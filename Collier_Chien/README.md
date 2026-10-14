@@ -27,4 +27,4 @@ RAK3172(H) est retenu pour la radio visée à 868 MHz ; LIS2HH12 mesure l’acc�
 
 Les références J20/J21/J22 évitent les collisions avec les connecteurs du BQ. [Architecture et brochages](../docs/ARCHITECTURE.md) · [Mise en service](../docs/MISE_EN_SERVICE.md).
 
-Le PCB et le firmware ne sont pas encore réalisés. Les empreintes, le stockage, les pointes radio et l’autonomie restent à valider avant fabrication.
+Le [PCB préliminaire](collier_chien.kicad_pcb) contient 47 composants dans un contour de 60 × 30 mm. [Placement et contrôles](PCB.md). Le routage et le firmware restent à réaliser. Les empreintes, le stockage, les pointes radio et l’autonomie restent à valider avant fabrication.

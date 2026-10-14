@@ -11,7 +11,8 @@
 | PDF et netlist | Actualisés avec KiCad 10.0.6 |
 | Contrôle d’intégration | 85 comparaisons de connexions réussies, références uniques |
 | ERC | **0 erreur, 4 avertissements documentés** |
-| PCB, boîtier et firmware | À réaliser |
+| PCB | Placement initial de 47 composants, contour 60 × 30 mm ; non routé |
+| Boîtier et firmware | À réaliser |
 | Essais et autonomie | À mesurer |
 
 ## Résultats de vérification
@@ -54,5 +55,7 @@ Le script fonctionne avec Python standard. Il compare l’alimentation avec l’
 - Cadence de mesure, plage d’accélération, seuils de réveil et cadence radio.
 - Liaison RF, modèle réel d’antenne et comportement à proximité du chien.
 - PCB, boîtier et firmware, puis essais du montage.
+
+Le [PCB initial et son rapport](../Collier_Chien/PCB.md) sont disponibles. La parité schéma/PCB ne signale aucun problème ; les violations de placement et la sérigraphie restent à traiter avant routage.
 
 Un ERC sans erreur confirme certains raccordements ; il ne démontre pas le fonctionnement physique ni une autonomie. Aucun prototype du collier n’a encore été mesuré. Les anciens PCB EDU RAK rangés dans les références ne sont pas des PCB du collier.
