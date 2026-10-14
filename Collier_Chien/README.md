@@ -1,56 +1,39 @@
-# Collier chien : mesure d'acceleration et LoRa
+# Collier chien - schema KiCad
 
-Revision 0.1, 14 octobre 2026. **Schema uniquement**, sans PCB ni firmware.
+Revision 0.2, 14 octobre 2026. Schema uniquement, conserve localement.
 
-Ouvrir `collier_chien.kicad_pro` dans KiCad 10, puis le schema. Les symboles sont inclus dans `Collier.kicad_sym` et references par `sym-lib-table` : aucune bibliotheque privee de Dorian n'est necessaire. Le PDF contient les quatre feuilles.
+Ouvrir collier_chien.kicad_pro dans KiCad 10. Le PDF reprend les quatre feuilles.
 
-## Architecture
+## Alimentation originale conservee
 
-- **U1 RAK3172(H)** : module LoRa EU868, alimentation nominale 3.31 V, programmation UART2/RUI3 et acces SWD.
-- **U2 BQ25570** : recuperation d'energie, charge d'un supercondensateur externe et sortie buck.
-- **U3 LIS2HH12** : acceleration XYZ, bus I2C2, adresse 0x1E, interruption INT1 vers PA1 pour le reveil.
+La feuille alimentation.kicad_sch est une copie exacte, octet pour octet, de harvester.kicad_sch extrait de Hardware/Kicad/edu_rak_2026_kicad.zip. Aucun composant, fil, reglage ou symbole de cette feuille n'a ete modifie. Les resistances NC sont laissees telles quelles. C22 est conservee, sans modification ni exploitation pour le dimensionnement du collier, conformement a la demande. Les avertissements provenant de ces elements ne donnent lieu a aucune correction.
 
-La reference demandee oralement « BQ2770 » est interpretee comme **BQ25570**, conformement au schema et aux fiches techniques EDU_RAK_2026 indiques par l'utilisateur.
+Le BQ25570 est celui du projet EDU RAK. Les valeurs et commandes originales sont conservees, y compris EN, VOUT_EN, VBAT_OK, les connecteurs de stockage et les reglages. La sortie buck est nominalement proche de 3.36 V avec ROUT1 = 4.64 M et ROUT2 = 8.25 M.
 
-## Connecteurs
+Le connecteur J3 de la feuille originale se trouve entre VOUT et le rail PWR : poser son cavalier pour alimenter le RAK et l'accelerometre, comme prevu par cette interface. Le drapeau PWR_FLAG sur la feuille MCU declare cette alimentation externe via le cavalier ; il ne remplace pas physiquement le cavalier. Le choix des commandes EN/VOUT_EN suit la feuille originale et doit etre applique sur le montage pour activer la sortie.
+
+## Feuilles du collier
+
+- RAK3172(H), EU868, alimentation PWR, programmation UART2/RUI3 et SWD.
+- LIS2HH12 : acceleration XYZ par I2C2, adresse 0x1E, INT1 vers PA1.
+- Surveillance VBAT_OK vers PA0 par le pont R8/R9, place sur la feuille MCU pour laisser la feuille BQ intacte.
+
+Le signal VBAT_OK utilise VSTOR comme niveau haut. Le pont 1 M / 2 M en abaisse le niveau vers le MCU. La correspondance des niveaux et le fonctionnement aux seuils devront etre mesures.
+
+## Connecteurs propres au collier
 
 | Connecteur | Broches |
 |---|---|
-| J1 recuperation d'energie | 1 : entree DC positive, 2 : GND |
-| J2 stockage | 1 : VBAT, 2 : GND ; supercondensateur externe >= 5.5 V |
-| J3 antenne | centre : RF 50 ohms, blindage : GND ; antenne 868 MHz |
-| J4 UART | 1 : 3V3, 2 : GND, 3 : TX module, 4 : RX module |
-| J5 SWD | 1 : reference 3V3, 2 : GND, 3 : SWDIO, 4 : SWCLK, 5 : NRST |
+| J20 antenne 868 MHz | centre RF 50 ohms, blindage GND |
+| J21 UART2 | 1 PWR, 2 GND, 3 TX module, 4 RX module |
+| J22 SWD | 1 reference PWR, 2 GND, 3 SWDIO, 4 SWCLK, 5 NRST |
 
-Utiliser un adaptateur UART logique 3.3 V et croiser TX/RX. J4/J5 donnent acces au rail : eviter une alimentation simultanee par le programmateur et le BQ25570.
+Utiliser des interfaces logiques 3.3 V. Croiser TX/RX pour UART. Eviter deux sources d'alimentation simultanees. Les numeros J20 a J22 evitent les collisions avec les connecteurs originaux de la feuille BQ.
 
-## Reglages de l'alimentation
+## Verification et limites
 
-Les resistances de programmation sont a 1 %. Avec VBIAS typique = 1.21 V :
+Les fichiers PDF, netlist et rapport ERC sont regeneres par KiCad. Les controles portent sur l'integration et les connexions des feuilles du collier. Les avertissements de la feuille BQ originale sont conserves et ne doivent pas etre interpretes comme des corrections a effectuer dans cette demande. SA0/SDO du LIS2HH12, declaree bidirectionnelle par son symbole, est reliee a GND pour fixer l'adresse en mode I2C.
 
-| Reglage | Calcul | Resultat nominal |
-|---|---|---|
-| Sortie | 1.21 x (1 + 8.25/4.75) | 3.312 V |
-| Fin de charge VBAT_OV | 1.5 x 1.21 x (1 + 8.66/7.15) | 4.013 V |
-| Stockage faible | 1.21 x (1 + 8.25/4.12) | 3.633 V |
-| Reprise | 1.21 x (1 + (8.25 + 0.681)/4.12) | 3.833 V |
+La source de recuperation d'energie, le stockage externe et l'autonomie restent a dimensionner selon l'usage. Les pointes de courant pendant les emissions LoRa et la tenue du rail doivent etre validees sur banc avant PCB. Aucun routage ni firmware n'est fourni.
 
-VOC_SAMP relie a VSTOR selectionne le MPPT 80 %. EN actif bas est relie a GND. VBAT_OK commande directement VOUT_EN : la charge est coupee en dessous du seuil et reactivee apres recuperation du stockage. Le signal VBAT_OK est adapte au RAK par le pont R8/R9 (rapport 2/3), car sa tension haute est celle de VSTOR, pas celle de 3V3.
-
-J1 suppose une **source DC de recuperation**, par exemple un petit panneau solaire adapte au MPPT 80 %. Une source piezoelectrique demanderait un redressement, une limitation de tension et un autre reglage MPPT. Ne pas raccorder directement une source alternative. Respecter les limites de VIN_DC de la fiche TI : demarrage a froid a partir d'environ 0.6 V typiques et entree de service <= 5.1 V.
-
-## Points a dimensionner avant un PCB
-
-Le choix de la source d'energie et de la capacite de stockage n'a pas ete fourni. J2 conserve donc le principe de stockage externe EDU RAK. L'autonomie depend de la capacite, de la fuite, de la puissance recoltee, de la cadence de mesure et des transmissions.
-
-Le BQ25570 annonce jusqu'a 110 mA de sortie **typiques**, sans garantie de cette valeur dans toutes les conditions. La fiche RAK du depot indique 87 mA typiques en TX a 20 dBm / 868 MHz. Verifier au banc les pointes TX, la chute du 3V3, la marge du buck et le demarrage : les capacites de decouplage ne garantissent pas a elles seules la tenue d'une transmission. Ne pas supposer que le fonctionnement radio maximal est valide.
-
-Les capacites 100 uF et 22 uF doivent conserver leur capacite utile sous polarisation ; leurs boitiers sont indicatifs pour cette revision de schema. Choisir les inductances a partir de leur courant de saturation, resistance serie et des limites maximales TI. Les composants ne constituent pas une nomenclature d'achat qualifiee.
-
-## Verification et sources
-
-Export PDF et netlist par KiCad 10.0.6. Verification automatique des nets de chaque broche par rapport a la table de connexions attendue. Le rapport `erc.json` contient le controle electrique KiCad. Un avertissement SA0/SDO contre le drapeau d'alimentation GND est attendu : en mode I2C, cette broche selectionne l'adresse et doit etre reliee a GND ; le symbole la declare bidirectionnelle pour son autre fonction SPI. Aucune exclusion globale des controles n'est appliquee.
-
-Inspiration : `Hardware/Kicad/edu_rak_2026_kicad.zip`, archive presente dans ce depot. Le nouveau schema supprime le BME280, les connecteurs GPIO generaux et les elements de demonstration, et conserve les trois composants utiles au collier.
-
-Sources : fiches `Datasheets/bq25570.pdf`, `Datasheets/RAK3172.pdf`, `Datasheets/LIS2HH12.pdf` du depot ; [TI BQ25570](https://www.ti.com/product/BQ25570), [ST LIS2HH12](https://www.st.com/resource/en/datasheet/lis2hh12.pdf), [RAK3172](https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/Datasheet/). Les symboles sont issus du projet EDU RAK et des bibliotheques installees KiCad ; leurs proprietes fabricant sont conservees.
+Sources : archive KiCad EDU_RAK_2026 et fiches bq25570.pdf, RAK3172.pdf et LIS2HH12.pdf presentes dans Datasheets.

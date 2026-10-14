@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "C:\\Users\\amira\\Desktop\\projet_kicad\\EDU_RAK_2026\\Collier_Chien\\collier_chien.kicad_sch")
-		(date "2026-10-14T12:20:33")
+		(date "2026-10-14T12:29:21")
 		(tool "Eeschema 10.0.6")
 		(sheet
 			(number "1")
@@ -55,16 +55,16 @@
 		(sheet
 			(number "2")
 			(name "/Alimentation / BQ25570/")
-			(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
+			(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
 			(title_block
-				(title "Alimentation / BQ25570")
-				(company "Collier chien / Amira")
-				(rev "0.1")
-				(date "2026-10-14")
+				(title "Edu_RAK_2026")
+				(company "DD")
+				(rev "1")
+				(date "2026-09-09")
 				(source "alimentation.kicad_sch")
 				(comment
 					(number "1")
-					(value "Schema uniquement - prototype a valider sur banc")
+					(value "")
 				)
 				(comment
 					(number "2")
@@ -200,22 +200,28 @@
 	(components
 		(comp
 			(ref "C1")
-			(value "4.7uF / 10V")
+			(value "100nF")
 			(footprint "Capacitor_SMD:C_0603_1608Metric")
+			(description "Unpolarized capacitor")
 			(fields
+				(field
+					(name "LCSC") "C1591")
 				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description")
-				)
+					(name "Description") "Unpolarized capacitor")
 			)
 			(libsource
-				(lib "Collier")
+				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "LCSC")
+				(value "C1591")
 			)
 			(property
 				(name "Sheetname")
@@ -235,9 +241,9 @@
 			)
 			(sheetpath
 				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
 			)
-			(tstamps "a74e8b8e-faeb-4c56-a2dc-9d0127248a2b")
+			(tstamps "da1eb712-e6a4-428c-b5e9-825fa894ec6f")
 			(units
 				(unit
 					(name "A")
@@ -253,23 +259,93 @@
 			)
 		)
 		(comp
-			(ref "C2")
-			(value "100nF / 10V")
+			(ref "C22")
+			(value "100uF")
 			(footprint "Capacitor_SMD:C_0603_1608Metric")
+			(description "Unpolarized capacitor")
 			(fields
+				(field
+					(name "LCSC")
+				)
 				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description")
-				)
+					(name "Description") "Unpolarized capacitor")
 			)
 			(libsource
-				(lib "Collier")
+				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "LCSC")
+				(value "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Alimentation / BQ25570")
+			)
+			(property
+				(name "Sheetfile")
+				(value "alimentation.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/Alimentation / BQ25570/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
+			)
+			(tstamps "43efa471-c42c-4d6b-8688-e22dd5948954")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "CBYP1")
+			(value "100nF")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
+			(description "Unpolarized capacitor")
+			(fields
+				(field
+					(name "LCSC") "C1591")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "LCSC")
+				(value "C1591")
 			)
 			(property
 				(name "Sheetname")
@@ -289,9 +365,9 @@
 			)
 			(sheetpath
 				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
 			)
-			(tstamps "94b3c786-6854-486a-9976-aab8b93daf94")
+			(tstamps "ed265d75-78e9-4662-8dbc-5a5bde9fb2e9")
 			(units
 				(unit
 					(name "A")
@@ -307,23 +383,29 @@
 			)
 		)
 		(comp
-			(ref "C3")
-			(value "10nF / faible fuite")
+			(ref "CIN1")
+			(value "100nF")
 			(footprint "Capacitor_SMD:C_0603_1608Metric")
+			(description "Unpolarized capacitor")
 			(fields
+				(field
+					(name "LCSC") "C1591")
 				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description")
-				)
+					(name "Description") "Unpolarized capacitor")
 			)
 			(libsource
-				(lib "Collier")
+				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "LCSC")
+				(value "C1591")
 			)
 			(property
 				(name "Sheetname")
@@ -343,9 +425,9 @@
 			)
 			(sheetpath
 				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
 			)
-			(tstamps "da3367e9-2966-45c2-8cfd-12cb18efc8ac")
+			(tstamps "0c4e0cc1-2cad-4a82-ac7c-b737e91da9a9")
 			(units
 				(unit
 					(name "A")
@@ -361,23 +443,29 @@
 			)
 		)
 		(comp
-			(ref "C4")
-			(value "22uF / 10V")
+			(ref "CIN2")
+			(value "4.7uF")
 			(footprint "Capacitor_SMD:C_0603_1608Metric")
+			(description "Unpolarized capacitor")
 			(fields
+				(field
+					(name "LCSC") "C107368 ")
 				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description")
-				)
+					(name "Description") "Unpolarized capacitor")
 			)
 			(libsource
-				(lib "Collier")
+				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "LCSC")
+				(value "C107368 ")
 			)
 			(property
 				(name "Sheetname")
@@ -397,9 +485,9 @@
 			)
 			(sheetpath
 				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
 			)
-			(tstamps "25e141d3-8566-4751-91b5-58f823687f60")
+			(tstamps "8a9812b4-3b9d-40f1-bca6-0b20749512e6")
 			(units
 				(unit
 					(name "A")
@@ -415,23 +503,29 @@
 			)
 		)
 		(comp
-			(ref "C5")
-			(value "100nF / 10V")
+			(ref "COUT1")
+			(value "22uF")
 			(footprint "Capacitor_SMD:C_0603_1608Metric")
+			(description "Unpolarized capacitor")
 			(fields
+				(field
+					(name "LCSC") "C2762594")
 				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description")
-				)
+					(name "Description") "Unpolarized capacitor")
 			)
 			(libsource
-				(lib "Collier")
+				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "LCSC")
+				(value "C2762594")
 			)
 			(property
 				(name "Sheetname")
@@ -451,9 +545,9 @@
 			)
 			(sheetpath
 				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
 			)
-			(tstamps "8ac16de1-34dd-4cb7-904a-d55de688f7a7")
+			(tstamps "cfc31960-1095-45e8-b0a5-c678f9d72513")
 			(units
 				(unit
 					(name "A")
@@ -469,23 +563,29 @@
 			)
 		)
 		(comp
-			(ref "C6")
-			(value "22uF / 10V")
+			(ref "CREF1")
+			(value "10nF")
 			(footprint "Capacitor_SMD:C_0603_1608Metric")
+			(description "Unpolarized capacitor")
 			(fields
+				(field
+					(name "LCSC") "C1591")
 				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description")
-				)
+					(name "Description") "Unpolarized capacitor")
 			)
 			(libsource
-				(lib "Collier")
+				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "LCSC")
+				(value "C1591")
 			)
 			(property
 				(name "Sheetname")
@@ -505,9 +605,9 @@
 			)
 			(sheetpath
 				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
 			)
-			(tstamps "96b2f196-3fa3-470e-9f49-c7f572183a83")
+			(tstamps "77dc8b0a-8fee-4920-a0bd-7834dd3fd315")
 			(units
 				(unit
 					(name "A")
@@ -523,23 +623,29 @@
 			)
 		)
 		(comp
-			(ref "C7")
-			(value "100nF / 10V")
+			(ref "CSTOR1")
+			(value "22uF")
 			(footprint "Capacitor_SMD:C_0603_1608Metric")
+			(description "Unpolarized capacitor")
 			(fields
+				(field
+					(name "LCSC") "C2762594")
 				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description")
-				)
+					(name "Description") "Unpolarized capacitor")
 			)
 			(libsource
-				(lib "Collier")
+				(lib "Device")
 				(part "C")
 				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "LCSC")
+				(value "C2762594")
 			)
 			(property
 				(name "Sheetname")
@@ -559,9 +665,9 @@
 			)
 			(sheetpath
 				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
 			)
-			(tstamps "075dc8d5-6b2e-4a46-8432-669619fe8b91")
+			(tstamps "f9495494-2d22-40b5-a691-01c4a2dd7084")
 			(units
 				(unit
 					(name "A")
@@ -577,23 +683,29 @@
 			)
 		)
 		(comp
-			(ref "J1")
-			(value "HARVESTER")
+			(ref "J3")
+			(value "Conn_01x02_Pin")
 			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x02, script generated")
 			(fields
+				(field
+					(name "LCSC") "C3332353")
 				(field
 					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description")
-				)
+					(name "Description") "Generic connector, single row, 01x02, script generated")
 			)
 			(libsource
-				(lib "Collier")
+				(lib "Connector")
 				(part "Conn_01x02_Pin")
 				(description "Generic connector, single row, 01x02, script generated")
+			)
+			(property
+				(name "LCSC")
+				(value "C3332353")
 			)
 			(property
 				(name "Sheetname")
@@ -613,9 +725,9 @@
 			)
 			(sheetpath
 				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
 			)
-			(tstamps "0a47beb9-dde3-4c5a-9b53-1ed552be42c1")
+			(tstamps "8220ff50-d257-40c2-8428-f7ec93124c46")
 			(units
 				(unit
 					(name "A")
@@ -631,23 +743,29 @@
 			)
 		)
 		(comp
-			(ref "J2")
-			(value "SUPERCAP 5.5V")
+			(ref "J4")
+			(value "Conn_01x02_Pin")
 			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x02, script generated")
 			(fields
+				(field
+					(name "LCSC") "C3332353")
 				(field
 					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description")
-				)
+					(name "Description") "Generic connector, single row, 01x02, script generated")
 			)
 			(libsource
-				(lib "Collier")
+				(lib "Connector")
 				(part "Conn_01x02_Pin")
 				(description "Generic connector, single row, 01x02, script generated")
+			)
+			(property
+				(name "LCSC")
+				(value "C3332353")
 			)
 			(property
 				(name "Sheetname")
@@ -667,9 +785,9 @@
 			)
 			(sheetpath
 				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
 			)
-			(tstamps "b58257d4-f3d1-43b3-82d0-469ba5f79f74")
+			(tstamps "724e720f-8d71-486b-957a-639a88b89c4d")
 			(units
 				(unit
 					(name "A")
@@ -685,23 +803,149 @@
 			)
 		)
 		(comp
-			(ref "L1")
-			(value "22uH / Isat >= 0.3A")
+			(ref "J10")
+			(value "P-MFC")
+			(footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal")
+			(description "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "LCSC") "C2683165")
+				(field
+					(name "Footprint") "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description")
-				)
+					(name "Description") "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			)
 			(libsource
-				(lib "Collier")
+				(lib "Connector")
+				(part "Screw_Terminal_01x02")
+				(description "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "LCSC")
+				(value "C2683165")
+			)
+			(property
+				(name "Sheetname")
+				(value "Alimentation / BQ25570")
+			)
+			(property
+				(name "Sheetfile")
+				(value "alimentation.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "screw terminal")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "TerminalBlock*:*")
+			)
+			(sheetpath
+				(names "/Alimentation / BQ25570/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
+			)
+			(tstamps "bcd46887-6a05-49af-bf3d-11c8a012e067")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J19")
+			(value "Conn_01x02_Socket")
+			(footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical")
+			(description "Generic connector, single row, 01x02, script generated")
+			(fields
+				(field
+					(name "LCSC") "C5372032")
+				(field
+					(name "Footprint") "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated")
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x02_Socket")
+				(description "Generic connector, single row, 01x02, script generated")
+			)
+			(property
+				(name "LCSC")
+				(value "C5372032")
+			)
+			(property
+				(name "Sheetname")
+				(value "Alimentation / BQ25570")
+			)
+			(property
+				(name "Sheetfile")
+				(value "alimentation.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/Alimentation / BQ25570/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
+			)
+			(tstamps "a0f0b6e5-53e4-4fda-b89b-d7aed0d6e007")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "LBOOST1")
+			(value "22uH")
+			(footprint "LPS4018-223MRC:IND_LPS4018-223MRC")
+			(description "Inductor")
+			(fields
+				(field
+					(name "LCSC") "C5441602")
+				(field
+					(name "Footprint") "LPS4018-223MRC:IND_LPS4018-223MRC")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Inductor")
+			)
+			(libsource
+				(lib "Device")
 				(part "L")
 				(description "Inductor")
+			)
+			(property
+				(name "LCSC")
+				(value "C5441602")
 			)
 			(property
 				(name "Sheetname")
@@ -721,9 +965,9 @@
 			)
 			(sheetpath
 				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
 			)
-			(tstamps "5b82614f-620f-4c22-b526-26fd73ac044a")
+			(tstamps "b69d2741-030c-4207-89d0-129030323c5f")
 			(units
 				(unit
 					(name "A")
@@ -739,23 +983,29 @@
 			)
 		)
 		(comp
-			(ref "L2")
-			(value "10uH / Isat >= 0.3A")
+			(ref "LBUCK1")
+			(value "10uH")
+			(footprint "Inductor_SMD:L_1008_2520Metric")
+			(description "Inductor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "LCSC") "C237599 ")
+				(field
+					(name "Footprint") "Inductor_SMD:L_1008_2520Metric")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description")
-				)
+					(name "Description") "Inductor")
 			)
 			(libsource
-				(lib "Collier")
+				(lib "Device")
 				(part "L")
 				(description "Inductor")
+			)
+			(property
+				(name "LCSC")
+				(value "C237599 ")
 			)
 			(property
 				(name "Sheetname")
@@ -775,9 +1025,9 @@
 			)
 			(sheetpath
 				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
 			)
-			(tstamps "691fc9c4-8502-4c35-9441-c2bc23950abc")
+			(tstamps "a65aa9d3-6101-481d-81ea-339a54d61c13")
 			(units
 				(unit
 					(name "A")
@@ -793,23 +1043,29 @@
 			)
 		)
 		(comp
-			(ref "R1")
-			(value "8.66M")
+			(ref "ROK1")
+			(value "4.22M")
 			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
 			(fields
+				(field
+					(name "LCSC") "C3009313")
 				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description")
-				)
+					(name "Description") "Resistor")
 			)
 			(libsource
-				(lib "Collier")
+				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "LCSC")
+				(value "C3009313")
 			)
 			(property
 				(name "Sheetname")
@@ -829,9 +1085,9 @@
 			)
 			(sheetpath
 				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
 			)
-			(tstamps "bdbac429-5a6a-400a-8e21-fc70109d94f4")
+			(tstamps "807426fd-ac62-4d3f-abf4-03fe4373e498")
 			(units
 				(unit
 					(name "A")
@@ -847,23 +1103,554 @@
 			)
 		)
 		(comp
-			(ref "R2")
+			(ref "ROK1B1")
+			(value "R")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Alimentation / BQ25570")
+			)
+			(property
+				(name "Sheetfile")
+				(value "alimentation.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Alimentation / BQ25570/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
+			)
+			(tstamps "fe8ecef4-f057-4d84-986b-ccf6cac6e3eb")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "ROK2")
+			(value "7.87M")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "LCSC") "C482913")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "LCSC")
+				(value "C482913")
+			)
+			(property
+				(name "Sheetname")
+				(value "Alimentation / BQ25570")
+			)
+			(property
+				(name "Sheetfile")
+				(value "alimentation.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Alimentation / BQ25570/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
+			)
+			(tstamps "15da84dd-2910-4f04-80b0-bc52c50c0fc7")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "ROK2B1")
+			(value "R")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Alimentation / BQ25570")
+			)
+			(property
+				(name "Sheetfile")
+				(value "alimentation.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Alimentation / BQ25570/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
+			)
+			(tstamps "7c04fa6a-4ecf-4f71-a862-3d2bcb575a59")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "ROK3")
+			(value "1.1M")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "LCSC") "C2930138")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "LCSC")
+				(value "C2930138")
+			)
+			(property
+				(name "Sheetname")
+				(value "Alimentation / BQ25570")
+			)
+			(property
+				(name "Sheetfile")
+				(value "alimentation.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Alimentation / BQ25570/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
+			)
+			(tstamps "87e4fd2f-57da-4fe2-a94a-bdb9b66a081f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "ROK3B1")
+			(value "R")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Alimentation / BQ25570")
+			)
+			(property
+				(name "Sheetfile")
+				(value "alimentation.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Alimentation / BQ25570/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
+			)
+			(tstamps "aaea3b71-355c-4a67-a8b7-fc5d87c64300")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "ROUT1")
+			(value "4.64M")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "LCSC") "C2079741")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "LCSC")
+				(value "C2079741")
+			)
+			(property
+				(name "Sheetname")
+				(value "Alimentation / BQ25570")
+			)
+			(property
+				(name "Sheetfile")
+				(value "alimentation.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Alimentation / BQ25570/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
+			)
+			(tstamps "f95e1af7-62c9-48a3-a2ad-002d72084b46")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "ROUT1B1")
+			(value "R")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Alimentation / BQ25570")
+			)
+			(property
+				(name "Sheetfile")
+				(value "alimentation.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Alimentation / BQ25570/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
+			)
+			(tstamps "7843e5ae-249e-4a44-8c99-c8d6e1e87258")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "ROUT2")
+			(value "8.25M")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "LCSC") "C166757")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "LCSC")
+				(value "C166757")
+			)
+			(property
+				(name "Sheetname")
+				(value "Alimentation / BQ25570")
+			)
+			(property
+				(name "Sheetfile")
+				(value "alimentation.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Alimentation / BQ25570/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
+			)
+			(tstamps "e2fe3136-2e17-48ab-a8a1-60e65e7aefde")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "ROUT2B1")
+			(value "R")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Alimentation / BQ25570")
+			)
+			(property
+				(name "Sheetfile")
+				(value "alimentation.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Alimentation / BQ25570/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
+			)
+			(tstamps "fc38fd61-e7df-403b-b535-86ef88820a80")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "ROV1")
 			(value "7.15M")
 			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
 			(fields
+				(field
+					(name "LCSC") "C422907")
 				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description")
-				)
+					(name "Description") "Resistor")
 			)
 			(libsource
-				(lib "Collier")
+				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "LCSC")
+				(value "C422907")
 			)
 			(property
 				(name "Sheetname")
@@ -883,9 +1670,9 @@
 			)
 			(sheetpath
 				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
 			)
-			(tstamps "8bc88893-969d-413a-b3a2-641cb74618eb")
+			(tstamps "f0754097-ef97-47a8-aab9-bc4afc683bc2")
 			(units
 				(unit
 					(name "A")
@@ -901,9 +1688,10 @@
 			)
 		)
 		(comp
-			(ref "R3")
-			(value "0.681M")
+			(ref "ROV1B1")
+			(value "R")
 			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
 			(fields
 				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
@@ -911,11 +1699,10 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description")
-				)
+					(name "Description") "Resistor")
 			)
 			(libsource
-				(lib "Collier")
+				(lib "Device")
 				(part "R")
 				(description "Resistor")
 			)
@@ -928,6 +1715,9 @@
 				(value "alimentation.kicad_sch")
 			)
 			(property
+				(name "dnp")
+			)
+			(property
 				(name "ki_keywords")
 				(value "R res resistor")
 			)
@@ -937,9 +1727,9 @@
 			)
 			(sheetpath
 				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
 			)
-			(tstamps "a84895e9-40f0-4b07-9783-0b847525a4e8")
+			(tstamps "11ea9a4f-56bc-4fc4-999d-04687c3f52d9")
 			(units
 				(unit
 					(name "A")
@@ -955,23 +1745,29 @@
 			)
 		)
 		(comp
-			(ref "R4")
-			(value "8.25M")
+			(ref "ROV2")
+			(value "8.66M")
 			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
 			(fields
+				(field
+					(name "LCSC") "C4087386")
 				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
 				(field
 					(name "Datasheet")
 				)
 				(field
-					(name "Description")
-				)
+					(name "Description") "Resistor")
 			)
 			(libsource
-				(lib "Collier")
+				(lib "Device")
 				(part "R")
 				(description "Resistor")
+			)
+			(property
+				(name "LCSC")
+				(value "C4087386")
 			)
 			(property
 				(name "Sheetname")
@@ -991,9 +1787,9 @@
 			)
 			(sheetpath
 				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
 			)
-			(tstamps "1f9d6995-7637-4139-b0d4-250f48c60c0f")
+			(tstamps "a31e7a82-1f42-4c01-b46b-a72d5de6e301")
 			(units
 				(unit
 					(name "A")
@@ -1009,9 +1805,10 @@
 			)
 		)
 		(comp
-			(ref "R5")
-			(value "4.12M")
+			(ref "ROV2B1")
+			(value "R")
 			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor")
 			(fields
 				(field
 					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
@@ -1019,11 +1816,10 @@
 					(name "Datasheet")
 				)
 				(field
-					(name "Description")
-				)
+					(name "Description") "Resistor")
 			)
 			(libsource
-				(lib "Collier")
+				(lib "Device")
 				(part "R")
 				(description "Resistor")
 			)
@@ -1036,58 +1832,7 @@
 				(value "alimentation.kicad_sch")
 			)
 			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
-			)
-			(tstamps "517c5d7d-fcac-48d3-9929-fac0da410243")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R6")
-			(value "8.25M")
-			(footprint "Resistor_SMD:R_0603_1608Metric")
-			(fields
-				(field
-					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description")
-				)
-			)
-			(libsource
-				(lib "Collier")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Sheetname")
-				(value "Alimentation / BQ25570")
-			)
-			(property
-				(name "Sheetfile")
-				(value "alimentation.kicad_sch")
+				(name "dnp")
 			)
 			(property
 				(name "ki_keywords")
@@ -1099,171 +1844,9 @@
 			)
 			(sheetpath
 				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
 			)
-			(tstamps "a7e855ab-1a60-4c3b-a8ea-1b0ce0c4eef3")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R7")
-			(value "4.75M")
-			(footprint "Resistor_SMD:R_0603_1608Metric")
-			(fields
-				(field
-					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description")
-				)
-			)
-			(libsource
-				(lib "Collier")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Sheetname")
-				(value "Alimentation / BQ25570")
-			)
-			(property
-				(name "Sheetfile")
-				(value "alimentation.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
-			)
-			(tstamps "8a56711f-790f-4194-86e3-3ae9f058cc5d")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R8")
-			(value "1M")
-			(footprint "Resistor_SMD:R_0603_1608Metric")
-			(fields
-				(field
-					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description")
-				)
-			)
-			(libsource
-				(lib "Collier")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Sheetname")
-				(value "Alimentation / BQ25570")
-			)
-			(property
-				(name "Sheetfile")
-				(value "alimentation.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
-			)
-			(tstamps "29b4d684-b64b-47c8-9820-72d637621a1c")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
-			(ref "R9")
-			(value "2M")
-			(footprint "Resistor_SMD:R_0603_1608Metric")
-			(fields
-				(field
-					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description")
-				)
-			)
-			(libsource
-				(lib "Collier")
-				(part "R")
-				(description "Resistor")
-			)
-			(property
-				(name "Sheetname")
-				(value "Alimentation / BQ25570")
-			)
-			(property
-				(name "Sheetfile")
-				(value "alimentation.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "R res resistor")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "R_*")
-			)
-			(sheetpath
-				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
-			)
-			(tstamps "106411c7-f9cf-437c-b1d3-b994a6fea108")
+			(tstamps "3a6c35dd-dd30-4189-b45f-0a1d2625a410")
 			(units
 				(unit
 					(name "A")
@@ -1283,19 +1866,25 @@
 			(value "BQ25570")
 			(footprint "Package_DFN_QFN:QFN-20-1EP_3.5x3.5mm_P0.5mm_EP2x2mm")
 			(datasheet "http://www.ti.com/lit/ds/symlink/bq25570.pdf")
+			(description "Nano Power Boost Charger and Buck Converter for Energy Harvester Powered Applications, QFN-20")
 			(fields
+				(field
+					(name "LCSC") "C506250")
 				(field
 					(name "Footprint") "Package_DFN_QFN:QFN-20-1EP_3.5x3.5mm_P0.5mm_EP2x2mm")
 				(field
 					(name "Datasheet") "http://www.ti.com/lit/ds/symlink/bq25570.pdf")
 				(field
-					(name "Description")
-				)
+					(name "Description") "Nano Power Boost Charger and Buck Converter for Energy Harvester Powered Applications, QFN-20")
 			)
 			(libsource
-				(lib "Collier")
+				(lib "Battery_Management")
 				(part "BQ25570")
 				(description "Nano Power Boost Charger and Buck Converter for Energy Harvester Powered Applications, QFN-20")
+			)
+			(property
+				(name "LCSC")
+				(value "C506250")
 			)
 			(property
 				(name "Sheetname")
@@ -1315,9 +1904,9 @@
 			)
 			(sheetpath
 				(names "/Alimentation / BQ25570/")
-				(tstamps "/7cb96041-c98a-4fea-9244-e389aafb5054/")
+				(tstamps "/f880b89c-eefd-40aa-8449-0ee4ceb1b8d1/")
 			)
-			(tstamps "1188354a-0bdc-4c86-b607-26f45ae9138a")
+			(tstamps "8d044881-a033-465b-8315-1bbac3be3530")
 			(units
 				(unit
 					(name "A")
@@ -1552,7 +2141,7 @@
 			)
 		)
 		(comp
-			(ref "J3")
+			(ref "J20")
 			(value "ANTENNE 868MHz / 50 ohms")
 			(footprint "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical")
 			(fields
@@ -1606,7 +2195,7 @@
 			)
 		)
 		(comp
-			(ref "J4")
+			(ref "J21")
 			(value "UART2 / RUI3")
 			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
 			(fields
@@ -1666,7 +2255,7 @@
 			)
 		)
 		(comp
-			(ref "J5")
+			(ref "J22")
 			(value "SWD")
 			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical")
 			(fields
@@ -1723,6 +2312,114 @@
 						)
 						(pin
 							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R8")
+			(value "1M")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Collier")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Traitement / RAK3172")
+			)
+			(property
+				(name "Sheetfile")
+				(value "rak3172.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Traitement / RAK3172/")
+				(tstamps "/92d73413-1739-4547-a5e4-aca8d0cf0eff/")
+			)
+			(tstamps "29b4d684-b64b-47c8-9820-72d637621a1c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R9")
+			(value "2M")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Collier")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Traitement / RAK3172")
+			)
+			(property
+				(name "Sheetfile")
+				(value "rak3172.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/Traitement / RAK3172/")
+				(tstamps "/92d73413-1739-4547-a5e4-aca8d0cf0eff/")
+			)
+			(tstamps "106411c7-f9cf-437c-b1d3-b994a6fea108")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
 						)
 					)
 				)
@@ -2385,59 +3082,7 @@
 	(variants)
 	(libparts
 		(libpart
-			(lib "Collier")
-			(part "B3U-1000P")
-			(description "Tactile Switch SPST-NO Top Actuated Surface Mount")
-			(fields
-				(field
-					(name "Reference") "S")
-				(field
-					(name "Value") "B3U-1000P")
-				(field
-					(name "Footprint") "B3U-1000P:SW_B3U-1000P")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Tactile Switch SPST-NO Top Actuated Surface Mount")
-				(field
-					(name "MF") "Omron")
-				(field
-					(name "PACKAGE") "None")
-				(field
-					(name "PRICE") "None")
-				(field
-					(name "Package") "Custom Package Omron")
-				(field
-					(name "Check_prices") "https://www.snapeda.com/parts/B3U-1000P/Omron/view-part/?ref=eda")
-				(field
-					(name "Price") "None")
-				(field
-					(name "SnapEDA_Link") "https://www.snapeda.com/parts/B3U-1000P/Omron/view-part/?ref=snap")
-				(field
-					(name "MP") "B3U-1000P")
-				(field
-					(name "Availability") "In Stock")
-				(field
-					(name "AVAILABILITY") "Unavailable")
-				(field
-					(name "Description_1") "SWITCH;TACTILE,TOP ACTUATED,TACTILE & JOG SWITCHES W/O BOSS W/O GROUND | Omron Electronic Components B3U-1000P")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "Collier")
+			(lib "Battery_Management")
 			(part "BQ25570")
 			(description "Nano Power Boost Charger and Buck Converter for Energy Harvester Powered Applications, QFN-20")
 			(docs "http://www.ti.com/lit/ds/symlink/bq25570.pdf")
@@ -2569,6 +3214,58 @@
 		)
 		(libpart
 			(lib "Collier")
+			(part "B3U-1000P")
+			(description "Tactile Switch SPST-NO Top Actuated Surface Mount")
+			(fields
+				(field
+					(name "Reference") "S")
+				(field
+					(name "Value") "B3U-1000P")
+				(field
+					(name "Footprint") "B3U-1000P:SW_B3U-1000P")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Tactile Switch SPST-NO Top Actuated Surface Mount")
+				(field
+					(name "MF") "Omron")
+				(field
+					(name "PACKAGE") "None")
+				(field
+					(name "PRICE") "None")
+				(field
+					(name "Package") "Custom Package Omron")
+				(field
+					(name "Check_prices") "https://www.snapeda.com/parts/B3U-1000P/Omron/view-part/?ref=eda")
+				(field
+					(name "Price") "None")
+				(field
+					(name "SnapEDA_Link") "https://www.snapeda.com/parts/B3U-1000P/Omron/view-part/?ref=snap")
+				(field
+					(name "MP") "B3U-1000P")
+				(field
+					(name "Availability") "In Stock")
+				(field
+					(name "AVAILABILITY") "Unavailable")
+				(field
+					(name "Description_1") "SWITCH;TACTILE,TOP ACTUATED,TACTILE & JOG SWITCHES W/O BOSS W/O GROUND | Omron Electronic Components B3U-1000P")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Collier")
 			(part "C")
 			(description "Unpolarized capacitor")
 			(footprints
@@ -2597,40 +3294,6 @@
 				(pin
 					(num "2")
 					(name "")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "Collier")
-			(part "Conn_01x02_Pin")
-			(description "Generic connector, single row, 01x02, script generated")
-			(footprints
-				(fp "Connector*:*_1x??_*")
-			)
-			(fields
-				(field
-					(name "Reference") "J")
-				(field
-					(name "Value") "Conn_01x02_Pin")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Generic connector, single row, 01x02, script generated")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "Pin_1")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "Pin_2")
 					(type "passive")
 				)
 			)
@@ -2766,43 +3429,6 @@
 				(pin
 					(num "2")
 					(name "Ext")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "Collier")
-			(part "L")
-			(description "Inductor")
-			(footprints
-				(fp "Choke_*")
-				(fp "*Coil*")
-				(fp "Inductor_*")
-				(fp "L_*")
-			)
-			(fields
-				(field
-					(name "Reference") "L")
-				(field
-					(name "Value") "L")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Inductor")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "1")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "2")
 					(type "passive")
 				)
 			)
@@ -3107,220 +3733,275 @@
 				)
 			)
 		)
+		(libpart
+			(lib "Connector")
+			(part "Conn_01x02_Pin")
+			(description "Generic connector, single row, 01x02, script generated")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x02_Pin")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector")
+			(part "Conn_01x02_Socket")
+			(description "Generic connector, single row, 01x02, script generated")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x02_Socket")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x02, script generated")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector")
+			(part "Screw_Terminal_01x02")
+			(description "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(footprints
+				(fp "TerminalBlock*:*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Screw_Terminal_01x02")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "C")
+			(description "Unpolarized capacitor")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "L")
+			(description "Inductor")
+			(footprints
+				(fp "Choke_*")
+				(fp "*Coil*")
+				(fp "Inductor_*")
+				(fp "L_*")
+			)
+			(fields
+				(field
+					(name "Reference") "L")
+				(field
+					(name "Value") "L")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Inductor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "R")
+			(description "Resistor")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "R")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
 	)
 	(libraries
 		(library
+			(logical "Battery_Management")
+			(uri "${KICAD10_SYMBOL_DIR}/Battery_Management.kicad_sym")
+		)
+		(library
 			(logical "Collier")
 			(uri "${KIPRJMOD}/Collier.kicad_sym")
+		)
+		(library
+			(logical "Connector")
+			(uri "${KICAD10_SYMBOL_DIR}/Connector.kicad_sym")
+		)
+		(library
+			(logical "Device")
+			(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")
 		)
 	)
 	(nets
 		(net
 			(code "1")
-			(name "/Alimentation {slash} BQ25570/LBOOST")
+			(name "'EN")
 			(class "Default")
 			(node
-				(ref "L1")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-			(node
 				(ref "U2")
-				(pin "20")
-				(pinfunction "LBOOST_20")
-				(pintype "passive")
+				(pin "5")
+				(pinfunction "~{EN}_5")
+				(pintype "input")
 			)
 		)
 		(net
 			(code "2")
-			(name "/Alimentation {slash} BQ25570/LBUCK")
-			(class "Default")
-			(node
-				(ref "L2")
-				(pin "1")
-				(pinfunction "1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U2")
-				(pin "16")
-				(pinfunction "LBUCK_16")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "3")
-			(name "/Alimentation {slash} BQ25570/OK_HYST")
-			(class "Default")
-			(node
-				(ref "R3")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R4")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U2")
-				(pin "10")
-				(pinfunction "OK_HYST_10")
-				(pintype "input")
-			)
-		)
-		(net
-			(code "4")
-			(name "/Alimentation {slash} BQ25570/OK_PROG")
-			(class "Default")
-			(node
-				(ref "R4")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R5")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U2")
-				(pin "11")
-				(pinfunction "OK_PROG_11")
-				(pintype "input")
-			)
-		)
-		(net
-			(code "5")
-			(name "/Alimentation {slash} BQ25570/OUT_SET")
-			(class "Default")
-			(node
-				(ref "R6")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R7")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U2")
-				(pin "12")
-				(pinfunction "VOUT_SET_12")
-				(pintype "input")
-			)
-		)
-		(net
-			(code "6")
-			(name "/Alimentation {slash} BQ25570/OV_SET")
-			(class "Default")
-			(node
-				(ref "R1")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R2")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U2")
-				(pin "7")
-				(pinfunction "VBAT_OV_7")
-				(pintype "input")
-			)
-		)
-		(net
-			(code "7")
-			(name "/Alimentation {slash} BQ25570/VBAT")
-			(class "Default")
-			(node
-				(ref "J2")
-				(pin "1")
-				(pinfunction "Pin_1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U2")
-				(pin "18")
-				(pinfunction "VBAT_18")
-				(pintype "power_in")
-			)
-		)
-		(net
-			(code "8")
-			(name "/Alimentation {slash} BQ25570/VBAT_OK_RAW")
-			(class "Default")
-			(node
-				(ref "R8")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U2")
-				(pin "13")
-				(pinfunction "VBAT_OK_13")
-				(pintype "output")
-			)
-			(node
-				(ref "U2")
-				(pin "6")
-				(pinfunction "VOUT_EN_6")
-				(pintype "input")
-			)
-		)
-		(net
-			(code "9")
-			(name "/Alimentation {slash} BQ25570/VIN_HARVEST")
-			(class "Default")
-			(node
-				(ref "C1")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C2")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "J1")
-				(pin "1")
-				(pinfunction "Pin_1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "L1")
-				(pin "1")
-				(pinfunction "1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U2")
-				(pin "2")
-				(pinfunction "VIN_DC_2")
-				(pintype "power_in")
-			)
-		)
-		(net
-			(code "10")
 			(name "/Alimentation {slash} BQ25570/VRDIV")
 			(class "Default")
 			(node
-				(ref "R1")
+				(ref "ROK3")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "R3")
+				(ref "ROK3B1")
 				(pin "1")
 				(pintype "passive")
 			)
 			(node
-				(ref "R6")
+				(ref "ROUT2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROUT2B1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROV2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROV2B1")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -3332,50 +4013,7 @@
 			)
 		)
 		(net
-			(code "11")
-			(name "/Alimentation {slash} BQ25570/VREF_SAMP")
-			(class "Default")
-			(node
-				(ref "C3")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U2")
-				(pin "4")
-				(pinfunction "VREF_SAMP_4")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "12")
-			(name "/Alimentation {slash} BQ25570/VSTOR")
-			(class "Default")
-			(node
-				(ref "C4")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C5")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U2")
-				(pin "19")
-				(pinfunction "VSTOR_19")
-				(pintype "power_out")
-			)
-			(node
-				(ref "U2")
-				(pin "3")
-				(pinfunction "VOC_SAMP_3")
-				(pintype "input")
-			)
-		)
-		(net
-			(code "13")
+			(code "3")
 			(name "/Traitement {slash} RAK3172/BOOT0")
 			(class "Default")
 			(node
@@ -3391,11 +4029,11 @@
 			)
 		)
 		(net
-			(code "14")
+			(code "4")
 			(name "/Traitement {slash} RAK3172/NRST")
 			(class "Default")
 			(node
-				(ref "J5")
+				(ref "J22")
 				(pin "5")
 				(pinfunction "Pin_5_5")
 				(pintype "passive")
@@ -3418,11 +4056,11 @@
 			)
 		)
 		(net
-			(code "15")
+			(code "5")
 			(name "/Traitement {slash} RAK3172/RF")
 			(class "Default")
 			(node
-				(ref "J3")
+				(ref "J20")
 				(pin "1")
 				(pinfunction "In_1")
 				(pintype "passive")
@@ -3435,11 +4073,11 @@
 			)
 		)
 		(net
-			(code "16")
+			(code "6")
 			(name "/Traitement {slash} RAK3172/SWCLK")
 			(class "Default")
 			(node
-				(ref "J5")
+				(ref "J22")
 				(pin "4")
 				(pinfunction "Pin_4_4")
 				(pintype "passive")
@@ -3452,11 +4090,11 @@
 			)
 		)
 		(net
-			(code "17")
+			(code "7")
 			(name "/Traitement {slash} RAK3172/SWDIO")
 			(class "Default")
 			(node
-				(ref "J5")
+				(ref "J22")
 				(pin "3")
 				(pinfunction "Pin_3_3")
 				(pintype "passive")
@@ -3469,11 +4107,11 @@
 			)
 		)
 		(net
-			(code "18")
+			(code "8")
 			(name "/Traitement {slash} RAK3172/UART2_RX")
 			(class "Default")
 			(node
-				(ref "J4")
+				(ref "J21")
 				(pin "4")
 				(pinfunction "Pin_4_4")
 				(pintype "passive")
@@ -3486,11 +4124,11 @@
 			)
 		)
 		(net
-			(code "19")
+			(code "9")
 			(name "/Traitement {slash} RAK3172/UART2_TX")
 			(class "Default")
 			(node
-				(ref "J4")
+				(ref "J21")
 				(pin "3")
 				(pinfunction "Pin_3_3")
 				(pintype "passive")
@@ -3503,115 +4141,7 @@
 			)
 		)
 		(net
-			(code "20")
-			(name "3V3")
-			(class "Default")
-			(node
-				(ref "C10")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C11")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C12")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C13")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C6")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C7")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C8")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "C9")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "J4")
-				(pin "1")
-				(pinfunction "Pin_1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "J5")
-				(pin "1")
-				(pinfunction "Pin_1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "L2")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R11")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R12")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "R13")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "24")
-				(pinfunction "VDD_24")
-				(pintype "power_in")
-			)
-			(node
-				(ref "U2")
-				(pin "14")
-				(pinfunction "VOUT_14")
-				(pintype "power_out")
-			)
-			(node
-				(ref "U3")
-				(pin "10")
-				(pinfunction "Vdd_IO_10")
-				(pintype "power_in")
-			)
-			(node
-				(ref "U3")
-				(pin "2")
-				(pinfunction "~{CS}_2")
-				(pintype "input")
-			)
-			(node
-				(ref "U3")
-				(pin "9")
-				(pinfunction "Vdd_9")
-				(pintype "power_in")
-			)
-		)
-		(net
-			(code "21")
+			(code "10")
 			(name "ACC_INT1")
 			(class "Default")
 			(node
@@ -3628,7 +4158,7 @@
 			)
 		)
 		(net
-			(code "22")
+			(code "11")
 			(name "GND")
 			(class "Default")
 			(node
@@ -3657,32 +4187,7 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "C2")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C3")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C4")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C5")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C6")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C7")
+				(ref "C22")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -3697,31 +4202,61 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "J1")
+				(ref "CBYP1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "CIN1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "CIN2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "COUT1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "CREF1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "CSTOR1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J10")
 				(pin "2")
 				(pinfunction "Pin_2_2")
 				(pintype "passive")
 			)
 			(node
-				(ref "J2")
-				(pin "2")
-				(pinfunction "Pin_2_2")
+				(ref "J19")
+				(pin "1")
+				(pinfunction "Pin_1_1")
 				(pintype "passive")
 			)
 			(node
-				(ref "J3")
+				(ref "J20")
 				(pin "2")
 				(pinfunction "Ext_2")
 				(pintype "passive")
 			)
 			(node
-				(ref "J4")
+				(ref "J21")
 				(pin "2")
 				(pinfunction "Pin_2_2")
 				(pintype "passive")
 			)
 			(node
-				(ref "J5")
+				(ref "J22")
 				(pin "2")
 				(pinfunction "Pin_2_2")
 				(pintype "passive")
@@ -3732,22 +4267,37 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "R2")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R5")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "R7")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
 				(ref "R9")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROK1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROK1B1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROUT1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROUT1B1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROV1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROV1B1")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -3812,12 +4362,6 @@
 			)
 			(node
 				(ref "U2")
-				(pin "5")
-				(pinfunction "~{EN}_5")
-				(pintype "input")
-			)
-			(node
-				(ref "U2")
 				(pin "9")
 				(pinfunction "VSS_9")
 				(pintype "passive")
@@ -3854,7 +4398,7 @@
 			)
 		)
 		(net
-			(code "23")
+			(code "12")
 			(name "I2C_SCL")
 			(class "Default")
 			(node
@@ -3876,7 +4420,7 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "13")
 			(name "I2C_SDA")
 			(class "Default")
 			(node
@@ -3898,7 +4442,388 @@
 			)
 		)
 		(net
+			(code "14")
+			(name "Net-(J3-Pin_1)")
+			(class "Default")
+			(node
+				(ref "COUT1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "LBUCK1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "14")
+				(pinfunction "VOUT_14")
+				(pintype "power_out")
+			)
+		)
+		(net
+			(code "15")
+			(name "Net-(J4-Pin_2)")
+			(class "Default")
+			(node
+				(ref "CIN1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "CIN2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "LBOOST1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "2")
+				(pinfunction "VIN_DC_2")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "16")
+			(name "Net-(J10-Pin_1)")
+			(class "Default")
+			(node
+				(ref "J10")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "17")
+			(name "Net-(U2-LBOOST)")
+			(class "Default")
+			(node
+				(ref "LBOOST1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "20")
+				(pinfunction "LBOOST_20")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "18")
+			(name "Net-(U2-LBUCK)")
+			(class "Default")
+			(node
+				(ref "LBUCK1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "16")
+				(pinfunction "LBUCK_16")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "19")
+			(name "Net-(U2-OK_HYST)")
+			(class "Default")
+			(node
+				(ref "ROK2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROK2B1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROK3")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROK3B1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "10")
+				(pinfunction "OK_HYST_10")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "20")
+			(name "Net-(U2-OK_PROG)")
+			(class "Default")
+			(node
+				(ref "ROK1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROK1B1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROK2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROK2B1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "11")
+				(pinfunction "OK_PROG_11")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "21")
+			(name "Net-(U2-VBAT)")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C22")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "18")
+				(pinfunction "VBAT_18")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "22")
+			(name "Net-(U2-VBAT_OV)")
+			(class "Default")
+			(node
+				(ref "ROV1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROV1B1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROV2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROV2B1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "7")
+				(pinfunction "VBAT_OV_7")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "23")
+			(name "Net-(U2-VOUT_SET)")
+			(class "Default")
+			(node
+				(ref "ROUT1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROUT1B1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROUT2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROUT2B1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "12")
+				(pinfunction "VOUT_SET_12")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "24")
+			(name "Net-(U2-VREF_SAMP)")
+			(class "Default")
+			(node
+				(ref "CREF1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "4")
+				(pinfunction "VREF_SAMP_4")
+				(pintype "passive")
+			)
+		)
+		(net
 			(code "25")
+			(name "PWR")
+			(class "Default")
+			(node
+				(ref "C10")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C11")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C12")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C13")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C8")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C9")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J21")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J22")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "R11")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R12")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R13")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "24")
+				(pinfunction "VDD_24")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U3")
+				(pin "10")
+				(pinfunction "Vdd_IO_10")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U3")
+				(pin "2")
+				(pinfunction "~{CS}_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U3")
+				(pin "9")
+				(pinfunction "Vdd_9")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "26")
+			(name "VBAT_OK")
+			(class "Default")
+			(node
+				(ref "R8")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "13")
+				(pinfunction "VBAT_OK_13")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "27")
 			(name "VBAT_OK_3V3")
 			(class "Default")
 			(node
@@ -3919,7 +4844,46 @@
 			)
 		)
 		(net
-			(code "26")
+			(code "28")
+			(name "VOUT_EN")
+			(class "Default")
+			(node
+				(ref "CBYP1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "CSTOR1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J19")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "19")
+				(pinfunction "VSTOR_19")
+				(pintype "power_out")
+			)
+			(node
+				(ref "U2")
+				(pin "3")
+				(pinfunction "VOC_SAMP_3")
+				(pintype "input")
+			)
+			(node
+				(ref "U2")
+				(pin "6")
+				(pinfunction "VOUT_EN_6")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "29")
 			(name "unconnected-(U1-PA4{slash}~{SPI1_SS}-Pad16)")
 			(class "Default")
 			(node
@@ -3930,7 +4894,7 @@
 			)
 		)
 		(net
-			(code "27")
+			(code "30")
 			(name "unconnected-(U1-PA5{slash}SPI1_CLK-Pad15)")
 			(class "Default")
 			(node
@@ -3941,7 +4905,7 @@
 			)
 		)
 		(net
-			(code "28")
+			(code "31")
 			(name "unconnected-(U1-PA6{slash}SPI1_MISO-Pad14)")
 			(class "Default")
 			(node
@@ -3952,7 +4916,7 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "32")
 			(name "unconnected-(U1-PA7{slash}SPI1_MOSI-Pad13)")
 			(class "Default")
 			(node
@@ -3963,7 +4927,7 @@
 			)
 		)
 		(net
-			(code "30")
+			(code "33")
 			(name "unconnected-(U1-PA8-Pad19)")
 			(class "Default")
 			(node
@@ -3974,7 +4938,7 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "34")
 			(name "unconnected-(U1-PA9-Pad20)")
 			(class "Default")
 			(node
@@ -3985,7 +4949,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "35")
 			(name "unconnected-(U1-PA10{slash}PIN_A3-Pad25)")
 			(class "Default")
 			(node
@@ -3996,7 +4960,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "36")
 			(name "unconnected-(U1-PA15{slash}PIN_A4-Pad3)")
 			(class "Default")
 			(node
@@ -4007,7 +4971,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "37")
 			(name "unconnected-(U1-PB2{slash}PIN_A2-Pad26)")
 			(class "Default")
 			(node
@@ -4018,7 +4982,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "38")
 			(name "unconnected-(U1-PB3{slash}PIN_A0-Pad32)")
 			(class "Default")
 			(node
@@ -4029,7 +4993,7 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "39")
 			(name "unconnected-(U1-PB4{slash}PIN_A1-Pad31)")
 			(class "Default")
 			(node
@@ -4040,7 +5004,7 @@
 			)
 		)
 		(net
-			(code "37")
+			(code "40")
 			(name "unconnected-(U1-PB5-Pad30)")
 			(class "Default")
 			(node
@@ -4051,7 +5015,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "41")
 			(name "unconnected-(U1-PB6{slash}UART1_TX-Pad4)")
 			(class "Default")
 			(node
@@ -4062,7 +5026,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "42")
 			(name "unconnected-(U1-PB7{slash}UART1_RX-Pad5)")
 			(class "Default")
 			(node
@@ -4073,7 +5037,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "43")
 			(name "unconnected-(U1-PB12-Pad27)")
 			(class "Default")
 			(node
@@ -4084,7 +5048,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "44")
 			(name "unconnected-(U3-INT2-Pad11)")
 			(class "Default")
 			(node
