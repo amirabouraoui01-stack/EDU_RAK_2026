@@ -2,7 +2,15 @@
 
 [Accueil](../README.md) · [PDF complet](../Collier_Chien/collier_chien.pdf)
 
-Images issues de l’export KiCad actuel. Elles montrent les schémas, pas une carte fabriquée.
+Images issues des exports KiCad actuels. Elles montrent les fichiers de conception, pas une carte fabriquée.
+
+## PCB routé — 60 × 30 mm
+
+![Face avant, cuivre et implantation](assets/pcb_avant.png)
+
+![Face arrière en miroir, plan de masse et pistes](assets/pcb_arriere.png)
+
+[Ouvrir le PCB](../Collier_Chien/collier_chien.kicad_pcb) · [Lire les contrôles et les hypothèses](../Collier_Chien/PCB.md).
 
 ## RAK3172 et antenne générique 868 MHz
 

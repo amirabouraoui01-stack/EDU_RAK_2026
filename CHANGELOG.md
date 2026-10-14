@@ -1,5 +1,14 @@
 # Historique du collier
 
+## 14 octobre 2026 — routage du PCB
+
+- Placement regroupé par fonction et connecteur RF rapproché du RAK3172.
+- Routage de toutes les connexions sur deux couches, plan de masse au dos.
+- Zone réservée sous la liaison RF pour garder son retour de masse.
+- Hypothèses documentées : épaisseur 0,8 mm et isolation minimale 0,15 mm.
+- Contrôle final : 0 violation DRC, 0 connexion manquante, 0 problème de parité.
+- Aperçus des deux faces et documents actualisés.
+
 ## 14 octobre 2026 — empreinte LBOOST1
 
 - Bibliothèque locale LPS4018-223MRC importée depuis SmartPot, avec le modèle 3D.

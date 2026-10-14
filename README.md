@@ -4,14 +4,14 @@
 
 Projet personnel d’**Amira — [amirabouraoui01-stack](https://github.com/amirabouraoui01-stack)** : concevoir l’électronique d’un collier pour chien qui mesure les mouvements sur trois axes, puis prépare leur transmission radio avec un **RAK3172**.
 
-**État au 14 octobre 2026 :** schéma KiCad disponible, accéléromètre LIS2HH12 raccordé, antenne générique 868 MHz représentée et feuille BQ25570 d’EDU RAK conservée à l’identique. Le PCB préliminaire de **60 × 30 mm** contient **47 composants**, sans routage. Le boîtier, le firmware et les essais restent à réaliser.
+**État au 14 octobre 2026 :** schéma et **PCB routé de 60 × 30 mm**, avec **47 composants**, deux couches et un plan de masse. Contrôle KiCad : **0 violation DRC, 0 connexion manquante, 0 problème de parité**. L’antenne est externe, pour 868 MHz, et la feuille BQ25570 d’EDU RAK reste identique à l’original. Les essais, le firmware, le boîtier et la validation de fabrication restent à réaliser.
 
 ## Accès au projet
 
 | Pour… | Ouvrir… |
 |---|---|
 | Modifier dans KiCad 10 | [Projet du collier](Collier_Chien/collier_chien.kicad_pro) |
-| Voir le placement du PCB | [Carte 60 × 30 mm](Collier_Chien/collier_chien.kicad_pcb) · [État du placement](Collier_Chien/PCB.md) |
+| Voir la carte routée | [PCB 60 × 30 mm](Collier_Chien/collier_chien.kicad_pcb) · [Règles et contrôles](Collier_Chien/PCB.md) |
 | Lire le schéma | [PDF complet — quatre pages](Collier_Chien/collier_chien.pdf) |
 | Explorer les feuilles | [Schéma principal](Collier_Chien/collier_chien.kicad_sch) |
 | Comprendre les connexions | [Architecture](docs/ARCHITECTURE.md) |
@@ -55,6 +55,12 @@ La feuille BQ25570 est une **copie exacte du fichier pédagogique d’origine**.
 
 [Galerie complète](docs/GALERIE.md) · [Documentation électronique](Collier_Chien/README.md)
 
+## Carte routée
+
+![PCB du collier : face avant et pistes](docs/assets/pcb_avant.png)
+
+[Voir le dos, les hypothèses de fabrication et le rapport de contrôle](Collier_Chien/PCB.md).
+
 ## Organisation
 
 ```text
@@ -77,7 +83,7 @@ EDU_RAK_2026/
 1. Cloner : `git clone https://github.com/amirabouraoui01-stack/EDU_RAK_2026.git`.
 2. Ouvrir `Collier_Chien/collier_chien.kicad_pro` avec **KiCad 10**.
 3. Consulter les feuilles, le PDF et [les contrôles](docs/ETAT_DU_PROJET.md).
-4. Définir la source d’énergie et le stockage, puis valider le montage sur banc avant le PCB.
+4. Confirmer la source d’énergie, le stockage et les contraintes de fabrication, puis valider le montage sur banc.
 
 Le nom historique du dépôt est conservé pour garder son adresse GitHub. Le projet actif et cette page sont dédiés au collier. Les anciens PCB et photos dans `references/` décrivent EDU RAK ; ils ne représentent pas une carte de collier fabriquée.
 
