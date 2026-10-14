@@ -4,13 +4,14 @@
 
 Projet personnel d’**Amira — [amirabouraoui01-stack](https://github.com/amirabouraoui01-stack)** : concevoir l’électronique d’un collier pour chien qui mesure les mouvements sur trois axes, puis prépare leur transmission radio avec un **RAK3172**.
 
-**État au 14 octobre 2026 :** schéma KiCad disponible, accéléromètre LIS2HH12 raccordé, antenne générique 868 MHz représentée et feuille BQ25570 d’EDU RAK conservée à l’identique. Le PCB, le boîtier, le firmware et les essais ne sont pas encore réalisés.
+**État au 14 octobre 2026 :** schéma KiCad disponible, accéléromètre LIS2HH12 raccordé, antenne générique 868 MHz représentée et feuille BQ25570 d’EDU RAK conservée à l’identique. Le PCB préliminaire de **60 × 30 mm** contient **47 composants**, sans routage. Le boîtier, le firmware et les essais restent à réaliser.
 
 ## Accès au projet
 
 | Pour… | Ouvrir… |
 |---|---|
 | Modifier dans KiCad 10 | [Projet du collier](Collier_Chien/collier_chien.kicad_pro) |
+| Voir le placement du PCB | [Carte 60 × 30 mm](Collier_Chien/collier_chien.kicad_pcb) · [État du placement](Collier_Chien/PCB.md) |
 | Lire le schéma | [PDF complet — quatre pages](Collier_Chien/collier_chien.pdf) |
 | Explorer les feuilles | [Schéma principal](Collier_Chien/collier_chien.kicad_sch) |
 | Comprendre les connexions | [Architecture](docs/ARCHITECTURE.md) |
