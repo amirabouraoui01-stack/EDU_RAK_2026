@@ -1,0 +1,59 @@
+# État du projet — 14 octobre 2026
+
+[Accueil](../README.md) · [Galerie](GALERIE.md)
+
+| Partie | État |
+|---|---|
+| Schéma du collier | Quatre feuilles, révision 0.3 pour les feuilles propres au collier |
+| BQ25570 | Fichier EDU RAK strictement inchangé |
+| RAK3172 et LIS2HH12 | Raccordements vérifiés dans les exports |
+| Antenne AE1 | Symbole générique externe 868 MHz, raccord RF vérifié |
+| PDF et netlist | Actualisés avec KiCad 10.0.6 |
+| Contrôle d’intégration | 85 comparaisons de connexions réussies, références uniques |
+| ERC | **0 erreur, 5 avertissements documentés** |
+| PCB, boîtier et firmware | À réaliser |
+| Essais et autonomie | À mesurer |
+
+## Résultats de vérification
+
+Le [rapport reproductible](verification_schema.json) confirme que la feuille BQ possède les mêmes octets que `harvester.kicad_sch` de l’archive pédagogique. Les résistances NC et C22 restent intactes.
+
+Les contrôles portent sur les alimentations, les masses, I²C, INT1, VBAT_OK, UART2, SWD, BOOT0, reset, RF, les inductances et diviseurs du BQ. Le raccordement graphique d’AE1 à RF est contrôlé séparément, car cette antenne externe est volontairement exclue du PCB et de la nomenclature.
+
+L’entrée EN du BQ était sans commande. Elle est désormais reliée à la masse depuis la feuille RAK, par le label global existant. Cette correction d’intégration ne change pas la feuille BQ. La commande VOUT_EN est déjà reliée à VSTOR dans le fichier original.
+
+Les quatre pages du PDF ont été inspectées visuellement. Le rendu de la feuille BQ conserve sa présentation originale, y compris les éléments non montés.
+
+## Avertissements ERC conservés
+
+Le [rapport KiCad](../Collier_Chien/erc.json) contient cinq avertissements :
+
+| Avertissement | Explication et suite |
+|---|---|
+| Bibliothèque d’empreinte LPS4018-223MRC absente | Référence conservée de l’inductance originale ; bibliothèque à fournir avant PCB |
+| Copie du symbole BQ25570 différente | Symbole embarqué original conservé ; aucune substitution automatique |
+| Plusieurs noms sur un net | EN est reliée à GND ; KiCad choisit `'EN` comme nom dans la netlist |
+| Label local/global de masse | Deux formes de label désignent la même masse |
+| SA0/SDO contre sortie d’alimentation | Broche bidirectionnelle du symbole reliée à GND pour sélectionner l’adresse I²C |
+
+Les avertissements sont laissés visibles. Les éléments NC et C22 ne sont pas modifiés pour nettoyer le rapport.
+
+## Reproduire les contrôles
+
+Après export de la netlist et du rapport ERC avec KiCad :
+
+```text
+python tools/verifier_schema.py
+```
+
+Le script fonctionne avec Python standard. Il compare l’alimentation avec l’archive de référence, contrôle les raccordements et actualise le rapport de vérification.
+
+## Ce qui reste à valider
+
+- Choix de la source d’énergie et du stockage externe.
+- Démarrage, tolérances du rail PWR et courant pendant les transmissions.
+- Cadence de mesure, plage d’accélération, seuils de réveil et cadence radio.
+- Liaison RF, modèle réel d’antenne et comportement à proximité du chien.
+- PCB, boîtier et firmware, puis essais du montage.
+
+Un ERC sans erreur confirme certains raccordements ; il ne démontre pas le fonctionnement physique ni une autonomie. Aucun prototype du collier n’a encore été mesuré. Les anciens PCB EDU RAK rangés dans les références ne sont pas des PCB du collier.

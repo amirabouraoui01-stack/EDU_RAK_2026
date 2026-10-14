@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "C:\\Users\\amira\\Desktop\\projet_kicad\\EDU_RAK_2026\\Collier_Chien\\collier_chien.kicad_sch")
-		(date "2026-10-14T12:29:21")
+		(date "2026-10-14T12:47:59")
 		(tool "Eeschema 10.0.6")
 		(sheet
 			(number "1")
@@ -11,7 +11,7 @@
 			(title_block
 				(title "Collier chien - acceleration et LoRa")
 				(company "Amira")
-				(rev "0.1")
+				(rev "0.3")
 				(date "2026-10-14")
 				(source "collier_chien.kicad_sch")
 				(comment
@@ -107,7 +107,7 @@
 			(title_block
 				(title "Traitement / RAK3172")
 				(company "Collier chien / Amira")
-				(rev "0.1")
+				(rev "0.3")
 				(date "2026-10-14")
 				(source "rak3172.kicad_sch")
 				(comment
@@ -155,7 +155,7 @@
 			(title_block
 				(title "Acceleration / LIS2HH12")
 				(company "Collier chien / Amira")
-				(rev "0.1")
+				(rev "0.3")
 				(date "2026-10-14")
 				(source "accelerometre.kicad_sch")
 				(comment
@@ -3214,6 +3214,32 @@
 		)
 		(libpart
 			(lib "Collier")
+			(part "Antenna_868MHz")
+			(description "Antenna")
+			(fields
+				(field
+					(name "Reference") "AE")
+				(field
+					(name "Value") "Antenna")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Antenna")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Collier")
 			(part "B3U-1000P")
 			(description "Tactile Switch SPST-NO Top Actuated Surface Mount")
 			(fields
@@ -3965,203 +3991,6 @@
 			(name "'EN")
 			(class "Default")
 			(node
-				(ref "U2")
-				(pin "5")
-				(pinfunction "~{EN}_5")
-				(pintype "input")
-			)
-		)
-		(net
-			(code "2")
-			(name "/Alimentation {slash} BQ25570/VRDIV")
-			(class "Default")
-			(node
-				(ref "ROK3")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "ROK3B1")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "ROUT2")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "ROUT2B1")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "ROV2")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "ROV2B1")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U2")
-				(pin "8")
-				(pinfunction "VRDIV_8")
-				(pintype "output")
-			)
-		)
-		(net
-			(code "3")
-			(name "/Traitement {slash} RAK3172/BOOT0")
-			(class "Default")
-			(node
-				(ref "R10")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "21")
-				(pinfunction "BOOT0_21")
-				(pintype "input")
-			)
-		)
-		(net
-			(code "4")
-			(name "/Traitement {slash} RAK3172/NRST")
-			(class "Default")
-			(node
-				(ref "J22")
-				(pin "5")
-				(pinfunction "Pin_5_5")
-				(pintype "passive")
-			)
-			(node
-				(ref "R11")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW1")
-				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "22")
-				(pinfunction "RST_22")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "5")
-			(name "/Traitement {slash} RAK3172/RF")
-			(class "Default")
-			(node
-				(ref "J20")
-				(pin "1")
-				(pinfunction "In_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "12")
-				(pinfunction "RF_12")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "6")
-			(name "/Traitement {slash} RAK3172/SWCLK")
-			(class "Default")
-			(node
-				(ref "J22")
-				(pin "4")
-				(pinfunction "Pin_4_4")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "8")
-				(pinfunction "PA14/SWCLK_8")
-				(pintype "bidirectional")
-			)
-		)
-		(net
-			(code "7")
-			(name "/Traitement {slash} RAK3172/SWDIO")
-			(class "Default")
-			(node
-				(ref "J22")
-				(pin "3")
-				(pinfunction "Pin_3_3")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "7")
-				(pinfunction "PA13/SWDIO_7")
-				(pintype "bidirectional")
-			)
-		)
-		(net
-			(code "8")
-			(name "/Traitement {slash} RAK3172/UART2_RX")
-			(class "Default")
-			(node
-				(ref "J21")
-				(pin "4")
-				(pinfunction "Pin_4_4")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "1")
-				(pinfunction "UART2_RX/PA3_1")
-				(pintype "bidirectional")
-			)
-		)
-		(net
-			(code "9")
-			(name "/Traitement {slash} RAK3172/UART2_TX")
-			(class "Default")
-			(node
-				(ref "J21")
-				(pin "3")
-				(pinfunction "Pin_3_3")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "2")
-				(pinfunction "UART2_TX/PA2_2")
-				(pintype "bidirectional")
-			)
-		)
-		(net
-			(code "10")
-			(name "ACC_INT1")
-			(class "Default")
-			(node
-				(ref "U1")
-				(pin "6")
-				(pinfunction "PA1_6")
-				(pintype "bidirectional")
-			)
-			(node
-				(ref "U3")
-				(pin "12")
-				(pinfunction "INT1_12")
-				(pintype "output")
-			)
-		)
-		(net
-			(code "11")
-			(name "GND")
-			(class "Default")
-			(node
 				(ref "C1")
 				(pin "2")
 				(pintype "passive")
@@ -4362,6 +4191,12 @@
 			)
 			(node
 				(ref "U2")
+				(pin "5")
+				(pinfunction "~{EN}_5")
+				(pintype "input")
+			)
+			(node
+				(ref "U2")
 				(pin "9")
 				(pinfunction "VSS_9")
 				(pintype "passive")
@@ -4398,7 +4233,193 @@
 			)
 		)
 		(net
-			(code "12")
+			(code "2")
+			(name "/Alimentation {slash} BQ25570/VRDIV")
+			(class "Default")
+			(node
+				(ref "ROK3")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROK3B1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROUT2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROUT2B1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROV2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "ROV2B1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "8")
+				(pinfunction "VRDIV_8")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "3")
+			(name "/Traitement {slash} RAK3172/BOOT0")
+			(class "Default")
+			(node
+				(ref "R10")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "21")
+				(pinfunction "BOOT0_21")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "4")
+			(name "/Traitement {slash} RAK3172/NRST")
+			(class "Default")
+			(node
+				(ref "J22")
+				(pin "5")
+				(pinfunction "Pin_5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "R11")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "22")
+				(pinfunction "RST_22")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "5")
+			(name "/Traitement {slash} RAK3172/RF")
+			(class "Default")
+			(node
+				(ref "J20")
+				(pin "1")
+				(pinfunction "In_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "12")
+				(pinfunction "RF_12")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "6")
+			(name "/Traitement {slash} RAK3172/SWCLK")
+			(class "Default")
+			(node
+				(ref "J22")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "8")
+				(pinfunction "PA14/SWCLK_8")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "7")
+			(name "/Traitement {slash} RAK3172/SWDIO")
+			(class "Default")
+			(node
+				(ref "J22")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "7")
+				(pinfunction "PA13/SWDIO_7")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "8")
+			(name "/Traitement {slash} RAK3172/UART2_RX")
+			(class "Default")
+			(node
+				(ref "J21")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "1")
+				(pinfunction "UART2_RX/PA3_1")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "9")
+			(name "/Traitement {slash} RAK3172/UART2_TX")
+			(class "Default")
+			(node
+				(ref "J21")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "UART2_TX/PA2_2")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "10")
+			(name "ACC_INT1")
+			(class "Default")
+			(node
+				(ref "U1")
+				(pin "6")
+				(pinfunction "PA1_6")
+				(pintype "bidirectional")
+			)
+			(node
+				(ref "U3")
+				(pin "12")
+				(pinfunction "INT1_12")
+				(pintype "output")
+			)
+		)
+		(net
+			(code "11")
 			(name "I2C_SCL")
 			(class "Default")
 			(node
@@ -4420,7 +4441,7 @@
 			)
 		)
 		(net
-			(code "13")
+			(code "12")
 			(name "I2C_SDA")
 			(class "Default")
 			(node
@@ -4442,7 +4463,7 @@
 			)
 		)
 		(net
-			(code "14")
+			(code "13")
 			(name "Net-(J3-Pin_1)")
 			(class "Default")
 			(node
@@ -4470,7 +4491,7 @@
 			)
 		)
 		(net
-			(code "15")
+			(code "14")
 			(name "Net-(J4-Pin_2)")
 			(class "Default")
 			(node
@@ -4503,7 +4524,7 @@
 			)
 		)
 		(net
-			(code "16")
+			(code "15")
 			(name "Net-(J10-Pin_1)")
 			(class "Default")
 			(node
@@ -4520,7 +4541,7 @@
 			)
 		)
 		(net
-			(code "17")
+			(code "16")
 			(name "Net-(U2-LBOOST)")
 			(class "Default")
 			(node
@@ -4537,7 +4558,7 @@
 			)
 		)
 		(net
-			(code "18")
+			(code "17")
 			(name "Net-(U2-LBUCK)")
 			(class "Default")
 			(node
@@ -4554,7 +4575,7 @@
 			)
 		)
 		(net
-			(code "19")
+			(code "18")
 			(name "Net-(U2-OK_HYST)")
 			(class "Default")
 			(node
@@ -4585,7 +4606,7 @@
 			)
 		)
 		(net
-			(code "20")
+			(code "19")
 			(name "Net-(U2-OK_PROG)")
 			(class "Default")
 			(node
@@ -4616,7 +4637,7 @@
 			)
 		)
 		(net
-			(code "21")
+			(code "20")
 			(name "Net-(U2-VBAT)")
 			(class "Default")
 			(node
@@ -4637,7 +4658,7 @@
 			)
 		)
 		(net
-			(code "22")
+			(code "21")
 			(name "Net-(U2-VBAT_OV)")
 			(class "Default")
 			(node
@@ -4668,7 +4689,7 @@
 			)
 		)
 		(net
-			(code "23")
+			(code "22")
 			(name "Net-(U2-VOUT_SET)")
 			(class "Default")
 			(node
@@ -4699,7 +4720,7 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "23")
 			(name "Net-(U2-VREF_SAMP)")
 			(class "Default")
 			(node
@@ -4715,7 +4736,7 @@
 			)
 		)
 		(net
-			(code "25")
+			(code "24")
 			(name "PWR")
 			(class "Default")
 			(node
@@ -4807,7 +4828,7 @@
 			)
 		)
 		(net
-			(code "26")
+			(code "25")
 			(name "VBAT_OK")
 			(class "Default")
 			(node
@@ -4823,7 +4844,7 @@
 			)
 		)
 		(net
-			(code "27")
+			(code "26")
 			(name "VBAT_OK_3V3")
 			(class "Default")
 			(node
@@ -4844,7 +4865,7 @@
 			)
 		)
 		(net
-			(code "28")
+			(code "27")
 			(name "VOUT_EN")
 			(class "Default")
 			(node
@@ -4883,7 +4904,7 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "28")
 			(name "unconnected-(U1-PA4{slash}~{SPI1_SS}-Pad16)")
 			(class "Default")
 			(node
@@ -4894,7 +4915,7 @@
 			)
 		)
 		(net
-			(code "30")
+			(code "29")
 			(name "unconnected-(U1-PA5{slash}SPI1_CLK-Pad15)")
 			(class "Default")
 			(node
@@ -4905,7 +4926,7 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "30")
 			(name "unconnected-(U1-PA6{slash}SPI1_MISO-Pad14)")
 			(class "Default")
 			(node
@@ -4916,7 +4937,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "31")
 			(name "unconnected-(U1-PA7{slash}SPI1_MOSI-Pad13)")
 			(class "Default")
 			(node
@@ -4927,7 +4948,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "32")
 			(name "unconnected-(U1-PA8-Pad19)")
 			(class "Default")
 			(node
@@ -4938,7 +4959,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "33")
 			(name "unconnected-(U1-PA9-Pad20)")
 			(class "Default")
 			(node
@@ -4949,7 +4970,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "34")
 			(name "unconnected-(U1-PA10{slash}PIN_A3-Pad25)")
 			(class "Default")
 			(node
@@ -4960,7 +4981,7 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "35")
 			(name "unconnected-(U1-PA15{slash}PIN_A4-Pad3)")
 			(class "Default")
 			(node
@@ -4971,7 +4992,7 @@
 			)
 		)
 		(net
-			(code "37")
+			(code "36")
 			(name "unconnected-(U1-PB2{slash}PIN_A2-Pad26)")
 			(class "Default")
 			(node
@@ -4982,7 +5003,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "37")
 			(name "unconnected-(U1-PB3{slash}PIN_A0-Pad32)")
 			(class "Default")
 			(node
@@ -4993,7 +5014,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "38")
 			(name "unconnected-(U1-PB4{slash}PIN_A1-Pad31)")
 			(class "Default")
 			(node
@@ -5004,7 +5025,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "39")
 			(name "unconnected-(U1-PB5-Pad30)")
 			(class "Default")
 			(node
@@ -5015,7 +5036,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "40")
 			(name "unconnected-(U1-PB6{slash}UART1_TX-Pad4)")
 			(class "Default")
 			(node
@@ -5026,7 +5047,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "41")
 			(name "unconnected-(U1-PB7{slash}UART1_RX-Pad5)")
 			(class "Default")
 			(node
@@ -5037,7 +5058,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "42")
 			(name "unconnected-(U1-PB12-Pad27)")
 			(class "Default")
 			(node
@@ -5048,7 +5069,7 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "43")
 			(name "unconnected-(U3-INT2-Pad11)")
 			(class "Default")
 			(node

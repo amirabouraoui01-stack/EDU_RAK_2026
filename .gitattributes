@@ -1,0 +1,7 @@
+*.kicad_sch -text
+*.kicad_sym -text
+*.pdf binary
+*.png binary
+*.zip binary
+*.md text eol=lf
+*.svg text eol=lf
