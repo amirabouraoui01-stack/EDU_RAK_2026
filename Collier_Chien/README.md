@@ -19,6 +19,8 @@ RAK3172(H) est retenu pour la radio visée à 868 MHz ; LIS2HH12 mesure l’acc�
 | rak3172.kicad_sch | Module, antenne indicative, UART/SWD et surveillance |
 | accelerometre.kicad_sch | LIS2HH12, I²C et interruption |
 | Collier.kicad_sym et sym-lib-table | Symboles locaux |
+| fp-lib-table et footprints/LPS4018-223MRC.pretty | Empreinte locale de LBOOST1 |
+| 3dmodels/LPS4018-223MRC.step | Modèle 3D de l’inductance |
 | collier_chien.pdf | Export de lecture |
 | collier_chien.net | Export des connexions |
 | erc.json | Rapport électrique KiCad |

@@ -10,7 +10,7 @@
 | Antenne AE1 | Symbole générique externe 868 MHz, raccord RF vérifié |
 | PDF et netlist | Actualisés avec KiCad 10.0.6 |
 | Contrôle d’intégration | 85 comparaisons de connexions réussies, références uniques |
-| ERC | **0 erreur, 5 avertissements documentés** |
+| ERC | **0 erreur, 4 avertissements documentés** |
 | PCB, boîtier et firmware | À réaliser |
 | Essais et autonomie | À mesurer |
 
@@ -26,11 +26,10 @@ Les quatre pages du PDF ont été inspectées visuellement. Le rendu de la feuil
 
 ## Avertissements ERC conservés
 
-Le [rapport KiCad](../Collier_Chien/erc.json) contient cinq avertissements :
+Le [rapport KiCad](../Collier_Chien/erc.json) contient quatre avertissements. L’empreinte LBOOST1 est désormais fournie dans une bibliothèque locale :
 
 | Avertissement | Explication et suite |
 |---|---|
-| Bibliothèque d’empreinte LPS4018-223MRC absente | Référence conservée de l’inductance originale ; bibliothèque à fournir avant PCB |
 | Copie du symbole BQ25570 différente | Symbole embarqué original conservé ; aucune substitution automatique |
 | Plusieurs noms sur un net | EN est reliée à GND ; KiCad choisit `'EN` comme nom dans la netlist |
 | Label local/global de masse | Deux formes de label désignent la même masse |

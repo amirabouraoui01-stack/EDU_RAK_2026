@@ -1,5 +1,11 @@
 # Historique du collier
 
+## 14 octobre 2026 — empreinte LBOOST1
+
+- Bibliothèque locale LPS4018-223MRC importée depuis SmartPot, avec le modèle 3D.
+- Enregistrement sous le nom exact demandé par le schéma, sans modification de la feuille BQ25570.
+- L’erreur de bibliothèque d’empreinte absente disparaît ; ERC : 0 erreur, 4 avertissements.
+
 ## 14 octobre 2026 — révision 0.3
 
 - Antenne externe générique 868 MHz ajoutée au schéma, sans modèle physique imposé.
