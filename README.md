@@ -12,12 +12,14 @@ Une ouverture ne permet pas de savoir qui passe ni si une personne sort effectiv
 
 ## Accès au projet
 
+**Pour voir tous les branchements sur une seule page : ouvrir [veilleporte_complet.kicad_pro](VeillePorte/veilleporte_complet.kicad_pro).** [PDF A2](VeillePorte/veilleporte_complet.pdf) · [Guide de lecture et vérification](docs/SCHEMA_COMPLET.md).
+
 | Pour… | Ouvrir… |
 |---|---|
-| Modifier dans KiCad 10 | [Projet VeillePorte](VeillePorte/veilleporte.kicad_pro) |
+| Modifier dans KiCad 10 | [Projet complet VeillePorte](VeillePorte/veilleporte_complet.kicad_pro) |
 | Voir la carte routée | [PCB 60 × 30 mm](VeillePorte/archive_avant_ir/veilleporte.kicad_pcb) · [Règles et contrôles](VeillePorte/PCB.md) |
-| Lire le schéma | [PDF complet — quatre pages](VeillePorte/veilleporte.pdf) |
-| Explorer les feuilles | [Schéma principal](VeillePorte/veilleporte.kicad_sch) |
+| Lire le schéma | [PDF — une page A2](VeillePorte/veilleporte_complet.pdf) · [Référence par feuilles](VeillePorte/veilleporte.pdf) |
+| Voir les branchements | [Schéma complet](VeillePorte/veilleporte_complet.kicad_sch) |
 | Comprendre les connexions | [Architecture](docs/ARCHITECTURE.md) |
 | Connaître les validations | [État du projet](docs/ETAT_DU_PROJET.md) |
 | Préparer les essais | [Mise en service](docs/MISE_EN_SERVICE.md) |
@@ -90,7 +92,7 @@ EDU_RAK_2026/
 ## Reprendre le travail
 
 1. Cloner : `git clone https://github.com/amirabouraoui01-stack/EDU_RAK_2026.git`.
-2. Ouvrir `VeillePorte/veilleporte.kicad_pro` avec **KiCad 10**.
+2. Ouvrir `VeillePorte/veilleporte_complet.kicad_pro` avec **KiCad 10** pour la vue unique et ses branchements.
 3. Consulter les feuilles, le PDF et [les contrôles](docs/ETAT_DU_PROJET.md).
 4. Confirmer la source d’énergie, le stockage et les contraintes de fabrication, puis valider le montage sur banc.
 

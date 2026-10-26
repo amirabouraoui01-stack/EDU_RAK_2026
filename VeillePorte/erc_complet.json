@@ -1,0 +1,98 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T14:52:06",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/7b09fa79-7372-4685-ba42-4de3750bbcc2",
+            "violations": [
+                {
+                    "description": "'EN et GND sont attachés aux mêmes éléments.  'EN a été choisi comme label  en netliste",
+                    "items": [
+                        {
+                            "description": "Label Global ''EN'",
+                            "pos": {
+                                "x": 1.3716,
+                                "y": 0.8255
+                            },
+                            "uuid": "8bf6fa98-1f7c-4b7d-b05e-f0d16ea0ebdf"
+                        },
+                        {
+                            "description": "Label 'GND'",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 0.6985
+                            },
+                            "uuid": "043ec5e2-81d4-4a76-9b1a-767bf812f2db"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "multiple_net_names"
+                },
+                {
+                    "description": "Le symbole 'BQ25570' ne correspond pas à la copie en librairie 'Battery_Management'",
+                    "items": [
+                        {
+                            "description": "Symbole U2 [BQ25570]",
+                            "pos": {
+                                "x": 1.6002,
+                                "y": 0.8636
+                            },
+                            "uuid": "8d044881-a033-465b-8315-1bbac3be3530"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Local and global labels have same name",
+                    "items": [
+                        {
+                            "description": "Label Global 'GND'",
+                            "pos": {
+                                "x": 4.7117,
+                                "y": 0.5715
+                            },
+                            "uuid": "6636eb0a-922e-474a-b2a6-464688fb0e53"
+                        },
+                        {
+                            "description": "Label 'GND'",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 0.6985
+                            },
+                            "uuid": "043ec5e2-81d4-4a76-9b1a-767bf812f2db"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "same_local_global_label"
+                }
+            ]
+        }
+    ],
+    "source": "veilleporte_complet.kicad_sch"
+}

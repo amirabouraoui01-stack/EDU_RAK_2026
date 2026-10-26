@@ -1,5 +1,9 @@
 > Révision IR : les vues PCB ci-dessous sont historiques (avant IR). Le nouveau schéma utilise le module VL53L4CD.
 
+[Vue complète avec les branchements — PDF A2](../VeillePorte/veilleporte_complet.pdf).
+
+![Schéma complet avec les liaisons entre blocs](assets/schema_complet.png)
+
 # Galerie des schémas
 
 [Accueil](../README.md) · [PDF complet](../VeillePorte/veilleporte.pdf)

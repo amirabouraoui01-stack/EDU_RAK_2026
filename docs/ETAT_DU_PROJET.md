@@ -1,5 +1,7 @@
 # État de VeillePorte — révision 0.5
 
+Une [vue complète A2](SCHEMA_COMPLET.md) est disponible en présentation 0.6 : une page avec les fils entre blocs, 44 composants, 43 groupes de connexions identiques à la référence, 0 erreur ERC et 3 avertissements conservés. Aucun changement électrique n’est introduit par cette présentation.
+
 [Accueil](../README.md) · [Câblage](CAPTEUR_IR.md)
 
 | Partie | État |

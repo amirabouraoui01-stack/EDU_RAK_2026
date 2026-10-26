@@ -1,5 +1,12 @@
 # Historique du projet
 
+## 26 octobre 2026 — présentation complète 0.6
+
+- Schéma unique A2 avec fils visibles entre alimentation, RAK, IR et interfaces.
+- Projet `veilleporte_complet`, netlist, PDF et ERC dédiés.
+- Comparaison intégrale des connexions : 44 composants et 43 groupes de nets identiques à la référence 0.5.
+- ERC : 0 erreur et 3 avertissements conservés ; aucun changement électrique.
+
 ## 26 octobre 2026 — révision 0.5, supercapacité 4 V et lisibilité
 
 - Q1 et R14 supprimés après vérification des seuils GPIO ; VL53L4CD Pololu conservé.

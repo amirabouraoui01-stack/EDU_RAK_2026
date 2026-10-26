@@ -1,5 +1,7 @@
 # VeillePorte — schéma 0.5
 
+**Vue complète recommandée : ouvrir [veilleporte_complet.kicad_pro](veilleporte_complet.kicad_pro).** Le [schéma unique](veilleporte_complet.kicad_sch) et le [PDF A2](veilleporte_complet.pdf) réunissent les fonctions avec leurs branchements. [Guide et vérification d’équivalence](../docs/SCHEMA_COMPLET.md). Les fichiers décrits ci-dessous constituent la référence par feuilles conservée.
+
 [Accueil](../README.md) · [PDF](veilleporte.pdf) · [Câblage IR](../docs/CAPTEUR_IR.md)
 
 Ouvrir `veilleporte.kicad_pro` dans KiCad 10. Le schéma principal rassemble `alimentation.kicad_sch`, `rak3172.kicad_sch` et `capteur_ir.kicad_sch`.

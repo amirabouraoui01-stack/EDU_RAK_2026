@@ -1,0 +1,10 @@
+{
+  "page_unique": true,
+  "format": "A2",
+  "composants_netlist": 44,
+  "groupes_de_connexions": 43,
+  "connexions_identiques_aux_feuilles": true,
+  "erc_erreurs": 0,
+  "erc_avertissements": 3,
+  "sha256_schema_complet": "f1fe7481825ddedc63f607793b81b06847d226012d4faf01b5225b36e63d4690"
+}
