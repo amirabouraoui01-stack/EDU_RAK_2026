@@ -1,5 +1,11 @@
 # Historique du projet
 
+## 26 octobre 2026 — définition de la première version
+
+- Détection, regroupement des chocs, bilan radio et critères d’essai spécifiés.
+- Limites de mesure et perte des données après coupure explicitées.
+- Étapes de choix et de validation de l’alimentation identifiées, sans changement matériel.
+
 ## 26 octobre 2026 — ColisCare
 
 - Nouvelle application : suivi des chocs pendant les livraisons fragiles.

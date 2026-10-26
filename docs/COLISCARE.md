@@ -2,6 +2,8 @@
 
 [Accueil](../README.md) · [Architecture électronique](ARCHITECTURE.md)
 
+[Première version : comportement, bilan et critères de réussite](VERSION_1.md).
+
 ## Besoin
 
 Un colis fragile peut subir un choc sans marque évidente sur son carton. ColisCare vise à fournir un indicateur de manipulation pour aider à décider d’inspecter le contenu. Un choc détecté ne prouve pas que l’objet est endommagé et ne détermine pas la responsabilité d’un transporteur.
