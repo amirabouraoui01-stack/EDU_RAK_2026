@@ -15,5 +15,7 @@
   "feuille_bq_identique": true,
   "sha256_pcb": "9aac4243217be5cb796d2835300a0c639a617511ad3a5e65fc973d037bed98c9",
   "validation_physique": "A effectuer sur prototype",
-  "hypotheses_fabrication": "FR4 0.8 mm; espacement cuivre min 0.15 mm; vias 0.6/0.3 mm"
+  "hypotheses_fabrication": "FR4 0.8 mm; espacement cuivre min 0.15 mm; vias 0.6/0.3 mm",
+  "statut": "Archive avant IR, non compatible avec le schema IR 0.4",
+  "fichier_pcb": "VeillePorte/archive_avant_ir/veilleporte.kicad_pcb"
 }

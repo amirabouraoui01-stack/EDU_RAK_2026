@@ -1,3 +1,5 @@
+> Révision IR : les vues PCB ci-dessous sont historiques (avant IR). Le nouveau schéma utilise le module VL53L4CD.
+
 # Galerie des schémas
 
 [Accueil](../README.md) · [PDF complet](../VeillePorte/veilleporte.pdf)
@@ -10,7 +12,7 @@ Images issues des exports KiCad actuels. Elles montrent les fichiers de concepti
 
 ![Face arrière en miroir, plan de masse et pistes](assets/pcb_arriere.png)
 
-[Ouvrir le PCB](../VeillePorte/veilleporte.kicad_pcb) · [Lire les contrôles et les hypothèses](../VeillePorte/PCB.md).
+[Ouvrir le PCB](../VeillePorte/archive_avant_ir/veilleporte.kicad_pcb) · [Lire les contrôles et les hypothèses](../VeillePorte/PCB.md).
 
 ## RAK3172 et antenne générique 868 MHz
 
@@ -18,11 +20,11 @@ Images issues des exports KiCad actuels. Elles montrent les fichiers de concepti
 
 [Feuille RAK3172](../VeillePorte/rak3172.kicad_sch).
 
-## Accélération — LIS2HH12
+## Accélération — VL53L4CD
 
-![LIS2HH12, I²C et INT1](assets/schema_accelerometre.png)
+![VL53L4CD, I²C et INT1](assets/schema_ir.png)
 
-[Feuille accéléromètre](../VeillePorte/accelerometre.kicad_sch).
+[Feuille capteur IR](../VeillePorte/capteur_ir.kicad_sch).
 
 ## Alimentation — BQ25570 originale
 

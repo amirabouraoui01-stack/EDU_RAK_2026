@@ -1,5 +1,14 @@
 # Historique du projet
 
+## 26 octobre 2026 — schéma IR 0.4
+
+- Remplacement du LIS2HH12 par le raccordement du module externe Pololu 3692 / VL53L4CD.
+- J23, Q1 BSS138 et R14 pour l’interface ; XSHUT sur PB5 en drain ouvert.
+- Suppression de R12/R13 et C12 ; rappels I²C fournis par le module.
+- ERC : 0 erreur, 3 avertissements historiques ; BQ25570 inchangé.
+- Ancien PCB et son DRC archivés ; le PCB IR reste à réaliser.
+
+
 ## Renommage des fichiers — VeillePorte
 
 - Dossier actif `VeillePorte/`, fichiers principaux `veilleporte.*` et bibliothèque `VeillePorte.kicad_sym`.

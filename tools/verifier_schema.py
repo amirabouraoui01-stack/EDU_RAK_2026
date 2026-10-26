@@ -32,11 +32,15 @@ def same(*pins):
     global count
     assert len({actual[p] for p in pins})==1,[(p,actual[p]) for p in pins]
     count+=len(pins)-1
-same(('U1','24'),('U3','2'),('U3','9'),('U3','10'),('J3','2'),('J21','1'),('J22','1'),('R11','1'),('R12','1'),('R13','1'),*[('C'+str(i),'1') for i in range(8,14)])
-same(('U1','11'),*[('U1',n) for n in ['17','18','23','28']],*[('U3',n) for n in ['3','5','6','7','8']],*[('U2',n) for n in ['1','5','9','15','17','21']],('J20','2'),('J21','2'),('J22','2'),('R10','2'),('R9','2'),('SW1','2'),*[('C'+str(i),'2') for i in range(8,14)])
-same(('U1','10'),('U3','4'),('R12','2'))
-same(('U1','9'),('U3','1'),('R13','2'))
-same(('U1','6'),('U3','12'))
+assert not {'U3','R12','R13','C12'} & set(refs),'Ancien accelerometre encore present'
+same(('U1','24'),('J23','1'),('R14','1'),('J3','2'),('J21','1'),('J22','1'),('R11','1'),*[('C'+str(i),'1') for i in [8,9,10,11,13]])
+same(('U1','11'),*[('U1',n) for n in ['17','18','23','28']],('J23','2'),*[('U2',n) for n in ['1','5','9','15','17','21']],('J20','2'),('J21','2'),('J22','2'),('R10','2'),('R9','2'),('SW1','2'),*[('C'+str(i),'2') for i in [8,9,10,11,13]])
+same(('U1','10'),('J23','3'))
+same(('U1','9'),('J23','4'))
+same(('U1','6'),('Q1','3'),('R14','2'))
+same(('J23','5'),('Q1','1'));same(('J23','6'),('Q1','2'))
+same(('U1','30'),('J23','7'))
+assert actual[('J23','5')]!=actual[('J23','1')],'VDD module court-circuite avec PWR'
 same(('U1','29'),('R8','2'),('R9','1'))
 same(('U2','13'),('R8','1'))
 same(('U1','12'),('J20','1'))
@@ -76,6 +80,6 @@ erc=json.loads((P/'erc.json').read_text(encoding='utf-8'))
 violations=[v for s in erc['sheets'] for v in s['violations']]
 errors=sum(v['severity']=='error' for v in violations)
 assert errors==0,'Erreurs ERC presentes'
-report={'date':'2026-10-14','feuille_bq_identique':True,'sha256_feuille_bq':hashlib.sha256(original).hexdigest(),'references_uniques':True,'comparaisons_de_connexions':count,'antenne_868MHz_raccordee':True,'antenne_externe_exclue_du_pcb_et_bom':True,'erc_erreurs':errors,'erc_avertissements':sum(v['severity']=='warning' for v in violations),'types_avertissements':[v['type'] for v in violations]}
+report={'date':'2026-10-26','revision':'IR 0.4','feuille_bq_identique':True,'sha256_feuille_bq':hashlib.sha256(original).hexdigest(),'references_uniques':True,'comparaisons_de_connexions':count,'antenne_868MHz_raccordee':True,'antenne_externe_exclue_du_pcb_et_bom':True,'erc_erreurs':errors,'erc_avertissements':sum(v['severity']=='warning' for v in violations),'types_avertissements':[v['type'] for v in violations]}
 (ROOT/'docs/verification_schema.json').write_text(json.dumps(report,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
 print(json.dumps(report,indent=2,ensure_ascii=False))

@@ -28,7 +28,7 @@ AE1 est un symbole indicatif : avant les essais radio, choisir et connecter sur 
 
 ## Vérifier les fonctions
 
-Après développement du firmware : vérifier la réponse I²C du LIS2HH12 à `0x1E`, lire les axes et relever INT1 sur PA1. Tester le réveil et le FIFO si utilisé. Consigner la plage et la fréquence configurées.
+Après développement du firmware, vérifier le VL53L4CD à l’adresse I²C 7 bits `0x29`, XSHUT en drain ouvert et l’interruption PA1 via Q1. Suivre [le guide IR](CAPTEUR_IR.md).
 
 | Essai | Mesures à relever |
 |---|---|

@@ -4,17 +4,17 @@
 
 ## Usage visé
 
-Un boîtier sur une porte de chambre signale son ouverture au personnel dans l’accompagnement des personnes atteintes de la maladie d’Alzheimer. Les horaires de surveillance sont configurés dans l’application. Le prototype est démontré sur une porte d’essai, avec des identifiants fictifs.
+Un boîtier IR sur le cadre, face à une cible sur la porte de chambre, vise à signaler son ouverture au personnel dans l’accompagnement des personnes atteintes de la maladie d’Alzheimer. Les horaires de surveillance sont configurés dans l’application. Le prototype est démontré sur une porte d’essai, avec des identifiants fictifs.
 
-Le dispositif détecte un changement de contact, sans identifier le patient, le soignant ou le visiteur. Il ne détermine pas le sens de passage, une sortie effective ou une situation de danger. Il ne verrouille pas la porte et ne remplace pas l’accompagnement humain.
+Le dispositif détecte un changement de distance, sans identifier le patient, le soignant ou le visiteur. Il ne détermine pas le sens de passage, une sortie effective ou une situation de danger. Il ne verrouille pas la porte et ne remplace pas l’accompagnement humain.
 
 ## Éléments nécessaires
 
 | Élément | État |
 |---|---|
 | RAK3172 et BQ25570 | Base électronique existante conservée |
-| LIS2HH12 | Conservé, optionnel pour de futurs essais de chocs |
-| Contact magnétique et aimant | À sélectionner et intégrer au schéma/PCB |
+| Ancien LIS2HH12 | Retiré du schéma actif ; ancienne carte archivée |
+| Module VL53L4CD Pololu 3692 | Raccordement intégré au schéma ; PCB à actualiser |
 | Panneau solaire | Disponible selon Amira ; caractéristiques à relever |
 | Stockage | Référence et dimensionnement à confirmer |
 | Antenne 868 MHz et boîtier 3D | À concevoir pour le projet |
@@ -28,4 +28,8 @@ Une perte de réseau ou d’alimentation doit rendre l’état affiché inconnu 
 
 ## Démonstration pédagogique
 
-Tester les ouvertures/fermetures, les rebonds, une ouverture prolongée, les horaires, une perte de couverture et un redémarrage. Prévoir un suivi de 1 à 2 semaines conformément au cadre du cours, en mesurant les événements manqués et la consommation. Aucun nom de patient ni donnée médicale n’est nécessaire à la démonstration.
+Tester les ouvertures/fermetures, les oscillations autour du seuil, une ouverture prolongée, les horaires, une perte de couverture et un redémarrage. Prévoir un suivi de 1 à 2 semaines conformément au cadre du cours, en mesurant les événements manqués et la consommation. Aucun nom de patient ni donnée médicale n’est nécessaire à la démonstration.
+
+## Révision IR active
+
+Le raccordement VL53L4CD est dessiné ; voir [CAPTEUR_IR.md](CAPTEUR_IR.md). La logique de porte repose sur une mesure valide, deux seuils et une temporisation, pas sur un contact. Les références à la stabilisation désignent le filtrage temporel de cet état. Le PCB IR et les essais restent à réaliser.

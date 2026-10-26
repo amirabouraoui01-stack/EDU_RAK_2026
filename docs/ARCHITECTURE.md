@@ -2,19 +2,9 @@
 
 [Accueil](../README.md) · [Schéma PDF](../VeillePorte/veilleporte.pdf)
 
-## Mesure de mouvement
+## Détection IR
 
-Le LIS2HH12 fournit trois axes d’accélération. Les résistances R12/R13 rappellent le bus I²C au rail PWR. CS à PWR sélectionne I²C ; SA0 à GND fixe l’adresse `0x1E`. RES est reliée à GND, INT2 est inutilisée.
-
-| Signal | RAK3172 | LIS2HH12 |
-|---|---|---|
-| SDA | Broche 10 / PA11 | Broche 4 |
-| SCL | Broche 9 / PA12 | Broche 1 |
-| INT1 | Broche 6 / PA1 | Broche 12 |
-| PWR | Broche 24 / VDD | Broches 2 / CS, 9 / Vdd, 10 / Vdd_IO |
-| Masse | Broches GND | Broches 3 / SA0, 5 / RES, 6, 7, 8 |
-
-La fréquence, la plage, le FIFO et les seuils de réveil seront configurés dans le firmware. La séquence lecture et transmission n’est pas encore implémentée.
+Le module Pololu 3692 avec VL53L4CD remplace le LIS2HH12. SDA va à PA11 (broche 10), SCL à PA12 (broche 9). GPIO1 est adapté de 2,8 V vers PWR par Q1 BSS138 et R14 100 kΩ avant PA1 (broche 6). XSHUT va à PB5 (broche 30), piloté exclusivement en drain ouvert. [Brochage et contraintes](CAPTEUR_IR.md).
 
 ## Radio à 868 MHz
 
@@ -34,8 +24,6 @@ Le pont R8/R9, 1 MΩ / 2 MΩ, adapte VBAT_OK vers PA0, broche 29. La source de r
 
 UART2 est accessible sur J21, SWD sur J22. BOOT0 est maintenu bas ; SW1 assure le reset. [Brochages et préparation des essais](MISE_EN_SERVICE.md).
 
-## Détection d’ouverture à intégrer
+## État de porte
 
-Un contact magnétique passif et un aimant seront placés sur le cadre et la porte. La référence du contact, la logique ouvert/fermé, le GPIO libre, la polarisation et la protection du câble restent à choisir avant modification du schéma. Un circuit ouvert peut aussi correspondre à un câble coupé : cette première version ne distinguera pas automatiquement ces situations.
-
-La communication visée est LoRaWAN avec passerelle, serveur réseau et application de réception. Le tableau de bord doit afficher la fraîcheur des données ; une absence de message ne prouve pas que la porte est fermée.
+Le capteur vise une cible fixée à la porte. Distance courte stable : fermé ; distance plus grande valide : ouvert. La disparition de cible et les mesures invalides doivent être qualifiées sur banc, avec un état inconnu pour les cas ambigus. La communication prévue reste LoRaWAN ; aucune réception garantie n’est revendiquée.

@@ -1,3 +1,7 @@
+# PCB IR : à réaliser
+
+Le PCB précédent est conservé dans [archive_avant_ir](archive_avant_ir/veilleporte.kicad_pcb). Il contient encore le LIS2HH12 et ne correspond pas au schéma IR 0.4. Les résultats ci-dessous concernent uniquement cette ancienne carte.
+
 # PCB routé — 60 × 30 mm
 
 La carte `veilleporte.kicad_pcb` contient 47 empreintes avec leurs références, champs et nets. Le contour nominal mesure 60 × 30 mm entre les axes des lignes Edge.Cuts. Les connexions sont routées sur deux couches, avec un plan de masse au dos. AE1 reste une antenne externe indicative ; l’antenne physique se raccordera à J20.

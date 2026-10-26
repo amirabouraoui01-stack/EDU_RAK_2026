@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-14",
+  "date": "2026-10-26",
+  "revision": "IR 0.4",
   "feuille_bq_identique": true,
   "sha256_feuille_bq": "ef224ea4c72778607d0707ed731b01c70d8f4d96cc9ce164aa25626209407460",
   "references_uniques": true,
-  "comparaisons_de_connexions": 85,
+  "comparaisons_de_connexions": 78,
   "antenne_868MHz_raccordee": true,
   "antenne_externe_exclue_du_pcb_et_bom": true,
   "erc_erreurs": 0,
-  "erc_avertissements": 4,
+  "erc_avertissements": 3,
   "types_avertissements": [
     "lib_symbol_mismatch",
     "multiple_net_names",
-    "same_local_global_label",
-    "pin_to_pin"
+    "same_local_global_label"
   ]
 }
