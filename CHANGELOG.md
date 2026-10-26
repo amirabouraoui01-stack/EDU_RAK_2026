@@ -1,5 +1,12 @@
 # Historique du projet
 
+## 26 octobre 2026 — antenne à piste fine
+
+- Rectangle terminal remplacé par un retour de piste de 0,5 mm.
+- Nouveau modèle actif `veilleporte_868_piste_basse.cst` : S11 ≈ −12,01 dB à 868 MHz, 82 620 cellules.
+- Ancienne référence avec plaque conservée pour comparaison.
+
+
 ## 26 octobre 2026 — étude d’antenne CST
 
 - Création de modèles CST paramétriques pour PCB 30 × 60 mm et antenne en méandre/F inversé.

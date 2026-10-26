@@ -104,3 +104,5 @@ L’autonomie, la portée et la détection des ouvertures restent à mesurer. Le
 
 
 Le projet actif se trouve désormais dans `VeillePorte/`, avec les fichiers principaux `veilleporte.*`. Le schéma 0.5 inclut les nouveaux réglages ; le PCB IR reste à réaliser.
+
+La version active de l’antenne utilise une [piste fine sans plaque](VeillePorte/cst/veilleporte_868_piste_basse.cst), avec un S11 simulé d’environ −12 dB à 868 MHz.

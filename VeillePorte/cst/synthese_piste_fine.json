@@ -1,0 +1,42 @@
+{
+  "modele": "veilleporte_868_piste_basse.cst",
+  "export": "s11_veilleporte_868_piste_basse.txt",
+  "geometrie": "veilleporte_868_piste_basse.vba.txt",
+  "ancienne_plaque_supprimee": true,
+  "largeur_retour_mm": 0.5,
+  "minimum_MHz": 865.32003,
+  "S11_minimum_dB": -13.50898,
+  "point_868_MHz": 867.99997,
+  "S11_868_dB": -12.008118,
+  "cellules": 82620,
+  "critere_energie_atteint": true,
+  "parametres": {
+    "cap_x": "12.3",
+    "x_feed": "6",
+    "y_fourth": "58",
+    "x_last": "2",
+    "y_third": "53",
+    "x_end": "28.67",
+    "pcb_x": "30",
+    "pcb_y": "60",
+    "pcb_h": "0.8",
+    "cu_t": "0.035",
+    "gnd_y": "40",
+    "feed_gap": "0.5",
+    "track_w": "1",
+    "x_left": "2",
+    "x_right": "28.67",
+    "y_first": "43",
+    "y_second": "48",
+    "eps_r": "4.3",
+    "loss_tan": "0.02",
+    "f_target": "0.868"
+  },
+  "sha256_cst": "69b651d0b7f3f6b0070091a2c11f35ccce82a8616194311476c8090b8668f4c0",
+  "sha256_export": "bafac93c916342cc01d5b2c42b8c8fccde17c79d987db9d73785ba79afb4bc60",
+  "hypotheses": "Carte seule, PEC et FR4 suppose ; panneau, boitier et pertes cuivre non modeles ; pas de validation physique",
+  "intervalle_points_sous_moins10_MHz": [
+    860.49598,
+    869.60799
+  ]
+}

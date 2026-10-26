@@ -15,7 +15,7 @@ Une [vue complète A2](SCHEMA_COMPLET.md) est disponible en présentation 0.6 : 
 | PCB IR | À réaliser ; dimensions visées 60 × 30 mm |
 | Ancien PCB | Archivé avec LIS2HH12, non compatible avec la révision IR |
 | Firmware, LoRaWAN, tableau de bord | À développer |
-| Antenne et boîtier | Référence CST : S11 ≈ −14,07 dB à 868 MHz, 81 000 cellules ; panneau et boîtier à intégrer |
+| Antenne et boîtier | Piste fine CST : S11 ≈ −12,01 dB à 868 MHz, 82 620 cellules ; panneau et boîtier à intégrer |
 | Alimentation et essais physiques | À valider |
 
 Les trois avertissements ERC concernent la différence entre le symbole BQ embarqué et la bibliothèque installée, les noms GND/EN sur la même masse et les labels local/global de masse. Aucun avertissement n’est masqué. [Rapport ERC](../VeillePorte/erc.json) · [Vérification des raccordements et du BQ](verification_schema.json).

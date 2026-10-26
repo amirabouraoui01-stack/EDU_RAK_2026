@@ -4,9 +4,13 @@
 
 L’étude utilise un PCB 30 × 60 mm et une zone rayonnante de 30 × 20 mm. Une antenne en F inversé à quatre branches, avec une charge terminale imprimée, est calculée dans CST Studio Suite 2026. Les plans de masse occupent les 40 autres millimètres de longueur.
 
-Le [modèle de référence](../VeillePorte/cst/veilleporte_868_reference.cst) donne environ **−14,07 dB à 868 MHz**, avec 81 000 cellules et le critère d’énergie atteint. Les points sous −10 dB couvrent approximativement 863,18 à 872,82 MHz dans ce modèle simplifié. [Synthèse et paramètres](../VeillePorte/cst/synthese_cst.json).
+L’ancien [modèle de référence avec plaque](../VeillePorte/cst/veilleporte_868_reference.cst) donne environ **−14,07 dB à 868 MHz**, avec 81 000 cellules et le critère d’énergie atteint. Les points sous −10 dB couvrent approximativement 863,18 à 872,82 MHz dans ce modèle simplifié. [Synthèse et paramètres](../VeillePorte/cst/synthese_cst.json).
 
 Les fichiers CST sont réellement générés et les traces `s11_*.txt` sont exportées par le solveur. La [synthèse numérique](../VeillePorte/cst/resultats_simulation.json) et les [courbes](../VeillePorte/cst/comparaison_s11.svg) permettent de comparer les essais. Un bon S11 décrit l’adaptation de cette simulation ; il ne garantit pas le rendement ou la portée de l’appareil.
+
+## Nouvelle forme à piste fine
+
+Le modèle actif est [veilleporte_868_piste_basse.cst](../VeillePorte/cst/veilleporte_868_piste_basse.cst). Le rectangle plein est supprimé et remplacé par un retour de 0,5 mm. S11 simulé ≈ **−12,01 dB à 868 MHz**, 82 620 cellules ; minimum vers 865,32 MHz. [Synthèse de cette variante](../VeillePorte/cst/synthese_piste_fine.json).
 
 ## Intégration à prévoir
 

@@ -2,9 +2,23 @@
 
 Le modèle utilise une carte de 30 × 60 × 0,8 mm et une antenne imprimée en méandre. La variante en F inversé ajoute un court-circuit vers la masse et un point d’alimentation décalé. Une surface terminale permet d’ajuster l’accord. Les calculs CST sont des simulations préliminaires, pas des mesures d’une antenne fabriquée.
 
-## Modèle de référence
+## Version active : piste fine sans plaque
 
-Ouvrir **[veilleporte_868_reference.cst](veilleporte_868_reference.cst)** dans CST Studio Suite 2026. Le fichier préexistant d’Amira n’est pas remplacé.
+Ouvrir **[veilleporte_868_piste_basse.cst](veilleporte_868_piste_basse.cst)**. Le grand rectangle est remplacé par un retour de piste de **0,5 mm** entre les branches, sans surface pleine.
+
+- S11 à 868 MHz : **−12,01 dB** ; minimum vers **865,32 MHz à −13,51 dB**.
+- Maillage : **82 620 cellules**, critère d’énergie atteint.
+- [Synthèse vérifiable](synthese_piste_fine.json) · [Export CST](s11_veilleporte_868_piste_basse.txt) · [Géométrie](veilleporte_868_piste_basse.vba.txt).
+
+![Version avec retour fin, vue sauvegardée par CST](veilleporte_868_piste_basse.png)
+
+Pour reproduire : `python creer_variante.py --nom nouvel_essai --terminal piste --cap-x 12.3 --right-x 28.67 --retour-y 54.75 --maillage 13`. `cap-x` désigne l’extrémité du retour ; `--terminal plaque` permet de reproduire l’ancienne forme. Le mode par défaut est maintenant `piste`. Le panneau, le boîtier et les pertes cuivre restent à intégrer.
+
+Les valeurs et images de l’ancienne référence ci-dessous concernent la variante avec plaque, conservée pour comparaison.
+
+## Ancienne référence avec plaque — comparaison
+
+Ancien modèle : **[veilleporte_868_reference.cst](veilleporte_868_reference.cst)** dans CST Studio Suite 2026. Le fichier préexistant d’Amira n’est pas remplacé.
 
 | Résultat CST, carte seule | Valeur |
 |---|---|

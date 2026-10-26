@@ -18,4 +18,13 @@ for sample in [report['reference'],report['controle_meme_geometrie']['maillage_i
     assert abs(near[1]-sample['S11_868_dB'])<1e-6
     assert sample['cellules']<=100000 and sample['critere_energie_atteint']
 assert report['reference']['S11_868_dB']<=-10
+fine=P/'synthese_piste_fine.json'
+if fine.exists():
+    d=json.loads(fine.read_text(encoding='utf-8'))
+    assert hashlib.sha256((P/d['modele']).read_bytes()).hexdigest()==d['sha256_cst']
+    assert hashlib.sha256((P/d['export']).read_bytes()).hexdigest()==d['sha256_export']
+    geometry=(P/d['geometrie']).read_text(encoding='utf-8')
+    assert 'Terminal_cap' not in geometry and all(n in geometry for n in ['Retour_1','Retour_2','Retour_3'])
+    assert d['ancienne_plaque_supprimee'] and d['largeur_retour_mm']==.5
+    assert d['S11_868_dB']<=-10 and d['cellules']<=100000 and d['critere_energie_atteint']
 print('Exports CST et empreintes des modeles coherents ; reference adaptee a 868 MHz dans le modele simplifie.')

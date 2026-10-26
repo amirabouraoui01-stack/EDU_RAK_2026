@@ -2,18 +2,25 @@
 import argparse,re
 from pathlib import Path
 p=argparse.ArgumentParser();p.add_argument('--nom',default='veilleporte_868_accord');p.add_argument('--cap-x',type=float,default=8.5);p.add_argument('--feed-x',type=float,default=6);p.add_argument('--right-x',type=float,default=28);p.add_argument('--maillage',type=int,default=12)
+p.add_argument('--terminal',choices=['piste','plaque'],default='piste')
+p.add_argument('--retour-y',type=float,default=54.75)
 a=p.parse_args();assert re.fullmatch(r'[A-Za-z0-9_]+',a.nom)
 P=Path(__file__).resolve().parent;q=lambda path:str(path).replace('\\','/')
 if (P/(a.nom+'.cst')).exists():raise SystemExit('Ce modele existe deja ; choisir un autre --nom pour conserver les resultats.')
 assert .5<a.cap_x<28 and 2.5<a.feed_x<27
 assert 27<a.right_x<29.5
 assert 8<=a.maillage<=40
+assert 54.75<=a.retour_y<=59.25
 lines=(P/'geometrie_ifa.vba.txt').read_text(encoding='utf-8').replace('StoreParameter "x_feed", "6"',f'StoreParameter "x_feed", "{a.feed_x}"').replace('.Set "StepsPerWaveNear", "12"',f'.Set "StepsPerWaveNear", "{a.maillage}"').splitlines()
 lines=[line.replace('Solver.FrequencyRange "0.6", "1.2"','Solver.FrequencyRange "0.6", "1.136"') for line in lines]
 lines=[line.replace('StoreParameter "x_right", "28"',f'StoreParameter "x_right", "{a.right_x}"').replace('StoreParameter "x_end", "28"',f'StoreParameter "x_end", "{a.right_x}"') for line in lines]
 lines=[line.replace('.Set "StepsPerBoxNear", "15"',f'.Set "StepsPerBoxNear", "{max(15,round(a.maillage*1.25))}"') for line in lines]
 lines[:0]=[f'StoreParameter "cap_x", "{a.cap_x}"']
 extra=['With Brick','.Reset','.Name "Terminal_cap"','.Component "VeillePorte"','.Material "PEC"','.Xrange "0.5", "cap_x"','.Yrange "54.5", "59.5"','.Zrange "pcb_h", "pcb_h+cu_t"','.Create','End With','Solid.Add "VeillePorte:Antenna", "VeillePorte:Terminal_cap"']
+if a.terminal=='piste':
+    extra=[]
+    for name,x1,x2,y1,y2 in [('Retour_1','0.5','2.25','57.75','58.25'),('Retour_2','0.5','1',str(min(a.retour_y-.25,57.75)),str(max(a.retour_y+.25,58.25))),('Retour_3','0.5','cap_x',str(a.retour_y-.25),str(a.retour_y+.25))]:
+        extra+=['With Brick','.Reset',f'.Name "{name}"','.Component "VeillePorte"','.Material "PEC"',f'.Xrange "{x1}", "{x2}"',f'.Yrange "{y1}", "{y2}"','.Zrange "pcb_h", "pcb_h+cu_t"','.Create','End With',f'Solid.Add "VeillePorte:Antenna", "VeillePorte:{name}"']
 i=lines.index('With DiscretePort');lines[i:i]=extra
 macro=['Option Explicit','Sub Main()','On Error GoTo Failed','Dim f As Integer','Dim s As String','Dim detail As String','f = FreeFile',f'Open "{q(P/(a.nom+".log"))}" For Output As #f','Print #f, "RUN_STARTED"','Close #f','s = ""']
 for line in lines:macro.append('s = s & "'+line.replace('"','""')+'" & vbCrLf')
