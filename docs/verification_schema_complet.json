@@ -1,10 +1,13 @@
 {
   "page_unique": true,
   "format": "A2",
-  "composants_netlist": 44,
+  "composants_netlist": 45,
   "groupes_de_connexions": 43,
-  "connexions_identiques_aux_feuilles": true,
+  "connexions_de_reference_identiques_hors_antenne": true,
+  "antenne_empreinte": "VeillePorte_Antennes:IFA_868_CST_30x20_PisteFine",
+  "antenne_RF": "/RF",
+  "antenne_masse": "'EN",
   "erc_erreurs": 0,
   "erc_avertissements": 3,
-  "sha256_schema_complet": "f1fe7481825ddedc63f607793b81b06847d226012d4faf01b5225b36e63d4690"
+  "sha256_schema_complet": "3af43b99e34b2dc620097718bb34cf1766b7006c824d3145d4892c603ae19b5d"
 }

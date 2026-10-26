@@ -1,0 +1,113 @@
+{
+  "empreinte": "VeillePorte_Antennes:IFA_868_CST_30x20_PisteFine",
+  "source_cst": "veilleporte_868_piste_basse.vba.txt",
+  "rectangles_radiateur": 13,
+  "borne_1": "RF",
+  "borne_2": "GND",
+  "net_tie": "1,2 : court-circuit DC de l IFA volontaire",
+  "repere": "xKiCad=xCST-6 ; yKiCad=40.5-yCST ; ancre pad1 y=-0.01 mm",
+  "zone_antenne_mm": [
+    30,
+    20
+  ],
+  "PCB_reference_mm": [
+    30,
+    60,
+    0.8
+  ],
+  "plan_masse": "A creer sur le PCB : 30x40mm, deux faces et liaisons entre masses ; non fourni comme cuivre plein dans l empreinte",
+  "rectangles_CST": [
+    [
+      "Antenna",
+      1.5,
+      2.5,
+      40.5,
+      43.5
+    ],
+    [
+      "Arm_1",
+      1.5,
+      29.17,
+      42.5,
+      43.5
+    ],
+    [
+      "Bend",
+      28.17,
+      29.17,
+      42.5,
+      48.5
+    ],
+    [
+      "Arm_2",
+      1.5,
+      29.17,
+      47.5,
+      48.5
+    ],
+    [
+      "Bend_2",
+      1.5,
+      2.5,
+      47.5,
+      53.5
+    ],
+    [
+      "Arm_3",
+      1.5,
+      29.17,
+      52.5,
+      53.5
+    ],
+    [
+      "Bend_3",
+      28.17,
+      29.17,
+      52.5,
+      58.5
+    ],
+    [
+      "Arm_4",
+      1.5,
+      29.17,
+      57.5,
+      58.5
+    ],
+    [
+      "Short_IFA",
+      1.5,
+      2.5,
+      40.0,
+      43.5
+    ],
+    [
+      "Feed_IFA",
+      5.5,
+      6.5,
+      40.5,
+      43.5
+    ],
+    [
+      "Retour_1",
+      0.5,
+      2.25,
+      57.75,
+      58.25
+    ],
+    [
+      "Retour_2",
+      0.5,
+      1,
+      54.5,
+      58.25
+    ],
+    [
+      "Retour_3",
+      0.5,
+      12.3,
+      54.5,
+      55.0
+    ]
+  ],
+  "modes_soudure": "pas de pate a braser sur le radiateur ; ouverture de masque sur les pistes"
+}

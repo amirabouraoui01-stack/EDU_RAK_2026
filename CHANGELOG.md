@@ -1,5 +1,11 @@
 # Historique du projet
 
+## 26 octobre 2026 — empreinte antenne dans KiCad
+
+- Empreinte personnalisée IFA 868 MHz créée depuis la géométrie CST et ajoutée à la bibliothèque locale du projet.
+- AE1 raccordé à `/RF` et à la masse dans le schéma complet ; netlist et ERC réexportés : 0 erreur, 3 avertissements connus.
+- Le moniteur farfield 868 MHz est présent dans le modèle CST ; l’export du diagramme en image ou en texte reste à faire.
+
 ## 26 octobre 2026 — antenne à piste fine
 
 - Rectangle terminal remplacé par un retour de piste de 0,5 mm.

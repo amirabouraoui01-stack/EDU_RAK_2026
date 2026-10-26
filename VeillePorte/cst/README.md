@@ -14,6 +14,8 @@ Ouvrir **[veilleporte_868_piste_basse.cst](veilleporte_868_piste_basse.cst)**. L
 
 Pour reproduire : `python creer_variante.py --nom nouvel_essai --terminal piste --cap-x 12.3 --right-x 28.67 --retour-y 54.75 --maillage 13`. `cap-x` désigne l’extrémité du retour ; `--terminal plaque` permet de reproduire l’ancienne forme. Le mode par défaut est maintenant `piste`. Le panneau, le boîtier et les pertes cuivre restent à intégrer.
 
+Le moniteur de farfield est réglé à 0,868 GHz dans ce modèle. Pour obtenir le diagramme dans CST, exécuter le solveur du modèle, puis sélectionner `Farfields → farfield (f=0.868)` dans l’arbre et afficher le tracé 3D. Le cache CST contenant les résultats bruts est local et ignoré par Git ; le modèle et sa macro sont versionnés, mais le diagramme n’est pas encore exporté en image ou en fichier texte.
+
 Les valeurs et images de l’ancienne référence ci-dessous concernent la variante avec plaque, conservée pour comparaison.
 
 ## Ancienne référence avec plaque — comparaison

@@ -12,7 +12,7 @@ Une ouverture ne permet pas de savoir qui passe ni si une personne sort effectiv
 
 ## Accès au projet
 
-**Antenne :** [étude CST 868 MHz](docs/ANTENNE_CST.md) · [modèles et macros](VeillePorte/cst/README.md). Les résultats concernent une carte simplifiée ; l’intégration au panneau et au boîtier reste à valider.
+**Antenne :** [étude CST 868 MHz](docs/ANTENNE_CST.md) · [empreinte KiCad locale](docs/EMPREINTE_ANTENNE.md) · [modèles CST et macros](VeillePorte/cst/README.md). L’empreinte IFA est liée aux réseaux RF et masse du schéma complet ; le placement final de la carte et l’intégration au panneau et au boîtier restent à valider.
 
 **Pour voir tous les branchements sur une seule page : ouvrir [veilleporte_complet.kicad_pro](VeillePorte/veilleporte_complet.kicad_pro).** [PDF A2](VeillePorte/veilleporte_complet.pdf) · [Guide de lecture et vérification](docs/SCHEMA_COMPLET.md).
 
@@ -52,7 +52,7 @@ flowchart LR
 | Traitement et radio | **RAK3172(H)** | I²C2, interruption, UART2, SWD, sortie RF |
 | Détection IR | **Module VL53L4CD Pololu 3692** | I²C `0x29`, interruption vers PA1, XSHUT vers PB5 |
 | Énergie | **BQ25570** | Récupération d’énergie et sortie buck |
-| Liaison radio | **AE1, antenne générique 868 MHz** | Représentation d’une antenne externe, modèle à choisir |
+| Liaison radio | **AE1, antenne IFA 868 MHz** | Empreinte cuivre personnalisée issue du modèle CST, réseau RF et masse |
 | Surveillance du stockage | **R8/R9** | Adaptation de VBAT_OK vers PA0 |
 
 J23 est un connecteur de câble défini pour ce projet : son ordre de broches ne reproduit pas l’ordre physique du module. Voir [le câblage IR](docs/CAPTEUR_IR.md).
@@ -62,7 +62,7 @@ La feuille BQ25570 est désormais adaptée à la demande d’Amira pour une **su
 ## Aperçus du schéma
 
 <table><tr>
-<td width="50%" align="center"><a href="VeillePorte/rak3172.kicad_sch"><img src="docs/assets/schema_rak3172.png" alt="RAK3172 et antenne générique 868 MHz" width="480"></a><br><strong>Traitement et radio</strong></td>
+<td width="50%" align="center"><a href="VeillePorte/rak3172.kicad_sch"><img src="docs/assets/schema_rak3172.png" alt="RAK3172 et antenne IFA 868 MHz" width="480"></a><br><strong>Traitement et radio</strong></td>
 <td width="50%" align="center"><a href="VeillePorte/capteur_ir.kicad_sch"><img src="docs/assets/schema_ir.png" alt="Raccordement du module VL53L4CD" width="480"></a><br><strong>Capteur IR et adaptation</strong></td>
 </tr></table>
 
@@ -105,4 +105,4 @@ L’autonomie, la portée et la détection des ouvertures restent à mesurer. Le
 
 Le projet actif se trouve désormais dans `VeillePorte/`, avec les fichiers principaux `veilleporte.*`. Le schéma 0.5 inclut les nouveaux réglages ; le PCB IR reste à réaliser.
 
-La version active de l’antenne utilise une [piste fine sans plaque](VeillePorte/cst/veilleporte_868_piste_basse.cst), avec un S11 simulé d’environ −12 dB à 868 MHz.
+La version active de l’antenne utilise une [piste fine sans plaque](VeillePorte/cst/veilleporte_868_piste_basse.cst), avec un S11 simulé d’environ −12 dB à 868 MHz et un moniteur de farfield configuré à 868 MHz. L’image du diagramme de rayonnement reste à exporter depuis CST. L’empreinte est assignée à AE1 dans le schéma complet ; le PCB reste à placer et à router.

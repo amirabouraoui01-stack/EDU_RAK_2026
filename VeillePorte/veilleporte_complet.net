@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "C:\\Users\\amira\\Desktop\\projet_kicad\\EDU_RAK_2026\\VeillePorte\\veilleporte_complet.kicad_sch")
-		(date "2026-10-26T14:52:03")
+		(date "2026-10-26T16:49:52")
 		(tool "Eeschema 10.0.6")
 		(sheet
 			(number "1")
@@ -54,6 +54,59 @@
 		)
 	)
 	(components
+		(comp
+			(ref "AE1")
+			(value "Antenne IFA imprimée 868 MHz")
+			(footprint "VeillePorte_Antennes:IFA_868_CST_30x20_PisteFine")
+			(fields
+				(field
+					(name "Footprint") "VeillePorte_Antennes:IFA_868_CST_30x20_PisteFine")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "VeillePorte")
+				(part "Antenna_868MHz")
+				(description "Antenna")
+			)
+			(property
+				(name "Sheetname")
+				(value "veilleporte")
+			)
+			(property
+				(name "Sheetfile")
+				(value "veilleporte_complet.kicad_sch")
+			)
+			(property
+				(name "exclude_from_bom")
+			)
+			(property
+				(name "ki_keywords")
+				(value "antenna")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "6e37b065-0695-414c-a0a4-77a8aec8cac2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
 		(comp
 			(ref "C1")
 			(value "100nF")
@@ -3223,6 +3276,11 @@
 					(name "A")
 					(type "passive")
 				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "passive")
+				)
 			)
 		)
 		(libpart
@@ -3692,6 +3750,12 @@
 			(name "'EN")
 			(class "Default")
 			(node
+				(ref "AE1")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "passive")
+			)
+			(node
 				(ref "C1")
 				(pin "2")
 				(pintype "passive")
@@ -3951,6 +4015,12 @@
 			(code "4")
 			(name "/RF")
 			(class "Default")
+			(node
+				(ref "AE1")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
 			(node
 				(ref "J20")
 				(pin "1")
