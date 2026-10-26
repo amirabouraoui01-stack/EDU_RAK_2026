@@ -4,7 +4,7 @@
 
 | Partie | État |
 |---|---|
-| Schéma de ColisCare | Quatre feuilles, révision 0.3 pour les feuilles propres au projet |
+| Schéma de VeillePorte | Quatre feuilles, révision 0.3 pour les feuilles propres au projet |
 | BQ25570 | Fichier EDU RAK strictement inchangé |
 | RAK3172 et LIS2HH12 | Raccordements vérifiés dans les exports |
 | Antenne AE1 | Symbole générique externe 868 MHz, raccord RF vérifié |
@@ -53,14 +53,14 @@ Le script fonctionne avec Python standard. Il compare l’alimentation avec l’
 
 - Choix de la source d’énergie et du stockage externe.
 - Démarrage, tolérances du rail PWR et courant pendant les transmissions.
-- Cadence de mesure, plage d’accélération, seuils de réveil et cadence radio.
-- Liaison RF, modèle réel d’antenne et comportement à proximité du contenu du colis.
+- Contact magnétique, entrée GPIO, filtrage et cadence LoRaWAN.
+- Liaison RF, modèle réel d’antenne et comportement à proximité du environnement de la porte.
 - Revue du PCB, conception du boîtier et firmware, puis essais du montage.
 
 Le [PCB routé et son rapport](../Collier_Chien/PCB.md) sont disponibles. Les contrôles géométriques passent avec les règles configurées. L’épaisseur de 0,8 mm et l’espacement de 0,15 mm restent à confirmer avec le fabricant ; la validation RF et électrique reste à effectuer.
 
-Un ERC sans erreur confirme certains raccordements ; il ne démontre pas le fonctionnement physique ni une autonomie. Aucun prototype ColisCare n’a encore été mesuré. Les anciens PCB EDU RAK rangés dans les références ne sont pas des PCB de ColisCare.
+Un ERC sans erreur confirme certains raccordements ; il ne démontre pas le fonctionnement physique ni une autonomie. Aucun prototype VeillePorte n’a encore été mesuré. Les anciens PCB EDU RAK rangés dans les références ne sont pas des PCB de VeillePorte.
 
-## Nouvelle application : ColisCare
+## Nouvelle application : VeillePorte
 
-Le suivi des chocs pour colis fragiles remplace le collier pour chien. Le matériel et ses rapports du 14 octobre sont conservés sans modification. Les fonctions métier (détection, compteur, bilan, réception LoRa) sont des objectifs, pas des fonctions déjà développées. Voir [le scénario et les essais](COLISCARE.md).
+Le suivi d’ouverture de porte pour accompagner les personnes atteintes de la maladie d’Alzheimer remplace le suivi des colis. Le matériel et les rapports du 14 octobre sont inchangés. Le contact magnétique n’est pas encore intégré : les contrôles existants ne valident pas cette nouvelle fonction. Firmware, LoRaWAN, horaires, tableau de bord et tests de disponibilité restent à réaliser. Voir [le scénario](VEILLEPORTE.md).

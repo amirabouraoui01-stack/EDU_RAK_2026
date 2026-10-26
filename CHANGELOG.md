@@ -1,5 +1,13 @@
 # Historique du projet
 
+## 26 octobre 2026 — VeillePorte
+
+- Nouvelle application : suivi des ouvertures de porte dans l’accompagnement des personnes atteintes de la maladie d’Alzheimer.
+- Présentation, scénario, spécification, disponibilité et essais adaptés à LoRaWAN.
+- Contact magnétique explicitement indiqué comme restant à intégrer.
+- Matériel et feuille BQ25570 inchangés ; rapports existants conservés comme contrôles de la base.
+
+
 ## 26 octobre 2026 — définition de la première version
 
 - Détection, regroupement des chocs, bilan radio et critères d’essai spécifiés.

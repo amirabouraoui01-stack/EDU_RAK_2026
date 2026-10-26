@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
-<title id="title">ColisCare — projet d’Amira</title><desc id="desc">Suivi des chocs pour colis fragiles avec RAK3172, LIS2HH12 et BQ25570.</desc>
+<title id="title">VeillePorte — projet d’Amira</title><desc id="desc">Suivi des ouvertures de porte avec RAK3172, LIS2HH12 et BQ25570.</desc>
 <rect width="1200" height="340" rx="24" fill="#102b35"/>
-<path d="M860 110 950 65 1040 110 950 155Z" fill="#d4a66b" stroke="#f3c979" stroke-width="4"/>
-<path d="M860 110V230L950 275V155Z" fill="#b88646" stroke="#f3c979" stroke-width="4"/>
-<path d="M950 155 1040 110V230L950 275Z" fill="#966530" stroke="#f3c979" stroke-width="4"/>
-<path d="M845 185h35l15-25 18 55 15-30h40" fill="none" stroke="#5bc8ad" stroke-width="7"/>
+<rect x="870" y="65" width="145" height="215" rx="6" fill="#244650" stroke="#86d3c1" stroke-width="6"/>
+<path d="M890 85 990 105V260L890 270Z" fill="#b88646" stroke="#f3c979" stroke-width="4"/>
+<circle cx="971" cy="183" r="6" fill="#fff"/>
+<rect x="1000" y="125" width="24" height="48" rx="5" fill="#5bc8ad"/>
 <path d="M1040 96q28 28 0 56M1066 78q45 45 0 92" fill="none" stroke="#86d3c1" stroke-width="5" stroke-linecap="round"/>
 <text x="65" y="65" font-family="Arial,sans-serif" font-size="16" letter-spacing="3" fill="#86d3c1">AMIRA · PROJET ÉLECTRONIQUE</text>
-<text x="65" y="139" font-family="Arial,sans-serif" font-size="53" font-weight="700" fill="#fff">ColisCare</text>
-<text x="65" y="183" font-family="Arial,sans-serif" font-size="25" fill="#c9d9de">Suivre les chocs des livraisons fragiles.</text>
+<text x="65" y="139" font-family="Arial,sans-serif" font-size="53" font-weight="700" fill="#fff">VeillePorte</text>
+<text x="65" y="183" font-family="Arial,sans-serif" font-size="25" fill="#c9d9de">Suivre les ouvertures. Accompagner le personnel.</text>
 <g font-family="Arial,sans-serif" font-size="17" font-weight="700">
 <rect x="65" y="224" width="145" height="42" rx="21" fill="#244650"/><text x="90" y="251" fill="#fff">RAK3172</text>
 <rect x="225" y="224" width="145" height="42" rx="21" fill="#244650"/><text x="249" y="251" fill="#fff">LIS2HH12</text>

@@ -1,16 +1,20 @@
-<p align="center"><img src="docs/assets/collier-banniere.svg" alt="ColisCare — suivi des chocs pendant le transport" width="100%"></p>
+<p align="center"><img src="docs/assets/collier-banniere.svg" alt="VeillePorte — suivi des ouvertures de porte" width="100%"></p>
 
-# ColisCare — suivi des chocs pour colis fragiles
+# VeillePorte — suivi des ouvertures de porte
 
-Projet personnel d’**Amira — [amirabouraoui01-stack](https://github.com/amirabouraoui01-stack)** : développer un boîtier placé dans un colis fragile pour détecter les chocs sur trois axes et préparer leur transmission radio avec un **RAK3172**.
+Projet d’**Amira — [amirabouraoui01-stack](https://github.com/amirabouraoui01-stack)** : concevoir un dispositif pour signaler les ouvertures de porte dans l’accompagnement des personnes atteintes de la **maladie d’Alzheimer**, notamment en milieu hospitalier.
 
-**État au 26 octobre 2026 :** schéma et **PCB routé de 60 × 30 mm**, avec **47 composants**, deux couches et un plan de masse. Contrôle KiCad : **0 violation DRC, 0 connexion manquante, 0 problème de parité**. L’antenne est externe, pour 868 MHz, et la feuille BQ25570 d’EDU RAK reste identique à l’original. Les essais, le firmware, le boîtier et la validation de fabrication restent à réaliser.
+Un contact magnétique placé sur la porte et son cadre indiquera l’état ouvert ou fermé. Le RAK3172 transmettra les changements par **LoRaWAN 868 MHz**. Un tableau de bord permettra au personnel de consulter l’état reçu, l’heure de réception et les événements pendant les horaires de surveillance configurés.
+
+**État au 26 octobre 2026 :** la base KiCad existante contient 47 composants sur un PCB routé de 60 × 30 mm. Le contact magnétique n’est pas encore intégré au schéma ni au PCB ; le firmware, le tableau de bord, l’antenne réelle et le boîtier restent à réaliser. Les rapports existants (0 violation DRC, 0 connexion manquante, 0 problème de parité) concernent uniquement cette base, pas un dispositif VeillePorte terminé.
+
+Une ouverture ne permet pas de savoir qui passe ni si une personne sort effectivement. Ce prototype pédagogique apporte une information complémentaire au personnel ; aucune prévention de sortie ou surveillance clinique garantie n’est revendiquée.
 
 ## Accès au projet
 
 | Pour… | Ouvrir… |
 |---|---|
-| Modifier dans KiCad 10 | [Projet ColisCare](Collier_Chien/collier_chien.kicad_pro) |
+| Modifier dans KiCad 10 | [Projet VeillePorte](Collier_Chien/collier_chien.kicad_pro) |
 | Voir la carte routée | [PCB 60 × 30 mm](Collier_Chien/collier_chien.kicad_pcb) · [Règles et contrôles](Collier_Chien/PCB.md) |
 | Lire le schéma | [PDF complet — quatre pages](Collier_Chien/collier_chien.pdf) |
 | Explorer les feuilles | [Schéma principal](Collier_Chien/collier_chien.kicad_sch) |
@@ -20,33 +24,35 @@ Projet personnel d’**Amira — [amirabouraoui01-stack](https://github.com/amir
 
 ## Le fonctionnement visé
 
-ColisCare vise les livraisons fragiles : verrerie, instruments de musique ou matériel électronique. Fixé dans l’emballage, le boîtier détectera les accélérations dépassant un seuil, comptera les événements et préparera un bilan transmissible par LoRa lorsqu’une passerelle est accessible. Le firmware et le service de réception restent à développer.
+1. Lire le contact magnétique et filtrer ses rebonds.
+2. Transmettre les transitions ouvert/fermé et un message périodique de présence.
+3. Afficher l’état reçu et signaler les ouvertures pendant les horaires configurés.
+4. Indiquer un état inconnu lorsque les données deviennent trop anciennes.
 
-Un choc détecté pourra justifier une inspection à réception ; il ne prouve pas que le contenu est endommagé. La plage, la fréquence de mesure et les seuils devront être testés avec chaque emballage. Le capteur peut saturer lors de chocs forts ; aucune mesure illimitée de leur intensité n’est promise.
-
-[Scénario, données et protocole d’essais](docs/COLISCARE.md).
+[Scénario et limites](docs/VEILLEPORTE.md) · [Spécification de la première version](docs/VERSION_1.md).
 
 ```mermaid
 flowchart LR
-  E[Source d’énergie externe] --> B[BQ25570 — feuille EDU RAK]
+  P[Panneau solaire] --> B[BQ25570 existant]
   S[Stockage à dimensionner] <--> B
-  B --> J[Cavalier J3 — PWR]
-  J --> R[RAK3172]
-  J --> A[LIS2HH12]
-  A <-->|I²C2| R
-  A -->|INT1 — mouvement| R
-  R --> ANT[Antenne générique 868 MHz]
+  B --> R[RAK3172]
+  C[Contact magnétique à intégrer] --> R
+  A[LIS2HH12 conservé] <-->|I²C| R
+  R -->|LoRaWAN 868 MHz| G[Passerelle et serveur réseau]
+  G --> T[Tableau de bord du personnel]
 ```
 
-## Électronique de ColisCare
+## Électronique de VeillePorte
 
 | Bloc | Composant | Fonction |
 |---|---|---|
 | Traitement et radio | **RAK3172(H)** | I²C2, interruption, UART2, SWD, sortie RF |
-| Accélération XYZ | **LIS2HH12** | Adresse I²C `0x1E`, INT1 vers PA1 |
+| Accéléromètre conservé, optionnel | **LIS2HH12** | Adresse I²C `0x1E`, INT1 vers PA1 |
 | Énergie | **BQ25570** | Récupération d’énergie et sortie buck |
 | Liaison radio | **AE1, antenne générique 868 MHz** | Représentation d’une antenne externe, modèle à choisir |
 | Surveillance du stockage | **R8/R9** | Adaptation de VBAT_OK vers PA0 |
+
+Le contact magnétique et son entrée GPIO restent à choisir et à intégrer. L’accéléromètre est conservé mais n’est pas nécessaire à la détection d’ouverture.
 
 La feuille BQ25570 est une **copie exacte du fichier pédagogique d’origine**. Les résistances NC et **C22** sont conservées sans correction. Le raccordement externe d’EN à la masse se fait sur la feuille RAK3172 ; le fichier BQ reste inchangé.
 
@@ -61,7 +67,7 @@ La feuille BQ25570 est une **copie exacte du fichier pédagogique d’origine**.
 
 ## Carte routée
 
-![PCB de ColisCare : face avant et pistes](docs/assets/pcb_avant.png)
+![PCB de VeillePorte : face avant et pistes](docs/assets/pcb_avant.png)
 
 [Voir le dos, les hypothèses de fabrication et le rapport de contrôle](Collier_Chien/PCB.md).
 
@@ -69,7 +75,7 @@ La feuille BQ25570 est une **copie exacte du fichier pédagogique d’origine**.
 
 ```text
 EDU_RAK_2026/
-├── README.md                 # ColisCare — projet d’Amira
+├── README.md                 # VeillePorte — projet d’Amira
 ├── CREDITS.md                # Origine et inspirations
 ├── CHANGELOG.md              # Évolution du projet
 ├── Collier_Chien/            # Projet actif, PDF et rapport ERC
@@ -89,8 +95,8 @@ EDU_RAK_2026/
 3. Consulter les feuilles, le PDF et [les contrôles](docs/ETAT_DU_PROJET.md).
 4. Confirmer la source d’énergie, le stockage et les contraintes de fabrication, puis valider le montage sur banc.
 
-Le nom historique du dépôt est conservé pour garder son adresse GitHub. Le projet actif et cette page sont dédiés à ColisCare. Les anciens PCB et photos dans `references/` décrivent EDU RAK ; ils ne représentent pas une carte ColisCare fabriquée.
+Le nom historique du dépôt est conservé pour garder son adresse GitHub. Le projet actif et cette page sont dédiés à VeillePorte. Les anciens PCB et photos dans `references/` décrivent EDU RAK ; ils ne représentent pas une carte VeillePorte fabriquée.
 
-L’autonomie, la portée et la détection des chocs restent à mesurer. Le projet actuel ne comprend pas de GPS. [Crédits et sources](CREDITS.md).
+L’autonomie, la portée et la détection des ouvertures restent à mesurer. Le projet actuel ne comprend pas de GPS. [Crédits et sources](CREDITS.md).
 
-Les chemins historiques `Collier_Chien/` et `collier_chien.*` sont conservés pour préserver les liens KiCad, les exports et les rapports. Ils désignent désormais le matériel réutilisé pour ColisCare ; le circuit n’a pas été modifié lors de ce changement d’application.
+Les chemins historiques `Collier_Chien/` et `collier_chien.*` sont conservés pour préserver les liens KiCad, les exports et les rapports. Ils désignent désormais le matériel réutilisé pour VeillePorte ; le circuit n’a pas été modifié lors de ce changement d’application.

@@ -25,7 +25,7 @@ L’espacement de 0,15 mm permet les pads fins du LIS2HH12 ; le fabricant doit a
 
 La liaison RF reste sur la face avant, avec une courte section élargie de 1,45 mm et des transitions de 0,35 mm au module et au connecteur. Cette géométrie prépare une liaison proche de 50 Ω sous l’hypothèse d’une carte FR4 de 0,8 mm ; l’impédance n’est pas certifiée et doit être recalculée avec l’empilage réel. La zone au dos sous la liaison est réservée au retour de masse, sans piste de signal.
 
-Avant fabrication finale : confirmer l’empilage, contrôler le placement et les boucles du BQ avec sa fiche technique, vérifier les modèles et empreintes, puis prévoir les essais de démarrage, de courant radio, d’accélération et d’antenne. Aucun prototype n’a encore été mesuré. Le stockage, la fixation dans le colis et le firmware restent à définir.
+Avant fabrication finale : confirmer l’empilage, contrôler le placement et les boucles du BQ avec sa fiche technique, vérifier les modèles et empreintes, puis prévoir les essais de démarrage, de courant radio, d’accélération et d’antenne. Aucun prototype n’a encore été mesuré. Le stockage, la fixation près de la porte et le firmware restent à définir.
 
 Le routage des signaux a utilisé [Freerouting 2.5.0](https://github.com/freerouting/freerouting/releases/tag/v2.5.0), après placement et préparation de la RF, puis import et corrections dans KiCad 10.0.6.
 

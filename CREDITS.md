@@ -1,6 +1,6 @@
 # Crédits et origine
 
-Projet ColisCare développé pour **Amira**, compte [amirabouraoui01-stack](https://github.com/amirabouraoui01-stack).
+Projet VeillePorte développé pour **Amira**, compte [amirabouraoui01-stack](https://github.com/amirabouraoui01-stack).
 
 ## Base pédagogique
 
@@ -12,7 +12,7 @@ Les feuilles RAK3172 et LIS2HH12 sont adaptées au projet. Les symboles viennent
 
 ## Inspiration de présentation
 
-[SmartPot_RAK3172 de MaxBarbe](https://github.com/MaxBarbe/SmartPot_RAK3172) inspire l’organisation : projet personnel au premier plan, aperçu des fichiers, état explicite et références séparées. Ses fichiers de pot, de PCB et d’antenne ainsi que ses résultats de simulation ne sont pas repris comme résultats de ColisCare.
+[SmartPot_RAK3172 de MaxBarbe](https://github.com/MaxBarbe/SmartPot_RAK3172) inspire l’organisation : projet personnel au premier plan, aperçu des fichiers, état explicite et références séparées. Ses fichiers de pot, de PCB et d’antenne ainsi que ses résultats de simulation ne sont pas repris comme résultats de VeillePorte.
 
 ## Fiches techniques
 
