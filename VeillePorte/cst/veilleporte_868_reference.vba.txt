@@ -1,0 +1,248 @@
+StoreParameter "cap_x", "12.3"
+StoreParameter "x_feed", "6"
+StoreParameter "y_fourth", "58"
+StoreParameter "x_last", "2"
+StoreParameter "y_third", "53"
+StoreParameter "x_end", "28.67"
+StoreParameter "pcb_x", "30"
+StoreParameter "pcb_y", "60"
+StoreParameter "pcb_h", "0.8"
+StoreParameter "cu_t", "0.035"
+StoreParameter "gnd_y", "40"
+StoreParameter "feed_gap", "0.5"
+StoreParameter "track_w", "1"
+StoreParameter "x_left", "2"
+StoreParameter "x_right", "28.67"
+StoreParameter "y_first", "43"
+StoreParameter "y_second", "48"
+StoreParameter "eps_r", "4.3"
+StoreParameter "loss_tan", "0.02"
+StoreParameter "f_target", "0.868"
+With Units
+.Geometry "mm"
+.Frequency "GHz"
+.Time "ns"
+End With
+WCS.ActivateWCS "global"
+With Material
+.Reset
+.Name "FR4_VeillePorte"
+.Type "Normal"
+.Epsilon "eps_r"
+.Mue "1"
+.TanD "loss_tan"
+.TanDFreq "f_target"
+.TanDGiven "True"
+.Create
+End With
+With Brick
+.Reset
+.Name "PCB"
+.Component "VeillePorte"
+.Material "FR4_VeillePorte"
+.Xrange "0", "pcb_x"
+.Yrange "0", "pcb_y"
+.Zrange "0", "pcb_h"
+.Create
+End With
+With Brick
+.Reset
+.Name "GND_top"
+.Component "VeillePorte"
+.Material "PEC"
+.Xrange "0", "pcb_x"
+.Yrange "0", "gnd_y"
+.Zrange "pcb_h", "pcb_h+cu_t"
+.Create
+End With
+With Brick
+.Reset
+.Name "GND_bottom"
+.Component "VeillePorte"
+.Material "PEC"
+.Xrange "0", "pcb_x"
+.Yrange "0", "gnd_y"
+.Zrange "-cu_t", "0"
+.Create
+End With
+With Brick
+.Reset
+.Name "GND_bridge"
+.Component "VeillePorte"
+.Material "PEC"
+.Xrange "14.5", "15.5"
+.Yrange "38", "39"
+.Zrange "-cu_t", "pcb_h+cu_t"
+.Create
+End With
+Solid.Add "VeillePorte:GND_top", "VeillePorte:GND_bridge"
+Solid.Add "VeillePorte:GND_top", "VeillePorte:GND_bottom"
+With Brick
+.Reset
+.Name "Antenna"
+.Component "VeillePorte"
+.Material "PEC"
+.Xrange "x_left-track_w/2", "x_left+track_w/2"
+.Yrange "gnd_y+feed_gap", "y_first+track_w/2"
+.Zrange "pcb_h", "pcb_h+cu_t"
+.Create
+End With
+With Brick
+.Reset
+.Name "Arm_1"
+.Component "VeillePorte"
+.Material "PEC"
+.Xrange "x_left-track_w/2", "x_right+track_w/2"
+.Yrange "y_first-track_w/2", "y_first+track_w/2"
+.Zrange "pcb_h", "pcb_h+cu_t"
+.Create
+End With
+With Brick
+.Reset
+.Name "Bend"
+.Component "VeillePorte"
+.Material "PEC"
+.Xrange "x_right-track_w/2", "x_right+track_w/2"
+.Yrange "y_first-track_w/2", "y_second+track_w/2"
+.Zrange "pcb_h", "pcb_h+cu_t"
+.Create
+End With
+With Brick
+.Reset
+.Name "Arm_2"
+.Component "VeillePorte"
+.Material "PEC"
+.Xrange "x_left-track_w/2", "x_right+track_w/2"
+.Yrange "y_second-track_w/2", "y_second+track_w/2"
+.Zrange "pcb_h", "pcb_h+cu_t"
+.Create
+End With
+Solid.Add "VeillePorte:Antenna", "VeillePorte:Arm_1"
+Solid.Add "VeillePorte:Antenna", "VeillePorte:Bend"
+Solid.Add "VeillePorte:Antenna", "VeillePorte:Arm_2"
+With Brick
+.Reset
+.Name "Bend_2"
+.Component "VeillePorte"
+.Material "PEC"
+.Xrange "x_left-track_w/2", "x_left+track_w/2"
+.Yrange "y_second-track_w/2", "y_third+track_w/2"
+.Zrange "pcb_h", "pcb_h+cu_t"
+.Create
+End With
+With Brick
+.Reset
+.Name "Arm_3"
+.Component "VeillePorte"
+.Material "PEC"
+.Xrange "x_left-track_w/2", "x_end+track_w/2"
+.Yrange "y_third-track_w/2", "y_third+track_w/2"
+.Zrange "pcb_h", "pcb_h+cu_t"
+.Create
+End With
+Solid.Add "VeillePorte:Antenna", "VeillePorte:Bend_2"
+Solid.Add "VeillePorte:Antenna", "VeillePorte:Arm_3"
+With Brick
+.Reset
+.Name "Bend_3"
+.Component "VeillePorte"
+.Material "PEC"
+.Xrange "x_right-track_w/2", "x_right+track_w/2"
+.Yrange "y_third-track_w/2", "y_fourth+track_w/2"
+.Zrange "pcb_h", "pcb_h+cu_t"
+.Create
+End With
+Solid.Add "VeillePorte:Antenna", "VeillePorte:Bend_3"
+With Brick
+.Reset
+.Name "Arm_4"
+.Component "VeillePorte"
+.Material "PEC"
+.Xrange "x_last-track_w/2", "x_right+track_w/2"
+.Yrange "y_fourth-track_w/2", "y_fourth+track_w/2"
+.Zrange "pcb_h", "pcb_h+cu_t"
+.Create
+End With
+Solid.Add "VeillePorte:Antenna", "VeillePorte:Arm_4"
+With Brick
+.Reset
+.Name "Short_IFA"
+.Component "VeillePorte"
+.Material "PEC"
+.Xrange "x_left-track_w/2", "x_left+track_w/2"
+.Yrange "gnd_y", "y_first+track_w/2"
+.Zrange "pcb_h", "pcb_h+cu_t"
+.Create
+End With
+Solid.Add "VeillePorte:Antenna", "VeillePorte:Short_IFA"
+With Brick
+.Reset
+.Name "Feed_IFA"
+.Component "VeillePorte"
+.Material "PEC"
+.Xrange "x_feed-track_w/2", "x_feed+track_w/2"
+.Yrange "gnd_y+feed_gap", "y_first+track_w/2"
+.Zrange "pcb_h", "pcb_h+cu_t"
+.Create
+End With
+Solid.Add "VeillePorte:Antenna", "VeillePorte:Feed_IFA"
+With Brick
+.Reset
+.Name "Terminal_cap"
+.Component "VeillePorte"
+.Material "PEC"
+.Xrange "0.5", "cap_x"
+.Yrange "54.5", "59.5"
+.Zrange "pcb_h", "pcb_h+cu_t"
+.Create
+End With
+Solid.Add "VeillePorte:Antenna", "VeillePorte:Terminal_cap"
+With DiscretePort
+.Reset
+.PortNumber "1"
+.Type "SParameter"
+.Impedance "50"
+.SetP1 "False", "x_feed", "gnd_y", "pcb_h+cu_t/2"
+.SetP2 "False", "x_feed", "gnd_y+feed_gap", "pcb_h+cu_t/2"
+.LocalCoordinates "False"
+.InvertDirection "False"
+.Monitor "True"
+.Create
+End With
+Solver.FrequencyRange "0.6", "1.136"
+With Boundary
+.Xmin "expanded open"
+.Xmax "expanded open"
+.Ymin "expanded open"
+.Ymax "expanded open"
+.Zmin "expanded open"
+.Zmax "expanded open"
+End With
+With Monitor
+.Reset
+.Name "farfield (f=0.868)"
+.Domain "Frequency"
+.FieldType "Farfield"
+.Frequency "0.868"
+.Create
+End With
+Plot.ZoomToStructure
+ChangeSolverType "HF Time Domain"
+With Background
+.Reset
+.Type "Normal"
+.Epsilon "1"
+.Mu "1"
+End With
+With MeshSettings
+.SetMeshType "Hex"
+.Set "StepsPerWaveNear", "13"
+.Set "WavelengthRefinementSameAsNear", "1"
+.Set "StepsPerBoxNear", "16"
+End With
+With Solver
+.CalculationType "TD-S"
+.StimulationPort "All"
+.StimulationMode "All"
+.SteadyStateLimit "-40"
+End With

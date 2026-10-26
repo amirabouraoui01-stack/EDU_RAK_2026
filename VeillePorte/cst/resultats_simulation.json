@@ -1,0 +1,95 @@
+{
+  "statut": "Essais CST, modele simplifie PEC/FR4, non valide sur montage reel",
+  "simulations": [
+    {
+      "essai": "Meandre 2 branches",
+      "export": "s11_initial.txt",
+      "frequence_minimum_MHz": 1200.0,
+      "S11_minimum_dB": -2.5628528,
+      "frequence_echantillon_cible_MHz": 868.1999999999999,
+      "S11_pres_868_dB": -0.25808255,
+      "fraction_puissance_reflechie_pres_868": 0.9423055412399355,
+      "echantillons": 1001
+    },
+    {
+      "essai": "Meandre 3 branches",
+      "export": "s11_trois_branches.txt",
+      "frequence_minimum_MHz": 1036.2,
+      "S11_minimum_dB": -3.0729957,
+      "frequence_echantillon_cible_MHz": 868.1999999999999,
+      "S11_pres_868_dB": -0.78005084,
+      "fraction_puissance_reflechie_pres_868": 0.835593236433283,
+      "echantillons": 1001
+    },
+    {
+      "essai": "Meandre 4 branches",
+      "export": "s11_quatre_branches.txt",
+      "frequence_minimum_MHz": 939.00001,
+      "S11_minimum_dB": -2.9946672,
+      "frequence_echantillon_cible_MHz": 868.1999999999999,
+      "S11_pres_868_dB": -1.7567952,
+      "fraction_puissance_reflechie_pres_868": 0.6672990091778318,
+      "echantillons": 1001
+    },
+    {
+      "essai": "F inverse",
+      "export": "s11_ifa.txt",
+      "frequence_minimum_MHz": 922.8,
+      "S11_minimum_dB": -15.814466,
+      "frequence_echantillon_cible_MHz": 868.1999999999999,
+      "S11_pres_868_dB": -0.71358474,
+      "fraction_puissance_reflechie_pres_868": 0.8484798363300174,
+      "echantillons": 1001
+    },
+    {
+      "essai": "F inverse avec charge terminale",
+      "export": "s11_veilleporte_868_accord.txt",
+      "frequence_minimum_MHz": 885.59997,
+      "S11_minimum_dB": -14.369082,
+      "frequence_echantillon_cible_MHz": 868.1999999999999,
+      "S11_pres_868_dB": -3.7561896,
+      "fraction_puissance_reflechie_pres_868": 0.42109592624454245,
+      "echantillons": 1001
+    },
+    {
+      "essai": "Longueur ajustee",
+      "export": "s11_veilleporte_868_ajuste.txt",
+      "frequence_minimum_MHz": 872.8240099999999,
+      "S11_minimum_dB": -14.054234,
+      "frequence_echantillon_cible_MHz": 867.99997,
+      "S11_pres_868_dB": -10.337847,
+      "fraction_puissance_reflechie_pres_868": 0.09251567035345666,
+      "echantillons": 1001
+    },
+    {
+      "essai": "Controle maillage",
+      "export": "s11_veilleporte_868_controle.txt",
+      "frequence_minimum_MHz": 873.3599800000001,
+      "S11_minimum_dB": -14.152772,
+      "frequence_echantillon_cible_MHz": 867.99997,
+      "S11_pres_868_dB": -9.9015411,
+      "fraction_puissance_reflechie_pres_868": 0.10229299397600707,
+      "echantillons": 1001
+    },
+    {
+      "essai": "Modele de reference",
+      "export": "s11_veilleporte_868_reference.txt",
+      "frequence_minimum_MHz": 867.99997,
+      "S11_minimum_dB": -14.067525,
+      "frequence_echantillon_cible_MHz": 867.99997,
+      "S11_pres_868_dB": -14.067525,
+      "fraction_puissance_reflechie_pres_868": 0.0391965190437851,
+      "echantillons": 1001
+    }
+  ],
+  "panneau_solaire_mm": [
+    50,
+    50
+  ],
+  "boitier": "integration prevue, materiau et disposition a confirmer",
+  "limites": [
+    "Pas de convergence de maillage demontree",
+    "Conducteur PEC sans pertes ohmiques",
+    "Panneau, fils, boitier, support et electronique absents de ces essais"
+  ]
+}

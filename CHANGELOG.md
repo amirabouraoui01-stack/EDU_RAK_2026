@@ -1,5 +1,12 @@
 # Historique du projet
 
+## 26 octobre 2026 — étude d’antenne CST
+
+- Création de modèles CST paramétriques pour PCB 30 × 60 mm et antenne en méandre/F inversé.
+- Calculs temporels et exports S11, comparaison des variantes et contrôle de maillage dans la limite de licence.
+- Panneau solaire d’environ 50 × 50 mm pris en compte dans une proposition d’implantation, pas encore dans le solveur.
+- Aucun changement du schéma électrique ou du PCB ; performances physiques non mesurées.
+
 ## 26 octobre 2026 — présentation complète 0.6
 
 - Schéma unique A2 avec fils visibles entre alimentation, RAK, IR et interfaces.

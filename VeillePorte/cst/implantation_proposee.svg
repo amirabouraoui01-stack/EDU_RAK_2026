@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600">
+<rect width="1100" height="600" fill="#fff"/>
+<g font-family="Arial,sans-serif" fill="#173540">
+<text x="35" y="40" font-size="24" font-weight="bold">VeillePorte — antenne et panneau solaire</text>
+<text x="35" y="70" font-size="15">Proposition d’implantation ; le panneau et le boîtier ne sont pas encore simulés.</text>
+<rect x="85" y="115" width="180" height="360" fill="#def4f2" stroke="#287b80" stroke-width="2"/>
+<rect x="85" y="235" width="180" height="240" fill="#96adb4"/>
+<path d="M97 235V217H253V187H97V157H253V127H97" fill="none" stroke="#bd842f" stroke-width="6"/>
+<path d="M121 238V217" fill="none" stroke="#bd842f" stroke-width="6"/>
+<circle cx="121" cy="237" r="5" fill="#c0394c"/>
+<text x="285" y="145" font-size="16" font-weight="bold">Zone antenne 30 × 20 mm</text>
+<text x="285" y="170" font-size="14">Sans masse ni composants sous le radiateur</text>
+<text x="285" y="193" font-size="14">Méandre en F inversé ; charge terminale à ajuster</text>
+<text x="285" y="253" font-size="14">Point d’alimentation et port CST de 50 Ω</text>
+<text x="110" y="350" font-size="15" font-weight="bold">Masse et</text>
+<text x="110" y="374" font-size="15" font-weight="bold">électronique</text>
+<text x="110" y="405" font-size="14">30 × 40 mm</text>
+<text x="85" y="505" font-size="15">PCB modélisé : 30 × 60 × 0,8 mm</text>
+<text x="85" y="530" font-size="13">Le placement des composants reste à revoir pour réserver cette zone.</text>
+<rect x="745" y="110" width="220" height="320" rx="12" fill="#f4f6f8" stroke="#647982" stroke-width="2"/>
+<rect x="795" y="120" width="120" height="240" fill="#def4f2" stroke="#287b80" stroke-dasharray="6 3"/>
+<rect x="795" y="120" width="120" height="80" fill="#f7dfa9"/>
+<text x="810" y="150" font-size="14">Antenne</text>
+<text x="810" y="173" font-size="13">zone libre</text>
+<rect x="755" y="220" width="200" height="200" rx="3" fill="#264655" stroke="#112e3a"/>
+<g stroke="#86a6b8" stroke-width="1"><path d="M795 220V420M835 220V420M875 220V420M915 220V420M755 260H955M755 300H955M755 340H955M755 380H955"/></g>
+<text x="775" y="328" font-size="15" fill="#fff">Panneau ≈ 50 × 50 mm</text>
+<path d="M975 200H995M975 220H995M985 200V220" stroke="#c0394c" fill="none"/>
+<text x="998" y="216" font-size="12">5 mm*</text>
+<text x="745" y="465" font-size="14">Vue de face : panneau décalé de l’antenne</text>
+<text x="745" y="488" font-size="13">Boîtier de l’ordre de 80 × 55 mm à étudier</text>
+<text x="745" y="511" font-size="13">Épaisseur, matière, fils et fixation à préciser</text>
+<text x="35" y="575" font-size="13">* Marge de départ proposée, sans garantie RF. Éviter de recouvrir l’antenne par le panneau, ses fils ou une pièce métallique.</text>
+</g></svg>

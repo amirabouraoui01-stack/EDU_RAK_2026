@@ -12,6 +12,8 @@ Une ouverture ne permet pas de savoir qui passe ni si une personne sort effectiv
 
 ## Accès au projet
 
+**Antenne :** [étude CST 868 MHz](docs/ANTENNE_CST.md) · [modèles et macros](VeillePorte/cst/README.md). Les résultats concernent une carte simplifiée ; l’intégration au panneau et au boîtier reste à valider.
+
 **Pour voir tous les branchements sur une seule page : ouvrir [veilleporte_complet.kicad_pro](VeillePorte/veilleporte_complet.kicad_pro).** [PDF A2](VeillePorte/veilleporte_complet.pdf) · [Guide de lecture et vérification](docs/SCHEMA_COMPLET.md).
 
 | Pour… | Ouvrir… |

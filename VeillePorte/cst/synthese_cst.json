@@ -1,0 +1,137 @@
+{
+  "statut": "Modele preliminaire de reference, carte seule, accord simule ; pas de validation physique",
+  "date": "2026-10-26",
+  "reference": {
+    "modele": "veilleporte_868_reference.cst",
+    "export": "s11_veilleporte_868_reference.txt",
+    "echantillons": 1001,
+    "minimum_MHz": 867.99997,
+    "S11_minimum_dB": -14.067525,
+    "point_proche_868_MHz": 867.99997,
+    "S11_868_dB": -14.067525,
+    "cellules": 81000,
+    "critere_energie_atteint": true,
+    "parametres": {
+      "cap_x": "12.3",
+      "x_feed": "6",
+      "y_fourth": "58",
+      "x_last": "2",
+      "y_third": "53",
+      "x_end": "28.67",
+      "pcb_x": "30",
+      "pcb_y": "60",
+      "pcb_h": "0.8",
+      "cu_t": "0.035",
+      "gnd_y": "40",
+      "feed_gap": "0.5",
+      "track_w": "1",
+      "x_left": "2",
+      "x_right": "28.67",
+      "y_first": "43",
+      "y_second": "48",
+      "eps_r": "4.3",
+      "loss_tan": "0.02",
+      "f_target": "0.868"
+    },
+    "sha256_cst": "cdd2fa32842f6a3caa96baf6a598e0067541b167bfb5068f6192b00bfb2833a3",
+    "sha256_export": "4b4059f85351ee019e6ac3c7b35e09c6764e2f7147aac31210a5eda9b65a065a",
+    "intervalle_points_sous_moins10_MHz": [
+      863.17599,
+      872.8240099999999
+    ]
+  },
+  "controle_meme_geometrie": {
+    "maillage_initial": {
+      "modele": "veilleporte_868_ajuste.cst",
+      "export": "s11_veilleporte_868_ajuste.txt",
+      "echantillons": 1001,
+      "minimum_MHz": 872.8240099999999,
+      "S11_minimum_dB": -14.054234,
+      "point_proche_868_MHz": 867.99997,
+      "S11_868_dB": -10.337847,
+      "cellules": 76440,
+      "critere_energie_atteint": true,
+      "parametres": {
+        "cap_x": "12.3",
+        "x_feed": "6",
+        "y_fourth": "58",
+        "x_last": "2",
+        "y_third": "53",
+        "x_end": "28.4",
+        "pcb_x": "30",
+        "pcb_y": "60",
+        "pcb_h": "0.8",
+        "cu_t": "0.035",
+        "gnd_y": "40",
+        "feed_gap": "0.5",
+        "track_w": "1",
+        "x_left": "2",
+        "x_right": "28.4",
+        "y_first": "43",
+        "y_second": "48",
+        "eps_r": "4.3",
+        "loss_tan": "0.02",
+        "f_target": "0.868"
+      },
+      "sha256_cst": "5ead061b0608d3f4d8c779567c956a18edfdea5501a40e5047bb38e72106d210",
+      "sha256_export": "ed163b458564fedb49a66992ddcaafb9c05a6b417d561fe17592013acdc80a6c",
+      "intervalle_points_sous_moins10_MHz": [
+        867.99997,
+        878.1840199999999
+      ]
+    },
+    "maillage_modere": {
+      "modele": "veilleporte_868_controle.cst",
+      "export": "s11_veilleporte_868_controle.txt",
+      "echantillons": 1001,
+      "minimum_MHz": 873.3599800000001,
+      "S11_minimum_dB": -14.152772,
+      "point_proche_868_MHz": 867.99997,
+      "S11_868_dB": -9.9015411,
+      "cellules": 79380,
+      "critere_energie_atteint": true,
+      "parametres": {
+        "cap_x": "12.3",
+        "x_feed": "6",
+        "y_fourth": "58",
+        "x_last": "2",
+        "y_third": "53",
+        "x_end": "28.4",
+        "pcb_x": "30",
+        "pcb_y": "60",
+        "pcb_h": "0.8",
+        "cu_t": "0.035",
+        "gnd_y": "40",
+        "feed_gap": "0.5",
+        "track_w": "1",
+        "x_left": "2",
+        "x_right": "28.4",
+        "y_first": "43",
+        "y_second": "48",
+        "eps_r": "4.3",
+        "loss_tan": "0.02",
+        "f_target": "0.868"
+      },
+      "sha256_cst": "122b8c3109d70f9448e8cff2633a3a6b2f3d99f8c17546ade5d2b25da40c7269",
+      "sha256_export": "fc7876010562b2a823c1fc41497fd1c67115eb865c5dc7c22473334f808afbf7",
+      "intervalle_points_sous_moins10_MHz": [
+        868.536,
+        878.71999
+      ]
+    },
+    "decalage_minimum_MHz": 0.535970000000134,
+    "limite": "Raffinement plus pousse refuse au-dela de 100000 cellules ; convergence complete non demontree"
+  },
+  "panneau_mm": [
+    50,
+    50
+  ],
+  "boitier": "prevu, pas encore modele",
+  "hypotheses": [
+    "PEC : pertes cuivre non calculees",
+    "FR4 eps_r=4.3 et tan_delta=0.02 supposes",
+    "PCB 30x60x0.8mm, masse 30x40mm, zone antenne 30x20mm",
+    "Panneau, fils, boitier, support et composants non modeles",
+    "Rendement, gain realise et portee non valides"
+  ]
+}
