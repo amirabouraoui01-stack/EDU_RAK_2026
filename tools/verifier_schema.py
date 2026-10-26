@@ -17,12 +17,12 @@ def kids(n,k):return [x for x in n if isinstance(x,list) and x and x[0]==k]
 def one(n,k):return next(iter(kids(n,k)))
 def prop(n,k):return next(x[2] for x in kids(n,'property') if x[1]==k)
 def read(path):return parse(path.read_text(encoding='utf-8'))
-P=ROOT/'Collier_Chien'
+P=ROOT/'VeillePorte'
 with zipfile.ZipFile(ROOT/'references/EDU_RAK_2026/Hardware/Kicad/edu_rak_2026_kicad.zip') as z:
     name=next(n for n in z.namelist() if n.endswith('harvester.kicad_sch'))
     original=z.read(name)
 assert original==(P/'alimentation.kicad_sch').read_bytes(),'Feuille BQ modifiee'
-doc=read(P/'collier_chien.net');actual={}
+doc=read(P/'veilleporte.net');actual={}
 refs=[one(c,'ref')[1] for c in kids(one(doc,'components'),'comp')]
 assert len(refs)==len(set(refs)),'References dupliquees'
 for net in kids(one(doc,'nets'),'net'):

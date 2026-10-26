@@ -1,6 +1,6 @@
 # PCB routé — 60 × 30 mm
 
-La carte `collier_chien.kicad_pcb` contient 47 empreintes avec leurs références, champs et nets. Le contour nominal mesure 60 × 30 mm entre les axes des lignes Edge.Cuts. Les connexions sont routées sur deux couches, avec un plan de masse au dos. AE1 reste une antenne externe indicative ; l’antenne physique se raccordera à J20.
+La carte `veilleporte.kicad_pcb` contient 47 empreintes avec leurs références, champs et nets. Le contour nominal mesure 60 × 30 mm entre les axes des lignes Edge.Cuts. Les connexions sont routées sur deux couches, avec un plan de masse au dos. AE1 reste une antenne externe indicative ; l’antenne physique se raccordera à J20.
 
 Le placement regroupe les inductances et capacités autour du BQ25570, l’accéléromètre et son découplage, et le RAK3172 avec un connecteur RF proche. Les connecteurs UART/SWD se trouvent en bordure. Les repères des composants sont conservés sur F.Fab pour éviter les collisions avec les pads ; ils ne constituent pas tous une sérigraphie imprimée.
 

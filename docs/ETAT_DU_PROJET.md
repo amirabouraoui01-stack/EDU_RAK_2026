@@ -28,7 +28,7 @@ Les quatre pages du PDF ont été inspectées visuellement. Le rendu de la feuil
 
 ## Avertissements ERC conservés
 
-Le [rapport KiCad](../Collier_Chien/erc.json) contient quatre avertissements. L’empreinte LBOOST1 est désormais fournie dans une bibliothèque locale :
+Le [rapport KiCad](../VeillePorte/erc.json) contient quatre avertissements. L’empreinte LBOOST1 est désormais fournie dans une bibliothèque locale :
 
 | Avertissement | Explication et suite |
 |---|---|
@@ -57,7 +57,7 @@ Le script fonctionne avec Python standard. Il compare l’alimentation avec l’
 - Liaison RF, modèle réel d’antenne et comportement à proximité du environnement de la porte.
 - Revue du PCB, conception du boîtier et firmware, puis essais du montage.
 
-Le [PCB routé et son rapport](../Collier_Chien/PCB.md) sont disponibles. Les contrôles géométriques passent avec les règles configurées. L’épaisseur de 0,8 mm et l’espacement de 0,15 mm restent à confirmer avec le fabricant ; la validation RF et électrique reste à effectuer.
+Le [PCB routé et son rapport](../VeillePorte/PCB.md) sont disponibles. Les contrôles géométriques passent avec les règles configurées. L’épaisseur de 0,8 mm et l’espacement de 0,15 mm restent à confirmer avec le fabricant ; la validation RF et électrique reste à effectuer.
 
 Un ERC sans erreur confirme certains raccordements ; il ne démontre pas le fonctionnement physique ni une autonomie. Aucun prototype VeillePorte n’a encore été mesuré. Les anciens PCB EDU RAK rangés dans les références ne sont pas des PCB de VeillePorte.
 

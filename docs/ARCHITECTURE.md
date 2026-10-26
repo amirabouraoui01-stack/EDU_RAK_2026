@@ -1,6 +1,6 @@
 # Architecture de VeillePorte
 
-[Accueil](../README.md) · [Schéma PDF](../Collier_Chien/collier_chien.pdf)
+[Accueil](../README.md) · [Schéma PDF](../VeillePorte/veilleporte.pdf)
 
 ## Mesure de mouvement
 

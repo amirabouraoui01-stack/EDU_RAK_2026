@@ -6,7 +6,7 @@ Projet VeillePorte développé pour **Amira**, compte [amirabouraoui01-stack](ht
 
 La base est la plateforme [EDU_RAK_2026 de DorianDIANA](https://github.com/DorianDIANA/EDU_RAK_2026). Ses ressources sont conservées dans [references/EDU_RAK_2026](references/EDU_RAK_2026/README.md), avec l’historique Git.
 
-La feuille `Collier_Chien/alimentation.kicad_sch` reproduit exactement `harvester.kicad_sch` extrait de l’archive KiCad EDU RAK. Les résistances NC et C22 sont laissées telles quelles, à la demande d’Amira.
+La feuille `VeillePorte/alimentation.kicad_sch` reproduit exactement `harvester.kicad_sch` extrait de l’archive KiCad EDU RAK. Les résistances NC et C22 sont laissées telles quelles, à la demande d’Amira.
 
 Les feuilles RAK3172 et LIS2HH12 sont adaptées au projet. Les symboles viennent de la base EDU RAK et des bibliothèques KiCad. AE1 est un symbole générique d’antenne externe, à port RF passif, exclu du PCB et de la nomenclature.
 

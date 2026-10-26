@@ -6,4 +6,4 @@ L’empreinte et son modèle 3D ont été importés du [dépôt SmartPot_RAK3172
 
 La référence fabricant est **Coilcraft LPS4018-223MRC**, inductance 22 µH. [Documentation fabricant](https://www.coilcraft.com/en-us/products/power/shielded-inductors/ferrite-drum/lps/lps4018/).
 
-Si le projet est déjà ouvert, fermer puis rouvrir le projet `collier_chien.kicad_pro` pour recharger la table locale, puis relancer « Mettre à jour le PCB à partir du schéma ». Utiliser ce projet complet : ouvrir seulement un schéma copié ailleurs ne charge pas sa bibliothèque locale.
+Si le projet est déjà ouvert, fermer puis rouvrir le projet `veilleporte.kicad_pro` pour recharger la table locale, puis relancer « Mettre à jour le PCB à partir du schéma ». Utiliser ce projet complet : ouvrir seulement un schéma copié ailleurs ne charge pas sa bibliothèque locale.

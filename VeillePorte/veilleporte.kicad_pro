@@ -488,7 +488,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "collier_chien.kicad_pro",
+    "filename": "veilleporte.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -655,8 +655,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "collier_chien.kicad_sch",
-        "name": "collier_chien",
+        "filename": "veilleporte.kicad_sch",
+        "name": "veilleporte",
         "uuid": "00000000-0000-0000-0000-000000000000"
       }
     ],

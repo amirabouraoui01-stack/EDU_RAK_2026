@@ -6,7 +6,7 @@ Ce guide prépare les futurs essais : il n’existe pas encore de prototype Veil
 
 ## Ouvrir les fichiers
 
-Ouvrir [le projet](../Collier_Chien/collier_chien.kicad_pro) dans KiCad 10. La bibliothèque `Collier.kicad_sym` fournit les symboles locaux ; la feuille BQ utilise ses symboles embarqués. Le [PDF](../Collier_Chien/collier_chien.pdf) permet une lecture sans KiCad.
+Ouvrir [le projet](../VeillePorte/veilleporte.kicad_pro) dans KiCad 10. La bibliothèque `VeillePorte.kicad_sym` fournit les symboles locaux ; la feuille BQ utilise ses symboles embarqués. Le [PDF](../VeillePorte/veilleporte.pdf) permet une lecture sans KiCad.
 
 ## Alimentation
 

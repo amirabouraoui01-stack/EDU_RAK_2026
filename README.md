@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/assets/collier-banniere.svg" alt="VeillePorte — suivi des ouvertures de porte" width="100%"></p>
+<p align="center"><img src="docs/assets/veilleporte-banniere.svg" alt="VeillePorte — suivi des ouvertures de porte" width="100%"></p>
 
 # VeillePorte — suivi des ouvertures de porte
 
@@ -14,10 +14,10 @@ Une ouverture ne permet pas de savoir qui passe ni si une personne sort effectiv
 
 | Pour… | Ouvrir… |
 |---|---|
-| Modifier dans KiCad 10 | [Projet VeillePorte](Collier_Chien/collier_chien.kicad_pro) |
-| Voir la carte routée | [PCB 60 × 30 mm](Collier_Chien/collier_chien.kicad_pcb) · [Règles et contrôles](Collier_Chien/PCB.md) |
-| Lire le schéma | [PDF complet — quatre pages](Collier_Chien/collier_chien.pdf) |
-| Explorer les feuilles | [Schéma principal](Collier_Chien/collier_chien.kicad_sch) |
+| Modifier dans KiCad 10 | [Projet VeillePorte](VeillePorte/veilleporte.kicad_pro) |
+| Voir la carte routée | [PCB 60 × 30 mm](VeillePorte/veilleporte.kicad_pcb) · [Règles et contrôles](VeillePorte/PCB.md) |
+| Lire le schéma | [PDF complet — quatre pages](VeillePorte/veilleporte.pdf) |
+| Explorer les feuilles | [Schéma principal](VeillePorte/veilleporte.kicad_sch) |
 | Comprendre les connexions | [Architecture](docs/ARCHITECTURE.md) |
 | Connaître les validations | [État du projet](docs/ETAT_DU_PROJET.md) |
 | Préparer les essais | [Mise en service](docs/MISE_EN_SERVICE.md) |
@@ -59,17 +59,17 @@ La feuille BQ25570 est une **copie exacte du fichier pédagogique d’origine**.
 ## Aperçus du schéma
 
 <table><tr>
-<td width="50%" align="center"><a href="Collier_Chien/rak3172.kicad_sch"><img src="docs/assets/schema_rak3172.png" alt="RAK3172 et antenne générique 868 MHz" width="480"></a><br><strong>Traitement et radio</strong></td>
-<td width="50%" align="center"><a href="Collier_Chien/accelerometre.kicad_sch"><img src="docs/assets/schema_accelerometre.png" alt="Accéléromètre LIS2HH12" width="480"></a><br><strong>Accélération sur trois axes</strong></td>
+<td width="50%" align="center"><a href="VeillePorte/rak3172.kicad_sch"><img src="docs/assets/schema_rak3172.png" alt="RAK3172 et antenne générique 868 MHz" width="480"></a><br><strong>Traitement et radio</strong></td>
+<td width="50%" align="center"><a href="VeillePorte/accelerometre.kicad_sch"><img src="docs/assets/schema_accelerometre.png" alt="Accéléromètre LIS2HH12" width="480"></a><br><strong>Accélération sur trois axes</strong></td>
 </tr></table>
 
-[Galerie complète](docs/GALERIE.md) · [Documentation électronique](Collier_Chien/README.md)
+[Galerie complète](docs/GALERIE.md) · [Documentation électronique](VeillePorte/README.md)
 
 ## Carte routée
 
 ![PCB de VeillePorte : face avant et pistes](docs/assets/pcb_avant.png)
 
-[Voir le dos, les hypothèses de fabrication et le rapport de contrôle](Collier_Chien/PCB.md).
+[Voir le dos, les hypothèses de fabrication et le rapport de contrôle](VeillePorte/PCB.md).
 
 ## Organisation
 
@@ -78,7 +78,7 @@ EDU_RAK_2026/
 ├── README.md                 # VeillePorte — projet d’Amira
 ├── CREDITS.md                # Origine et inspirations
 ├── CHANGELOG.md              # Évolution du projet
-├── Collier_Chien/            # Projet actif, PDF et rapport ERC
+├── VeillePorte/            # Projet actif, PDF et rapport ERC
 ├── docs/                     # Architecture, avancement et essais
 │   └── assets/               # Bannière et aperçus réels des schémas
 ├── tools/                    # Vérification reproductible des fichiers
@@ -91,7 +91,7 @@ EDU_RAK_2026/
 ## Reprendre le travail
 
 1. Cloner : `git clone https://github.com/amirabouraoui01-stack/EDU_RAK_2026.git`.
-2. Ouvrir `Collier_Chien/collier_chien.kicad_pro` avec **KiCad 10**.
+2. Ouvrir `VeillePorte/veilleporte.kicad_pro` avec **KiCad 10**.
 3. Consulter les feuilles, le PDF et [les contrôles](docs/ETAT_DU_PROJET.md).
 4. Confirmer la source d’énergie, le stockage et les contraintes de fabrication, puis valider le montage sur banc.
 
@@ -99,4 +99,5 @@ Le nom historique du dépôt est conservé pour garder son adresse GitHub. Le pr
 
 L’autonomie, la portée et la détection des ouvertures restent à mesurer. Le projet actuel ne comprend pas de GPS. [Crédits et sources](CREDITS.md).
 
-Les chemins historiques `Collier_Chien/` et `collier_chien.*` sont conservés pour préserver les liens KiCad, les exports et les rapports. Ils désignent désormais le matériel réutilisé pour VeillePorte ; le circuit n’a pas été modifié lors de ce changement d’application.
+
+Le projet actif se trouve désormais dans `VeillePorte/`, avec les fichiers principaux `veilleporte.*`. Le circuit reste identique ; le contact magnétique reste à intégrer.

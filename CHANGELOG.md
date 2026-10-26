@@ -1,5 +1,12 @@
 # Historique du projet
 
+## Renommage des fichiers — VeillePorte
+
+- Dossier actif `VeillePorte/`, fichiers principaux `veilleporte.*` et bibliothèque `VeillePorte.kicad_sym`.
+- Liens, références KiCad et outils actualisés.
+- Feuille BQ25570 et cuivre du PCB conservés.
+
+
 ## 26 octobre 2026 — VeillePorte
 
 - Nouvelle application : suivi des ouvertures de porte dans l’accompagnement des personnes atteintes de la maladie d’Alzheimer.
