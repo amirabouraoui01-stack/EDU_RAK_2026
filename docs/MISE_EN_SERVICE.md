@@ -10,9 +10,7 @@ Ouvrir [le projet](../VeillePorte/veilleporte.kicad_pro) dans KiCad 10. La bibli
 
 ## Alimentation
 
-Choisir une source et un stockage compatibles avec [la fiche BQ25570](../references/EDU_RAK_2026/Datasheets/bq25570.pdf). Vérifier polarité, tension, fuite et capacité. Les connexions J4 et J19 restent celles du schéma original. EN est reliée à GND depuis la feuille RAK ; VOUT_EN est reliée à VSTOR sur la feuille BQ.
-
-Le cavalier **J3 de la feuille BQ** relie la sortie buck à PWR. Vérifier le rail avant de brancher les autres blocs : la valeur nominale est environ 3,36 V, avec des tolérances et une dépendance aux conditions de charge.
+Suivre les [réglages supercapacité 4 V](ALIMENTATION.md) et confirmer la référence du stockage avant branchement. J3 relie le buck au rail PWR d’environ 3,118 V. VOUT_EN est piloté par VBAT_OK pour couper puis relancer le buck selon l’énergie disponible. Les seuils doivent être mesurés sur banc. Ne pas connecter une alimentation externe en parallèle sur PWR.
 
 ## Interfaces
 
@@ -28,7 +26,7 @@ AE1 est un symbole indicatif : avant les essais radio, choisir et connecter sur 
 
 ## Vérifier les fonctions
 
-Après développement du firmware, vérifier le VL53L4CD à l’adresse I²C 7 bits `0x29`, XSHUT en drain ouvert et l’interruption PA1 via Q1. Suivre [le guide IR](CAPTEUR_IR.md).
+Après développement du firmware, vérifier le VL53L4CD à l’adresse I²C 7 bits `0x29`, XSHUT en drain ouvert et l’interruption PA1 directe, sans rappel interne. Suivre [le guide IR](CAPTEUR_IR.md).
 
 | Essai | Mesures à relever |
 |---|---|

@@ -1,0 +1,23 @@
+{
+  "reference_TI": "SLUSBH2G eq. 2,3,4,5",
+  "supercapacite_max_V": 4,
+  "resistances_Mohm": {
+    "ROV1": 6.19,
+    "ROV2": 6.81,
+    "ROK1": 4.22,
+    "ROK2": 7.87,
+    "ROK3": 0.464,
+    "ROUT1": 4.99,
+    "ROUT2": 7.87
+  },
+  "tolerance_resistances": ".1% requise",
+  "VBAT_OV_nominal_V": 3.8117932148626816,
+  "VBAT_OK_bas_nominal_V": 3.4665639810426536,
+  "VBAT_OK_haut_nominal_V": 3.59960663507109,
+  "VOUT_nominal_V": 3.118356713426853,
+  "VOUT_EN": "VBAT_OK, buck coupe sous seuil bas puis redemarre au seuil haut",
+  "reference_originale_preservee": "references/EDU_RAK_2026/Hardware/Kicad/edu_rak_2026_kicad.zip",
+  "raison_modification_BQ": "Nouvelle demande utilisateur : regler les resistances pour supercapacite 4 V",
+  "OV_max_estime_2pourcent_V": 3.8880290791599355,
+  "OV_max_conservateur_2_2pourcent_V": 3.895652665589661
+}

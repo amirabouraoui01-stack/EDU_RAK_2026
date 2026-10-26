@@ -1,5 +1,14 @@
 # Historique du projet
 
+## 26 octobre 2026 — révision 0.5, supercapacité 4 V et lisibilité
+
+- Q1 et R14 supprimés après vérification des seuils GPIO ; VL53L4CD Pololu conservé.
+- BQ25570 : OV ~3,812 V, arrêt ~3,467 V, reprise ~3,600 V et rail ~3,118 V ; résistances de précision 0,1 %.
+- VBAT_OK commande VOUT_EN ; R9 passe à 3,3 MΩ pour le suivi PA0.
+- Cette demande de réglage remplace la conservation intégrale de la feuille BQ ; options NC et C22 inchangées.
+- Feuille RAK organisée en six cadres fonctionnels ; exports et contrôles actualisés.
+
+
 ## 26 octobre 2026 — schéma IR 0.4
 
 - Remplacement du LIS2HH12 par le raccordement du module externe Pololu 3692 / VL53L4CD.

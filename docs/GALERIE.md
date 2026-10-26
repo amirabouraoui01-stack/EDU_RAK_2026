@@ -26,8 +26,8 @@ Images issues des exports KiCad actuels. Elles montrent les fichiers de concepti
 
 [Feuille capteur IR](../VeillePorte/capteur_ir.kicad_sch).
 
-## Alimentation — BQ25570 originale
+## Alimentation — BQ25570 — supercapacité 4 V
 
 ![BQ25570 EDU RAK avec éléments NC et C22 conservés](assets/schema_bq25570.png)
 
-[Feuille BQ25570](../VeillePorte/alimentation.kicad_sch), identique au fichier d’origine.
+[Feuille BQ25570](../VeillePorte/alimentation.kicad_sch), adaptée aux seuils de la supercapacité 4 V.

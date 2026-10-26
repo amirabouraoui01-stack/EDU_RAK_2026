@@ -1,31 +1,35 @@
-# VL53L4CD — raccordement du module Pololu 3692
+# VL53L4CD — module Pololu 3692, révision 0.5
 
-[Accueil](../README.md) · [Schéma](../VeillePorte/capteur_ir.kicad_sch)
+[Accueil](../README.md) · [Schéma](../VeillePorte/capteur_ir.kicad_sch) · [Alimentation](ALIMENTATION.md)
 
-Le projet utilise le module complet, pas le composant nu. [Documentation et schéma du fabricant](https://www.pololu.com/product/3692). Le module contient son régulateur 2,8 V, les adaptations I²C et les résistances de rappel. Son adresse I²C 7 bits est `0x29`.
+Le module Pololu VL53L4CD reste retenu pour ses possibilités de détection ULP. Le VL53L1X Pimoroni PIM373 du lien Kubii est un autre module, avec un autre brochage et un autre pilote ; ce changement n’est pas appliqué. Aucune comparaison d’autonomie réelle entre ces deux cartes n’a été mesurée.
 
-| J23, câble du projet | Nom sur module | Liaison côté carte |
+| J23, câble défini pour le projet | Module Pololu | Carte RAK3172 |
 |---|---|---|
-| 1 | VIN | PWR nominal environ 3,36 V |
-| 2 | GND | Masse commune |
-| 3 | SDA | PA11, broche 10 RAK3172 |
+| 1 | VIN | PWR, environ 3,118 V |
+| 2 | GND | Masse |
+| 3 | SDA | PA11, broche 10 |
 | 4 | SCL | PA12, broche 9 |
-| 5 | VDD | Sortie 2,8 V du module vers grille Q1 uniquement |
-| 6 | GPIO1 | Source Q1 ; drain vers PA1, rappel R14 à PWR |
+| 5 | Non câblé | NC ; ne pas utiliser VDD du module |
+| 6 | GPIO1 | PA1, broche 6, entrée sans rappel interne |
 | 7 | XSHUT | PB5, broche 30, drain ouvert |
 
-**Cet ordre est celui du câble J23, pas l’ordre physique des pastilles Pololu.** Relier les fils en suivant les noms du module. Ne pas relier VDD à PWR. XSHUT : commander bas pour arrêter, haute impédance pour laisser démarrer ; ne jamais imposer un niveau haut PWR ou activer un rappel interne haut sur cette ligne.
+**J23 ne reproduit pas l’ordre physique des pastilles Pololu.** Suivre leurs noms pour fabriquer le câble. VDD est une sortie du module et reste non connectée. SDA/SCL sont déjà adaptés à VIN sur la carte Pololu ; ses rappels sont conservés.
 
-GPIO1 reste dans le domaine 2,8 V. Q1 BSS138 et R14 100 kΩ adaptent son signal au domaine MCU. Vérifier les niveaux et temps de montée sur banc. Les rappels SDA/SCL sont déjà sur le module ; R12/R13 sont retirées. C11 et C13 découplent l’alimentation du câble près de J23.
+## Pourquoi Q1 a été retiré
 
-## Détection et énergie
+GPIO1 est une sortie à drain ouvert avec rappel à 2,8 V sur le module. Le STM32WLE5 du RAK accepte un niveau haut à partir de 0,7 × VDD. Même en majorant le rail prévu à environ 3,19 V, cela représente environ 2,24 V : le niveau 2,8 V est suffisant sans translation supplémentaire. Q1 et R14 ne sont donc pas nécessaires. Ne pas ajouter de rappel PA1 à PWR, pour laisser le module imposer son propre niveau haut. Vérifier les niveaux et les fronts avec le câble réel.
 
-Cible proche stable : porte fermée ; distance supérieure valide : ouverte. Deux seuils et une temporisation évitent les oscillations. Une mesure invalide, un capteur débranché ou un reflet parasite doivent conduire à inconnu tant que le comportement n’a pas été caractérisé. Le capteur n’identifie pas la personne ni le sens de passage.
+XSHUT se commande uniquement bas ou haute impédance, sans rappel MCU au rail PWR. L’extinction matérielle arrête la détection ; laisser le module actif dans son mode autonome lorsqu’il doit surveiller la cible.
 
-Le mode ULP et le mode distance ne fournissent pas les mêmes données. Les 55 µA annoncés par ST à 1 Hz concernent une configuration ULP du capteur ; ils ne constituent pas le budget total du module et de la carte. La disparition de la cible doit être testée avec ce mode ; ne pas supposer qu’une interruption de présence signale aussi toute ouverture. Voir [le pilote ULP ST](https://www.st.com/en/embedded-software/stsw-img034).
+## Ce qui est inclus sur une carte de capteur
 
-Prévoir des acquisitions espacées ou le mode autonome approprié, le sommeil MCU et des transmissions limitées aux changements plus un message périodique. Mesurer la consommation moyenne et les pointes : Pololu indique environ 25 mA typiques en mesure active et jusqu’à 40 mA de pointe. Ces pointes doivent être vérifiées avec le BQ25570 et le stockage ; aucune autonomie à « 10 % » n’est calculable sans les caractéristiques du stockage.
+Un régulateur d’alimentation et un adaptateur de signaux ont des fonctions différentes. L’indication « 3–6 V » sur un module n’indique pas à elle seule la tension de sa sortie INT. Pour le Pimoroni PIM373, le fabricant annonce une compatibilité 3,3 V / 5 V ; son brochage n’est pas celui utilisé ici. Le schéma détaillé de son interruption n’a pas été confirmé pendant cette revue.
 
-## État
+## Énergie et détection
 
-Schéma de raccordement réalisé, firmware non développé, montage non testé. Le PCB antérieur avec accéléromètre est archivé ; le nouveau PCB reste à concevoir. La feuille BQ25570 est inchangée.
+Les 55 µA annoncés par ST correspondent à une configuration ULP à 1 Hz sous 2,8 V du capteur, pas à la consommation totale du système. Le mode ULP ne fournit pas les distances du mode standard. Caractériser l’ouverture et la disparition de cible avant de choisir la stratégie de réveil. Une mesure invalide doit rester distincte d’une porte certainement ouverte. La fréquence d’acquisition détermine le risque de manquer une ouverture brève.
+
+Mesurer les courants moyens et de pointe, notamment le régulateur et les rappels de la carte. Éviter de superposer mesure active du capteur et émission radio avant d’avoir vérifié le budget du buck. Ni l’énergie disponible ni l’autonomie ne se déduisent de la seule indication « 10 % ».
+
+Sources : [Pololu 3692](https://www.pololu.com/product/3692), [seuils GPIO STM32WLE5](https://www.st.com/resource/en/datasheet/stm32wle5cc.pdf), [pilote ULP ST](https://www.st.com/en/embedded-software/stsw-img034), [Pimoroni PIM373](https://shop.pimoroni.com/products/vl53l1x-breakout).

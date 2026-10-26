@@ -6,7 +6,7 @@ Projet d’**Amira — [amirabouraoui01-stack](https://github.com/amirabouraoui0
 
 Un module infrarouge de distance VL53L4CD (Pololu 3692), fixé sur le cadre face à une cible sur la porte, permettra de qualifier son état. Le RAK3172 transmettra les changements par **LoRaWAN 868 MHz**. Un tableau de bord permettra au personnel de consulter l’état reçu, l’heure de réception et les événements pendant les horaires de surveillance configurés.
 
-**Révision IR 0.4 :** l’accéléromètre est remplacé dans le schéma par le raccordement du module VL53L4CD : I²C, interruption adaptée en niveau et commande de veille. Le BQ25570 est inchangé. Le PCB de 60 × 30 mm avec accéléromètre est conservé dans `archive_avant_ir/` ; **le PCB de la révision IR reste à réaliser**. Les anciens résultats DRC ne valident pas le nouveau schéma. Aucun programme ou essai physique IR n’est encore réalisé.
+**Révision 0.5 :** l’accéléromètre est remplacé dans le schéma par le raccordement du module VL53L4CD : I²C, interruption directe 2,8 V et commande de veille. Le BQ25570 est réglé pour une supercapacité limitée à 4 V ; voir le guide de dimensionnement. Le PCB de 60 × 30 mm avec accéléromètre est conservé dans `archive_avant_ir/` ; **le PCB de la révision IR reste à réaliser**. Les anciens résultats DRC ne valident pas le nouveau schéma. Aucun programme ou essai physique IR n’est encore réalisé.
 
 Une ouverture ne permet pas de savoir qui passe ni si une personne sort effectivement. Ce prototype pédagogique apporte une information complémentaire au personnel ; aucune prévention de sortie ou surveillance clinique garantie n’est revendiquée.
 
@@ -53,7 +53,7 @@ flowchart LR
 
 J23 est un connecteur de câble défini pour ce projet : son ordre de broches ne reproduit pas l’ordre physique du module. Voir [le câblage IR](docs/CAPTEUR_IR.md).
 
-La feuille BQ25570 est une **copie exacte du fichier pédagogique d’origine**. Les résistances NC et **C22** sont conservées sans correction. Le raccordement externe d’EN à la masse se fait sur la feuille RAK3172 ; le fichier BQ reste inchangé.
+La feuille BQ25570 est désormais adaptée à la demande d’Amira pour une **supercapacité 4 V maximum**. Les options NC et C22 restent conservées. Le fichier original demeure dans l’archive EDU RAK. [Valeurs, hystérésis et limites](docs/ALIMENTATION.md).
 
 ## Aperçus du schéma
 
@@ -99,4 +99,4 @@ Le nom historique du dépôt est conservé pour garder son adresse GitHub. Le pr
 L’autonomie, la portée et la détection des ouvertures restent à mesurer. Le projet actuel ne comprend pas de GPS. [Crédits et sources](CREDITS.md).
 
 
-Le projet actif se trouve désormais dans `VeillePorte/`, avec les fichiers principaux `veilleporte.*`. Le circuit reste identique ; le PCB IR reste à réaliser.
+Le projet actif se trouve désormais dans `VeillePorte/`, avec les fichiers principaux `veilleporte.*`. Le schéma 0.5 inclut les nouveaux réglages ; le PCB IR reste à réaliser.

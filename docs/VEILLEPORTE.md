@@ -22,7 +22,7 @@ Le dispositif détecte un changement de distance, sans identifier le patient, le
 
 ## Alimentation et disponibilité
 
-L’éclairage d’un couloir ou d’une chambre peut être insuffisant pour assurer une alimentation solaire continue. Mesurer l’énergie récoltée, la consommation, les pointes radio et l’autonomie dans l’obscurité avant d’annoncer une durée de fonctionnement. Le fichier BQ25570 reste strictement inchangé, avec ses résistances NC et C22.
+L’éclairage d’un couloir ou d’une chambre peut être insuffisant pour assurer une alimentation solaire continue. Mesurer l’énergie récoltée, la consommation, les pointes radio et l’autonomie dans l’obscurité avant d’annoncer une durée de fonctionnement. Le BQ25570 est réglé pour une supercapacité 4 V ; les options NC et C22 sont conservées.
 
 Une perte de réseau ou d’alimentation doit rendre l’état affiché inconnu après expiration d’un délai défini. Un message radio émis ne prouve pas qu’il a été reçu. Aucun fonctionnement clinique ni délai de livraison garanti n’a été validé.
 
