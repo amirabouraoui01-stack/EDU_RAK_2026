@@ -1,16 +1,16 @@
-<p align="center"><img src="docs/assets/collier-banniere.svg" alt="Collier connecté d’Amira — accélération et LoRa" width="100%"></p>
+<p align="center"><img src="docs/assets/collier-banniere.svg" alt="ColisCare — suivi des chocs pendant le transport" width="100%"></p>
 
-# Collier connecté — accélération et LoRa
+# ColisCare — suivi des chocs pour colis fragiles
 
-Projet personnel d’**Amira — [amirabouraoui01-stack](https://github.com/amirabouraoui01-stack)** : concevoir l’électronique d’un collier pour chien qui mesure les mouvements sur trois axes, puis prépare leur transmission radio avec un **RAK3172**.
+Projet personnel d’**Amira — [amirabouraoui01-stack](https://github.com/amirabouraoui01-stack)** : développer un boîtier placé dans un colis fragile pour détecter les chocs sur trois axes et préparer leur transmission radio avec un **RAK3172**.
 
-**État au 14 octobre 2026 :** schéma et **PCB routé de 60 × 30 mm**, avec **47 composants**, deux couches et un plan de masse. Contrôle KiCad : **0 violation DRC, 0 connexion manquante, 0 problème de parité**. L’antenne est externe, pour 868 MHz, et la feuille BQ25570 d’EDU RAK reste identique à l’original. Les essais, le firmware, le boîtier et la validation de fabrication restent à réaliser.
+**État au 26 octobre 2026 :** schéma et **PCB routé de 60 × 30 mm**, avec **47 composants**, deux couches et un plan de masse. Contrôle KiCad : **0 violation DRC, 0 connexion manquante, 0 problème de parité**. L’antenne est externe, pour 868 MHz, et la feuille BQ25570 d’EDU RAK reste identique à l’original. Les essais, le firmware, le boîtier et la validation de fabrication restent à réaliser.
 
 ## Accès au projet
 
 | Pour… | Ouvrir… |
 |---|---|
-| Modifier dans KiCad 10 | [Projet du collier](Collier_Chien/collier_chien.kicad_pro) |
+| Modifier dans KiCad 10 | [Projet ColisCare](Collier_Chien/collier_chien.kicad_pro) |
 | Voir la carte routée | [PCB 60 × 30 mm](Collier_Chien/collier_chien.kicad_pcb) · [Règles et contrôles](Collier_Chien/PCB.md) |
 | Lire le schéma | [PDF complet — quatre pages](Collier_Chien/collier_chien.pdf) |
 | Explorer les feuilles | [Schéma principal](Collier_Chien/collier_chien.kicad_sch) |
@@ -20,7 +20,11 @@ Projet personnel d’**Amira — [amirabouraoui01-stack](https://github.com/amir
 
 ## Le fonctionnement visé
 
-Le **LIS2HH12** fournit les accélérations `ax`, `ay`, `az`. Le **RAK3172** pourra lire ces mesures, exploiter l’interruption de mouvement et transmettre des données par LoRa. Cette séquence reste à développer dans le firmware.
+ColisCare vise les livraisons fragiles : verrerie, instruments de musique ou matériel électronique. Fixé dans l’emballage, le boîtier détectera les accélérations dépassant un seuil, comptera les événements et préparera un bilan transmissible par LoRa lorsqu’une passerelle est accessible. Le firmware et le service de réception restent à développer.
+
+Un choc détecté pourra justifier une inspection à réception ; il ne prouve pas que le contenu est endommagé. La plage, la fréquence de mesure et les seuils devront être testés avec chaque emballage. Le capteur peut saturer lors de chocs forts ; aucune mesure illimitée de leur intensité n’est promise.
+
+[Scénario, données et protocole d’essais](docs/COLISCARE.md).
 
 ```mermaid
 flowchart LR
@@ -34,7 +38,7 @@ flowchart LR
   R --> ANT[Antenne générique 868 MHz]
 ```
 
-## Électronique du collier
+## Électronique de ColisCare
 
 | Bloc | Composant | Fonction |
 |---|---|---|
@@ -57,7 +61,7 @@ La feuille BQ25570 est une **copie exacte du fichier pédagogique d’origine**.
 
 ## Carte routée
 
-![PCB du collier : face avant et pistes](docs/assets/pcb_avant.png)
+![PCB de ColisCare : face avant et pistes](docs/assets/pcb_avant.png)
 
 [Voir le dos, les hypothèses de fabrication et le rapport de contrôle](Collier_Chien/PCB.md).
 
@@ -65,7 +69,7 @@ La feuille BQ25570 est une **copie exacte du fichier pédagogique d’origine**.
 
 ```text
 EDU_RAK_2026/
-├── README.md                 # Collier connecté d’Amira
+├── README.md                 # ColisCare — projet d’Amira
 ├── CREDITS.md                # Origine et inspirations
 ├── CHANGELOG.md              # Évolution du projet
 ├── Collier_Chien/            # Projet actif, PDF et rapport ERC
@@ -85,6 +89,8 @@ EDU_RAK_2026/
 3. Consulter les feuilles, le PDF et [les contrôles](docs/ETAT_DU_PROJET.md).
 4. Confirmer la source d’énergie, le stockage et les contraintes de fabrication, puis valider le montage sur banc.
 
-Le nom historique du dépôt est conservé pour garder son adresse GitHub. Le projet actif et cette page sont dédiés au collier. Les anciens PCB et photos dans `references/` décrivent EDU RAK ; ils ne représentent pas une carte de collier fabriquée.
+Le nom historique du dépôt est conservé pour garder son adresse GitHub. Le projet actif et cette page sont dédiés à ColisCare. Les anciens PCB et photos dans `references/` décrivent EDU RAK ; ils ne représentent pas une carte ColisCare fabriquée.
 
-L’autonomie, la portée et la classification de l’activité restent à mesurer. Le projet actuel ne comprend pas de GPS. [Crédits et sources](CREDITS.md).
+L’autonomie, la portée et la détection des chocs restent à mesurer. Le projet actuel ne comprend pas de GPS. [Crédits et sources](CREDITS.md).
+
+Les chemins historiques `Collier_Chien/` et `collier_chien.*` sont conservés pour préserver les liens KiCad, les exports et les rapports. Ils désignent désormais le matériel réutilisé pour ColisCare ; le circuit n’a pas été modifié lors de ce changement d’application.

@@ -2,7 +2,7 @@
 
 [Accueil](../README.md) · [Architecture](ARCHITECTURE.md)
 
-Ce guide prépare les futurs essais : il n’existe pas encore de prototype du collier validé.
+Ce guide prépare les futurs essais : il n’existe pas encore de prototype ColisCare validé.
 
 ## Ouvrir les fichiers
 
@@ -38,4 +38,4 @@ Après développement du firmware : vérifier la réponse I²C du LIS2HH12 à `0
 | Émission | Courant de pointe, chute de PWR, durée, puissance RF |
 | Autonomie | Capacité réelle, fuite, cadence, conditions de récupération |
 
-Ces essais doivent précéder l’intégration finale au collier.
+Ces essais doivent précéder l’intégration finale au colis.

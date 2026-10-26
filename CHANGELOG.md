@@ -1,4 +1,11 @@
-# Historique du collier
+# Historique du projet
+
+## 26 octobre 2026 — ColisCare
+
+- Nouvelle application : suivi des chocs pendant les livraisons fragiles.
+- Présentation, bannière, architecture et protocole d’essais adaptés.
+- Circuit, fichiers KiCad, exports et feuille BQ25570 conservés à l’identique.
+- Les noms historiques des fichiers et l’historique ci-dessous restent conservés.
 
 ## 14 octobre 2026 — routage du PCB
 

@@ -1,4 +1,4 @@
-# Schéma KiCad du collier — révision 0.3
+# Schéma KiCad de ColisCare — révision 0.3
 
 [Accueil du projet](../README.md) · [PDF](collier_chien.pdf) · [État et contrôles](../docs/ETAT_DU_PROJET.md)
 
