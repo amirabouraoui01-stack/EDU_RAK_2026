@@ -1,28 +1,21 @@
-# État de VeillePorte — révision 0.6
+# État du projet VeillePorte
 
-Une [vue complète A2](SCHEMA_COMPLET.md) est disponible en présentation 0.6 : une page avec les fils entre blocs, 44 composants, 43 groupes de connexions identiques à la référence, 0 erreur ERC et 3 avertissements conservés. Aucun changement électrique n’est introduit par cette présentation.
+[Accueil](../README.md) · [Schéma final](SCHEMA_COMPLET.md)
 
-[Accueil](../README.md) · [Câblage](CAPTEUR_IR.md)
-
-| Partie | État |
+| Élément | État retenu |
 |---|---|
-| Schéma | RAK3172 + BQ25570 + VL53L4CD Pololu 3692 + antenne IFA 868 MHz |
-| Accéléromètre | Retiré du schéma actif |
-| Alimentation BQ25570 | Réglé pour supercapacité 4 V ; options NC et C22 conservées |
-| Interface IR | J23, I²C, interruption directe sur PA1, XSHUT vers PB5 |
-| ERC | 0 erreur, 3 avertissements conservés |
-| Vérification netlist | AE1 ajouté à `/RF` et à la masse ; autres connexions de référence inchangées |
-| PCB IR | À réaliser ; dimensions visées 60 × 30 mm |
-| Ancien PCB | Archivé avec LIS2HH12, non compatible avec la révision IR |
-| Firmware, LoRaWAN, tableau de bord | À développer |
-| Antenne | Empreinte KiCad liée à AE1 ; S11 CST ≈ −12,01 dB à 868 MHz, 82 620 cellules ; diagramme farfield à exporter |
-| Boîtier | Panneau et boîtier à intégrer au modèle électromagnétique |
-| Alimentation et essais physiques | À valider |
+| Schéma | Une page KiCad A2 avec alimentation, RAK3172, capteur IR, interfaces et antenne |
+| BQ25570 | Seuils calculés pour stockage 4 V max ; composants NC et C22 conservés |
+| Capteur | Module VL53L4CD Pololu 3692 externe relié par J23 |
+| Antenne | Empreinte IFA 868 MHz liée à RF et masse ; résultats CST préliminaires |
+| ERC | 0 erreur, 3 avertissements connus |
+| Netlist | 45 composants et 43 groupes de connexions |
+| PCB final | À placer et router ; 60 × 30 mm reste l’objectif de départ, ajustement antenne à vérifier |
+| Firmware et LoRaWAN | À développer et tester |
+| Boîtier et panneau | Panneau solaire environ 50 × 50 mm ; géométrie et matériaux à intégrer |
+| Mesures physiques | Non réalisées ; consommation, autonomie, portée et détection restent à valider |
 
-Les trois avertissements ERC concernent la différence entre le symbole BQ embarqué et la bibliothèque installée, les noms GND/EN sur la même masse et les labels local/global de masse. Aucun avertissement n’est masqué. [Rapport ERC](../VeillePorte/erc.json) · [Vérification des raccordements et du BQ](verification_schema.json).
+L’antenne simplifiée atteint un S11 simulé d’environ −12,01 dB à 868 MHz avec 82 620 cellules. Cela ne démontre ni un gain ni un rendement suffisant. Le diagramme farfield reste à exporter depuis CST.
 
-Les anciens DRC à zéro et le rapport `verification_pcb.json` décrivent uniquement la carte avant IR ; ils ne valident pas un nouveau PCB. La commande `python tools/verifier_schema.py` contrôle le schéma IR et la conservation octet pour octet du BQ.
+Les trois avertissements ERC connus portent sur le symbole BQ, les noms EN/GND sur la même masse et les labels locaux/globaux. Aucun n’est masqué. Voir le [rapport ERC](../VeillePorte/erc_complet.json) et le [rapport de vérification](verification_schema_complet.json).
 
-## Révision 0.5 : alimentation et présentation
-
-Q1/R14 supprimés, interruption directe compatible. BQ adapté à la supercapacité 4 V et VBAT_OK relié à VOUT_EN ; voir [les calculs](ALIMENTATION.md). Six cadres organisent la feuille RAK. Le PCB reste à réaliser pour cette révision.

@@ -1,6 +1,6 @@
-# VL53L4CD — module Pololu 3692, révision 0.5
+# VL53L4CD — module Pololu 3692
 
-[Accueil](../README.md) · [Schéma](../VeillePorte/capteur_ir.kicad_sch) · [Alimentation](ALIMENTATION.md)
+[Accueil](../README.md) · [Schéma](../VeillePorte/veilleporte_complet.kicad_sch) · [Alimentation](ALIMENTATION.md)
 
 Le module Pololu VL53L4CD reste retenu pour ses possibilités de détection ULP. Le VL53L1X Pimoroni PIM373 du lien Kubii est un autre module, avec un autre brochage et un autre pilote ; ce changement n’est pas appliqué. Aucune comparaison d’autonomie réelle entre ces deux cartes n’a été mesurée.
 
@@ -33,3 +33,4 @@ Les 55 µA annoncés par ST correspondent à une configuration ULP à 1 Hz sous 
 Mesurer les courants moyens et de pointe, notamment le régulateur et les rappels de la carte. Éviter de superposer mesure active du capteur et émission radio avant d’avoir vérifié le budget du buck. Ni l’énergie disponible ni l’autonomie ne se déduisent de la seule indication « 10 % ».
 
 Sources : [Pololu 3692](https://www.pololu.com/product/3692), [seuils GPIO STM32WLE5](https://www.st.com/resource/en/datasheet/stm32wle5cc.pdf), [pilote ULP ST](https://www.st.com/en/embedded-software/stsw-img034), [Pimoroni PIM373](https://shop.pimoroni.com/products/vl53l1x-breakout).
+

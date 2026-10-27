@@ -1,21 +1,22 @@
-# Schéma complet sur une page
+# Schéma électrique retenu
 
-[Accueil](../README.md) · [Projet KiCad](../VeillePorte/veilleporte_complet.kicad_pro) · [Schéma](../VeillePorte/veilleporte_complet.kicad_sch) · [PDF](../VeillePorte/veilleporte_complet.pdf)
+[Accueil](../README.md) · [Projet KiCad](../VeillePorte/veilleporte_complet.kicad_pro) · [Schéma](../VeillePorte/veilleporte_complet.kicad_sch) · [PDF A2](../VeillePorte/veilleporte_complet.pdf)
 
-La vue recommandée est `veilleporte_complet.kicad_pro`. Elle contient une seule page A2 avec l’alimentation BQ25570, le RAK3172, le connecteur du module IR, l’antenne IFA 868 MHz avec ses broches RF et GND, UART, SWD, BOOT/reset et le suivi du stockage. AE1 utilise l’empreinte locale `VeillePorte_Antennes:IFA_868_CST_30x20_PisteFine`.
+Le seul schéma de conception actif est une page A2. Il réunit le BQ25570, le RAK3172, le connecteur du module VL53L4CD Pololu 3692, l’antenne IFA 868 MHz, UART, SWD, reset, BOOT0 et le suivi du stockage.
 
-Les liaisons entre fonctions sont tracées : alimentation et masse, I²C SDA/SCL, interruption IR, XSHUT, état du stockage, UART, SWD, reset, BOOT0 et RF. Les symboles et étiquettes PWR/GND répétés restent des connexions conventionnelles aux mêmes rails. Un croisement de fils sans point ne représente pas une jonction ; les points indiquent les dérivations.
+J23 est le câble vers le module, pas son brochage physique. Sa broche 5 est non connectée. Les liaisons d’alimentation, de masse, I²C, interruption, XSHUT et interfaces sont tracées dans le schéma.
 
-J23 est le câble vers le module Pololu 3692 externe, pas son brochage physique. La broche 5 de J23 reste non connectée ; suivre les noms de pastilles décrits dans [le guide IR](CAPTEUR_IR.md).
+## Antenne
 
-## Contrôles
+AE1 utilise l’empreinte locale VeillePorte_Antennes:IFA_868_CST_30x20_PisteFine. La broche 1 est sur /RF ; la broche 2 est sur le net de masse du projet. J20 est aussi sur le réseau RF : le routage du PCB devra choisir la topologie RF finale.
 
-Le schéma complet contient maintenant 45 composants et 43 groupes de connexions. Il reprend les connexions de référence des 44 composants d’origine, puis ajoute AE1 : sa broche 1 rejoint `/RF` et sa broche 2 la masse. Le contrôle ERC donne 0 erreur et 3 avertissements conservés (symbole BQ d’origine, noms EN/GND et labels local/global de masse). [Rapport actualisé](verification_schema_complet.json) · [Netlist](../VeillePorte/veilleporte_complet.net) · [ERC complet](../VeillePorte/erc_complet.json).
+## Vérifications actuelles
 
-Après réexport des deux netlists et du rapport ERC : `python tools/verifier_schema_complet.py`. Le contrôle compare les ensembles de broches connectées, indépendamment du nom choisi par KiCad pour chaque net.
+Le netlist KiCad compte 45 composants et 43 groupes de connexions. Le rapport ERC indique 0 erreur et 3 avertissements conservés : symbole BQ intégré différent de la bibliothèque, alias de masse EN/GND et labels local/global de masse. Le script de vérification contrôle le netlist final, le raccordement de l’antenne et les réglages autorisés du BQ25570 à partir de l’archive EDU RAK.
 
-## Fichiers conservés
+- [Netlist finale](../VeillePorte/veilleporte_complet.net)
+- [Rapport ERC final](../VeillePorte/erc_complet.json)
+- [Rapport de vérification](verification_schema_complet.json)
 
-`veilleporte.kicad_pro` et ses feuilles restent la référence de la révision 0.5 ayant servi à créer cette vue. L’ajout d’AE1 est une extension de la seule vue complète ; le rapport compare donc les connexions de référence hors antenne et vérifie séparément les deux broches d’AE1. La vue complète a sa propre netlist et son rapport ERC.
+Le PCB, le firmware et les essais physiques restent à réaliser. Le schéma ne valide pas le fonctionnement sur banc.
 
-Le PDF est conçu pour le format A2 : zoomer à l’écran ou imprimer au format approprié. Le PCB IR, le firmware et les essais physiques restent à réaliser ; cette réunion des feuilles ne valide pas le fonctionnement sur banc.

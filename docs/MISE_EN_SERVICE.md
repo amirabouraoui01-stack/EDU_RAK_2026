@@ -1,39 +1,33 @@
-# Préparer la mise en service
+# Préparer les essais de VeillePorte
 
-[Accueil](../README.md) · [Architecture](ARCHITECTURE.md)
+[Accueil](../README.md) · [Projet KiCad retenu](../VeillePorte/veilleporte_complet.kicad_pro) · [Spécification](VEILLEPORTE.md)
 
-Ce guide prépare les futurs essais : il n’existe pas encore de prototype VeillePorte validé.
-
-## Ouvrir les fichiers
-
-Ouvrir [le projet](../VeillePorte/veilleporte.kicad_pro) dans KiCad 10. La bibliothèque `VeillePorte.kicad_sym` fournit les symboles locaux ; la feuille BQ utilise ses symboles embarqués. Le [PDF](../VeillePorte/veilleporte.pdf) permet une lecture sans KiCad.
+Le schéma est disponible, mais aucun prototype VeillePorte n’a encore été validé sur banc. Ce guide liste les vérifications à effectuer après réalisation du PCB et du firmware.
 
 ## Alimentation
 
-Suivre les [réglages supercapacité 4 V](ALIMENTATION.md) et confirmer la référence du stockage avant branchement. J3 relie le buck au rail PWR d’environ 3,118 V. VOUT_EN est piloté par VBAT_OK pour couper puis relancer le buck selon l’énergie disponible. Les seuils doivent être mesurés sur banc. Ne pas connecter une alimentation externe en parallèle sur PWR.
+Confirmer la référence de la supercapacité et sa tension maximale avant branchement. Le BQ25570 est réglé pour une capacité limitée à 4 V : fin de charge vers 3,812 V, arrêt du buck vers 3,467 V, reprise vers 3,600 V, rail PWR proche de 3,118 V. J3 relie le buck au rail. Mesurer ces seuils, le rail et ses creux pendant les acquisitions et les émissions.
 
 ## Interfaces
 
-| Connecteur | Brochage |
+| Interface | Affectation |
 |---|---|
-| J20 RF | Centre RF 50 Ω ; blindage GND |
-| J21 UART2 | 1 PWR ; 2 GND ; 3 TX module ; 4 RX module |
-| J22 SWD | 1 référence PWR ; 2 GND ; 3 SWDIO ; 4 SWCLK ; 5 NRST |
+| J20 RF | Accès coaxial au réseau RF ; vérifier son usage avec l’antenne IFA imprimée |
+| J21 UART2 | PWR, GND, TX module, RX module |
+| J22 SWD | PWR, GND, SWDIO, SWCLK, NRST |
+| J23 capteur | VIN, GND, SDA, SCL, NC, GPIO1, XSHUT |
 
-Utiliser un adaptateur UART logique 3,3 V, croiser TX/RX et partager la masse. Éviter deux sources d’alimentation simultanées sur PWR. La méthode de programmation doit correspondre au firmware installé.
+Utiliser un adaptateur UART logique 3,3 V, croiser TX/RX et partager la masse. Ne pas alimenter PWR par deux sources en parallèle. Pour J23, suivre les noms des broches du module Pololu 3692, pas leur position physique : sa broche VDD reste non connectée.
 
-AE1 est un symbole indicatif : avant les essais radio, choisir et connecter sur J20 une antenne réelle adaptée à 868 MHz. La liaison RF et son environnement doivent être validés.
+## Qualification de la porte
 
-## Vérifier les fonctions
+Après développement du firmware, tester cible proche, cible éloignée, cible absente, mesure invalide, démarrage, lumière ambiante, mouvement lent et ouverture rapide. Régler deux seuils et une temporisation pour éviter les oscillations. Mesurer les ouvertures manquées et les délais de mise à jour.
 
-Après développement du firmware, vérifier le VL53L4CD à l’adresse I²C 7 bits `0x29`, XSHUT en drain ouvert et l’interruption PA1 directe, sans rappel interne. Suivre [le guide IR](CAPTEUR_IR.md).
+Le mode ULP du capteur ne fournit pas les distances du mode normal. Vérifier que l’absence de cible et une panne de capteur produisent un état inconnu plutôt qu’une ouverture certaine.
 
-| Essai | Mesures à relever |
-|---|---|
-| Démarrage | État de la source/du stockage, délai, rail PWR |
-| Veille | Courant et configuration de réveil |
-| Acquisition | Axes, fréquence et consommation |
-| Émission | Courant de pointe, chute de PWR, durée, puissance RF |
-| Autonomie | Capacité réelle, fuite, cadence, conditions de récupération |
+## Énergie et radio
 
-Ces essais doivent précéder l’intégration finale à la porte d’essai.
+Mesurer courant de veille, courant moyen, pointes radio, tension du stockage et autonomie dans l’obscurité. Tester réseau absent, redémarrage, messages dupliqués et expiration des données sur le futur tableau de bord. Un paquet transmis n’est pas une preuve de réception.
+
+Avant routage, réserver la zone de 30 × 20 mm de l’antenne IFA. J20 et AE1 partagent le réseau RF : déterminer la topologie d’alimentation RF pour éviter une branche ouverte ou une antenne externe en parallèle avec l’antenne imprimée.
+

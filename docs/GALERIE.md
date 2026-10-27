@@ -1,37 +1,11 @@
-> Révision IR : les vues PCB ci-dessous sont historiques (avant IR). Le nouveau schéma utilise le module VL53L4CD.
+# Fichiers visuels de la version retenue
 
-[Vue complète avec les branchements — PDF A2](../VeillePorte/veilleporte_complet.pdf).
+[Accueil](../README.md)
 
-![Schéma complet avec les liaisons entre blocs](assets/schema_complet.png)
+- [Schéma complet A2 en PDF](../VeillePorte/veilleporte_complet.pdf)
+- [Schéma KiCad modifiable](../VeillePorte/veilleporte_complet.kicad_pro)
+- [Aperçu CST de l’antenne IFA à piste fine](../VeillePorte/cst/veilleporte_868_piste_basse.png)
+- [Empreinte KiCad de l’antenne](../VeillePorte/footprints/VeillePorte_Antennes.pretty/IFA_868_CST_30x20_PisteFine.kicad_mod)
 
-# Galerie des schémas
+L’image CST montre la géométrie du modèle, pas le diagramme de rayonnement. L’export du farfield reste à faire. Aucun PCB VeillePorte final n’a encore été placé ou fabriqué.
 
-[Accueil](../README.md) · [PDF complet](../VeillePorte/veilleporte.pdf)
-
-Images issues des exports KiCad actuels. Elles montrent les fichiers de conception, pas une carte fabriquée.
-
-## PCB routé — 60 × 30 mm
-
-![Face avant, cuivre et implantation](assets/pcb_avant.png)
-
-![Face arrière en miroir, plan de masse et pistes](assets/pcb_arriere.png)
-
-[Ouvrir le PCB](../VeillePorte/archive_avant_ir/veilleporte.kicad_pcb) · [Lire les contrôles et les hypothèses](../VeillePorte/PCB.md).
-
-## RAK3172 et antenne générique 868 MHz
-
-![RAK3172 et antenne 868 MHz indicative](assets/schema_rak3172.png)
-
-[Feuille RAK3172](../VeillePorte/rak3172.kicad_sch).
-
-## Accélération — VL53L4CD
-
-![VL53L4CD, I²C et INT1](assets/schema_ir.png)
-
-[Feuille capteur IR](../VeillePorte/capteur_ir.kicad_sch).
-
-## Alimentation — BQ25570 — supercapacité 4 V
-
-![BQ25570 EDU RAK avec éléments NC et C22 conservés](assets/schema_bq25570.png)
-
-[Feuille BQ25570](../VeillePorte/alimentation.kicad_sch), adaptée aux seuils de la supercapacité 4 V.

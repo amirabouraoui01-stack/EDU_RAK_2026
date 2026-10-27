@@ -1,31 +1,23 @@
-# Antenne 868 MHz — étude CST
+# Antenne IFA 868 MHz — version retenue
 
-[Accueil](../README.md) · [Modèles, macros et hypothèses](../VeillePorte/cst/README.md)
+[Accueil](../README.md) · [Modèle CST et fichiers](../VeillePorte/cst/README.md) · [Empreinte KiCad](EMPREINTE_ANTENNE.md)
 
-L’étude utilise un PCB 30 × 60 mm et une zone rayonnante de 30 × 20 mm. La variante active est une antenne en F inversé à quatre branches et retour de piste fin, calculée dans CST Studio Suite 2026. Les plans de masse occupent les 40 autres millimètres de longueur.
+Le modèle retenu est une antenne imprimée en F inversé, sur une carte théorique de 30 × 60 × 0,8 mm. Le radiateur occupe l’extrémité de 30 × 20 mm ; le plan de masse couvre les 40 mm restants. Le grand rectangle de réglage a été remplacé par un retour de piste de 0,5 mm.
 
-L’ancien [modèle de référence avec plaque](../VeillePorte/cst/veilleporte_868_reference.cst) donne environ **−14,07 dB à 868 MHz**, avec 81 000 cellules et le critère d’énergie atteint. Les points sous −10 dB couvrent approximativement 863,18 à 872,82 MHz dans ce modèle simplifié. [Synthèse et paramètres](../VeillePorte/cst/synthese_cst.json).
+## Résultat CST disponible
 
-Les fichiers CST sont réellement générés et les traces `s11_*.txt` sont exportées par le solveur. La [synthèse numérique](../VeillePorte/cst/resultats_simulation.json) et les [courbes](../VeillePorte/cst/comparaison_s11.svg) permettent de comparer les essais. Un bon S11 décrit l’adaptation de cette simulation ; il ne garantit pas le rendement ou la portée de l’appareil.
+- S11 à 868 MHz : **−12,01 dB**.
+- Minimum échantillonné : **−13,51 dB vers 865,32 MHz**.
+- Maillage : **82 620 cellules** ; critère d’énergie −40 dB atteint.
+- [Modèle CST](../VeillePorte/cst/veilleporte_868_piste_basse.cst) · [Export S11](../VeillePorte/cst/s11_veilleporte_868_piste_basse.txt) · [Synthèse](../VeillePorte/cst/synthese_piste_fine.json).
 
-## Nouvelle forme à piste fine
+Le moniteur farfield est défini à 868 MHz, mais son diagramme n’a pas encore été exporté comme image ou fichier de données. Le S11 n’indique pas à lui seul le gain, le rendement ou la forme du rayonnement. L’export sera à réaliser dans CST après ouverture du modèle et chargement ou recalcul des résultats.
 
-Le modèle actif est [veilleporte_868_piste_basse.cst](../VeillePorte/cst/veilleporte_868_piste_basse.cst). Le rectangle plein est supprimé et remplacé par un retour de 0,5 mm. S11 simulé ≈ **−12,01 dB à 868 MHz**, 82 620 cellules ; minimum vers 865,32 MHz. [Synthèse de cette variante](../VeillePorte/cst/synthese_piste_fine.json).
+## Hypothèses et limites
 
-## Diagramme de rayonnement (*farfield*)
+La simulation est une carte seule avec substrat FR4 supposé (εr = 4,3 ; tan δ = 0,02) et conducteurs PEC. Elle simplifie le plan de masse, le pont entre faces et l’excitation 50 Ω. Elle ne comprend ni le RAK3172 détaillé, ni le connecteur, ni le panneau solaire 50 × 50 mm, ni les fils, le boîtier, la colle ou le support de porte. Le rendement, l’accord final et la portée ne sont donc pas validés.
 
-Le modèle actif contient un moniteur de champ lointain à **868 MHz** et le solveur avait atteint le critère d’énergie de −40 dB. Les fichiers de calcul CST sont dans le cache local, qui n’est pas transféré par Git. Le fichier texte et l’image du diagramme n’ont pas encore été exportés ; il faut ouvrir le modèle dans CST, recalculer si le résultat n’apparaît pas, puis sélectionner `Farfields → farfield (f=0.868)` et tracer le diagramme 3D. Le S11 de −12,01 dB ne donne pas à lui seul le gain, le rendement ni la forme du diagramme.
+L’empreinte KiCad AE1 est une traduction géométrique des conducteurs CST ; elle réserve 30 × 20 mm à l’extrémité de la carte. Le PCB reste à implanter et router. J20 et AE1 partagent le réseau RF : il faudra définir une alimentation RF adaptée avant de fabriquer.
 
-## Intégration à la carte
+Le croquis d’implantation panneau/boîtier est une hypothèse mécanique, pas un résultat de simulation. La géométrie doit être recalculée avec les matériaux réels puis mesurée au VNA sur prototype.
 
-Une empreinte KiCad locale a été créée à partir de la géométrie CST et assignée au symbole AE1 du schéma complet. Sa broche 1 va au réseau `/RF`, sa broche 2 au réseau de masse. Elle réserve une zone de 30 × 20 mm à l’extrémité de la carte ; les pistes du radiateur sont du cuivre intégré à l’empreinte. Consulter le guide [Empreinte antenne KiCad](EMPREINTE_ANTENNE.md).
-
-Le PCB électronique doit encore être placé et routé en conservant cette zone d’antenne. La simulation ne représente pas encore le panneau, le boîtier, la colle ni le support.
-
-## Intégration mécanique à prévoir
-
-Le panneau d’Amira mesure environ 50 × 50 mm et comporte deux fils. Le boîtier devra tenir compte de cette largeur et préserver la zone rayonnante. Le [croquis](../VeillePorte/cst/implantation_proposee.svg) montre une disposition possible, sans recouvrement du radiateur par le panneau. La matière du boîtier, la colle, les fils et le support de porte restent à définir.
-
-Le panneau et le boîtier ne sont pas encore inclus dans le calcul. Le conducteur est PEC ; les pertes cuivre ne sont donc pas représentées. Le FR4 est supposé, le plan de masse et son pont sont simplifiés. La convergence complète, le gain réalisé et le rendement restent à étudier. La licence a refusé un raffinement dépassant 100 000 cellules ; les calculs retenus respectent cette limite.
-
-La présence de l’empreinte dans le schéma ne constitue pas un placement PCB validé ni une autorisation de fabrication.

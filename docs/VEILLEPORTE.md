@@ -1,35 +1,28 @@
-# VeillePorte — ouvertures de porte et accompagnement
+# Spécification fonctionnelle de VeillePorte
 
-[Accueil](../README.md) · [Première version](VERSION_1.md)
+[Accueil](../README.md) · [Schéma KiCad retenu](../VeillePorte/veilleporte_complet.kicad_pro)
 
 ## Usage visé
 
-Un boîtier IR sur le cadre, face à une cible sur la porte de chambre, vise à signaler son ouverture au personnel dans l’accompagnement des personnes atteintes de la maladie d’Alzheimer. Les horaires de surveillance sont configurés dans l’application. Le prototype est démontré sur une porte d’essai, avec des identifiants fictifs.
+Un capteur VL53L4CD fixé sur le cadre observe une cible fixée sur la porte. Le boîtier vise à transmettre les changements d’état au personnel via le RAK3172 et LoRaWAN. Les horaires de surveillance et l’affichage relèvent du futur tableau de bord.
 
-Le dispositif détecte un changement de distance, sans identifier le patient, le soignant ou le visiteur. Il ne détermine pas le sens de passage, une sortie effective ou une situation de danger. Il ne verrouille pas la porte et ne remplace pas l’accompagnement humain.
+Le dispositif ne reconnaît personne, ne donne pas le sens du passage et ne confirme pas qu’une personne a quitté la pièce. C’est un prototype pédagogique, pas un équipement clinique ou de sécurité certifié.
 
-## Éléments nécessaires
+## États à qualifier
 
-| Élément | État |
-|---|---|
-| RAK3172 et BQ25570 | Base électronique existante conservée |
-| Ancien LIS2HH12 | Retiré du schéma actif ; ancienne carte archivée |
-| Module VL53L4CD Pololu 3692 | Raccordement intégré au schéma ; PCB à actualiser |
-| Panneau solaire | Disponible selon Amira ; caractéristiques à relever |
-| Stockage | Référence et dimensionnement à confirmer |
-| Antenne 868 MHz et boîtier 3D | À concevoir pour le projet |
-| Réseau LoRaWAN et tableau de bord | À configurer et développer |
+- **Fermé** : cible proche, mesure valide et stable.
+- **Ouvert** : mesure valide au-delà du seuil d’ouverture pendant la temporisation.
+- **Inconnu** : cible absente ou mesure invalide, communication perdue, démarrage non stabilisé ou situation ambiguë.
 
-## Alimentation et disponibilité
+Deux seuils distincts et une temporisation doivent limiter les oscillations. La disparition de la cible doit être caractérisée sur la porte d’essai : elle ne doit pas être automatiquement confondue avec une ouverture certaine.
 
-L’éclairage d’un couloir ou d’une chambre peut être insuffisant pour assurer une alimentation solaire continue. Mesurer l’énergie récoltée, la consommation, les pointes radio et l’autonomie dans l’obscurité avant d’annoncer une durée de fonctionnement. Le BQ25570 est réglé pour une supercapacité 4 V ; les options NC et C22 sont conservées.
+## Communication prévue
 
-Une perte de réseau ou d’alimentation doit rendre l’état affiché inconnu après expiration d’un délai défini. Un message radio émis ne prouve pas qu’il a été reçu. Aucun fonctionnement clinique ni délai de livraison garanti n’a été validé.
+Transmettre l’état initial, les transitions confirmées et un message périodique de présence. Le futur tableau de bord enregistrera l’heure de réception, éliminera les doublons et affichera l’état comme inconnu lorsque les données sont trop anciennes. Un message LoRaWAN émis ne prouve pas qu’il a été reçu. Les compteurs en mémoire vive repartent à zéro après coupure tant qu’aucun stockage persistant n’est prévu.
 
-## Démonstration pédagogique
+## Matériel retenu
 
-Tester les ouvertures/fermetures, les oscillations autour du seuil, une ouverture prolongée, les horaires, une perte de couverture et un redémarrage. Prévoir un suivi de 1 à 2 semaines conformément au cadre du cours, en mesurant les événements manqués et la consommation. Aucun nom de patient ni donnée médicale n’est nécessaire à la démonstration.
+Le schéma final comprend le RAK3172, le BQ25570 configuré pour une supercapacité limitée à 4 V, le raccordement du module Pololu 3692/VL53L4CD par J23 et l’empreinte de l’antenne IFA 868 MHz. Le PCB, le firmware, le boîtier et le tableau de bord restent à réaliser.
 
-## Révision IR active
+Utiliser des identifiants fictifs et aucune donnée de patient pendant la démonstration.
 
-Le raccordement VL53L4CD est dessiné ; voir [CAPTEUR_IR.md](CAPTEUR_IR.md). La logique de porte repose sur une mesure valide, deux seuils et une temporisation, pas sur un contact. Les références à la stabilisation désignent le filtrage temporel de cet état. Le PCB IR et les essais restent à réaliser.
