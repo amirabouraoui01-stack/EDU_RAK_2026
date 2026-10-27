@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "C:\\Users\\amira\\Desktop\\projet_kicad\\EDU_RAK_2026\\VeillePorte\\veilleporte_complet.kicad_sch")
-		(date "2026-10-26T16:49:52")
+		(date "2026-10-27T16:33:04")
 		(tool "Eeschema 10.0.6")
 		(sheet
 			(number "1")
@@ -153,6 +153,63 @@
 				(tstamps "/")
 			)
 			(tstamps "da1eb712-e6a4-428c-b5e9-825fa894ec6f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C6")
+			(value "DNP")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
+			(datasheet "https://www.pololu.com/product/3692")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
+				(field
+					(name "Datasheet") "https://www.pololu.com/product/3692")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "veilleporte")
+			)
+			(property
+				(name "Sheetfile")
+				(value "veilleporte_complet.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9f9e16c6-9428-4b55-b5a8-70e02d81fe8c")
 			(units
 				(unit
 					(name "A")
@@ -1102,60 +1159,6 @@
 			)
 		)
 		(comp
-			(ref "J20")
-			(value "ANTENNE 868MHz / 50 ohms")
-			(footprint "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical")
-			(fields
-				(field
-					(name "Footprint") "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description")
-				)
-			)
-			(libsource
-				(lib "VeillePorte")
-				(part "Conn_Coaxial")
-				(description "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
-			)
-			(property
-				(name "Sheetname")
-				(value "veilleporte")
-			)
-			(property
-				(name "Sheetfile")
-				(value "veilleporte_complet.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "e4445221-51ad-49a2-b820-a7d31d307f3b")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
 			(ref "J21")
 			(value "UART2 / RUI3")
 			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
@@ -1342,6 +1345,63 @@
 						)
 						(pin
 							(num "7")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "L1")
+			(value "DNP")
+			(footprint "Inductor_SMD:L_0603_1608Metric")
+			(description "Resistor")
+			(fields
+				(field
+					(name "Footprint") "Inductor_SMD:L_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(libsource
+				(lib "Device")
+				(part "L")
+				(description "Inductor")
+			)
+			(property
+				(name "Sheetname")
+				(value "veilleporte")
+			)
+			(property
+				(name "Sheetfile")
+				(value "veilleporte_complet.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "inductor choke coil reactor magnetic")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Choke_* *Coil* Inductor_* L_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "94465553-c2c5-46cc-bd82-d8e0f1c8e435")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
 						)
 					)
 				)
@@ -1669,6 +1729,60 @@
 				(tstamps "/")
 			)
 			(tstamps "51abb4e1-7e8a-4203-956d-ded80027ca36")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R12")
+			(value "0R")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(fields
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "VeillePorte")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "veilleporte")
+			)
+			(property
+				(name "Sheetfile")
+				(value "veilleporte_complet.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "014ff37e-968b-4551-961c-51e63947c417")
 			(units
 				(unit
 					(name "A")
@@ -3464,48 +3578,6 @@
 		)
 		(libpart
 			(lib "VeillePorte")
-			(part "Conn_Coaxial")
-			(description "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
-			(footprints
-				(fp "*BNC*")
-				(fp "*SMA*")
-				(fp "*SMB*")
-				(fp "*SMC*")
-				(fp "*Cinch*")
-				(fp "*LEMO*")
-				(fp "*UMRF*")
-				(fp "*MCX*")
-				(fp "*U.FL*")
-			)
-			(fields
-				(field
-					(name "Reference") "J")
-				(field
-					(name "Value") "Conn_Coaxial")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "In")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "Ext")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "VeillePorte")
 			(part "R")
 			(description "Resistor")
 			(footprints
@@ -3781,6 +3853,11 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "C6")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
 				(ref "C8")
 				(pin "2")
 				(pintype "passive")
@@ -3833,12 +3910,6 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "J20")
-				(pin "2")
-				(pinfunction "Ext_2")
-				(pintype "passive")
-			)
-			(node
 				(ref "J21")
 				(pin "2")
 				(pinfunction "Pin_2_2")
@@ -3854,6 +3925,12 @@
 				(ref "J23")
 				(pin "2")
 				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "L1")
+				(pin "2")
+				(pinfunction "2_2")
 				(pintype "passive")
 			)
 			(node
@@ -4013,7 +4090,7 @@
 		)
 		(net
 			(code "4")
-			(name "/RF")
+			(name "/RF_ANT")
 			(class "Default")
 			(node
 				(ref "AE1")
@@ -4022,9 +4099,29 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "J20")
+				(ref "L1")
 				(pin "1")
-				(pinfunction "In_1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R12")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "5")
+			(name "/RF_SRC")
+			(class "Default")
+			(node
+				(ref "C6")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R12")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -4035,7 +4132,7 @@
 			)
 		)
 		(net
-			(code "5")
+			(code "6")
 			(name "/SWCLK")
 			(class "Default")
 			(node
@@ -4052,7 +4149,7 @@
 			)
 		)
 		(net
-			(code "6")
+			(code "7")
 			(name "/SWDIO")
 			(class "Default")
 			(node
@@ -4069,7 +4166,7 @@
 			)
 		)
 		(net
-			(code "7")
+			(code "8")
 			(name "/UART2_RX")
 			(class "Default")
 			(node
@@ -4086,7 +4183,7 @@
 			)
 		)
 		(net
-			(code "8")
+			(code "9")
 			(name "/UART2_TX")
 			(class "Default")
 			(node
@@ -4103,7 +4200,7 @@
 			)
 		)
 		(net
-			(code "9")
+			(code "10")
 			(name "/VRDIV")
 			(class "Default")
 			(node
@@ -4144,7 +4241,7 @@
 			)
 		)
 		(net
-			(code "10")
+			(code "11")
 			(name "I2C_SCL")
 			(class "Default")
 			(node
@@ -4161,7 +4258,7 @@
 			)
 		)
 		(net
-			(code "11")
+			(code "12")
 			(name "I2C_SDA")
 			(class "Default")
 			(node
@@ -4178,7 +4275,7 @@
 			)
 		)
 		(net
-			(code "12")
+			(code "13")
 			(name "IR_INT")
 			(class "Default")
 			(node
@@ -4195,7 +4292,7 @@
 			)
 		)
 		(net
-			(code "13")
+			(code "14")
 			(name "IR_XSHUT")
 			(class "Default")
 			(node
@@ -4212,7 +4309,7 @@
 			)
 		)
 		(net
-			(code "14")
+			(code "15")
 			(name "Net-(J3-Pin_1)")
 			(class "Default")
 			(node
@@ -4240,7 +4337,7 @@
 			)
 		)
 		(net
-			(code "15")
+			(code "16")
 			(name "Net-(J4-Pin_2)")
 			(class "Default")
 			(node
@@ -4273,7 +4370,7 @@
 			)
 		)
 		(net
-			(code "16")
+			(code "17")
 			(name "Net-(J10-Pin_1)")
 			(class "Default")
 			(node
@@ -4290,7 +4387,7 @@
 			)
 		)
 		(net
-			(code "17")
+			(code "18")
 			(name "Net-(J19-Pin_2)")
 			(class "Default")
 			(node
@@ -4323,7 +4420,7 @@
 			)
 		)
 		(net
-			(code "18")
+			(code "19")
 			(name "Net-(U2-LBOOST)")
 			(class "Default")
 			(node
@@ -4340,7 +4437,7 @@
 			)
 		)
 		(net
-			(code "19")
+			(code "20")
 			(name "Net-(U2-LBUCK)")
 			(class "Default")
 			(node
@@ -4357,7 +4454,7 @@
 			)
 		)
 		(net
-			(code "20")
+			(code "21")
 			(name "Net-(U2-OK_HYST)")
 			(class "Default")
 			(node
@@ -4388,7 +4485,7 @@
 			)
 		)
 		(net
-			(code "21")
+			(code "22")
 			(name "Net-(U2-OK_PROG)")
 			(class "Default")
 			(node
@@ -4419,7 +4516,7 @@
 			)
 		)
 		(net
-			(code "22")
+			(code "23")
 			(name "Net-(U2-VBAT)")
 			(class "Default")
 			(node
@@ -4440,7 +4537,7 @@
 			)
 		)
 		(net
-			(code "23")
+			(code "24")
 			(name "Net-(U2-VBAT_OV)")
 			(class "Default")
 			(node
@@ -4471,7 +4568,7 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "25")
 			(name "Net-(U2-VOUT_SET)")
 			(class "Default")
 			(node
@@ -4502,7 +4599,7 @@
 			)
 		)
 		(net
-			(code "25")
+			(code "26")
 			(name "Net-(U2-VREF_SAMP)")
 			(class "Default")
 			(node
@@ -4518,7 +4615,7 @@
 			)
 		)
 		(net
-			(code "26")
+			(code "27")
 			(name "PWR")
 			(class "Default")
 			(node
@@ -4583,7 +4680,7 @@
 			)
 		)
 		(net
-			(code "27")
+			(code "28")
 			(name "VBAT_OK")
 			(class "Default")
 			(node
@@ -4605,7 +4702,7 @@
 			)
 		)
 		(net
-			(code "28")
+			(code "29")
 			(name "VBAT_OK_3V3")
 			(class "Default")
 			(node
@@ -4626,7 +4723,7 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "30")
 			(name "unconnected-(J23-Pin_5-Pad5)")
 			(class "Default")
 			(node
@@ -4637,7 +4734,7 @@
 			)
 		)
 		(net
-			(code "30")
+			(code "31")
 			(name "unconnected-(U1-PA4{slash}~{SPI1_SS}-Pad16)")
 			(class "Default")
 			(node
@@ -4648,7 +4745,7 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "32")
 			(name "unconnected-(U1-PA5{slash}SPI1_CLK-Pad15)")
 			(class "Default")
 			(node
@@ -4659,7 +4756,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "33")
 			(name "unconnected-(U1-PA6{slash}SPI1_MISO-Pad14)")
 			(class "Default")
 			(node
@@ -4670,7 +4767,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "34")
 			(name "unconnected-(U1-PA7{slash}SPI1_MOSI-Pad13)")
 			(class "Default")
 			(node
@@ -4681,7 +4778,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "35")
 			(name "unconnected-(U1-PA8-Pad19)")
 			(class "Default")
 			(node
@@ -4692,7 +4789,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "36")
 			(name "unconnected-(U1-PA9-Pad20)")
 			(class "Default")
 			(node
@@ -4703,7 +4800,7 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "37")
 			(name "unconnected-(U1-PA10{slash}PIN_A3-Pad25)")
 			(class "Default")
 			(node
@@ -4714,7 +4811,7 @@
 			)
 		)
 		(net
-			(code "37")
+			(code "38")
 			(name "unconnected-(U1-PA15{slash}PIN_A4-Pad3)")
 			(class "Default")
 			(node
@@ -4725,7 +4822,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "39")
 			(name "unconnected-(U1-PB2{slash}PIN_A2-Pad26)")
 			(class "Default")
 			(node
@@ -4736,7 +4833,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "40")
 			(name "unconnected-(U1-PB3{slash}PIN_A0-Pad32)")
 			(class "Default")
 			(node
@@ -4747,7 +4844,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "41")
 			(name "unconnected-(U1-PB4{slash}PIN_A1-Pad31)")
 			(class "Default")
 			(node
@@ -4758,7 +4855,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "42")
 			(name "unconnected-(U1-PB6{slash}UART1_TX-Pad4)")
 			(class "Default")
 			(node
@@ -4769,7 +4866,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "43")
 			(name "unconnected-(U1-PB7{slash}UART1_RX-Pad5)")
 			(class "Default")
 			(node
@@ -4780,7 +4877,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "44")
 			(name "unconnected-(U1-PB12-Pad27)")
 			(class "Default")
 			(node

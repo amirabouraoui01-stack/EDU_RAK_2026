@@ -240,7 +240,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "0.6"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -617,7 +617,7 @@
       "include_excluded_from_bom": true,
       "name": "Default Editing",
       "sort_asc": true,
-      "sort_field": "R\u00e9f\u00e9rence"
+      "sort_field": "Référence"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -657,7 +657,7 @@
       {
         "filename": "veilleporte_complet.kicad_sch",
         "name": "veilleporte",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "7b09fa79-7372-4685-ba42-4de3750bbcc2"
       }
     ],
     "used_designators": "",
@@ -666,7 +666,7 @@
   "sheets": [
     [
       "7b09fa79-7372-4685-ba42-4de3750bbcc2",
-      ""
+      "veilleporte"
     ]
   ],
   "text_variables": {},
