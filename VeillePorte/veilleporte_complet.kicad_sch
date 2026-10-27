@@ -4641,12 +4641,7 @@
 		(color 0 0 0 0)
 		(uuid "8b79884c-f4ba-4469-92df-0f251e92957e")
 	)
-	(junction
-		(at 445.77 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9582d645-1770-4dba-a015-d73a92584e00")
-	)
+	
 	(junction
 		(at 213.36 123.19)
 		(diameter 0)
@@ -6646,26 +6641,8 @@
 		)
 		(uuid "e3595d64-1d01-408f-9b93-bdac986bbb59")
 	)
-	(wire
-		(pts
-			(xy 445.77 44.45) (xy 445.77 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4408836-3327-44e9-a04b-82025be197aa")
-	)
-	(wire
-		(pts
-			(xy 445.77 45.72) (xy 445.77 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5b3f2f5-9b4a-4300-8ca8-cead7b6d154b")
-	)
+	
+	
 	(wire
 		(pts
 			(xy 386.08 148.59) (xy 386.08 157.48)
@@ -6986,16 +6963,7 @@
 		)
 		(uuid "408b3c67-3934-4541-9168-4be081b005cf")
 	)
-	(label "GND"
-		(at 527.05 30.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5c117a18-e95d-4226-b723-ff54b7ef76ff")
-	)
+	
 	(label "SWDIO"
 		(at 468.63 110.49 180)
 		(effects
@@ -7066,16 +7034,7 @@
 		)
 		(uuid "8912f522-d83c-4103-8016-ad98cc4c338c")
 	)
-	(label "GND"
-		(at 527.05 30.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "963d4682-5318-442c-a690-0977177f2113")
-	)
+	
 	(label "RF_ANT"
 		(at 527.05 40.64 0)
 		(effects
@@ -13940,6 +13899,99 @@
 			)
 		)
 	)
+
+(symbol
+		(lib_id "power:GND")
+		(at 527.0500 30.4800 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2bc6ffd-4742-427c-82ed-6e64117b0da0")
+		(property "Reference" "#PWR065"
+			(at 527.0500 36.8300 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 527.0500 35.5600 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 527.0500 30.4800 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 527.0500 30.4800 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 527.0500 30.4800 180)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0436ca63-9ff9-4cea-82bb-6abeb883c512")
+		)
+		(instances
+			(project "veilleporte_complet"
+				(path "/7b09fa79-7372-4685-ba42-4de3750bbcc2"
+					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+
+	(wire
+		(pts (xy 438.15 52.07) (xy 438.15 45.72))
+		(stroke (width 0) (type default))
+		(uuid "6b8ec1e0-ff6a-45d5-8d3e-a72bd7642978")
+	)
+
+	(wire
+		(pts (xy 438.15 45.72) (xy 445.77 45.72))
+		(stroke (width 0) (type default))
+		(uuid "7088ec34-6605-4715-abf8-d0b5cfba9302")
+	)
+
+	(junction (at 438.15 52.07) (diameter 0) (color 0 0 0 0) (uuid "2af6b4df-fadb-43cc-9ffb-3882b8b94676"))
 	(sheet_instances
 		(path "/"
 			(page "1")
