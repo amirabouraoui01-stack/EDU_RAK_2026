@@ -14,3 +14,5 @@ L’historique des modifications antérieures est conservé dans l’historique 
 - PCB KiCad créé depuis le schéma complet ; empreinte d’antenne CST AE1 importée. Placement et routage restant à faire.
 
 - PCB : contour Edge.Cuts arrondi 60 x 70 mm, empilement cuivre 4 couches ; DRC sans erreur de contour.
+
+- Implantation du PCB : RAK3172 au centre, connecteurs en périphérie, dégagement d’antenne maintenu ; aucun routage effectué.
