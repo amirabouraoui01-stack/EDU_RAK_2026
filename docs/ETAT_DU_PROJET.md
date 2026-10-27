@@ -10,7 +10,7 @@
 | Antenne | Empreinte IFA 868 MHz liée à RF et masse ; résultats CST préliminaires |
 | ERC | 0 erreur, 3 avertissements connus |
 | Netlist | 45 composants et 43 groupes de connexions |
-| PCB | Importé dans `../VeillePorte/veilleporte.kicad_pcb`, AE1 incluse ; placement et routage à terminer. Rapport DRC : `../VeillePorte/pcb_drc.json` |
+| PCB | Importé dans `../VeillePorte/veilleporte.kicad_pcb`, AE1 incluse, contour arrondi 60 × 70 mm, 4 couches cuivre ; 0 erreur de contour, 99 avertissements et 108 connexions non routées. Rapport DRC : `../VeillePorte/pcb_drc.json` |
 | Firmware et LoRaWAN | À développer et tester |
 | Boîtier et panneau | Panneau solaire environ 50 × 50 mm ; géométrie et matériaux à intégrer |
 | Mesures physiques | Non réalisées ; consommation, autonomie, portée et détection restent à valider |
@@ -18,5 +18,6 @@
 L’antenne simplifiée atteint un S11 simulé d’environ −12,01 dB à 868 MHz avec 82 620 cellules. Cela ne démontre ni un gain ni un rendement suffisant. Le diagramme farfield reste à exporter depuis CST.
 
 Les trois avertissements ERC connus portent sur le symbole BQ, les noms EN/GND sur la même masse et les labels locaux/globaux. Aucun n’est masqué. Voir le [rapport ERC](../VeillePorte/erc_complet.json) et le [rapport de vérification](verification_schema_complet.json).
+
 
 
