@@ -1,0 +1,4814 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T14:28:10",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "veilleporte.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(U2-VBAT)] de C1 sur F.Cu",
+                    "pos": {
+                        "x": 159.78,
+                        "y": 55.105
+                    },
+                    "uuid": "3fe258f3-e7c6-4183-b787-8f08133fb867"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-VBAT)] de C22 sur F.Cu",
+                    "pos": {
+                        "x": 159.78,
+                        "y": 67.655
+                    },
+                    "uuid": "bba91e03-5b40-486e-ab77-1e05d7a107a9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(U2-VBAT)] de C22 sur F.Cu",
+                    "pos": {
+                        "x": 159.78,
+                        "y": 67.655
+                    },
+                    "uuid": "bba91e03-5b40-486e-ab77-1e05d7a107a9"
+                },
+                {
+                    "description": "Pad 18 [Net-(U2-VBAT)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 175.6,
+                        "y": 89.6875
+                    },
+                    "uuid": "0a9295d3-715e-4ea8-92cf-6a6081d8662d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de AE1 sur F.Cu",
+                    "pos": {
+                        "x": 129.775,
+                        "y": 55.275
+                    },
+                    "uuid": "c77e7e4e-25da-4637-801d-0ecb8f029355"
+                },
+                {
+                    "description": "Pad 2 ['EN] de AE1 sur F.Cu",
+                    "pos": {
+                        "x": 133.775,
+                        "y": 55.275
+                    },
+                    "uuid": "c024fbe8-9f4d-4156-bf1f-ec27d955fda3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 2 ['EN] de J23",
+                    "pos": {
+                        "x": 160.845,
+                        "y": 38.845
+                    },
+                    "uuid": "5bbb91de-31d5-45ef-814e-b77441797754"
+                },
+                {
+                    "description": "Pad 11 ['EN] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 164.815,
+                        "y": 47.315
+                    },
+                    "uuid": "851a60a3-bbdf-4181-9274-40f0022bf4f4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de C1 sur F.Cu",
+                    "pos": {
+                        "x": 161.33,
+                        "y": 55.105
+                    },
+                    "uuid": "f952de34-0b87-4e9b-a068-eeb50d8c6014"
+                },
+                {
+                    "description": "Pad 2 ['EN] de C8 sur F.Cu",
+                    "pos": {
+                        "x": 161.33,
+                        "y": 57.615
+                    },
+                    "uuid": "3cd8684e-0044-4e20-a571-f695e5398b48"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de C1 sur F.Cu",
+                    "pos": {
+                        "x": 161.33,
+                        "y": 55.105
+                    },
+                    "uuid": "f952de34-0b87-4e9b-a068-eeb50d8c6014"
+                },
+                {
+                    "description": "Pad 2 ['EN] de AE1 sur F.Cu",
+                    "pos": {
+                        "x": 133.775,
+                        "y": 55.275
+                    },
+                    "uuid": "c024fbe8-9f4d-4156-bf1f-ec27d955fda3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de C8 sur F.Cu",
+                    "pos": {
+                        "x": 161.33,
+                        "y": 57.615
+                    },
+                    "uuid": "3cd8684e-0044-4e20-a571-f695e5398b48"
+                },
+                {
+                    "description": "Pad 2 ['EN] de C9 sur F.Cu",
+                    "pos": {
+                        "x": 161.33,
+                        "y": 60.125
+                    },
+                    "uuid": "b64346c5-fea4-4f17-a39d-77b23e5cb6ab"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de C11 sur F.Cu",
+                    "pos": {
+                        "x": 161.33,
+                        "y": 62.635
+                    },
+                    "uuid": "a463549b-f4a7-494a-8907-1cbd695c6b39"
+                },
+                {
+                    "description": "Pad 1 ['EN] de COUT1 sur F.Cu",
+                    "pos": {
+                        "x": 163.79,
+                        "y": 62.635
+                    },
+                    "uuid": "82e9d6ad-5c89-4457-bf53-5b046e39d374"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de C11 sur F.Cu",
+                    "pos": {
+                        "x": 161.33,
+                        "y": 62.635
+                    },
+                    "uuid": "a463549b-f4a7-494a-8907-1cbd695c6b39"
+                },
+                {
+                    "description": "Pad 2 ['EN] de C9 sur F.Cu",
+                    "pos": {
+                        "x": 161.33,
+                        "y": 60.125
+                    },
+                    "uuid": "b64346c5-fea4-4f17-a39d-77b23e5cb6ab"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de C13 sur F.Cu",
+                    "pos": {
+                        "x": 161.33,
+                        "y": 65.145
+                    },
+                    "uuid": "aec655ca-a9e3-4904-b441-f4c0cc4805d8"
+                },
+                {
+                    "description": "Pad 2 ['EN] de C11 sur F.Cu",
+                    "pos": {
+                        "x": 161.33,
+                        "y": 62.635
+                    },
+                    "uuid": "a463549b-f4a7-494a-8907-1cbd695c6b39"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de C22 sur F.Cu",
+                    "pos": {
+                        "x": 161.33,
+                        "y": 67.655
+                    },
+                    "uuid": "53bdd7d2-d3ca-460c-8700-e094a7fb7e7d"
+                },
+                {
+                    "description": "Pad 2 ['EN] de C13 sur F.Cu",
+                    "pos": {
+                        "x": 161.33,
+                        "y": 65.145
+                    },
+                    "uuid": "aec655ca-a9e3-4904-b441-f4c0cc4805d8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 ['EN] de COUT1 sur F.Cu",
+                    "pos": {
+                        "x": 163.79,
+                        "y": 62.635
+                    },
+                    "uuid": "82e9d6ad-5c89-4457-bf53-5b046e39d374"
+                },
+                {
+                    "description": "Pad 2 ['EN] de CREF1 sur F.Cu",
+                    "pos": {
+                        "x": 165.34,
+                        "y": 65.145
+                    },
+                    "uuid": "f39de3cc-8539-41f6-b9d6-8af189b5a8ba"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 ['EN] de COUT1 sur F.Cu",
+                    "pos": {
+                        "x": 163.79,
+                        "y": 62.635
+                    },
+                    "uuid": "82e9d6ad-5c89-4457-bf53-5b046e39d374"
+                },
+                {
+                    "description": "Pad 2 ['EN] de CIN2 sur F.Cu",
+                    "pos": {
+                        "x": 165.34,
+                        "y": 60.125
+                    },
+                    "uuid": "53644a29-8a89-4b67-8edb-cff41389f6a2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 11 ['EN] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 164.815,
+                        "y": 47.315
+                    },
+                    "uuid": "851a60a3-bbdf-4181-9274-40f0022bf4f4"
+                },
+                {
+                    "description": "Pad 2 ['EN] de CBYP1 sur F.Cu",
+                    "pos": {
+                        "x": 165.34,
+                        "y": 55.105
+                    },
+                    "uuid": "29c5b46a-e135-48f6-83eb-1f23b653be3e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de CBYP1 sur F.Cu",
+                    "pos": {
+                        "x": 165.34,
+                        "y": 55.105
+                    },
+                    "uuid": "29c5b46a-e135-48f6-83eb-1f23b653be3e"
+                },
+                {
+                    "description": "Pad 2 ['EN] de CIN1 sur F.Cu",
+                    "pos": {
+                        "x": 165.34,
+                        "y": 57.615
+                    },
+                    "uuid": "b6085672-1759-4795-93f8-1aa0499d8a79"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de CIN2 sur F.Cu",
+                    "pos": {
+                        "x": 165.34,
+                        "y": 60.125
+                    },
+                    "uuid": "53644a29-8a89-4b67-8edb-cff41389f6a2"
+                },
+                {
+                    "description": "Pad 2 ['EN] de CIN1 sur F.Cu",
+                    "pos": {
+                        "x": 165.34,
+                        "y": 57.615
+                    },
+                    "uuid": "b6085672-1759-4795-93f8-1aa0499d8a79"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de CIN2 sur F.Cu",
+                    "pos": {
+                        "x": 165.34,
+                        "y": 60.125
+                    },
+                    "uuid": "53644a29-8a89-4b67-8edb-cff41389f6a2"
+                },
+                {
+                    "description": "Pad 2 ['EN] de R10 sur F.Cu",
+                    "pos": {
+                        "x": 169.4,
+                        "y": 60.125
+                    },
+                    "uuid": "9d814a55-d462-4563-8961-fdc7ac487f97"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de CREF1 sur F.Cu",
+                    "pos": {
+                        "x": 165.34,
+                        "y": 65.145
+                    },
+                    "uuid": "f39de3cc-8539-41f6-b9d6-8af189b5a8ba"
+                },
+                {
+                    "description": "Pad 2 ['EN] de CSTOR1 sur F.Cu",
+                    "pos": {
+                        "x": 165.34,
+                        "y": 67.655
+                    },
+                    "uuid": "5427ed38-3b33-4b03-a437-148139c1bfaa"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de CREF1 sur F.Cu",
+                    "pos": {
+                        "x": 165.34,
+                        "y": 65.145
+                    },
+                    "uuid": "f39de3cc-8539-41f6-b9d6-8af189b5a8ba"
+                },
+                {
+                    "description": "Pad 2 ['EN] de ROK1 sur F.Cu",
+                    "pos": {
+                        "x": 169.4,
+                        "y": 65.145
+                    },
+                    "uuid": "9e2c9219-4745-4e86-ad3a-af30e4980d1c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 2 ['EN] de J10",
+                    "pos": {
+                        "x": 167.195,
+                        "y": 75.835
+                    },
+                    "uuid": "d93f8864-6e6a-458f-8d61-0a668555a9ef"
+                },
+                {
+                    "description": "Pad métallisé 2 ['EN] de J21",
+                    "pos": {
+                        "x": 173.065,
+                        "y": 73.745
+                    },
+                    "uuid": "616f49fd-0996-4669-a8d5-b866c470d1c7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de R9 sur F.Cu",
+                    "pos": {
+                        "x": 169.4,
+                        "y": 57.615
+                    },
+                    "uuid": "373e8c11-825b-44c9-aa0c-bd74e4eac58a"
+                },
+                {
+                    "description": "Pad 2 ['EN] de R10 sur F.Cu",
+                    "pos": {
+                        "x": 169.4,
+                        "y": 60.125
+                    },
+                    "uuid": "9d814a55-d462-4563-8961-fdc7ac487f97"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 2 ['EN] de J21",
+                    "pos": {
+                        "x": 173.065,
+                        "y": 73.745
+                    },
+                    "uuid": "616f49fd-0996-4669-a8d5-b866c470d1c7"
+                },
+                {
+                    "description": "Pad 2 ['EN] de C10 sur F.Cu",
+                    "pos": {
+                        "x": 178.535,
+                        "y": 78.515
+                    },
+                    "uuid": "aa8d460d-4af1-403d-8949-41ca9bed5a69"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de ROK1B1 sur F.Cu",
+                    "pos": {
+                        "x": 173.41,
+                        "y": 57.615
+                    },
+                    "uuid": "b6184dbd-9d17-4f15-9c93-338ed2add436"
+                },
+                {
+                    "description": "Pad 2 ['EN] de R9 sur F.Cu",
+                    "pos": {
+                        "x": 169.4,
+                        "y": 57.615
+                    },
+                    "uuid": "373e8c11-825b-44c9-aa0c-bd74e4eac58a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de ROK1B1 sur F.Cu",
+                    "pos": {
+                        "x": 173.41,
+                        "y": 57.615
+                    },
+                    "uuid": "b6184dbd-9d17-4f15-9c93-338ed2add436"
+                },
+                {
+                    "description": "Pad 2 ['EN] de ROUT1B1 sur F.Cu",
+                    "pos": {
+                        "x": 177.42,
+                        "y": 55.105
+                    },
+                    "uuid": "dd628056-acb5-46f9-a65c-2ade545e04a9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de ROUT1 sur F.Cu",
+                    "pos": {
+                        "x": 173.41,
+                        "y": 65.145
+                    },
+                    "uuid": "baf9f9c2-3651-4775-834a-4e97e0d0f55d"
+                },
+                {
+                    "description": "Pad 2 ['EN] de ROK1 sur F.Cu",
+                    "pos": {
+                        "x": 169.4,
+                        "y": 65.145
+                    },
+                    "uuid": "9e2c9219-4745-4e86-ad3a-af30e4980d1c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 5 ['EN] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 173.9125,
+                        "y": 92.375
+                    },
+                    "uuid": "4654fd32-f431-4650-bffe-dd5aca377b7a"
+                },
+                {
+                    "description": "Pad 21 ['EN] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 175.6,
+                        "y": 91.375
+                    },
+                    "uuid": "0f09cbce-9ff6-4054-8c15-f68038a3154b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de J20 sur F.Cu",
+                    "pos": {
+                        "x": 175.395,
+                        "y": 83.97
+                    },
+                    "uuid": "3fded43a-7850-4e5e-a413-7ae695bbbb23"
+                },
+                {
+                    "description": "Pad métallisé 1 ['EN] de J19",
+                    "pos": {
+                        "x": 170.025,
+                        "y": 84.715
+                    },
+                    "uuid": "32d616c0-a37d-49bb-a8c6-6b3d07f5b8c2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de J20 sur F.Cu",
+                    "pos": {
+                        "x": 175.395,
+                        "y": 83.97
+                    },
+                    "uuid": "3fded43a-7850-4e5e-a413-7ae695bbbb23"
+                },
+                {
+                    "description": "Pad 2 ['EN] de C10 sur F.Cu",
+                    "pos": {
+                        "x": 178.535,
+                        "y": 78.515
+                    },
+                    "uuid": "aa8d460d-4af1-403d-8949-41ca9bed5a69"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de J20 sur F.Cu",
+                    "pos": {
+                        "x": 175.395,
+                        "y": 86.92
+                    },
+                    "uuid": "a1295b33-62a3-4525-b582-079590d4de3f"
+                },
+                {
+                    "description": "Pad 17 ['EN] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 176.1,
+                        "y": 89.6875
+                    },
+                    "uuid": "94165183-7c18-45d6-ae53-449174ce26b0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de J20 sur F.Cu",
+                    "pos": {
+                        "x": 175.395,
+                        "y": 86.92
+                    },
+                    "uuid": "a1295b33-62a3-4525-b582-079590d4de3f"
+                },
+                {
+                    "description": "Pad 2 ['EN] de J20 sur F.Cu",
+                    "pos": {
+                        "x": 175.395,
+                        "y": 83.97
+                    },
+                    "uuid": "3fded43a-7850-4e5e-a413-7ae695bbbb23"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 21 ['EN] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 175.6,
+                        "y": 91.375
+                    },
+                    "uuid": "0f09cbce-9ff6-4054-8c15-f68038a3154b"
+                },
+                {
+                    "description": "Pad 9 ['EN] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 176.1,
+                        "y": 93.0625
+                    },
+                    "uuid": "f3b425be-ff3a-41c1-8e45-d64f466827bc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 21 ['EN] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 175.6,
+                        "y": 91.375
+                    },
+                    "uuid": "0f09cbce-9ff6-4054-8c15-f68038a3154b"
+                },
+                {
+                    "description": "Pad 1 ['EN] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 173.9125,
+                        "y": 90.375
+                    },
+                    "uuid": "ce113725-34ca-47b8-aed0-906da946694f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 17 ['EN] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 176.1,
+                        "y": 89.6875
+                    },
+                    "uuid": "94165183-7c18-45d6-ae53-449174ce26b0"
+                },
+                {
+                    "description": "Pad 21 ['EN] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 175.6,
+                        "y": 91.375
+                    },
+                    "uuid": "0f09cbce-9ff6-4054-8c15-f68038a3154b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 15 ['EN] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 177.2875,
+                        "y": 90.375
+                    },
+                    "uuid": "ee08dda9-33a3-4c86-a0d5-e91e7f42034e"
+                },
+                {
+                    "description": "Pad 17 ['EN] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 176.1,
+                        "y": 89.6875
+                    },
+                    "uuid": "94165183-7c18-45d6-ae53-449174ce26b0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de ROUT1B1 sur F.Cu",
+                    "pos": {
+                        "x": 177.42,
+                        "y": 55.105
+                    },
+                    "uuid": "dd628056-acb5-46f9-a65c-2ade545e04a9"
+                },
+                {
+                    "description": "Pad 17 ['EN] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 179.615,
+                        "y": 48.315
+                    },
+                    "uuid": "22b2ad43-20fd-49eb-8a50-cd8344622014"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de ROV1 sur F.Cu",
+                    "pos": {
+                        "x": 177.42,
+                        "y": 60.125
+                    },
+                    "uuid": "38032234-12a5-447a-a232-8aa93021cb1d"
+                },
+                {
+                    "description": "Pad métallisé 2 ['EN] de J22",
+                    "pos": {
+                        "x": 180.895,
+                        "y": 58.685
+                    },
+                    "uuid": "e107d48e-8474-470a-8d0e-a20f839be5b0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de ROV1 sur F.Cu",
+                    "pos": {
+                        "x": 177.42,
+                        "y": 60.125
+                    },
+                    "uuid": "38032234-12a5-447a-a232-8aa93021cb1d"
+                },
+                {
+                    "description": "Pad 2 ['EN] de ROK1B1 sur F.Cu",
+                    "pos": {
+                        "x": 173.41,
+                        "y": 57.615
+                    },
+                    "uuid": "b6184dbd-9d17-4f15-9c93-338ed2add436"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de ROV1B1 sur F.Cu",
+                    "pos": {
+                        "x": 177.42,
+                        "y": 65.145
+                    },
+                    "uuid": "aa1cdc47-3eb1-442d-b8d0-2bd09fe605eb"
+                },
+                {
+                    "description": "Pad 2 ['EN] de ROUT1 sur F.Cu",
+                    "pos": {
+                        "x": 173.41,
+                        "y": 65.145
+                    },
+                    "uuid": "baf9f9c2-3651-4775-834a-4e97e0d0f55d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 23 ['EN] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 179.615,
+                        "y": 38.315
+                    },
+                    "uuid": "9da26aae-7719-450a-bc5c-1d179de2988b"
+                },
+                {
+                    "description": "Pad 28 ['EN] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 172.715,
+                        "y": 35.665
+                    },
+                    "uuid": "25e668b8-241e-4272-86c7-9cb7e828ef13"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 18 ['EN] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 179.615,
+                        "y": 47.315
+                    },
+                    "uuid": "978f799f-6c33-40f6-a1e9-514898282b6e"
+                },
+                {
+                    "description": "Pad 17 ['EN] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 179.615,
+                        "y": 48.315
+                    },
+                    "uuid": "22b2ad43-20fd-49eb-8a50-cd8344622014"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 18 ['EN] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 179.615,
+                        "y": 47.315
+                    },
+                    "uuid": "978f799f-6c33-40f6-a1e9-514898282b6e"
+                },
+                {
+                    "description": "Pad 23 ['EN] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 179.615,
+                        "y": 38.315
+                    },
+                    "uuid": "9da26aae-7719-450a-bc5c-1d179de2988b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de SW1 sur F.Cu",
+                    "pos": {
+                        "x": 179.985,
+                        "y": 71.085
+                    },
+                    "uuid": "f52837b9-70c9-4c0f-9b89-bc4d4282247b"
+                },
+                {
+                    "description": "Pad 2 ['EN] de ROV1B1 sur F.Cu",
+                    "pos": {
+                        "x": 177.42,
+                        "y": 65.145
+                    },
+                    "uuid": "aa1cdc47-3eb1-442d-b8d0-2bd09fe605eb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 ['EN] de SW1 sur F.Cu",
+                    "pos": {
+                        "x": 179.985,
+                        "y": 71.085
+                    },
+                    "uuid": "f52837b9-70c9-4c0f-9b89-bc4d4282247b"
+                },
+                {
+                    "description": "Pad métallisé 2 ['EN] de J21",
+                    "pos": {
+                        "x": 173.065,
+                        "y": 73.745
+                    },
+                    "uuid": "616f49fd-0996-4669-a8d5-b866c470d1c7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [PWR] de C8 sur F.Cu",
+                    "pos": {
+                        "x": 159.78,
+                        "y": 57.615
+                    },
+                    "uuid": "63e244e9-15f8-4596-a042-ffbca94fbcc4"
+                },
+                {
+                    "description": "Pad 1 [PWR] de C9 sur F.Cu",
+                    "pos": {
+                        "x": 159.78,
+                        "y": 60.125
+                    },
+                    "uuid": "fb897861-e363-4984-ac43-a24802f94a5d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [PWR] de C9 sur F.Cu",
+                    "pos": {
+                        "x": 159.78,
+                        "y": 60.125
+                    },
+                    "uuid": "fb897861-e363-4984-ac43-a24802f94a5d"
+                },
+                {
+                    "description": "Pad 1 [PWR] de C11 sur F.Cu",
+                    "pos": {
+                        "x": 159.78,
+                        "y": 62.635
+                    },
+                    "uuid": "900c5d63-31f2-4b72-95f8-4d3a5c7df079"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [PWR] de C11 sur F.Cu",
+                    "pos": {
+                        "x": 159.78,
+                        "y": 62.635
+                    },
+                    "uuid": "900c5d63-31f2-4b72-95f8-4d3a5c7df079"
+                },
+                {
+                    "description": "Pad 1 [PWR] de C13 sur F.Cu",
+                    "pos": {
+                        "x": 159.78,
+                        "y": 65.145
+                    },
+                    "uuid": "6c82dad1-2f10-4b31-8726-a1029427896e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [PWR] de C11 sur F.Cu",
+                    "pos": {
+                        "x": 159.78,
+                        "y": 62.635
+                    },
+                    "uuid": "900c5d63-31f2-4b72-95f8-4d3a5c7df079"
+                },
+                {
+                    "description": "Pad 1 [PWR] de R11 sur F.Cu",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 62.635
+                    },
+                    "uuid": "af7ad934-b754-45ce-b758-3b2a73731c00"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 2 [PWR] de J3",
+                    "pos": {
+                        "x": 160.845,
+                        "y": 87.255
+                    },
+                    "uuid": "39da0feb-134b-462f-904e-0aeb5f51deeb"
+                },
+                {
+                    "description": "Pad 1 [PWR] de C10 sur F.Cu",
+                    "pos": {
+                        "x": 176.635,
+                        "y": 78.515
+                    },
+                    "uuid": "12634f44-ff52-40fb-95fd-7eaa047d2782"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 1 [PWR] de J21",
+                    "pos": {
+                        "x": 173.065,
+                        "y": 71.205
+                    },
+                    "uuid": "6a63acb3-b714-42d2-8484-0660fb60656b"
+                },
+                {
+                    "description": "Pad 1 [PWR] de R11 sur F.Cu",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 62.635
+                    },
+                    "uuid": "af7ad934-b754-45ce-b758-3b2a73731c00"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [PWR] de C10 sur F.Cu",
+                    "pos": {
+                        "x": 176.635,
+                        "y": 78.515
+                    },
+                    "uuid": "12634f44-ff52-40fb-95fd-7eaa047d2782"
+                },
+                {
+                    "description": "Pad métallisé 1 [PWR] de J21",
+                    "pos": {
+                        "x": 173.065,
+                        "y": 71.205
+                    },
+                    "uuid": "6a63acb3-b714-42d2-8484-0660fb60656b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 24 [PWR] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 179.615,
+                        "y": 37.315
+                    },
+                    "uuid": "4a81b7c1-7e95-4e84-8fd4-9ec8c7dd45fd"
+                },
+                {
+                    "description": "Pad métallisé 1 [PWR] de J23",
+                    "pos": {
+                        "x": 160.845,
+                        "y": 36.305
+                    },
+                    "uuid": "c6efd4b8-ceca-4ef6-94db-e6fc77951ff9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 1 [PWR] de J22",
+                    "pos": {
+                        "x": 180.895,
+                        "y": 56.145
+                    },
+                    "uuid": "1cbf30f6-b0cf-45e3-8dda-4c899e33f83a"
+                },
+                {
+                    "description": "Pad 1 [PWR] de R11 sur F.Cu",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 62.635
+                    },
+                    "uuid": "af7ad934-b754-45ce-b758-3b2a73731c00"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 1 [PWR] de J22",
+                    "pos": {
+                        "x": 180.895,
+                        "y": 56.145
+                    },
+                    "uuid": "1cbf30f6-b0cf-45e3-8dda-4c899e33f83a"
+                },
+                {
+                    "description": "Pad 24 [PWR] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 179.615,
+                        "y": 37.315
+                    },
+                    "uuid": "4a81b7c1-7e95-4e84-8fd4-9ec8c7dd45fd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 7 [Net-(U2-VBAT_OV)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 175.1,
+                        "y": 93.0625
+                    },
+                    "uuid": "bb824327-8eff-4db6-9828-7d8a52f25143"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-VBAT_OV)] de ROV2B1 sur F.Cu",
+                    "pos": {
+                        "x": 177.42,
+                        "y": 67.655
+                    },
+                    "uuid": "29d630d8-c044-451d-a000-3113c11b62bc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(U2-VBAT_OV)] de ROV1B1 sur F.Cu",
+                    "pos": {
+                        "x": 175.77,
+                        "y": 65.145
+                    },
+                    "uuid": "669ea778-4917-499b-9ecd-18c7f5317741"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-VBAT_OV)] de ROV2B1 sur F.Cu",
+                    "pos": {
+                        "x": 177.42,
+                        "y": 67.655
+                    },
+                    "uuid": "29d630d8-c044-451d-a000-3113c11b62bc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(U2-VBAT_OV)] de ROV2 sur F.Cu",
+                    "pos": {
+                        "x": 177.42,
+                        "y": 62.635
+                    },
+                    "uuid": "f390c9be-c189-4311-ba3c-0cfe830643b0"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-VBAT_OV)] de ROV1B1 sur F.Cu",
+                    "pos": {
+                        "x": 175.77,
+                        "y": 65.145
+                    },
+                    "uuid": "669ea778-4917-499b-9ecd-18c7f5317741"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(U2-VBAT_OV)] de ROV2 sur F.Cu",
+                    "pos": {
+                        "x": 177.42,
+                        "y": 62.635
+                    },
+                    "uuid": "f390c9be-c189-4311-ba3c-0cfe830643b0"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-VBAT_OV)] de ROV1 sur F.Cu",
+                    "pos": {
+                        "x": 175.77,
+                        "y": 60.125
+                    },
+                    "uuid": "70d2a8dd-a2ec-440b-b434-438bdc596533"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/NRST] de R11 sur F.Cu",
+                    "pos": {
+                        "x": 169.4,
+                        "y": 62.635
+                    },
+                    "uuid": "e54e119f-6dc8-4db2-b20c-77b229927468"
+                },
+                {
+                    "description": "Pad 1 [/NRST] de SW1 sur F.Cu",
+                    "pos": {
+                        "x": 176.585,
+                        "y": 71.085
+                    },
+                    "uuid": "5d68ee6a-ba12-456c-ba81-a5f6fce7cb17"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/NRST] de SW1 sur F.Cu",
+                    "pos": {
+                        "x": 176.585,
+                        "y": 71.085
+                    },
+                    "uuid": "5d68ee6a-ba12-456c-ba81-a5f6fce7cb17"
+                },
+                {
+                    "description": "Pad métallisé 5 [/NRST] de J22",
+                    "pos": {
+                        "x": 180.895,
+                        "y": 66.305
+                    },
+                    "uuid": "8cf01cb6-8e48-4280-a5ce-e6552b0feef7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 22 [/NRST] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 179.615,
+                        "y": 39.315
+                    },
+                    "uuid": "ec67dfba-c466-4a42-ab6b-ade453514737"
+                },
+                {
+                    "description": "Pad 2 [/NRST] de R11 sur F.Cu",
+                    "pos": {
+                        "x": 169.4,
+                        "y": 62.635
+                    },
+                    "uuid": "e54e119f-6dc8-4db2-b20c-77b229927468"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/VRDIV] de ROK3B1 sur F.Cu",
+                    "pos": {
+                        "x": 171.76,
+                        "y": 62.635
+                    },
+                    "uuid": "151807e5-73ee-422d-ae2b-85fd1aeb086e"
+                },
+                {
+                    "description": "Pad 1 [/VRDIV] de ROUT2 sur F.Cu",
+                    "pos": {
+                        "x": 171.76,
+                        "y": 67.655
+                    },
+                    "uuid": "b16c6213-b097-4fa0-a2ea-40bc63da6126"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/VRDIV] de ROUT2 sur F.Cu",
+                    "pos": {
+                        "x": 171.76,
+                        "y": 67.655
+                    },
+                    "uuid": "b16c6213-b097-4fa0-a2ea-40bc63da6126"
+                },
+                {
+                    "description": "Pad 1 [/VRDIV] de ROV2B1 sur F.Cu",
+                    "pos": {
+                        "x": 175.77,
+                        "y": 67.655
+                    },
+                    "uuid": "71f782d2-6e32-4e25-9e6e-a8ffc2646e9c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 8 [/VRDIV] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 175.6,
+                        "y": 93.0625
+                    },
+                    "uuid": "881a19ce-fd86-4028-bf8d-78eca279d73d"
+                },
+                {
+                    "description": "Pad 1 [/VRDIV] de ROV2B1 sur F.Cu",
+                    "pos": {
+                        "x": 175.77,
+                        "y": 67.655
+                    },
+                    "uuid": "71f782d2-6e32-4e25-9e6e-a8ffc2646e9c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/VRDIV] de ROUT2B1 sur F.Cu",
+                    "pos": {
+                        "x": 175.77,
+                        "y": 57.615
+                    },
+                    "uuid": "66235ee4-8542-4672-bbeb-70d0dd3c173a"
+                },
+                {
+                    "description": "Pad 1 [/VRDIV] de ROK3 sur F.Cu",
+                    "pos": {
+                        "x": 171.76,
+                        "y": 55.105
+                    },
+                    "uuid": "1d44a757-41c2-4697-9f8f-848829751b2c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/VRDIV] de ROV2 sur F.Cu",
+                    "pos": {
+                        "x": 175.77,
+                        "y": 62.635
+                    },
+                    "uuid": "b624c82a-a352-4a49-9a5e-e73f2ee235a8"
+                },
+                {
+                    "description": "Pad 1 [/VRDIV] de ROK3B1 sur F.Cu",
+                    "pos": {
+                        "x": 171.76,
+                        "y": 62.635
+                    },
+                    "uuid": "151807e5-73ee-422d-ae2b-85fd1aeb086e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/VRDIV] de ROV2 sur F.Cu",
+                    "pos": {
+                        "x": 175.77,
+                        "y": 62.635
+                    },
+                    "uuid": "b624c82a-a352-4a49-9a5e-e73f2ee235a8"
+                },
+                {
+                    "description": "Pad 1 [/VRDIV] de ROUT2B1 sur F.Cu",
+                    "pos": {
+                        "x": 175.77,
+                        "y": 57.615
+                    },
+                    "uuid": "66235ee4-8542-4672-bbeb-70d0dd3c173a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(J4-Pin_2)] de CIN1 sur F.Cu",
+                    "pos": {
+                        "x": 163.79,
+                        "y": 57.615
+                    },
+                    "uuid": "551e12fc-e48f-4da2-ba5e-569897d77dcc"
+                },
+                {
+                    "description": "Pad 1 [Net-(J4-Pin_2)] de CIN2 sur F.Cu",
+                    "pos": {
+                        "x": 163.79,
+                        "y": 60.125
+                    },
+                    "uuid": "09161a73-f47c-437f-b19e-51ce5ae56424"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 2 [Net-(J4-Pin_2)] de J4",
+                    "pos": {
+                        "x": 165.435,
+                        "y": 87.255
+                    },
+                    "uuid": "dff0f79a-a14a-493c-b8c9-f603a9641141"
+                },
+                {
+                    "description": "Pad 1 [Net-(J4-Pin_2)] de LBOOST1 sur F.Cu",
+                    "pos": {
+                        "x": 160.235,
+                        "y": 92.285
+                    },
+                    "uuid": "9585ef79-0cbf-47e2-84ee-643ff2e95d07"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 2 [Net-(J4-Pin_2)] de J4",
+                    "pos": {
+                        "x": 165.435,
+                        "y": 87.255
+                    },
+                    "uuid": "dff0f79a-a14a-493c-b8c9-f603a9641141"
+                },
+                {
+                    "description": "Pad 1 [Net-(J4-Pin_2)] de CIN2 sur F.Cu",
+                    "pos": {
+                        "x": 163.79,
+                        "y": 60.125
+                    },
+                    "uuid": "09161a73-f47c-437f-b19e-51ce5ae56424"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(J4-Pin_2)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 173.9125,
+                        "y": 90.875
+                    },
+                    "uuid": "0c4edf7e-b4bf-41cd-814d-f3ad0de4a60a"
+                },
+                {
+                    "description": "Pad métallisé 2 [Net-(J4-Pin_2)] de J4",
+                    "pos": {
+                        "x": 165.435,
+                        "y": 87.255
+                    },
+                    "uuid": "dff0f79a-a14a-493c-b8c9-f603a9641141"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(U2-OK_HYST)] de ROK2 sur F.Cu",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 67.655
+                    },
+                    "uuid": "48beaedb-583e-4c6d-aca6-59cdac9c563a"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-OK_HYST)] de ROK3B1 sur F.Cu",
+                    "pos": {
+                        "x": 173.41,
+                        "y": 62.635
+                    },
+                    "uuid": "8539222e-73d5-451f-9202-5e374d4db607"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(U2-OK_HYST)] de ROK2 sur F.Cu",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 67.655
+                    },
+                    "uuid": "48beaedb-583e-4c6d-aca6-59cdac9c563a"
+                },
+                {
+                    "description": "Pad 10 [Net-(U2-OK_HYST)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 176.6,
+                        "y": 93.0625
+                    },
+                    "uuid": "888371a1-2449-489f-b4e4-fc3bdc7f6c54"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(U2-OK_HYST)] de ROK3 sur F.Cu",
+                    "pos": {
+                        "x": 173.41,
+                        "y": 55.105
+                    },
+                    "uuid": "5171c0f4-aabb-4d2d-848c-df8e0ec0a073"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-OK_HYST)] de ROK2B1 sur F.Cu",
+                    "pos": {
+                        "x": 171.76,
+                        "y": 60.125
+                    },
+                    "uuid": "60da9a3a-5189-4554-bcf8-755bcc135451"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(U2-OK_HYST)] de ROK3B1 sur F.Cu",
+                    "pos": {
+                        "x": 173.41,
+                        "y": 62.635
+                    },
+                    "uuid": "8539222e-73d5-451f-9202-5e374d4db607"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-OK_HYST)] de ROK2B1 sur F.Cu",
+                    "pos": {
+                        "x": 171.76,
+                        "y": 60.125
+                    },
+                    "uuid": "60da9a3a-5189-4554-bcf8-755bcc135451"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(U2-OK_PROG)] de ROK1 sur F.Cu",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 65.145
+                    },
+                    "uuid": "d141959b-2c83-4de6-b05f-347a5fda922e"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-OK_PROG)] de ROK2 sur F.Cu",
+                    "pos": {
+                        "x": 169.4,
+                        "y": 67.655
+                    },
+                    "uuid": "51790115-b3f7-421f-abc2-e9bbb671d66e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(U2-OK_PROG)] de ROK2B1 sur F.Cu",
+                    "pos": {
+                        "x": 173.41,
+                        "y": 60.125
+                    },
+                    "uuid": "f09619a0-2a3c-47d4-b5d3-95067259d1f7"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-OK_PROG)] de ROK1B1 sur F.Cu",
+                    "pos": {
+                        "x": 171.76,
+                        "y": 57.615
+                    },
+                    "uuid": "2e99bef6-c78c-4eed-b848-a85e51b67a40"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(U2-OK_PROG)] de ROK2B1 sur F.Cu",
+                    "pos": {
+                        "x": 173.41,
+                        "y": 60.125
+                    },
+                    "uuid": "f09619a0-2a3c-47d4-b5d3-95067259d1f7"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-OK_PROG)] de ROK1 sur F.Cu",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 65.145
+                    },
+                    "uuid": "d141959b-2c83-4de6-b05f-347a5fda922e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 11 [Net-(U2-OK_PROG)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 177.2875,
+                        "y": 92.375
+                    },
+                    "uuid": "ae8d3ad3-fad9-4474-a83b-b49b6bf08750"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-OK_PROG)] de ROK2 sur F.Cu",
+                    "pos": {
+                        "x": 169.4,
+                        "y": 67.655
+                    },
+                    "uuid": "51790115-b3f7-421f-abc2-e9bbb671d66e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 1 [Net-(J10-Pin_1)] de J10",
+                    "pos": {
+                        "x": 162.115,
+                        "y": 75.835
+                    },
+                    "uuid": "f6b11b2c-9863-4ac2-a62a-3c4cfe78a2b5"
+                },
+                {
+                    "description": "Pad métallisé 1 [Net-(J10-Pin_1)] de J4",
+                    "pos": {
+                        "x": 165.435,
+                        "y": 84.715
+                    },
+                    "uuid": "8262fc1a-fc4e-4b61-b0ca-fc69a6d1d6d3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(J19-Pin_2)] de CBYP1 sur F.Cu",
+                    "pos": {
+                        "x": 163.79,
+                        "y": 55.105
+                    },
+                    "uuid": "c3cbb21f-075f-4e1a-b07f-fb74c21cf39a"
+                },
+                {
+                    "description": "Pad 1 [Net-(J19-Pin_2)] de CSTOR1 sur F.Cu",
+                    "pos": {
+                        "x": 163.79,
+                        "y": 67.655
+                    },
+                    "uuid": "fd411ab2-a881-445d-89c5-db40481bfdd0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(J19-Pin_2)] de CSTOR1 sur F.Cu",
+                    "pos": {
+                        "x": 163.79,
+                        "y": 67.655
+                    },
+                    "uuid": "fd411ab2-a881-445d-89c5-db40481bfdd0"
+                },
+                {
+                    "description": "Pad métallisé 2 [Net-(J19-Pin_2)] de J19",
+                    "pos": {
+                        "x": 170.025,
+                        "y": 87.255
+                    },
+                    "uuid": "522a18af-353d-43d4-a747-3cce11a7073c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [Net-(J19-Pin_2)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 173.9125,
+                        "y": 91.375
+                    },
+                    "uuid": "df8df02f-efbd-44bf-97ce-1c9448ce3f0f"
+                },
+                {
+                    "description": "Pad 19 [Net-(J19-Pin_2)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 175.1,
+                        "y": 89.6875
+                    },
+                    "uuid": "f1cae027-c13a-4957-aecb-7ee31da6c5b9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 19 [Net-(J19-Pin_2)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 175.1,
+                        "y": 89.6875
+                    },
+                    "uuid": "f1cae027-c13a-4957-aecb-7ee31da6c5b9"
+                },
+                {
+                    "description": "Pad métallisé 2 [Net-(J19-Pin_2)] de J19",
+                    "pos": {
+                        "x": 170.025,
+                        "y": 87.255
+                    },
+                    "uuid": "522a18af-353d-43d4-a747-3cce11a7073c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 3 [I2C_SDA] de J23",
+                    "pos": {
+                        "x": 160.845,
+                        "y": 41.385
+                    },
+                    "uuid": "10f07ec2-e134-4664-9546-6514ee43dae4"
+                },
+                {
+                    "description": "Pad 10 [I2C_SDA] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 164.815,
+                        "y": 46.315
+                    },
+                    "uuid": "98c24a5e-e4c0-4107-8dee-f135743e9aa7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 4 [I2C_SCL] de J23",
+                    "pos": {
+                        "x": 160.845,
+                        "y": 43.925
+                    },
+                    "uuid": "cf413bf3-68cc-4008-ae64-a352b519c871"
+                },
+                {
+                    "description": "Pad 9 [I2C_SCL] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 164.815,
+                        "y": 45.315
+                    },
+                    "uuid": "08315919-bf0a-475b-a7ad-22f0af46498f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 6 [IR_INT] de J23",
+                    "pos": {
+                        "x": 160.845,
+                        "y": 49.005
+                    },
+                    "uuid": "dba5664e-046b-4ea2-9897-ecc23172f2ea"
+                },
+                {
+                    "description": "Pad 6 [IR_INT] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 164.815,
+                        "y": 42.315
+                    },
+                    "uuid": "ed857c89-9176-46c5-9d7b-2bb26a0e1b6e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 7 [IR_XSHUT] de J23",
+                    "pos": {
+                        "x": 160.845,
+                        "y": 51.545
+                    },
+                    "uuid": "bce0103a-aad9-4759-979d-5560495af723"
+                },
+                {
+                    "description": "Pad 30 [IR_XSHUT] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 170.715,
+                        "y": 35.665
+                    },
+                    "uuid": "d0c42e6b-cff0-43a4-a3c9-981c19f9ed5c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 6 [VBAT_OK] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 174.6,
+                        "y": 93.0625
+                    },
+                    "uuid": "f37e36ba-935a-41d9-a8f6-21b731f5e468"
+                },
+                {
+                    "description": "Pad 13 [VBAT_OK] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 177.2875,
+                        "y": 91.375
+                    },
+                    "uuid": "56a636e3-82e1-4bb5-b195-c9400d667c8a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 13 [VBAT_OK] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 177.2875,
+                        "y": 91.375
+                    },
+                    "uuid": "56a636e3-82e1-4bb5-b195-c9400d667c8a"
+                },
+                {
+                    "description": "Pad 1 [VBAT_OK] de R8 sur F.Cu",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 55.105
+                    },
+                    "uuid": "61d45f68-74a7-42c2-be09-9d3b6ad8beac"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [VBAT_OK_3V3] de R9 sur F.Cu",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 57.615
+                    },
+                    "uuid": "a6da7be9-53ae-44a6-8327-26aff2aea48a"
+                },
+                {
+                    "description": "Pad 2 [VBAT_OK_3V3] de R8 sur F.Cu",
+                    "pos": {
+                        "x": 169.4,
+                        "y": 55.105
+                    },
+                    "uuid": "845f6613-2635-468c-adfb-96a263e298f5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [VBAT_OK_3V3] de R8 sur F.Cu",
+                    "pos": {
+                        "x": 169.4,
+                        "y": 55.105
+                    },
+                    "uuid": "845f6613-2635-468c-adfb-96a263e298f5"
+                },
+                {
+                    "description": "Pad 29 [VBAT_OK_3V3] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 171.715,
+                        "y": 35.665
+                    },
+                    "uuid": "d91d4c5c-7796-4afa-9d3a-4592196b6dce"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(U2-VREF_SAMP)] de CREF1 sur F.Cu",
+                    "pos": {
+                        "x": 163.79,
+                        "y": 65.145
+                    },
+                    "uuid": "6dade643-84b8-46cc-9773-30614f08a0f9"
+                },
+                {
+                    "description": "Pad 4 [Net-(U2-VREF_SAMP)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 173.9125,
+                        "y": 91.875
+                    },
+                    "uuid": "c87437d6-af6c-4104-86a0-39d88e77fb55"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/UART2_RX] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 164.815,
+                        "y": 37.315
+                    },
+                    "uuid": "2f6c89ef-ed97-4523-8226-f5eb115f7d02"
+                },
+                {
+                    "description": "Pad métallisé 4 [/UART2_RX] de J21",
+                    "pos": {
+                        "x": 173.065,
+                        "y": 78.825
+                    },
+                    "uuid": "dded9f9e-00f7-4e74-ad56-b8fc50f45fc2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/UART2_TX] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 164.815,
+                        "y": 38.315
+                    },
+                    "uuid": "81cac953-430f-40ed-8b9f-685eb613ec48"
+                },
+                {
+                    "description": "Pad métallisé 3 [/UART2_TX] de J21",
+                    "pos": {
+                        "x": 173.065,
+                        "y": 76.285
+                    },
+                    "uuid": "30825630-bcdf-4b5d-bce8-ee841e35ba46"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 7 [/SWDIO] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 164.815,
+                        "y": 43.315
+                    },
+                    "uuid": "36443aff-e121-446b-8aa2-02b49e835b33"
+                },
+                {
+                    "description": "Pad métallisé 3 [/SWDIO] de J22",
+                    "pos": {
+                        "x": 180.895,
+                        "y": 61.225
+                    },
+                    "uuid": "2be72612-a36f-4d83-a0cb-2ef8977f75a3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 8 [/SWCLK] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 164.815,
+                        "y": 44.315
+                    },
+                    "uuid": "19522767-cd9b-47ae-8361-36251519ed24"
+                },
+                {
+                    "description": "Pad métallisé 4 [/SWCLK] de J22",
+                    "pos": {
+                        "x": 180.895,
+                        "y": 63.765
+                    },
+                    "uuid": "3b7e57bb-8c73-447f-bfa6-ed173cf60fce"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 12 [/RF] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 164.815,
+                        "y": 48.315
+                    },
+                    "uuid": "d265a69d-6a87-4a33-be9f-23aae09c8e3a"
+                },
+                {
+                    "description": "Pad 1 [/RF] de AE1 sur F.Cu",
+                    "pos": {
+                        "x": 133.775,
+                        "y": 54.265
+                    },
+                    "uuid": "e550b75c-c0bf-45ff-bd6c-eb9a5a5d0971"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF] de J20 sur F.Cu",
+                    "pos": {
+                        "x": 173.87,
+                        "y": 85.445
+                    },
+                    "uuid": "0f2dff81-3ab9-476b-b7c0-8080893123df"
+                },
+                {
+                    "description": "Pad 12 [/RF] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 164.815,
+                        "y": 48.315
+                    },
+                    "uuid": "d265a69d-6a87-4a33-be9f-23aae09c8e3a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/BOOT0] de R10 sur F.Cu",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 60.125
+                    },
+                    "uuid": "c51e0ba8-5c64-422d-be00-2770660da7c8"
+                },
+                {
+                    "description": "Pad 21 [/BOOT0] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 179.615,
+                        "y": 40.315
+                    },
+                    "uuid": "147b0785-ff6b-4e26-98ed-072d50e5429d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 1 [Net-(J3-Pin_1)] de J3",
+                    "pos": {
+                        "x": 160.845,
+                        "y": 84.715
+                    },
+                    "uuid": "8ae5cf26-e9ba-44b9-9efd-bbe65c0a397d"
+                },
+                {
+                    "description": "Pad 14 [Net-(J3-Pin_1)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 177.2875,
+                        "y": 90.875
+                    },
+                    "uuid": "d3d2e6b6-c910-470c-abaf-06a0c1a82f6c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 14 [Net-(J3-Pin_1)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 177.2875,
+                        "y": 90.875
+                    },
+                    "uuid": "d3d2e6b6-c910-470c-abaf-06a0c1a82f6c"
+                },
+                {
+                    "description": "Pad 2 [Net-(J3-Pin_1)] de LBUCK1 sur F.Cu",
+                    "pos": {
+                        "x": 178.91,
+                        "y": 75.135
+                    },
+                    "uuid": "31c9557d-c44c-4059-b6b5-289631ed32da"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(J3-Pin_1)] de LBUCK1 sur F.Cu",
+                    "pos": {
+                        "x": 178.91,
+                        "y": 75.135
+                    },
+                    "uuid": "31c9557d-c44c-4059-b6b5-289631ed32da"
+                },
+                {
+                    "description": "Pad 2 [Net-(J3-Pin_1)] de COUT1 sur F.Cu",
+                    "pos": {
+                        "x": 165.34,
+                        "y": 62.635
+                    },
+                    "uuid": "aa61035f-894b-40ed-8188-fc27a4b76ac9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(U2-LBOOST)] de LBOOST1 sur F.Cu",
+                    "pos": {
+                        "x": 163.765,
+                        "y": 92.285
+                    },
+                    "uuid": "f57687e8-cbc5-49ad-ae34-56deac79e26a"
+                },
+                {
+                    "description": "Pad 20 [Net-(U2-LBOOST)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 174.6,
+                        "y": 89.6875
+                    },
+                    "uuid": "dc4a81ee-4e44-4781-b06c-86a96f8fe8c6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(U2-VOUT_SET)] de ROUT1 sur F.Cu",
+                    "pos": {
+                        "x": 171.76,
+                        "y": 65.145
+                    },
+                    "uuid": "0b4f381f-88f4-48d6-ae09-a768c0ee6398"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-VOUT_SET)] de ROUT2 sur F.Cu",
+                    "pos": {
+                        "x": 173.41,
+                        "y": 67.655
+                    },
+                    "uuid": "b182ad7d-5578-45b7-add5-1f17916eb71b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 12 [Net-(U2-VOUT_SET)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 177.2875,
+                        "y": 91.875
+                    },
+                    "uuid": "d6089cd8-3eac-4311-a498-2c0fdebdf4bf"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-VOUT_SET)] de ROUT2 sur F.Cu",
+                    "pos": {
+                        "x": 173.41,
+                        "y": 67.655
+                    },
+                    "uuid": "b182ad7d-5578-45b7-add5-1f17916eb71b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(U2-VOUT_SET)] de ROUT2B1 sur F.Cu",
+                    "pos": {
+                        "x": 177.42,
+                        "y": 57.615
+                    },
+                    "uuid": "987b9444-e19d-4d1a-91be-87e6ab1d9a2d"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-VOUT_SET)] de ROUT1B1 sur F.Cu",
+                    "pos": {
+                        "x": 175.77,
+                        "y": 55.105
+                    },
+                    "uuid": "91ad8a4a-1968-4d67-a6a8-0f3301db021b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(U2-VOUT_SET)] de ROUT2B1 sur F.Cu",
+                    "pos": {
+                        "x": 177.42,
+                        "y": 57.615
+                    },
+                    "uuid": "987b9444-e19d-4d1a-91be-87e6ab1d9a2d"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-VOUT_SET)] de ROUT1 sur F.Cu",
+                    "pos": {
+                        "x": 171.76,
+                        "y": 65.145
+                    },
+                    "uuid": "0b4f381f-88f4-48d6-ae09-a768c0ee6398"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 16 [Net-(U2-LBUCK)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 176.6,
+                        "y": 89.6875
+                    },
+                    "uuid": "adbd36d5-1242-4a7c-b144-e864fd0de9d9"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-LBUCK)] de LBUCK1 sur F.Cu",
+                    "pos": {
+                        "x": 176.76,
+                        "y": 75.135
+                    },
+                    "uuid": "562e8e69-803a-47bb-b771-4bcf258fb445"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Le C.I. a un contour mal formé (Aucun contour trouvé sur couche Contour)",
+            "items": [
+                {
+                    "description": "PCB",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "1c919fe6-7fbb-4427-a634-f9c0f5d34c2c"
+                }
+            ],
+            "severity": "error",
+            "type": "invalid_outline"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de CIN2",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 58.695
+                    },
+                    "uuid": "75143c56-f65f-4297-afeb-ddb7b2e90824"
+                },
+                {
+                    "description": "Segment de CIN1 sur F.Silkscreen",
+                    "pos": {
+                        "x": 164.42442,
+                        "y": 58.125
+                    },
+                    "uuid": "c741303a-321b-400d-9351-748248e38d7c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de CBYP1 sur F.Silkscreen",
+                    "pos": {
+                        "x": 164.42442,
+                        "y": 55.615
+                    },
+                    "uuid": "154e9a08-8711-4b1e-b753-2bf6c3cc517d"
+                },
+                {
+                    "description": "Champ référence de CIN1",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 56.185
+                    },
+                    "uuid": "70af773a-2003-4970-81d8-cc844aa31114"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de C8 sur F.Silkscreen",
+                    "pos": {
+                        "x": 160.41442,
+                        "y": 58.125
+                    },
+                    "uuid": "2767077e-f89c-40ed-b456-71b4e5afaeb9"
+                },
+                {
+                    "description": "Champ référence de C9",
+                    "pos": {
+                        "x": 160.555,
+                        "y": 58.695
+                    },
+                    "uuid": "d84188f5-9dcd-4008-b634-7731597ca511"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de R9 sur F.Silkscreen",
+                    "pos": {
+                        "x": 168.337742,
+                        "y": 58.1375
+                    },
+                    "uuid": "388bd919-3ba1-4583-9ad3-56144122d5e2"
+                },
+                {
+                    "description": "Champ référence de R10",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 58.695
+                    },
+                    "uuid": "d7730ab5-630a-40b5-95ca-78278ba2e398"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de R9",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 56.185
+                    },
+                    "uuid": "33eba426-0b16-4050-b7e5-fade6e555455"
+                },
+                {
+                    "description": "Segment de R8 sur F.Silkscreen",
+                    "pos": {
+                        "x": 168.337742,
+                        "y": 55.6275
+                    },
+                    "uuid": "bb6d082f-232e-4b15-8e4b-f89554697969"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de R10 sur F.Silkscreen",
+                    "pos": {
+                        "x": 168.337742,
+                        "y": 60.6475
+                    },
+                    "uuid": "5b194225-94c2-44a0-bd9a-90a4ca16cf15"
+                },
+                {
+                    "description": "Champ référence de R11",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 61.205
+                    },
+                    "uuid": "ac38009a-b243-44be-9a7e-0c6601a8e118"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de ROUT1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 63.715
+                    },
+                    "uuid": "39d93ed5-6147-42d5-9a68-e7df8009d41c"
+                },
+                {
+                    "description": "Champ référence de ROV1B1",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 63.715
+                    },
+                    "uuid": "5d41d69d-4a47-49a6-be68-d9d4fecef857"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de ROV2",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 61.205
+                    },
+                    "uuid": "6859e7ce-2dab-457c-a223-43c244adc907"
+                },
+                {
+                    "description": "Champ référence de ROK3B1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 61.205
+                    },
+                    "uuid": "a8c17f25-bed6-43ec-ba0d-8e93f0e94c21"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de ROK3B1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 61.205
+                    },
+                    "uuid": "a8c17f25-bed6-43ec-ba0d-8e93f0e94c21"
+                },
+                {
+                    "description": "Champ référence de R11",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 61.205
+                    },
+                    "uuid": "ac38009a-b243-44be-9a7e-0c6601a8e118"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de ROK2B1 sur F.Silkscreen",
+                    "pos": {
+                        "x": 172.347742,
+                        "y": 60.6475
+                    },
+                    "uuid": "35741bdd-93dd-4cbe-babe-1723c56b417f"
+                },
+                {
+                    "description": "Champ référence de ROK3B1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 61.205
+                    },
+                    "uuid": "a8c17f25-bed6-43ec-ba0d-8e93f0e94c21"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de ROUT1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 63.715
+                    },
+                    "uuid": "39d93ed5-6147-42d5-9a68-e7df8009d41c"
+                },
+                {
+                    "description": "Segment de ROK3B1 sur F.Silkscreen",
+                    "pos": {
+                        "x": 172.347742,
+                        "y": 63.1575
+                    },
+                    "uuid": "56297964-5377-454c-b5b7-417cc501bea4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de ROK2B1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 58.695
+                    },
+                    "uuid": "4347488d-75d2-466a-a01b-3546fa681920"
+                },
+                {
+                    "description": "Champ référence de R10",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 58.695
+                    },
+                    "uuid": "d7730ab5-630a-40b5-95ca-78278ba2e398"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de ROK2B1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 58.695
+                    },
+                    "uuid": "4347488d-75d2-466a-a01b-3546fa681920"
+                },
+                {
+                    "description": "Segment de ROK1B1 sur F.Silkscreen",
+                    "pos": {
+                        "x": 172.347742,
+                        "y": 58.1375
+                    },
+                    "uuid": "ad7de158-703f-4242-ab67-ea24f0af72d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de ROK2B1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 58.695
+                    },
+                    "uuid": "4347488d-75d2-466a-a01b-3546fa681920"
+                },
+                {
+                    "description": "Champ référence de ROV1",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 58.695
+                    },
+                    "uuid": "8d28c5ab-1efd-45c1-802e-0aa683084b09"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de C8",
+                    "pos": {
+                        "x": 160.555,
+                        "y": 56.185
+                    },
+                    "uuid": "4557cfe0-a402-4646-8fbc-1319ad593eb0"
+                },
+                {
+                    "description": "Segment de C1 sur F.Silkscreen",
+                    "pos": {
+                        "x": 160.41442,
+                        "y": 55.615
+                    },
+                    "uuid": "f2526aee-0d9e-4a6b-a7cf-3dbde184f446"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de C11 sur F.Silkscreen",
+                    "pos": {
+                        "x": 160.41442,
+                        "y": 63.145
+                    },
+                    "uuid": "655d062a-6289-4698-8ea8-e9cea61a309a"
+                },
+                {
+                    "description": "Champ référence de C13",
+                    "pos": {
+                        "x": 160.555,
+                        "y": 63.715
+                    },
+                    "uuid": "88794534-9bb9-4510-a706-0a4d9767e85d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de COUT1 sur F.Silkscreen",
+                    "pos": {
+                        "x": 164.42442,
+                        "y": 63.145
+                    },
+                    "uuid": "20b1c0a4-61a4-4f90-b696-12c71b667fa8"
+                },
+                {
+                    "description": "Champ référence de CREF1",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 63.715
+                    },
+                    "uuid": "c19773a6-ae09-45a9-905a-6249841385ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de CSTOR1",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 66.225
+                    },
+                    "uuid": "80ba2ca5-f965-42db-ab5d-1c1bd0ac044f"
+                },
+                {
+                    "description": "Segment de CREF1 sur F.Silkscreen",
+                    "pos": {
+                        "x": 164.42442,
+                        "y": 65.655
+                    },
+                    "uuid": "a742deac-bc65-4322-a196-1995d2db5b6c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de C11",
+                    "pos": {
+                        "x": 160.555,
+                        "y": 61.205
+                    },
+                    "uuid": "80c60d47-2822-4eac-87ba-88ac30f4e1df"
+                },
+                {
+                    "description": "Segment de C9 sur F.Silkscreen",
+                    "pos": {
+                        "x": 160.41442,
+                        "y": 60.635
+                    },
+                    "uuid": "e8fca2b3-71eb-46f0-8c39-cb351dc4c2c9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de COUT1",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 61.205
+                    },
+                    "uuid": "6ad2182c-306d-4eea-9bd1-49adfb4c339f"
+                },
+                {
+                    "description": "Segment de CIN2 sur F.Silkscreen",
+                    "pos": {
+                        "x": 164.42442,
+                        "y": 60.635
+                    },
+                    "uuid": "da3b1757-26b6-466e-9be8-c8bbdb6b3508"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de C13 sur F.Silkscreen",
+                    "pos": {
+                        "x": 160.41442,
+                        "y": 65.655
+                    },
+                    "uuid": "275f41ed-d86f-418f-98ea-c8ea1165d803"
+                },
+                {
+                    "description": "Champ référence de C22",
+                    "pos": {
+                        "x": 160.555,
+                        "y": 66.225
+                    },
+                    "uuid": "4d1c3b1f-fbd0-4a2e-9ba2-7ad5ae10bc09"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de C22",
+                    "pos": {
+                        "x": 160.555,
+                        "y": 66.225
+                    },
+                    "uuid": "4d1c3b1f-fbd0-4a2e-9ba2-7ad5ae10bc09"
+                },
+                {
+                    "description": "Champ référence de CSTOR1",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 66.225
+                    },
+                    "uuid": "80ba2ca5-f965-42db-ab5d-1c1bd0ac044f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de ROV2",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 61.205
+                    },
+                    "uuid": "6859e7ce-2dab-457c-a223-43c244adc907"
+                },
+                {
+                    "description": "Segment de ROV1 sur F.Silkscreen",
+                    "pos": {
+                        "x": 176.357742,
+                        "y": 60.6475
+                    },
+                    "uuid": "eae8fc4e-9599-4217-896d-a30886ad9903"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de ROUT2B1 sur F.Silkscreen",
+                    "pos": {
+                        "x": 176.357742,
+                        "y": 58.1375
+                    },
+                    "uuid": "5298f1cd-dfc3-4070-8b0b-80011c8f7bbf"
+                },
+                {
+                    "description": "Champ référence de ROV1",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 58.695
+                    },
+                    "uuid": "8d28c5ab-1efd-45c1-802e-0aa683084b09"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de ROUT2B1",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 56.185
+                    },
+                    "uuid": "c929967b-a003-4a99-82a3-5a0ec17649d3"
+                },
+                {
+                    "description": "Champ référence de ROK1B1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 56.185
+                    },
+                    "uuid": "f5fb4759-25e0-4c04-8bc0-ffd58aa4ae9f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de ROUT1B1 sur F.Silkscreen",
+                    "pos": {
+                        "x": 176.357742,
+                        "y": 55.6275
+                    },
+                    "uuid": "69dbbd1e-d9c3-4895-917a-19215a6b73a5"
+                },
+                {
+                    "description": "Champ référence de ROUT2B1",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 56.185
+                    },
+                    "uuid": "c929967b-a003-4a99-82a3-5a0ec17649d3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de ROV1B1",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 63.715
+                    },
+                    "uuid": "5d41d69d-4a47-49a6-be68-d9d4fecef857"
+                },
+                {
+                    "description": "Segment de ROV2 sur F.Silkscreen",
+                    "pos": {
+                        "x": 176.357742,
+                        "y": 63.1575
+                    },
+                    "uuid": "8acf82e5-792d-467a-9e40-df5fec46d1c9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de ROK3 sur F.Silkscreen",
+                    "pos": {
+                        "x": 172.347742,
+                        "y": 55.6275
+                    },
+                    "uuid": "07faa5ee-eea9-49b6-9120-e1d555f4dcea"
+                },
+                {
+                    "description": "Champ référence de ROK1B1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 56.185
+                    },
+                    "uuid": "f5fb4759-25e0-4c04-8bc0-ffd58aa4ae9f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de J22",
+                    "pos": {
+                        "x": 180.895,
+                        "y": 53.765
+                    },
+                    "uuid": "4fbead8d-de2e-4899-867f-b8e2c2ed80a5"
+                },
+                {
+                    "description": "Champ référence de ROUT1B1",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 53.675
+                    },
+                    "uuid": "6f315103-d3c5-48d0-bcb3-5aeeea04fc10"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de ROK3",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 53.675
+                    },
+                    "uuid": "6059ed33-148f-4258-9630-cfe3dccc8e66"
+                },
+                {
+                    "description": "Champ référence de ROUT1B1",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 53.675
+                    },
+                    "uuid": "6f315103-d3c5-48d0-bcb3-5aeeea04fc10"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de J22 sur F.Silkscreen",
+                    "pos": {
+                        "x": 179.515,
+                        "y": 56.145
+                    },
+                    "uuid": "38a0af9f-4b41-4118-99da-077fd74b1d71"
+                },
+                {
+                    "description": "Champ référence de ROUT2B1",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 56.185
+                    },
+                    "uuid": "c929967b-a003-4a99-82a3-5a0ec17649d3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de U1",
+                    "pos": {
+                        "x": 165.715,
+                        "y": 52.565
+                    },
+                    "uuid": "83e1e02d-ea39-4d48-ae66-c6391549114a"
+                },
+                {
+                    "description": "Champ référence de CBYP1",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 53.675
+                    },
+                    "uuid": "eb0c18b9-ef6d-42df-9ea2-2dfab90f9e4f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de SW1 sur F.Silkscreen",
+                    "pos": {
+                        "x": 176.635,
+                        "y": 72.485
+                    },
+                    "uuid": "242ff814-6156-4668-bc06-a83b46f70040"
+                },
+                {
+                    "description": "Champ référence de LBUCK1",
+                    "pos": {
+                        "x": 177.835,
+                        "y": 73.085
+                    },
+                    "uuid": "b35ec04a-a5c8-4bfe-bc7b-9f8165e1022f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de ROV1B1 sur F.Silkscreen",
+                    "pos": {
+                        "x": 176.357742,
+                        "y": 65.6675
+                    },
+                    "uuid": "4af30b26-1bf1-4959-8cd1-c1dec886ae46"
+                },
+                {
+                    "description": "Champ référence de ROV2B1",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 66.225
+                    },
+                    "uuid": "6d970537-06f8-4d1e-8bc3-6dcda804d359"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de ROV2B1 sur F.Silkscreen",
+                    "pos": {
+                        "x": 176.357742,
+                        "y": 68.1775
+                    },
+                    "uuid": "3dfa0822-9b63-4e28-9a08-fe3418e8357d"
+                },
+                {
+                    "description": "Champ référence de SW1",
+                    "pos": {
+                        "x": 178.285,
+                        "y": 68.585
+                    },
+                    "uuid": "97f75218-188f-4e35-8e62-4952d67f83be"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de ROUT2",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 66.225
+                    },
+                    "uuid": "035ca6f4-69d1-411a-8dca-959d83576612"
+                },
+                {
+                    "description": "Champ référence de ROV2B1",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 66.225
+                    },
+                    "uuid": "6d970537-06f8-4d1e-8bc3-6dcda804d359"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de ROK1 sur F.Silkscreen",
+                    "pos": {
+                        "x": 168.337742,
+                        "y": 65.6675
+                    },
+                    "uuid": "c7bd7b0b-4ce4-420f-9035-502e0f9c4919"
+                },
+                {
+                    "description": "Champ référence de ROK2",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 66.225
+                    },
+                    "uuid": "f8971ce0-c901-453f-8983-b25d27dfb3de"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de ROUT2",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 66.225
+                    },
+                    "uuid": "035ca6f4-69d1-411a-8dca-959d83576612"
+                },
+                {
+                    "description": "Champ référence de ROK2",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 66.225
+                    },
+                    "uuid": "f8971ce0-c901-453f-8983-b25d27dfb3de"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de ROK1",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 63.715
+                    },
+                    "uuid": "1f19c58e-1b63-400c-b7f2-30948d52420d"
+                },
+                {
+                    "description": "Segment de R11 sur F.Silkscreen",
+                    "pos": {
+                        "x": 168.337742,
+                        "y": 63.1575
+                    },
+                    "uuid": "92f4c537-77be-407d-b565-60177c76798a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de CSTOR1",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 66.225
+                    },
+                    "uuid": "80ba2ca5-f965-42db-ab5d-1c1bd0ac044f"
+                },
+                {
+                    "description": "Champ référence de ROK2",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 66.225
+                    },
+                    "uuid": "f8971ce0-c901-453f-8983-b25d27dfb3de"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de ROK1",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 63.715
+                    },
+                    "uuid": "1f19c58e-1b63-400c-b7f2-30948d52420d"
+                },
+                {
+                    "description": "Champ référence de CREF1",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 63.715
+                    },
+                    "uuid": "c19773a6-ae09-45a9-905a-6249841385ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de J10",
+                    "pos": {
+                        "x": 164.655,
+                        "y": 68.815
+                    },
+                    "uuid": "31254faa-f0eb-4b73-abc3-2bdcda38f5a3"
+                },
+                {
+                    "description": "Segment de CSTOR1 sur F.Silkscreen",
+                    "pos": {
+                        "x": 164.42442,
+                        "y": 68.165
+                    },
+                    "uuid": "bd7059be-0e1f-408e-a944-0654fba61958"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de ROK1",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 63.715
+                    },
+                    "uuid": "1f19c58e-1b63-400c-b7f2-30948d52420d"
+                },
+                {
+                    "description": "Champ référence de ROUT1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 63.715
+                    },
+                    "uuid": "39d93ed5-6147-42d5-9a68-e7df8009d41c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de ROUT2",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 66.225
+                    },
+                    "uuid": "035ca6f4-69d1-411a-8dca-959d83576612"
+                },
+                {
+                    "description": "Segment de ROUT1 sur F.Silkscreen",
+                    "pos": {
+                        "x": 172.347742,
+                        "y": 65.6675
+                    },
+                    "uuid": "f3f2d11b-4ee2-4ec4-8522-abbf503569a7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de J21",
+                    "pos": {
+                        "x": 173.065,
+                        "y": 68.825
+                    },
+                    "uuid": "045ec069-7636-483d-a5bd-566824cf4b5a"
+                },
+                {
+                    "description": "Segment de ROUT2 sur F.Silkscreen",
+                    "pos": {
+                        "x": 172.347742,
+                        "y": 68.1775
+                    },
+                    "uuid": "fc30dab0-a83f-4328-b8e9-96f3e9d381a3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de LBUCK1 sur F.Silkscreen",
+                    "pos": {
+                        "x": 177.573748,
+                        "y": 76.245
+                    },
+                    "uuid": "0ecbcaf9-001c-4bcc-beee-b66fd4906dbd"
+                },
+                {
+                    "description": "Champ référence de C10",
+                    "pos": {
+                        "x": 177.585,
+                        "y": 76.835
+                    },
+                    "uuid": "9a7793aa-c8cc-48ee-9e2a-2158b1ef6e3a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de J3 sur F.Silkscreen",
+                    "pos": {
+                        "x": 162.225,
+                        "y": 85.985
+                    },
+                    "uuid": "2bfd044a-07b6-4823-87f2-10096228fe32"
+                },
+                {
+                    "description": "Champ référence de LBOOST1",
+                    "pos": {
+                        "x": 163.175,
+                        "y": 89.15
+                    },
+                    "uuid": "6516c729-31e5-4f4a-a788-cb8b6aff047b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment de J3 sur F.Silkscreen",
+                    "pos": {
+                        "x": 159.465,
+                        "y": 88.635
+                    },
+                    "uuid": "52d94b27-ac14-40c6-bb43-e7e7cc95502b"
+                },
+                {
+                    "description": "Champ référence de LBOOST1",
+                    "pos": {
+                        "x": 163.175,
+                        "y": 89.15
+                    },
+                    "uuid": "6516c729-31e5-4f4a-a788-cb8b6aff047b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de LBOOST1",
+                    "pos": {
+                        "x": 163.175,
+                        "y": 89.15
+                    },
+                    "uuid": "6516c729-31e5-4f4a-a788-cb8b6aff047b"
+                },
+                {
+                    "description": "Segment de J4 sur F.Silkscreen",
+                    "pos": {
+                        "x": 164.055,
+                        "y": 85.985
+                    },
+                    "uuid": "cb37a002-3578-4876-88fa-951ab8fe262a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Champ référence de LBOOST1",
+                    "pos": {
+                        "x": 163.175,
+                        "y": 89.15
+                    },
+                    "uuid": "6516c729-31e5-4f4a-a788-cb8b6aff047b"
+                },
+                {
+                    "description": "Segment de J4 sur F.Silkscreen",
+                    "pos": {
+                        "x": 164.055,
+                        "y": 88.635
+                    },
+                    "uuid": "c621f092-9d0e-4d9d-9f2b-b53019816b2f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de C8",
+                    "pos": {
+                        "x": 160.555,
+                        "y": 56.185
+                    },
+                    "uuid": "4557cfe0-a402-4646-8fbc-1319ad593eb0"
+                },
+                {
+                    "description": "Pad 2 ['EN] de C1 sur F.Cu",
+                    "pos": {
+                        "x": 161.33,
+                        "y": 55.105
+                    },
+                    "uuid": "f952de34-0b87-4e9b-a068-eeb50d8c6014"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de CIN1",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 56.185
+                    },
+                    "uuid": "70af773a-2003-4970-81d8-cc844aa31114"
+                },
+                {
+                    "description": "Pad 1 [Net-(J19-Pin_2)] de CBYP1 sur F.Cu",
+                    "pos": {
+                        "x": 163.79,
+                        "y": 55.105
+                    },
+                    "uuid": "c3cbb21f-075f-4e1a-b07f-fb74c21cf39a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de CIN2",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 58.695
+                    },
+                    "uuid": "75143c56-f65f-4297-afeb-ddb7b2e90824"
+                },
+                {
+                    "description": "Pad 1 [Net-(J4-Pin_2)] de CIN1 sur F.Cu",
+                    "pos": {
+                        "x": 163.79,
+                        "y": 57.615
+                    },
+                    "uuid": "551e12fc-e48f-4da2-ba5e-569897d77dcc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de CIN2",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 58.695
+                    },
+                    "uuid": "75143c56-f65f-4297-afeb-ddb7b2e90824"
+                },
+                {
+                    "description": "Pad 2 ['EN] de CIN1 sur F.Cu",
+                    "pos": {
+                        "x": 165.34,
+                        "y": 57.615
+                    },
+                    "uuid": "b6085672-1759-4795-93f8-1aa0499d8a79"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de C9",
+                    "pos": {
+                        "x": 160.555,
+                        "y": 58.695
+                    },
+                    "uuid": "d84188f5-9dcd-4008-b634-7731597ca511"
+                },
+                {
+                    "description": "Pad 2 ['EN] de C8 sur F.Cu",
+                    "pos": {
+                        "x": 161.33,
+                        "y": 57.615
+                    },
+                    "uuid": "3cd8684e-0044-4e20-a571-f695e5398b48"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de R10",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 58.695
+                    },
+                    "uuid": "d7730ab5-630a-40b5-95ca-78278ba2e398"
+                },
+                {
+                    "description": "Pad 1 [VBAT_OK_3V3] de R9 sur F.Cu",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 57.615
+                    },
+                    "uuid": "a6da7be9-53ae-44a6-8327-26aff2aea48a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de R9",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 56.185
+                    },
+                    "uuid": "33eba426-0b16-4050-b7e5-fade6e555455"
+                },
+                {
+                    "description": "Pad 1 [VBAT_OK] de R8 sur F.Cu",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 55.105
+                    },
+                    "uuid": "61d45f68-74a7-42c2-be09-9d3b6ad8beac"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de R11",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 61.205
+                    },
+                    "uuid": "ac38009a-b243-44be-9a7e-0c6601a8e118"
+                },
+                {
+                    "description": "Pad 1 [/BOOT0] de R10 sur F.Cu",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 60.125
+                    },
+                    "uuid": "c51e0ba8-5c64-422d-be00-2770660da7c8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROK3B1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 61.205
+                    },
+                    "uuid": "a8c17f25-bed6-43ec-ba0d-8e93f0e94c21"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-OK_HYST)] de ROK2B1 sur F.Cu",
+                    "pos": {
+                        "x": 171.76,
+                        "y": 60.125
+                    },
+                    "uuid": "60da9a3a-5189-4554-bcf8-755bcc135451"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de R11",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 61.205
+                    },
+                    "uuid": "ac38009a-b243-44be-9a7e-0c6601a8e118"
+                },
+                {
+                    "description": "Pad 2 ['EN] de R10 sur F.Cu",
+                    "pos": {
+                        "x": 169.4,
+                        "y": 60.125
+                    },
+                    "uuid": "9d814a55-d462-4563-8961-fdc7ac487f97"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROK3B1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 61.205
+                    },
+                    "uuid": "a8c17f25-bed6-43ec-ba0d-8e93f0e94c21"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-OK_PROG)] de ROK2B1 sur F.Cu",
+                    "pos": {
+                        "x": 173.41,
+                        "y": 60.125
+                    },
+                    "uuid": "f09619a0-2a3c-47d4-b5d3-95067259d1f7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROK2B1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 58.695
+                    },
+                    "uuid": "4347488d-75d2-466a-a01b-3546fa681920"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-OK_PROG)] de ROK1B1 sur F.Cu",
+                    "pos": {
+                        "x": 171.76,
+                        "y": 57.615
+                    },
+                    "uuid": "2e99bef6-c78c-4eed-b848-a85e51b67a40"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de R10",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 58.695
+                    },
+                    "uuid": "d7730ab5-630a-40b5-95ca-78278ba2e398"
+                },
+                {
+                    "description": "Pad 2 ['EN] de R9 sur F.Cu",
+                    "pos": {
+                        "x": 169.4,
+                        "y": 57.615
+                    },
+                    "uuid": "373e8c11-825b-44c9-aa0c-bd74e4eac58a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de C13",
+                    "pos": {
+                        "x": 160.555,
+                        "y": 63.715
+                    },
+                    "uuid": "88794534-9bb9-4510-a706-0a4d9767e85d"
+                },
+                {
+                    "description": "Pad 1 [PWR] de C11 sur F.Cu",
+                    "pos": {
+                        "x": 159.78,
+                        "y": 62.635
+                    },
+                    "uuid": "900c5d63-31f2-4b72-95f8-4d3a5c7df079"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de C13",
+                    "pos": {
+                        "x": 160.555,
+                        "y": 63.715
+                    },
+                    "uuid": "88794534-9bb9-4510-a706-0a4d9767e85d"
+                },
+                {
+                    "description": "Pad 2 ['EN] de C11 sur F.Cu",
+                    "pos": {
+                        "x": 161.33,
+                        "y": 62.635
+                    },
+                    "uuid": "a463549b-f4a7-494a-8907-1cbd695c6b39"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de CREF1",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 63.715
+                    },
+                    "uuid": "c19773a6-ae09-45a9-905a-6249841385ec"
+                },
+                {
+                    "description": "Pad 1 ['EN] de COUT1 sur F.Cu",
+                    "pos": {
+                        "x": 163.79,
+                        "y": 62.635
+                    },
+                    "uuid": "82e9d6ad-5c89-4457-bf53-5b046e39d374"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de CREF1",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 63.715
+                    },
+                    "uuid": "c19773a6-ae09-45a9-905a-6249841385ec"
+                },
+                {
+                    "description": "Pad 2 [Net-(J3-Pin_1)] de COUT1 sur F.Cu",
+                    "pos": {
+                        "x": 165.34,
+                        "y": 62.635
+                    },
+                    "uuid": "aa61035f-894b-40ed-8188-fc27a4b76ac9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de C11",
+                    "pos": {
+                        "x": 160.555,
+                        "y": 61.205
+                    },
+                    "uuid": "80c60d47-2822-4eac-87ba-88ac30f4e1df"
+                },
+                {
+                    "description": "Pad 1 [PWR] de C9 sur F.Cu",
+                    "pos": {
+                        "x": 159.78,
+                        "y": 60.125
+                    },
+                    "uuid": "fb897861-e363-4984-ac43-a24802f94a5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de C11",
+                    "pos": {
+                        "x": 160.555,
+                        "y": 61.205
+                    },
+                    "uuid": "80c60d47-2822-4eac-87ba-88ac30f4e1df"
+                },
+                {
+                    "description": "Pad 2 ['EN] de C9 sur F.Cu",
+                    "pos": {
+                        "x": 161.33,
+                        "y": 60.125
+                    },
+                    "uuid": "b64346c5-fea4-4f17-a39d-77b23e5cb6ab"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de COUT1",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 61.205
+                    },
+                    "uuid": "6ad2182c-306d-4eea-9bd1-49adfb4c339f"
+                },
+                {
+                    "description": "Pad 1 [Net-(J4-Pin_2)] de CIN2 sur F.Cu",
+                    "pos": {
+                        "x": 163.79,
+                        "y": 60.125
+                    },
+                    "uuid": "09161a73-f47c-437f-b19e-51ce5ae56424"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de COUT1",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 61.205
+                    },
+                    "uuid": "6ad2182c-306d-4eea-9bd1-49adfb4c339f"
+                },
+                {
+                    "description": "Pad 2 ['EN] de CIN2 sur F.Cu",
+                    "pos": {
+                        "x": 165.34,
+                        "y": 60.125
+                    },
+                    "uuid": "53644a29-8a89-4b67-8edb-cff41389f6a2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de C22",
+                    "pos": {
+                        "x": 160.555,
+                        "y": 66.225
+                    },
+                    "uuid": "4d1c3b1f-fbd0-4a2e-9ba2-7ad5ae10bc09"
+                },
+                {
+                    "description": "Pad 1 [PWR] de C13 sur F.Cu",
+                    "pos": {
+                        "x": 159.78,
+                        "y": 65.145
+                    },
+                    "uuid": "6c82dad1-2f10-4b31-8726-a1029427896e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de C22",
+                    "pos": {
+                        "x": 160.555,
+                        "y": 66.225
+                    },
+                    "uuid": "4d1c3b1f-fbd0-4a2e-9ba2-7ad5ae10bc09"
+                },
+                {
+                    "description": "Pad 2 ['EN] de C13 sur F.Cu",
+                    "pos": {
+                        "x": 161.33,
+                        "y": 65.145
+                    },
+                    "uuid": "aec655ca-a9e3-4904-b441-f4c0cc4805d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROUT2B1",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 56.185
+                    },
+                    "uuid": "c929967b-a003-4a99-82a3-5a0ec17649d3"
+                },
+                {
+                    "description": "Pad 2 ['EN] de ROUT1B1 sur F.Cu",
+                    "pos": {
+                        "x": 177.42,
+                        "y": 55.105
+                    },
+                    "uuid": "dd628056-acb5-46f9-a65c-2ade545e04a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROUT2B1",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 56.185
+                    },
+                    "uuid": "c929967b-a003-4a99-82a3-5a0ec17649d3"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-VOUT_SET)] de ROUT1B1 sur F.Cu",
+                    "pos": {
+                        "x": 175.77,
+                        "y": 55.105
+                    },
+                    "uuid": "91ad8a4a-1968-4d67-a6a8-0f3301db021b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROV2",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 61.205
+                    },
+                    "uuid": "6859e7ce-2dab-457c-a223-43c244adc907"
+                },
+                {
+                    "description": "Pad 2 ['EN] de ROV1 sur F.Cu",
+                    "pos": {
+                        "x": 177.42,
+                        "y": 60.125
+                    },
+                    "uuid": "38032234-12a5-447a-a232-8aa93021cb1d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROV1",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 58.695
+                    },
+                    "uuid": "8d28c5ab-1efd-45c1-802e-0aa683084b09"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-VOUT_SET)] de ROUT2B1 sur F.Cu",
+                    "pos": {
+                        "x": 177.42,
+                        "y": 57.615
+                    },
+                    "uuid": "987b9444-e19d-4d1a-91be-87e6ab1d9a2d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROK2B1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 58.695
+                    },
+                    "uuid": "4347488d-75d2-466a-a01b-3546fa681920"
+                },
+                {
+                    "description": "Pad 2 ['EN] de ROK1B1 sur F.Cu",
+                    "pos": {
+                        "x": 173.41,
+                        "y": 57.615
+                    },
+                    "uuid": "b6184dbd-9d17-4f15-9c93-338ed2add436"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROUT2B1",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 56.185
+                    },
+                    "uuid": "c929967b-a003-4a99-82a3-5a0ec17649d3"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-OK_HYST)] de ROK3 sur F.Cu",
+                    "pos": {
+                        "x": 173.41,
+                        "y": 55.105
+                    },
+                    "uuid": "5171c0f4-aabb-4d2d-848c-df8e0ec0a073"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROK1B1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 56.185
+                    },
+                    "uuid": "f5fb4759-25e0-4c04-8bc0-ffd58aa4ae9f"
+                },
+                {
+                    "description": "Pad 1 [/VRDIV] de ROK3 sur F.Cu",
+                    "pos": {
+                        "x": 171.76,
+                        "y": 55.105
+                    },
+                    "uuid": "1d44a757-41c2-4697-9f8f-848829751b2c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROK1B1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 56.185
+                    },
+                    "uuid": "f5fb4759-25e0-4c04-8bc0-ffd58aa4ae9f"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-OK_HYST)] de ROK3 sur F.Cu",
+                    "pos": {
+                        "x": 173.41,
+                        "y": 55.105
+                    },
+                    "uuid": "5171c0f4-aabb-4d2d-848c-df8e0ec0a073"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de R9",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 56.185
+                    },
+                    "uuid": "33eba426-0b16-4050-b7e5-fade6e555455"
+                },
+                {
+                    "description": "Pad 2 [VBAT_OK_3V3] de R8 sur F.Cu",
+                    "pos": {
+                        "x": 169.4,
+                        "y": 55.105
+                    },
+                    "uuid": "845f6613-2635-468c-adfb-96a263e298f5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de CIN1",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 56.185
+                    },
+                    "uuid": "70af773a-2003-4970-81d8-cc844aa31114"
+                },
+                {
+                    "description": "Pad 2 ['EN] de CBYP1 sur F.Cu",
+                    "pos": {
+                        "x": 165.34,
+                        "y": 55.105
+                    },
+                    "uuid": "29c5b46a-e135-48f6-83eb-1f23b653be3e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROV1B1",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 63.715
+                    },
+                    "uuid": "5d41d69d-4a47-49a6-be68-d9d4fecef857"
+                },
+                {
+                    "description": "Pad 1 [/VRDIV] de ROV2 sur F.Cu",
+                    "pos": {
+                        "x": 175.77,
+                        "y": 62.635
+                    },
+                    "uuid": "b624c82a-a352-4a49-9a5e-e73f2ee235a8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de SW1",
+                    "pos": {
+                        "x": 178.285,
+                        "y": 68.585
+                    },
+                    "uuid": "97f75218-188f-4e35-8e62-4952d67f83be"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-VBAT_OV)] de ROV2B1 sur F.Cu",
+                    "pos": {
+                        "x": 177.42,
+                        "y": 67.655
+                    },
+                    "uuid": "29d630d8-c044-451d-a000-3113c11b62bc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROV2B1",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 66.225
+                    },
+                    "uuid": "6d970537-06f8-4d1e-8bc3-6dcda804d359"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-VBAT_OV)] de ROV1B1 sur F.Cu",
+                    "pos": {
+                        "x": 175.77,
+                        "y": 65.145
+                    },
+                    "uuid": "669ea778-4917-499b-9ecd-18c7f5317741"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROV2B1",
+                    "pos": {
+                        "x": 176.595,
+                        "y": 66.225
+                    },
+                    "uuid": "6d970537-06f8-4d1e-8bc3-6dcda804d359"
+                },
+                {
+                    "description": "Pad 2 ['EN] de ROV1B1 sur F.Cu",
+                    "pos": {
+                        "x": 177.42,
+                        "y": 65.145
+                    },
+                    "uuid": "aa1cdc47-3eb1-442d-b8d0-2bd09fe605eb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROUT2",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 66.225
+                    },
+                    "uuid": "035ca6f4-69d1-411a-8dca-959d83576612"
+                },
+                {
+                    "description": "Pad 2 ['EN] de ROUT1 sur F.Cu",
+                    "pos": {
+                        "x": 173.41,
+                        "y": 65.145
+                    },
+                    "uuid": "baf9f9c2-3651-4775-834a-4e97e0d0f55d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROUT1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 63.715
+                    },
+                    "uuid": "39d93ed5-6147-42d5-9a68-e7df8009d41c"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-OK_HYST)] de ROK3B1 sur F.Cu",
+                    "pos": {
+                        "x": 173.41,
+                        "y": 62.635
+                    },
+                    "uuid": "8539222e-73d5-451f-9202-5e374d4db607"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROK2",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 66.225
+                    },
+                    "uuid": "f8971ce0-c901-453f-8983-b25d27dfb3de"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-OK_PROG)] de ROK1 sur F.Cu",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 65.145
+                    },
+                    "uuid": "d141959b-2c83-4de6-b05f-347a5fda922e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROK2",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 66.225
+                    },
+                    "uuid": "f8971ce0-c901-453f-8983-b25d27dfb3de"
+                },
+                {
+                    "description": "Pad 2 ['EN] de ROK1 sur F.Cu",
+                    "pos": {
+                        "x": 169.4,
+                        "y": 65.145
+                    },
+                    "uuid": "9e2c9219-4745-4e86-ad3a-af30e4980d1c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROK1",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 63.715
+                    },
+                    "uuid": "1f19c58e-1b63-400c-b7f2-30948d52420d"
+                },
+                {
+                    "description": "Pad 1 [PWR] de R11 sur F.Cu",
+                    "pos": {
+                        "x": 167.75,
+                        "y": 62.635
+                    },
+                    "uuid": "af7ad934-b754-45ce-b758-3b2a73731c00"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de CSTOR1",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 66.225
+                    },
+                    "uuid": "80ba2ca5-f965-42db-ab5d-1c1bd0ac044f"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-VREF_SAMP)] de CREF1 sur F.Cu",
+                    "pos": {
+                        "x": 163.79,
+                        "y": 65.145
+                    },
+                    "uuid": "6dade643-84b8-46cc-9773-30614f08a0f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de CSTOR1",
+                    "pos": {
+                        "x": 164.565,
+                        "y": 66.225
+                    },
+                    "uuid": "80ba2ca5-f965-42db-ab5d-1c1bd0ac044f"
+                },
+                {
+                    "description": "Pad 2 ['EN] de CREF1 sur F.Cu",
+                    "pos": {
+                        "x": 165.34,
+                        "y": 65.145
+                    },
+                    "uuid": "f39de3cc-8539-41f6-b9d6-8af189b5a8ba"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROK1",
+                    "pos": {
+                        "x": 168.575,
+                        "y": 63.715
+                    },
+                    "uuid": "1f19c58e-1b63-400c-b7f2-30948d52420d"
+                },
+                {
+                    "description": "Pad 2 [/NRST] de R11 sur F.Cu",
+                    "pos": {
+                        "x": 169.4,
+                        "y": 62.635
+                    },
+                    "uuid": "e54e119f-6dc8-4db2-b20c-77b229927468"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROUT1",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 63.715
+                    },
+                    "uuid": "39d93ed5-6147-42d5-9a68-e7df8009d41c"
+                },
+                {
+                    "description": "Pad 1 [/VRDIV] de ROK3B1 sur F.Cu",
+                    "pos": {
+                        "x": 171.76,
+                        "y": 62.635
+                    },
+                    "uuid": "151807e5-73ee-422d-ae2b-85fd1aeb086e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de ROUT2",
+                    "pos": {
+                        "x": 172.585,
+                        "y": 66.225
+                    },
+                    "uuid": "035ca6f4-69d1-411a-8dca-959d83576612"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-VOUT_SET)] de ROUT1 sur F.Cu",
+                    "pos": {
+                        "x": 171.76,
+                        "y": 65.145
+                    },
+                    "uuid": "0b4f381f-88f4-48d6-ae09-a768c0ee6398"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de C10",
+                    "pos": {
+                        "x": 177.585,
+                        "y": 76.835
+                    },
+                    "uuid": "9a7793aa-c8cc-48ee-9e2a-2158b1ef6e3a"
+                },
+                {
+                    "description": "Pad 2 [Net-(J3-Pin_1)] de LBUCK1 sur F.Cu",
+                    "pos": {
+                        "x": 178.91,
+                        "y": 75.135
+                    },
+                    "uuid": "31c9557d-c44c-4059-b6b5-289631ed32da"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Champ référence de C10",
+                    "pos": {
+                        "x": 177.585,
+                        "y": 76.835
+                    },
+                    "uuid": "9a7793aa-c8cc-48ee-9e2a-2158b1ef6e3a"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-LBUCK)] de LBUCK1 sur F.Cu",
+                    "pos": {
+                        "x": 176.76,
+                        "y": 75.135
+                    },
+                    "uuid": "562e8e69-803a-47bb-b771-4bcf258fb445"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

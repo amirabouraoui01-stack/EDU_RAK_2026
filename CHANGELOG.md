@@ -10,3 +10,5 @@ Version retenue du projet VeillePorte :
 
 L’historique des modifications antérieures est conservé dans l’historique Git.
 
+
+- PCB KiCad créé depuis le schéma complet ; empreinte d’antenne CST AE1 importée. Placement et routage restant à faire.
