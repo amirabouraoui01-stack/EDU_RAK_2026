@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "C:\\Users\\amira\\Desktop\\projet_kicad\\EDU_RAK_2026\\VeillePorte\\veilleporte_complet.kicad_sch")
-		(date "2026-10-28T12:05:11")
+		(date "2026-10-28T16:32:49")
 		(tool "Eeschema 10.0.6")
 		(sheet
 			(number "1")
@@ -1040,14 +1040,14 @@
 		)
 		(comp
 			(ref "J10")
-			(value "P-MFC")
-			(footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal")
+			(value "PANNEAU SOLAIRE")
+			(footprint "VeillePorte_Connecteurs:Solar_Wires_2x_D1.0_P5.08")
 			(description "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			(fields
 				(field
 					(name "LCSC") "C2683165")
 				(field
-					(name "Footprint") "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal")
+					(name "Footprint") "VeillePorte_Connecteurs:Solar_Wires_2x_D1.0_P5.08")
 				(field
 					(name "Datasheet")
 				)
@@ -1221,10 +1221,10 @@
 		(comp
 			(ref "J22")
 			(value "SWD")
-			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical")
+			(footprint "VeillePorte_Connecteurs:SWD_1x05_P2.54_VeillePorte")
 			(fields
 				(field
-					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical")
+					(name "Footprint") "VeillePorte_Connecteurs:SWD_1x05_P2.54_VeillePorte")
 				(field
 					(name "Datasheet")
 				)
@@ -2707,11 +2707,11 @@
 		(comp
 			(ref "U1")
 			(value "RAK3172(H) / EU868")
-			(footprint "RF_Module:RAK3172")
+			(footprint "VeillePorte_Modules:RAK3172_VeillePorte")
 			(datasheet "https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/Datasheet/")
 			(fields
 				(field
-					(name "Footprint") "RF_Module:RAK3172")
+					(name "Footprint") "VeillePorte_Modules:RAK3172_VeillePorte")
 				(field
 					(name "Datasheet") "https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/Datasheet/")
 				(field
@@ -2851,14 +2851,14 @@
 		(comp
 			(ref "U2")
 			(value "BQ25570")
-			(footprint "Package_DFN_QFN:QFN-20-1EP_3.5x3.5mm_P0.5mm_EP2x2mm")
+			(footprint "VeillePorte_Modules:BQ25570_VeillePorte")
 			(datasheet "http://www.ti.com/lit/ds/symlink/bq25570.pdf")
 			(description "Nano Power Boost Charger and Buck Converter for Energy Harvester Powered Applications, QFN-20")
 			(fields
 				(field
 					(name "LCSC") "C506250")
 				(field
-					(name "Footprint") "Package_DFN_QFN:QFN-20-1EP_3.5x3.5mm_P0.5mm_EP2x2mm")
+					(name "Footprint") "VeillePorte_Modules:BQ25570_VeillePorte")
 				(field
 					(name "Datasheet") "http://www.ti.com/lit/ds/symlink/bq25570.pdf")
 				(field
@@ -2983,7 +2983,7 @@
 				(field
 					(name "Value") "BQ25570")
 				(field
-					(name "Footprint") "Package_DFN_QFN:QFN-20-1EP_3.5x3.5mm_P0.5mm_EP2x2mm")
+					(name "Footprint") "VeillePorte_Modules:BQ25570_VeillePorte")
 				(field
 					(name "Datasheet") "http://www.ti.com/lit/ds/symlink/bq25570.pdf")
 				(field
@@ -3624,7 +3624,7 @@
 				(field
 					(name "Value") "RAK3172-xx-8-SM-xI")
 				(field
-					(name "Footprint") "RF_Module:RAK3172")
+					(name "Footprint") "VeillePorte_Modules:RAK3172_VeillePorte")
 				(field
 					(name "Datasheet") "https://docs.rakwireless.com/Product-Categories/WisDuo/RAK3172-Module/Datasheet/")
 				(field

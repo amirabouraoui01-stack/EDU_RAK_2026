@@ -1,5 +1,14 @@
 # État publié — 27 octobre 2026
 
+## 2026-10-28 — PCB quatre couches routé
+
+- Sauvegarde du projet avant reprise dans `archives/2026-10-28_avant_reprise_40x60.zip`.
+- PCB 40 × 60 × 1,6 mm ; zone antenne 30 × 20 mm, court-circuit IFA et exclusion de cuivre corrigés.
+- Plan GND In2.Cu, 19 vias GND, perçages des vias ≥ 0,3 mm ; RF 0603 et C22 non monté conservés.
+- Pastilles de fils solaires sur J10 et connecteurs latéraux.
+- Routage connecté : 427 segments, 55 vias ; DRC et parité schéma/PCB sans violation ni connexion manquante.
+- Export STEP, vues 3D, audit des pistes, PDF et netlist actualisés. Accord radio à revalider sur l’épaisseur de 1,6 mm et dans le boîtier.
+
 Version retenue du projet VeillePorte :
 
 - Schéma KiCad A2 unique, netlist et rapport ERC à jour.

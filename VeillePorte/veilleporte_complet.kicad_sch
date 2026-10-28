@@ -9,7 +9,7 @@
 		(date "2026-10-26")
 		(rev "0.6")
 		(company "Amira")
-		(comment 1 "Module Pololu 3692 externe ; supercapacite 4 V ; PCB a realiser")
+		(comment 1 "Module Pololu 3692 externe ; supercapacite 4 V ; PCB 4 couches route - RF a revalider")
 	)
 	(lib_symbols
 		(symbol "Battery_Management:BQ25570"
@@ -40,7 +40,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:QFN-20-1EP_3.5x3.5mm_P0.5mm_EP2x2mm"
+			(property "Footprint" "VeillePorte_Modules:BQ25570_VeillePorte"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3362,7 +3362,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "RF_Module:RAK3172"
+			(property "Footprint" "VeillePorte_Modules:RAK3172_VeillePorte"
 				(at 0 -45.212 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4641,7 +4641,6 @@
 		(color 0 0 0 0)
 		(uuid "8b79884c-f4ba-4469-92df-0f251e92957e")
 	)
-	
 	(junction
 		(at 213.36 123.19)
 		(diameter 0)
@@ -5462,7 +5461,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 125.73) (xy 474.98 125.73)
+			(xy 351.79 125.73) (xy 411.48 125.73)
 		)
 		(stroke
 			(width 0)
@@ -5670,7 +5669,6 @@
 		)
 		(uuid "646fc350-3fa7-4a96-bd77-03e2b413c556")
 	)
-	
 	(wire
 		(pts
 			(xy 411.48 125.73) (xy 411.48 157.48)
@@ -6273,16 +6271,6 @@
 	)
 	(wire
 		(pts
-			(xy 474.98 125.73) (xy 474.98 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bfcbccbd-2d33-438e-835c-11729fc46074")
-	)
-	(wire
-		(pts
 			(xy 440.69 113.03) (xy 476.25 113.03)
 		)
 		(stroke
@@ -6641,8 +6629,6 @@
 		)
 		(uuid "e3595d64-1d01-408f-9b93-bdac986bbb59")
 	)
-	
-	
 	(wire
 		(pts
 			(xy 386.08 148.59) (xy 386.08 157.48)
@@ -6963,7 +6949,6 @@
 		)
 		(uuid "408b3c67-3934-4541-9168-4be081b005cf")
 	)
-	
 	(label "SWDIO"
 		(at 468.63 110.49 180)
 		(effects
@@ -7034,7 +7019,6 @@
 		)
 		(uuid "8912f522-d83c-4103-8016-ad98cc4c338c")
 	)
-	
 	(label "RF_ANT"
 		(at 527.05 40.64 0)
 		(effects
@@ -7501,7 +7485,6 @@
 			)
 		)
 	)
-	
 	(global_label "VBAT_OK"
 		(shape output)
 		(at 139.7 86.36 180)
@@ -8217,7 +8200,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RF_Module:RAK3172"
+		(property "Footprint" "VeillePorte_Modules:RAK3172_VeillePorte"
 			(at 386.08 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -8482,7 +8465,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+		(property "Footprint" "VeillePorte_Connecteurs:SWD_1x05_P2.54_VeillePorte"
 			(at 481.33 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -11127,7 +11110,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-20-1EP_3.5x3.5mm_P0.5mm_EP2x2mm"
+		(property "Footprint" "VeillePorte_Modules:BQ25570_VeillePorte"
 			(at 160.02 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -12282,7 +12265,7 @@
 				)
 			)
 		)
-		(property "Value" "P-MFC"
+		(property "Value" "PANNEAU SOLAIRE"
 			(at 29.21 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12293,7 +12276,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "VeillePorte_Connecteurs:Solar_Wires_2x_D1.0_P5.08"
 			(at 29.21 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -13899,7 +13882,6 @@
 			)
 		)
 	)
-
 (symbol
 		(lib_id "power:GND")
 		(at 527.0500 30.4800 180)
@@ -13978,14 +13960,11 @@
 			)
 		)
 	)
-
 	(wire
 		(pts (xy 438.15 52.07) (xy 445.77 52.07))
 		(stroke (width 0) (type default))
 		(uuid "6b8ec1e0-ff6a-45d5-8d3e-a72bd7642978")
 	)
-
-
 	(junction (at 438.15 52.07) (diameter 0) (color 0 0 0 0) (uuid "2af6b4df-fadb-43cc-9ffb-3882b8b94676"))
 	(sheet_instances
 		(path "/"

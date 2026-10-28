@@ -2,4 +2,6 @@
   (version 7)
   (lib (name "LPS4018-223MRC") (type "KiCad") (uri "${KIPRJMOD}/footprints/LPS4018-223MRC.pretty") (options "") (descr "Empreinte locale Coilcraft LPS4018-223MRC importee depuis SmartPot_RAK3172"))
   (lib (name "VeillePorte_Antennes") (type "KiCad") (uri "${KIPRJMOD}/footprints/VeillePorte_Antennes.pretty") (options "") (descr "Antennes imprimees issues des modeles CST VeillePorte"))
+ (lib (name "VeillePorte_Connecteurs") (type "KiCad") (uri "${KIPRJMOD}/footprints/VeillePorte_Connecteurs.pretty") (options "") (descr "Pastilles de soudure pour les fils solaires"))
+ (lib (name "VeillePorte_Modules") (type "KiCad") (uri "${KIPRJMOD}/footprints/VeillePorte_Modules.pretty") (options "") (descr "RAK3172 et modele 3D officiel"))
 )

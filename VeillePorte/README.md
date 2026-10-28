@@ -1,30 +1,35 @@
 # Projet KiCad retenu — VeillePorte
 
-Ouvrir `veilleporte_complet.kicad_pro` pour modifier le schéma et le PCB.
+Ouvrir **veilleporte_complet.kicad_pro**. Le PCB courant est **veilleporte_complet.kicad_pcb** ; les anciennes versions sont conservées dans `../archives/2026-10-28_avant_reprise_40x60.zip`.
 
-- Schéma : `veilleporte_complet.kicad_sch`
-- PCB : `veilleporte_complet.kicad_pcb` — contour 40 × 60 mm, 4 couches cuivre.
-- Implantation côté composants : `implantation.svg`
-- Implantation côté dessous : `implantation_dos.svg`
-- Rapport DRC : `pcb_drc.json` — 0 erreur de géométrie/isolement, 2 avertissements de discordance d’empreinte (J10/J22), 106 connexions à réaliser avant fabrication.
-- PDF A2 : `veilleporte_complet.pdf`
-- Netlist : `veilleporte_complet.net`
-- Rapport ERC : `erc_complet.json`
-- Variante en cours deux couches : `veilleporte_v2_2couches.kicad_pcb` (brouillon DRC : 19 erreurs, 61 connexions non résolues ; ne pas fabriquer).
-- Bibliothèques d’empreintes : `fp-lib-table` et `footprints/`
-- Bibliothèque de symboles : `sym-lib-table` et `VeillePorte.kicad_sym`
+La carte mesure **40 × 60 × 1,6 mm**, en quatre couches. L’épaisseur de 1,6 mm reprend le fichier `project_v1.kicad_pcb` de Dorian DIANA. Le radiateur issu de CST est conservé dans une zone de **30 × 20 mm**, soit un quart de la surface de carte. Le FR4 reste présent sous l’antenne ; aucun plan de cuivre ne passe sous sa zone rayonnante.
 
-Le RAK3172 est placé au centre, l’antenne AE1 en bord de carte, et les connecteurs J3/J4/J19/J21/J22/J23/J10 sont conservés ; J3, J4 et J19 sont au dos. Le module Pololu 3692 se raccorde par J23 ; l’ordre du câble figure dans `../docs/CAPTEUR_IR.md`. Le schéma BQ25570 original reste conservé dans les références EDU_RAK.
-
-**Répartition des couches demandée pour la prochaine révision quatre couches :**
-
-| Couche | Usage prévu |
+| Couche | Utilisation actuelle |
 |---|---|
-| F.Cu | Distribution des alimentations VCC et boucles locales du BQ25570 ; garder le trajet RF vers AE1 sur cette couche |
-| In1.Cu | Plan GND continu, avec vias de masse depuis les composants SMD |
-| In2.Cu | Signaux numériques issus du RAK3172 (I²C, IR, UART et SWD), avec vias d’échappement aux pastilles SMD |
-| B.Cu | Autres signaux et connexions restantes |
+| F.Cu | Composants, alimentations, trajet RF et raccords locaux aux vias |
+| In1.Cu | Liaisons de signaux, dont celles du RAK3172 |
+| In2.Cu | Plan GND, sans piste de signal |
+| B.Cu | Composants au dos, autres liaisons et raccords locaux |
 
-Le PCB a été repris au stade implantation : 47 empreintes, aucune piste et aucun via. Un plan GND est préparé sur In1.Cu. Les autres couches sont disponibles pour le routage suivant cette répartition. Le RAK a été tourné pour rapprocher sa sortie RF de l’antenne ; les composants d’alimentation ont été regroupés autour du BQ25570, et le connecteur solaire J10 déplacé en bas à gauche, hors de la zone rayonnante. Le contour d’encombrement de l’antenne a été corrigé dans le PCB et sa bibliothèque locale, sans modifier son cuivre.
+Des remplissages GND sur les faces externes rejoignent le plan In2.Cu par les vias de masse. Le PCB comporte **427 segments et 55 vias, dont 19 GND**. Tous les vias sont percés à **0,30 mm minimum**. L’audit de chaque segment figure dans `exports/audit_pistes.csv` ; les courts raccords aux pastilles ou vias sont distingués des segments droits et à 45°.
 
-**État :** implantation préparée, routage à faire après validation de cette implantation. Le DRC affiche 106 connexions non résolues, ce qui est attendu pour ce PCB sans pistes ; la carte ne doit pas être fabriquée. Deux avertissements concernent les empreintes J10 et J22. Le modèle CST reste une référence 30 × 60 mm ; l’accord de l’antenne sur cette carte 40 × 60 mm et dans son boîtier reste à vérifier.
+Les **47 empreintes du schéma** sont présentes. Le capteur reste le module externe VL53L4CD Pololu 3692 raccordé à J23 : le détecteur lui-même ne se trouve pas sur cette carte. Les connecteurs J3/J4/J19/J21/J22/J23 sont placés sur les côtés. J10 fournit deux pastilles traversantes de perçage 1 mm pour souder directement les fils du panneau solaire.
+
+R12, C6 et L1 gardent leurs empreintes **0603**. R12 vaut 0 Ω ; C6/L1 restent non montés pour l’adaptation RF. **C22 est conservé non monté**. La branche de court-circuit de l’IFA touche sa pastille GND ; la géométrie du cuivre est inchangée par rapport au générateur CST. La zone d’exclusion et les contours de l’empreinte sont maintenant orientés avec le radiateur.
+
+## Vérifications
+
+- `pcb_drc.json` : **0 erreur, 0 avertissement, 0 connexion manquante et 0 problème de concordance schéma/PCB**.
+- `erc_complet.json` : **0 erreur, 3 avertissements connus**, conservés visibles : symboles BQ25570 et RAK différents des copies de bibliothèque, et label local/global de même nom.
+- `exports/verification_pcb.json` : dimensions, vias, couches, DNP et empreintes RF.
+- Le fil RF inutile se terminant dans le vide a été supprimé du schéma, sans changer le réseau électrique.
+
+## Vues et exports
+
+- [Vue 3D](exports/vue_3d.png)
+- [Dessus](exports/vue_dessus.png) · [Dessous](exports/vue_dessous.png)
+- [Assemblage STEP avec cuivre et modèles montés](exports/veilleporte.step)
+- [Implantation dessus](implantation.svg) · [Implantation dessous](implantation_dos.svg)
+- [Schéma PDF A2](veilleporte_complet.pdf) · [Netlist](veilleporte_complet.net)
+
+**Validation RF restante :** le DRC valide les règles géométriques et les connexions, pas l’accord de l’antenne ni l’impédance de la ligne RF. Le CST historique utilisait une carte 30 × 60 mm de 0,8 mm ; le PCB courant est 40 × 60 mm de 1,6 mm. L’empilage réel, l’accord à 868 MHz, le panneau solaire et le boîtier doivent être repris dans la simulation et contrôlés sur prototype avant fabrication en série. Aucun fichier Gerber n’est présenté comme prêt à fabriquer.

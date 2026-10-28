@@ -157,7 +157,8 @@
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
-        "use_height_for_length_calcs": true
+        "use_height_for_length_calcs": true,
+        "min_via_drill": 0.3
       },
       "teardrop_options": [
         {
@@ -617,7 +618,7 @@
       "include_excluded_from_bom": true,
       "name": "Default Editing",
       "sort_asc": true,
-      "sort_field": "Référence"
+      "sort_field": "R\u00e9f\u00e9rence"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,

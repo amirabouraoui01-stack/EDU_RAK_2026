@@ -22,3 +22,7 @@ Les feuilles RAK3172 et LIS2HH12 sont adaptées au projet. Les symboles viennent
 - [Copies locales](references/EDU_RAK_2026/Datasheets/).
 
 Les droits des fichiers d’origine restent ceux de leurs auteurs. Aucune nouvelle licence globale n’est attribuée aux ressources tierces.
+
+## Modèle 3D RAK3172
+
+Le modèle STEP du module provient du [répertoire officiel RAKwireless](https://rakwireless-downloads-center-prod.s3.eu-central-1.amazonaws.com/3D_File/WisDuo/3D_RAK3172.stp), téléchargé le 28 octobre 2026. Le décalage du modèle est corrigé dans l’empreinte locale ; ses dimensions ne sont pas utilisées pour modifier les pastilles du module. Le boîtier 3D du BQ25570 provient de la bibliothèque KiCad Texas VQFN RGR 20, 3,5 × 3,5 mm.

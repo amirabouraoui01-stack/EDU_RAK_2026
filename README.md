@@ -22,9 +22,12 @@ J23 est le brochage du câble du projet, pas l’ordre physique des pastilles du
 
 ## État actuel
 
-- Schéma final : 45 composants, 43 groupes de connexions, 0 erreur ERC et 3 avertissements connus.
-- Antenne CST : S11 simulé −12,01 dB à 868 MHz sur la carte simplifiée. Le diagramme farfield reste à exporter.
-- PCB final, firmware, essais d’autonomie et validation radio : à réaliser.
+- Schéma : 47 composants ; 0 erreur ERC et 3 avertissements documentés.
+- PCB routé : 40 × 60 mm, quatre couches, 1,6 mm ; plan GND sur In2.Cu, 19 vias GND et perçages de vias de 0,3 mm minimum.
+- Contrôle PCB et concordance avec le schéma : **0 erreur, 0 avertissement et 0 connexion manquante**.
+- [Vues 3D et STEP](VeillePorte/README.md#vues-et-exports) disponibles ; versions précédentes conservées dans [archives](archives/README.md).
+- Antenne : géométrie CST conservée, zone 30 × 20 mm. Accord à 868 MHz à revalider sur le PCB de 1,6 mm et dans le boîtier ; le résultat CST historique ne valide pas cette nouvelle carte.
+- Firmware, mesures d’autonomie et essais radio sur prototype : à réaliser.
 
 La carte routée de l’ancienne version accéléromètre n’est pas une carte VeillePorte et n’est plus présentée comme version courante. Aucun prototype n’a été validé sur banc.
 
@@ -56,7 +59,7 @@ flowchart LR
 1. Cloner https://github.com/amirabouraoui01-stack/EDU_RAK_2026.git.
 2. Ouvrir VeillePorte/veilleporte_complet.kicad_pro avec KiCad 10.
 3. Consulter le [PDF A2](VeillePorte/veilleporte_complet.pdf) ou le [rapport ERC](VeillePorte/erc_complet.json).
-4. Créer le PCB à partir du schéma en gardant la zone d’antenne libre, puis valider l’assemblage et les mesures sur banc.
+4. Examiner le PCB routé, ses vues 3D et ses rapports ; revalider la radio sur l’empilage réel avant fabrication, puis réaliser les essais sur banc.
 
 L’archive references/EDU_RAK_2026/ conserve les documents pédagogiques d’origine, dont le BQ25570 source. Elle n’est pas une seconde version du projet actif.
 

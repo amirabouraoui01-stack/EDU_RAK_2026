@@ -1,0 +1,1839 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T15:13:35",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "veilleporte_v2_2couches.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] sur F.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "569c6575-45a6-47a8-9295-d4e8a4a75085"
+                },
+                {
+                    "description": "Zone [GND] sur B.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "7bb3657f-0c91-4170-aab7-d532b654a84a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] de C8 sur B.Cu",
+                    "pos": {
+                        "x": 148.775,
+                        "y": 60.2
+                    },
+                    "uuid": "3cd8684e-0044-4e20-a571-f695e5398b48"
+                },
+                {
+                    "description": "Pad 2 [GND] de AE1 sur F.Cu",
+                    "pos": {
+                        "x": 150.0,
+                        "y": 56.0
+                    },
+                    "uuid": "c77e7e4e-25da-4637-801d-0ecb8f029355"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] de AE1 sur F.Cu",
+                    "pos": {
+                        "x": 150.0,
+                        "y": 52.0
+                    },
+                    "uuid": "c024fbe8-9f4d-4156-bf1f-ec27d955fda3"
+                },
+                {
+                    "description": "Pad 2 [GND] de AE1 sur F.Cu",
+                    "pos": {
+                        "x": 150.0,
+                        "y": 56.0
+                    },
+                    "uuid": "c77e7e4e-25da-4637-801d-0ecb8f029355"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] sur B.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "7bb3657f-0c91-4170-aab7-d532b654a84a"
+                },
+                {
+                    "description": "Zone [GND] sur F.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "569c6575-45a6-47a8-9295-d4e8a4a75085"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] sur B.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "7bb3657f-0c91-4170-aab7-d532b654a84a"
+                },
+                {
+                    "description": "Zone [GND] sur B.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "7bb3657f-0c91-4170-aab7-d532b654a84a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] sur B.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "7bb3657f-0c91-4170-aab7-d532b654a84a"
+                },
+                {
+                    "description": "Zone [GND] sur B.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "7bb3657f-0c91-4170-aab7-d532b654a84a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] sur B.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "7bb3657f-0c91-4170-aab7-d532b654a84a"
+                },
+                {
+                    "description": "Zone [GND] sur B.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "7bb3657f-0c91-4170-aab7-d532b654a84a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] sur B.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "7bb3657f-0c91-4170-aab7-d532b654a84a"
+                },
+                {
+                    "description": "Zone [GND] sur B.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "7bb3657f-0c91-4170-aab7-d532b654a84a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 2 [GND] de J10",
+                    "pos": {
+                        "x": 162.92,
+                        "y": 42.0
+                    },
+                    "uuid": "d93f8864-6e6a-458f-8d61-0a668555a9ef"
+                },
+                {
+                    "description": "Pad 2 [GND] de L1 sur F.Cu",
+                    "pos": {
+                        "x": 168.0,
+                        "y": 55.2125
+                    },
+                    "uuid": "38714759-5e63-4ca4-bf74-d7b834bd1007"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] de L1 sur F.Cu",
+                    "pos": {
+                        "x": 168.0,
+                        "y": 55.2125
+                    },
+                    "uuid": "38714759-5e63-4ca4-bf74-d7b834bd1007"
+                },
+                {
+                    "description": "Zone [GND] sur F.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "569c6575-45a6-47a8-9295-d4e8a4a75085"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] sur B.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "7bb3657f-0c91-4170-aab7-d532b654a84a"
+                },
+                {
+                    "description": "Zone [GND] sur F.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "569c6575-45a6-47a8-9295-d4e8a4a75085"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] sur F.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "569c6575-45a6-47a8-9295-d4e8a4a75085"
+                },
+                {
+                    "description": "Zone [GND] sur B.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "7bb3657f-0c91-4170-aab7-d532b654a84a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] sur B.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "7bb3657f-0c91-4170-aab7-d532b654a84a"
+                },
+                {
+                    "description": "Zone [GND] sur B.Cu, priorité 2",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "7bb3657f-0c91-4170-aab7-d532b654a84a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 1 [Net-(J10-Pin_1)] de J4",
+                    "pos": {
+                        "x": 149.0,
+                        "y": 83.5
+                    },
+                    "uuid": "8262fc1a-fc4e-4b61-b0ca-fc69a6d1d6d3"
+                },
+                {
+                    "description": "Pad métallisé 1 [Net-(J10-Pin_1)] de J10",
+                    "pos": {
+                        "x": 168.0,
+                        "y": 42.0
+                    },
+                    "uuid": "f6b11b2c-9863-4ac2-a62a-3c4cfe78a2b5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [PWR] sur B.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "ff0a6756-c73d-4d1d-b438-3ea4ea65bead"
+                },
+                {
+                    "description": "Zone [PWR] sur B.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "ff0a6756-c73d-4d1d-b438-3ea4ea65bead"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [PWR] sur B.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "ff0a6756-c73d-4d1d-b438-3ea4ea65bead"
+                },
+                {
+                    "description": "Zone [PWR] sur F.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "28865a19-7ade-4ce0-b255-c73621124b35"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [PWR] sur B.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "ff0a6756-c73d-4d1d-b438-3ea4ea65bead"
+                },
+                {
+                    "description": "Zone [PWR] sur B.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "ff0a6756-c73d-4d1d-b438-3ea4ea65bead"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [PWR] sur B.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "ff0a6756-c73d-4d1d-b438-3ea4ea65bead"
+                },
+                {
+                    "description": "Zone [PWR] sur B.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "ff0a6756-c73d-4d1d-b438-3ea4ea65bead"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [PWR] sur B.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "ff0a6756-c73d-4d1d-b438-3ea4ea65bead"
+                },
+                {
+                    "description": "Zone [PWR] sur B.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "ff0a6756-c73d-4d1d-b438-3ea4ea65bead"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [PWR] sur B.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "ff0a6756-c73d-4d1d-b438-3ea4ea65bead"
+                },
+                {
+                    "description": "Zone [PWR] sur B.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "ff0a6756-c73d-4d1d-b438-3ea4ea65bead"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [PWR] sur F.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "28865a19-7ade-4ce0-b255-c73621124b35"
+                },
+                {
+                    "description": "Zone [PWR] sur B.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "ff0a6756-c73d-4d1d-b438-3ea4ea65bead"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [PWR] sur B.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "ff0a6756-c73d-4d1d-b438-3ea4ea65bead"
+                },
+                {
+                    "description": "Zone [PWR] sur B.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "ff0a6756-c73d-4d1d-b438-3ea4ea65bead"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [PWR] sur B.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "ff0a6756-c73d-4d1d-b438-3ea4ea65bead"
+                },
+                {
+                    "description": "Zone [PWR] sur F.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "28865a19-7ade-4ce0-b255-c73621124b35"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [PWR] sur F.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "28865a19-7ade-4ce0-b255-c73621124b35"
+                },
+                {
+                    "description": "Zone [PWR] sur B.Cu, priorité 1",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 28.0
+                    },
+                    "uuid": "ff0a6756-c73d-4d1d-b438-3ea4ea65bead"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_SRC] de R12 sur F.Cu",
+                    "pos": {
+                        "x": 143.5,
+                        "y": 63.825
+                    },
+                    "uuid": "5f2491d3-9225-4b61-9cfc-4d15f008067e"
+                },
+                {
+                    "description": "Piste [/RF_SRC] sur F.Cu, long. 3,2173 mm",
+                    "pos": {
+                        "x": 143.0,
+                        "y": 70.275
+                    },
+                    "uuid": "592e822e-68f7-4418-940a-1f6539f041fb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 29 [VBAT_OK_3V3] de U1 sur F.Cu",
+                    "pos": {
+                        "x": 157.0,
+                        "y": 59.8
+                    },
+                    "uuid": "d91d4c5c-7796-4afa-9d3a-4592196b6dce"
+                },
+                {
+                    "description": "Piste [VBAT_OK_3V3] sur B.Cu, long. 3,9000 mm",
+                    "pos": {
+                        "x": 150.3,
+                        "y": 67.2
+                    },
+                    "uuid": "8b710f82-a44d-4b4e-947a-eb5583d1b3de"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 2 [Net-(J4-Pin_2)] de J4",
+                    "pos": {
+                        "x": 149.0,
+                        "y": 80.96
+                    },
+                    "uuid": "dff0f79a-a14a-493c-b8c9-f603a9641141"
+                },
+                {
+                    "description": "Pad 2 [Net-(J4-Pin_2)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 159.3125,
+                        "y": 81.0
+                    },
+                    "uuid": "0c4edf7e-b4bf-41cd-814d-f3ad0de4a60a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Piste [Net-(J4-Pin_2)] sur B.Cu, long. 0,8310 mm",
+                    "pos": {
+                        "x": 151.8,
+                        "y": 61.6
+                    },
+                    "uuid": "e7c6f9f6-06da-4e2f-91bb-08291b117614"
+                },
+                {
+                    "description": "Pad métallisé 2 [Net-(J4-Pin_2)] de J4",
+                    "pos": {
+                        "x": 149.0,
+                        "y": 80.96
+                    },
+                    "uuid": "dff0f79a-a14a-493c-b8c9-f603a9641141"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(J4-Pin_2)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 159.3125,
+                        "y": 81.0
+                    },
+                    "uuid": "0c4edf7e-b4bf-41cd-814d-f3ad0de4a60a"
+                },
+                {
+                    "description": "Pad 1 [Net-(J4-Pin_2)] de LBOOST1 sur F.Cu",
+                    "pos": {
+                        "x": 167.235,
+                        "y": 78.0
+                    },
+                    "uuid": "9585ef79-0cbf-47e2-84ee-643ff2e95d07"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 20 [Net-(U2-LBOOST)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 160.0,
+                        "y": 79.8125
+                    },
+                    "uuid": "dc4a81ee-4e44-4781-b06c-86a96f8fe8c6"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-LBOOST)] de LBOOST1 sur F.Cu",
+                    "pos": {
+                        "x": 170.765,
+                        "y": 78.0
+                    },
+                    "uuid": "f57687e8-cbc5-49ad-ae34-56deac79e26a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_ANT] de AE1 sur F.Cu",
+                    "pos": {
+                        "x": 148.99,
+                        "y": 52.0
+                    },
+                    "uuid": "e550b75c-c0bf-45ff-bd6c-eb9a5a5d0971"
+                },
+                {
+                    "description": "Pad 2 [/RF_ANT] de R12 sur F.Cu",
+                    "pos": {
+                        "x": 143.5,
+                        "y": 62.175
+                    },
+                    "uuid": "7d809538-ca86-425c-b503-99c3518ceb2b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/RF_ANT] de L1 sur F.Cu",
+                    "pos": {
+                        "x": 168.0,
+                        "y": 56.7875
+                    },
+                    "uuid": "5095f343-9187-4f57-b810-3d9ed5e49739"
+                },
+                {
+                    "description": "Pad 1 [/RF_ANT] de AE1 sur F.Cu",
+                    "pos": {
+                        "x": 148.99,
+                        "y": 52.0
+                    },
+                    "uuid": "e550b75c-c0bf-45ff-bd6c-eb9a5a5d0971"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 16 [Net-(U2-LBUCK)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 162.0,
+                        "y": 79.8125
+                    },
+                    "uuid": "adbd36d5-1242-4a7c-b144-e864fd0de9d9"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-LBUCK)] de LBUCK1 sur F.Cu",
+                    "pos": {
+                        "x": 167.925,
+                        "y": 84.0
+                    },
+                    "uuid": "562e8e69-803a-47bb-b771-4bcf258fb445"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 14 [Net-(J3-Pin_1)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 162.6875,
+                        "y": 81.0
+                    },
+                    "uuid": "d3d2e6b6-c910-470c-abaf-06a0c1a82f6c"
+                },
+                {
+                    "description": "Pad 2 [Net-(J3-Pin_1)] de LBUCK1 sur F.Cu",
+                    "pos": {
+                        "x": 170.075,
+                        "y": 84.0
+                    },
+                    "uuid": "31c9557d-c44c-4059-b6b5-289631ed32da"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 14 [Net-(J3-Pin_1)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 162.6875,
+                        "y": 81.0
+                    },
+                    "uuid": "d3d2e6b6-c910-470c-abaf-06a0c1a82f6c"
+                },
+                {
+                    "description": "Pad métallisé 1 [Net-(J3-Pin_1)] de J3",
+                    "pos": {
+                        "x": 141.0,
+                        "y": 83.5
+                    },
+                    "uuid": "8ae5cf26-e9ba-44b9-9efd-bbe65c0a397d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(J3-Pin_1)] de COUT1 sur B.Cu",
+                    "pos": {
+                        "x": 164.775,
+                        "y": 64.2
+                    },
+                    "uuid": "aa61035f-894b-40ed-8188-fc27a4b76ac9"
+                },
+                {
+                    "description": "Pad 14 [Net-(J3-Pin_1)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 162.6875,
+                        "y": 81.0
+                    },
+                    "uuid": "d3d2e6b6-c910-470c-abaf-06a0c1a82f6c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad métallisé 2 [Net-(J19-Pin_2)] de J19",
+                    "pos": {
+                        "x": 157.0,
+                        "y": 80.96
+                    },
+                    "uuid": "522a18af-353d-43d4-a747-3cce11a7073c"
+                },
+                {
+                    "description": "Pad 3 [Net-(J19-Pin_2)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 159.3125,
+                        "y": 81.5
+                    },
+                    "uuid": "df8df02f-efbd-44bf-97ce-1c9448ce3f0f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [Net-(J19-Pin_2)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 159.3125,
+                        "y": 81.5
+                    },
+                    "uuid": "df8df02f-efbd-44bf-97ce-1c9448ce3f0f"
+                },
+                {
+                    "description": "Pad 19 [Net-(J19-Pin_2)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 79.8125
+                    },
+                    "uuid": "f1cae027-c13a-4957-aecb-7ee31da6c5b9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 19 [Net-(J19-Pin_2)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 79.8125
+                    },
+                    "uuid": "f1cae027-c13a-4957-aecb-7ee31da6c5b9"
+                },
+                {
+                    "description": "Piste [Net-(J19-Pin_2)] sur B.Cu, long. 0,8310 mm",
+                    "pos": {
+                        "x": 159.8,
+                        "y": 65.599999
+                    },
+                    "uuid": "5a801bc0-2e5d-421b-8e8f-8c8cb6c9f29a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(U2-VREF_SAMP)] de CREF1 sur B.Cu",
+                    "pos": {
+                        "x": 151.225,
+                        "y": 64.2
+                    },
+                    "uuid": "6dade643-84b8-46cc-9773-30614f08a0f9"
+                },
+                {
+                    "description": "Pad 4 [Net-(U2-VREF_SAMP)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 159.3125,
+                        "y": 82.0
+                    },
+                    "uuid": "c87437d6-af6c-4104-86a0-39d88e77fb55"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [VBAT_OK] de R8 sur B.Cu",
+                    "pos": {
+                        "x": 147.175,
+                        "y": 64.2
+                    },
+                    "uuid": "61d45f68-74a7-42c2-be09-9d3b6ad8beac"
+                },
+                {
+                    "description": "Pad 6 [VBAT_OK] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 160.0,
+                        "y": 83.1875
+                    },
+                    "uuid": "f37e36ba-935a-41d9-a8f6-21b731f5e468"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 6 [VBAT_OK] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 160.0,
+                        "y": 83.1875
+                    },
+                    "uuid": "f37e36ba-935a-41d9-a8f6-21b731f5e468"
+                },
+                {
+                    "description": "Pad 13 [VBAT_OK] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 162.6875,
+                        "y": 81.5
+                    },
+                    "uuid": "56a636e3-82e1-4bb5-b195-c9400d667c8a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 7 [Net-(U2-VBAT_OV)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 160.5,
+                        "y": 83.1875
+                    },
+                    "uuid": "bb824327-8eff-4db6-9828-7d8a52f25143"
+                },
+                {
+                    "description": "Piste [Net-(U2-VBAT_OV)] sur B.Cu, long. 4,0000 mm",
+                    "pos": {
+                        "x": 158.2,
+                        "y": 67.2
+                    },
+                    "uuid": "b8e42e9f-f956-4c0c-8225-693da2553f08"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/VRDIV] de ROUT2B1 sur B.Cu",
+                    "pos": {
+                        "x": 143.175,
+                        "y": 66.2
+                    },
+                    "uuid": "66235ee4-8542-4672-bbeb-70d0dd3c173a"
+                },
+                {
+                    "description": "Pad 1 [/VRDIV] de ROK3 sur B.Cu",
+                    "pos": {
+                        "x": 147.175,
+                        "y": 68.2
+                    },
+                    "uuid": "1d44a757-41c2-4697-9f8f-848829751b2c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/VRDIV] de ROK3 sur B.Cu",
+                    "pos": {
+                        "x": 147.175,
+                        "y": 68.2
+                    },
+                    "uuid": "1d44a757-41c2-4697-9f8f-848829751b2c"
+                },
+                {
+                    "description": "Pad 1 [/VRDIV] de ROV2 sur B.Cu",
+                    "pos": {
+                        "x": 155.175,
+                        "y": 64.2
+                    },
+                    "uuid": "b624c82a-a352-4a49-9a5e-e73f2ee235a8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/VRDIV] de ROV2B1 sur B.Cu",
+                    "pos": {
+                        "x": 155.175,
+                        "y": 60.2
+                    },
+                    "uuid": "71f782d2-6e32-4e25-9e6e-a8ffc2646e9c"
+                },
+                {
+                    "description": "Pad 1 [/VRDIV] de ROV2 sur B.Cu",
+                    "pos": {
+                        "x": 155.175,
+                        "y": 64.2
+                    },
+                    "uuid": "b624c82a-a352-4a49-9a5e-e73f2ee235a8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/VRDIV] de ROUT2 sur B.Cu",
+                    "pos": {
+                        "x": 159.175,
+                        "y": 68.2
+                    },
+                    "uuid": "b16c6213-b097-4fa0-a2ea-40bc63da6126"
+                },
+                {
+                    "description": "Pad 1 [/VRDIV] de ROV2 sur B.Cu",
+                    "pos": {
+                        "x": 155.175,
+                        "y": 64.2
+                    },
+                    "uuid": "b624c82a-a352-4a49-9a5e-e73f2ee235a8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 8 [/VRDIV] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 83.1875
+                    },
+                    "uuid": "881a19ce-fd86-4028-bf8d-78eca279d73d"
+                },
+                {
+                    "description": "Pad 1 [/VRDIV] de ROUT2 sur B.Cu",
+                    "pos": {
+                        "x": 159.175,
+                        "y": 68.2
+                    },
+                    "uuid": "b16c6213-b097-4fa0-a2ea-40bc63da6126"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/VRDIV] de ROK3B1 sur B.Cu",
+                    "pos": {
+                        "x": 163.175,
+                        "y": 60.2
+                    },
+                    "uuid": "151807e5-73ee-422d-ae2b-85fd1aeb086e"
+                },
+                {
+                    "description": "Pad 1 [/VRDIV] de ROV2B1 sur B.Cu",
+                    "pos": {
+                        "x": 155.175,
+                        "y": 60.2
+                    },
+                    "uuid": "71f782d2-6e32-4e25-9e6e-a8ffc2646e9c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Piste [Net-(U2-OK_HYST)] sur B.Cu, long. 1,2728 mm",
+                    "pos": {
+                        "x": 147.2,
+                        "y": 62.3
+                    },
+                    "uuid": "0f393f3e-d25b-4b9f-82cb-0a2e77f13f0c"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-OK_HYST)] de ROK3B1 sur B.Cu",
+                    "pos": {
+                        "x": 164.825,
+                        "y": 60.2
+                    },
+                    "uuid": "8539222e-73d5-451f-9202-5e374d4db607"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(U2-OK_HYST)] de ROK3 sur B.Cu",
+                    "pos": {
+                        "x": 148.825,
+                        "y": 68.2
+                    },
+                    "uuid": "5171c0f4-aabb-4d2d-848c-df8e0ec0a073"
+                },
+                {
+                    "description": "Piste [Net-(U2-OK_HYST)] sur B.Cu, long. 1,2728 mm",
+                    "pos": {
+                        "x": 147.2,
+                        "y": 62.3
+                    },
+                    "uuid": "0f393f3e-d25b-4b9f-82cb-0a2e77f13f0c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(U2-OK_HYST)] de ROK3 sur B.Cu",
+                    "pos": {
+                        "x": 148.825,
+                        "y": 68.2
+                    },
+                    "uuid": "5171c0f4-aabb-4d2d-848c-df8e0ec0a073"
+                },
+                {
+                    "description": "Pad 10 [Net-(U2-OK_HYST)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 162.0,
+                        "y": 83.1875
+                    },
+                    "uuid": "888371a1-2449-489f-b4e4-fc3bdc7f6c54"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(U2-OK_PROG)] de ROK2B1 sur B.Cu",
+                    "pos": {
+                        "x": 144.825,
+                        "y": 62.2
+                    },
+                    "uuid": "f09619a0-2a3c-47d4-b5d3-95067259d1f7"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-OK_PROG)] de ROK1B1 sur B.Cu",
+                    "pos": {
+                        "x": 143.175,
+                        "y": 68.2
+                    },
+                    "uuid": "2e99bef6-c78c-4eed-b848-a85e51b67a40"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(U2-OK_PROG)] de ROK2 sur B.Cu",
+                    "pos": {
+                        "x": 148.825,
+                        "y": 62.2
+                    },
+                    "uuid": "51790115-b3f7-421f-abc2-e9bbb671d66e"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-OK_PROG)] de ROK2B1 sur B.Cu",
+                    "pos": {
+                        "x": 144.825,
+                        "y": 62.2
+                    },
+                    "uuid": "f09619a0-2a3c-47d4-b5d3-95067259d1f7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(U2-OK_PROG)] de ROK1 sur B.Cu",
+                    "pos": {
+                        "x": 159.175,
+                        "y": 62.2
+                    },
+                    "uuid": "d141959b-2c83-4de6-b05f-347a5fda922e"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-OK_PROG)] de ROK2 sur B.Cu",
+                    "pos": {
+                        "x": 148.825,
+                        "y": 62.2
+                    },
+                    "uuid": "51790115-b3f7-421f-abc2-e9bbb671d66e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 11 [Net-(U2-OK_PROG)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 162.6875,
+                        "y": 82.5
+                    },
+                    "uuid": "ae8d3ad3-fad9-4474-a83b-b49b6bf08750"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-OK_PROG)] de ROK1 sur B.Cu",
+                    "pos": {
+                        "x": 159.175,
+                        "y": 62.2
+                    },
+                    "uuid": "d141959b-2c83-4de6-b05f-347a5fda922e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(U2-VOUT_SET)] de ROUT1B1 sur B.Cu",
+                    "pos": {
+                        "x": 151.175,
+                        "y": 66.2
+                    },
+                    "uuid": "91ad8a4a-1968-4d67-a6a8-0f3301db021b"
+                },
+                {
+                    "description": "Pad 2 [Net-(U2-VOUT_SET)] de ROUT2B1 sur B.Cu",
+                    "pos": {
+                        "x": 144.825,
+                        "y": 66.2
+                    },
+                    "uuid": "987b9444-e19d-4d1a-91be-87e6ab1d9a2d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Piste [Net-(U2-VOUT_SET)] sur B.Cu, long. 0,3010 mm",
+                    "pos": {
+                        "x": 151.175,
+                        "y": 68.2
+                    },
+                    "uuid": "94807df7-1352-4b4c-955d-8f09f41ef176"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-VOUT_SET)] de ROUT1B1 sur B.Cu",
+                    "pos": {
+                        "x": 151.175,
+                        "y": 66.2
+                    },
+                    "uuid": "91ad8a4a-1968-4d67-a6a8-0f3301db021b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Piste [Net-(U2-VOUT_SET)] sur B.Cu, long. 8,2000 mm",
+                    "pos": {
+                        "x": 151.9,
+                        "y": 69.2
+                    },
+                    "uuid": "9993ab68-af9f-4e9b-b38f-882164f19a4d"
+                },
+                {
+                    "description": "Pad 12 [Net-(U2-VOUT_SET)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 162.6875,
+                        "y": 82.0
+                    },
+                    "uuid": "d6089cd8-3eac-4311-a498-2c0fdebdf4bf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(U2-VBAT)] de C1 sur B.Cu",
+                    "pos": {
+                        "x": 143.225,
+                        "y": 60.2
+                    },
+                    "uuid": "3fe258f3-e7c6-4183-b787-8f08133fb867"
+                },
+                {
+                    "description": "Pad 1 [Net-(U2-VBAT)] de C22 sur B.Cu",
+                    "pos": {
+                        "x": 147.225,
+                        "y": 66.2
+                    },
+                    "uuid": "bba91e03-5b40-486e-ab77-1e05d7a107a9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [Net-(U2-VBAT)] de C22 sur B.Cu",
+                    "pos": {
+                        "x": 147.225,
+                        "y": 66.2
+                    },
+                    "uuid": "bba91e03-5b40-486e-ab77-1e05d7a107a9"
+                },
+                {
+                    "description": "Pad 18 [Net-(U2-VBAT)] de U2 sur F.Cu",
+                    "pos": {
+                        "x": 161.0,
+                        "y": 79.8125
+                    },
+                    "uuid": "0a9295d3-715e-4ea8-92cf-6a6081d8662d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Piste [IR_XSHUT] sur B.Cu, long. 15,9400 mm",
+                    "pos": {
+                        "x": 166.0,
+                        "y": 60.8
+                    },
+                    "uuid": "2d2950f7-970b-4fee-93bc-21e82ad08bad"
+                },
+                {
+                    "description": "Piste [/NRST] sur B.Cu, long. 2,1750 mm",
+                    "pos": {
+                        "x": 164.825,
+                        "y": 68.2
+                    },
+                    "uuid": "6a991ca4-2c73-4efd-82a7-40fc6348ad2f"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Piste [Net-(J19-Pin_2)] sur B.Cu, long. 0,4000 mm",
+                    "pos": {
+                        "x": 159.8,
+                        "y": 65.2
+                    },
+                    "uuid": "7c8b92ed-3d13-4ce7-84ad-c6571ea20e41"
+                },
+                {
+                    "description": "Piste [/BOOT0] sur B.Cu, long. 13,1173 mm",
+                    "pos": {
+                        "x": 167.0,
+                        "y": 64.45
+                    },
+                    "uuid": "837159da-4522-4123-ba56-bbf58d9e03f9"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Piste [I2C_SDA] sur B.Cu, long. 8,8000 mm",
+                    "pos": {
+                        "x": 148.8,
+                        "y": 70.45
+                    },
+                    "uuid": "66fb6983-8b6a-4458-828a-9b0c9fc79562"
+                },
+                {
+                    "description": "Piste [/UART2_TX] sur B.Cu, long. 15,7000 mm",
+                    "pos": {
+                        "x": 142.0,
+                        "y": 58.8
+                    },
+                    "uuid": "97de507d-7aa5-4aaa-b165-ca18acd735c7"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Piste [/UART2_TX] sur B.Cu, long. 2,0000 mm",
+                    "pos": {
+                        "x": 172.0,
+                        "y": 82.58
+                    },
+                    "uuid": "01a3b939-e12e-4af4-a919-ccfad9355f2c"
+                },
+                {
+                    "description": "Piste [/UART2_RX] sur B.Cu, long. 26,1200 mm",
+                    "pos": {
+                        "x": 172.0,
+                        "y": 59.0
+                    },
+                    "uuid": "a2afe662-107b-4ad8-8b1e-f12984295ff2"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Eléments court-circuitant deux nets (nets Net-(U2-VBAT_OV) et  /BOOT0)",
+            "items": [
+                {
+                    "description": "Piste [Net-(U2-VBAT_OV)] sur B.Cu, long. 1,9623 mm",
+                    "pos": {
+                        "x": 156.825,
+                        "y": 64.2
+                    },
+                    "uuid": "5326eb5e-6363-4763-a9b4-fb0379a7f788"
+                },
+                {
+                    "description": "Piste [/BOOT0] sur B.Cu, long. 13,1173 mm",
+                    "pos": {
+                        "x": 167.0,
+                        "y": 64.45
+                    },
+                    "uuid": "837159da-4522-4123-ba56-bbf58d9e03f9"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Eléments court-circuitant deux nets (nets Net-(J19-Pin_2) et  /BOOT0)",
+            "items": [
+                {
+                    "description": "Piste [Net-(J19-Pin_2)] sur B.Cu, long. 0,8310 mm",
+                    "pos": {
+                        "x": 159.8,
+                        "y": 65.599999
+                    },
+                    "uuid": "5a801bc0-2e5d-421b-8e8f-8c8cb6c9f29a"
+                },
+                {
+                    "description": "Piste [/BOOT0] sur B.Cu, long. 13,1173 mm",
+                    "pos": {
+                        "x": 167.0,
+                        "y": 64.45
+                    },
+                    "uuid": "837159da-4522-4123-ba56-bbf58d9e03f9"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Piste [/SWDIO] sur B.Cu, long. 5,0000 mm",
+                    "pos": {
+                        "x": 169.0,
+                        "y": 57.42
+                    },
+                    "uuid": "1a42b6eb-c2a5-4dc5-ab02-5f1be74af34f"
+                },
+                {
+                    "description": "Piste [/SWCLK] sur B.Cu, long. 17,1200 mm",
+                    "pos": {
+                        "x": 171.0,
+                        "y": 72.0
+                    },
+                    "uuid": "fa31ea76-6cc9-4c7b-9826-b294d387b721"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Piste [/UART2_TX] sur B.Cu, long. 8,0800 mm",
+                    "pos": {
+                        "x": 172.0,
+                        "y": 74.5
+                    },
+                    "uuid": "520eea38-763b-496a-a6f6-6a7380ebf0ea"
+                },
+                {
+                    "description": "Piste [/UART2_RX] sur B.Cu, long. 26,1200 mm",
+                    "pos": {
+                        "x": 172.0,
+                        "y": 59.0
+                    },
+                    "uuid": "a2afe662-107b-4ad8-8b1e-f12984295ff2"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Piste [/SWDIO] sur B.Cu, long. 23,0000 mm",
+                    "pos": {
+                        "x": 146.0,
+                        "y": 67.45
+                    },
+                    "uuid": "0b5f7533-383f-41a9-bca4-6370bc0f4915"
+                },
+                {
+                    "description": "Piste [VBAT_OK_3V3] sur B.Cu, long. 1,3966 mm",
+                    "pos": {
+                        "x": 154.2,
+                        "y": 67.2
+                    },
+                    "uuid": "f8e6b953-d09f-4c2a-8d8c-393e4fb3c586"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Piste [/UART2_RX] sur B.Cu, long. 22,5000 mm",
+                    "pos": {
+                        "x": 149.5,
+                        "y": 59.0
+                    },
+                    "uuid": "26a8bfa0-2f7d-4b09-bd1c-245bde8bedd4"
+                },
+                {
+                    "description": "Piste [/SWDIO] sur B.Cu, long. 10,0300 mm",
+                    "pos": {
+                        "x": 169.0,
+                        "y": 67.45
+                    },
+                    "uuid": "e6ca3800-59b2-4971-8870-6ee4e7dd2ce8"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Piste [IR_XSHUT] sur B.Cu, long. 15,9400 mm",
+                    "pos": {
+                        "x": 166.0,
+                        "y": 60.8
+                    },
+                    "uuid": "2d2950f7-970b-4fee-93bc-21e82ad08bad"
+                },
+                {
+                    "description": "Piste [/BOOT0] sur B.Cu, long. 13,1173 mm",
+                    "pos": {
+                        "x": 167.0,
+                        "y": 64.45
+                    },
+                    "uuid": "837159da-4522-4123-ba56-bbf58d9e03f9"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Violation d'isolation ( isolation 0,1500 mm; réel 0,0250 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] de CIN2 sur B.Cu",
+                    "pos": {
+                        "x": 160.775,
+                        "y": 60.2
+                    },
+                    "uuid": "53644a29-8a89-4b67-8edb-cff41389f6a2"
+                },
+                {
+                    "description": "Piste [IR_XSHUT] sur B.Cu, long. 10,0000 mm",
+                    "pos": {
+                        "x": 156.0,
+                        "y": 60.8
+                    },
+                    "uuid": "b9f32f8d-10ba-40e7-98a8-83085898b102"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "L’ouverture du masque de soudure de dessous relie des éléments de différents nets",
+            "items": [
+                {
+                    "description": "Piste [/BOOT0] sur B.Cu, long. 13,1173 mm",
+                    "pos": {
+                        "x": 167.0,
+                        "y": 64.45
+                    },
+                    "uuid": "837159da-4522-4123-ba56-bbf58d9e03f9"
+                },
+                {
+                    "description": "Pad 2 [Net-(J3-Pin_1)] de COUT1 sur B.Cu",
+                    "pos": {
+                        "x": 164.775,
+                        "y": 64.2
+                    },
+                    "uuid": "aa61035f-894b-40ed-8188-fc27a4b76ac9"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "L’ouverture du masque de soudure de dessous relie des éléments de différents nets",
+            "items": [
+                {
+                    "description": "Piste [/BOOT0] sur B.Cu, long. 13,1173 mm",
+                    "pos": {
+                        "x": 167.0,
+                        "y": 64.45
+                    },
+                    "uuid": "837159da-4522-4123-ba56-bbf58d9e03f9"
+                },
+                {
+                    "description": "Pad 2 [GND] de R10 sur B.Cu",
+                    "pos": {
+                        "x": 156.825,
+                        "y": 66.2
+                    },
+                    "uuid": "9d814a55-d462-4563-8961-fdc7ac487f97"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/NRST] sur F.Cu - B.Cu",
+                    "pos": {
+                        "x": 170.0,
+                        "y": 67.5
+                    },
+                    "uuid": "67e0d9c8-ca83-4c8f-889c-0f5d8a3231e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [I2C_SCL] sur F.Cu - B.Cu",
+                    "pos": {
+                        "x": 148.8,
+                        "y": 69.45
+                    },
+                    "uuid": "ee0c6679-9a22-4be2-8782-aae99ebee83e"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "L’empreinte 'TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal' ne correspond pas à la copie en librairie 'TerminalBlock_Phoenix'",
+            "items": [
+                {
+                    "description": "Empreinte J10",
+                    "pos": {
+                        "x": 168.0,
+                        "y": 42.0
+                    },
+                    "uuid": "42103e1b-43e4-4665-9d24-4881a4668e29"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "L’empreinte 'PinHeader_1x05_P2.54mm_Vertical' ne correspond pas à la copie en librairie 'Connector_PinHeader_2.54mm'",
+            "items": [
+                {
+                    "description": "Empreinte J22",
+                    "pos": {
+                        "x": 174.0,
+                        "y": 62.5
+                    },
+                    "uuid": "b194ef4a-66d7-4d08-946d-bc15f24d22b0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "L’empreinte 'IFA_868_CST_30x20_PisteFine' ne correspond pas à la copie en librairie 'VeillePorte_Antennes'",
+            "items": [
+                {
+                    "description": "Empreinte AE1",
+                    "pos": {
+                        "x": 149.0,
+                        "y": 52.0
+                    },
+                    "uuid": "b2f69cbc-92f4-407a-9897-d01433c021ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        }
+    ]
+}

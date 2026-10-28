@@ -15,7 +15,7 @@
     60,
     0.8
   ],
-  "plan_masse": "A creer sur le PCB : 30x40mm, deux faces et liaisons entre masses ; non fourni comme cuivre plein dans l empreinte",
+  "plan_masse": "Reference CST : 30x40 mm deux faces. PCB courant : plan In2.Cu et remplissages GND des faces externes, uniquement sous electronique ; aucun plan sous radiateur.",
   "rectangles_CST": [
     [
       "Antenna",
@@ -109,5 +109,19 @@
       55.0
     ]
   ],
-  "modes_soudure": "pas de pate a braser sur le radiateur ; ouverture de masque sur les pistes"
+  "modes_soudure": "pas de pate a braser sur le radiateur ; ouverture de masque sur les pistes",
+  "contact_GND_IFA_local_mm": [
+    -4,
+    0
+  ],
+  "autre_pastille_GND_locale_mm": [
+    2.5,
+    1
+  ],
+  "zone_exclusion_couches": [
+    "F.Cu",
+    "In1.Cu",
+    "In2.Cu",
+    "B.Cu"
+  ]
 }
