@@ -13980,13 +13980,13 @@
 	)
 
 	(wire
-		(pts (xy 438.15 52.07) (xy 438.15 45.72))
+		(pts (xy 438.15 52.07) (xy 445.77 52.07))
 		(stroke (width 0) (type default))
 		(uuid "6b8ec1e0-ff6a-45d5-8d3e-a72bd7642978")
 	)
 
 	(wire
-		(pts (xy 438.15 45.72) (xy 445.77 45.72))
+		(pts (xy 445.77 52.07) (xy 445.77 53.34))
 		(stroke (width 0) (type default))
 		(uuid "7088ec34-6605-4715-abf8-d0b5cfba9302")
 	)
