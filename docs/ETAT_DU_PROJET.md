@@ -10,7 +10,7 @@
 | Antenne | Empreinte IFA 868 MHz liée à RF et masse ; résultats CST préliminaires |
 | ERC | 0 erreur, 3 avertissements connus |
 | Netlist | 45 composants et 43 groupes de connexions |
-| PCB | RAK3172 au centre, connecteurs au pourtour, contour 60 × 70 mm et 4 couches cuivre. DRC : 0 erreur, 28 avertissements ; 108 connexions non routées. Aperçu : `../VeillePorte/implantation.png` |
+| PCB | RAK3172 au centre, connecteurs au pourtour, contour 40 × 60 mm et 4 couches cuivre. DRC : 8 avertissements (sérigraphie/empreintes), 110 connexions non routées. J3/J4/J19 sont placés au dos. L’accord de l’antenne sur cette taille reste à vérifier dans CST. Aperçus : `../VeillePorte/implantation.png` et `../VeillePorte/implantation_dos.png` |
 | Firmware et LoRaWAN | À développer et tester |
 | Boîtier et panneau | Panneau solaire environ 50 × 50 mm ; géométrie et matériaux à intégrer |
 | Mesures physiques | Non réalisées ; consommation, autonomie, portée et détection restent à valider |
