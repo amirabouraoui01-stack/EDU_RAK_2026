@@ -10,7 +10,7 @@
 | Antenne | Empreinte IFA 868 MHz liée à RF et masse ; résultats CST préliminaires |
 | ERC | 0 erreur, 3 avertissements connus |
 | Netlist | 45 composants et 43 groupes de connexions |
-| PCB | RAK3172 au centre, connecteurs au pourtour, contour 40 × 60 mm et 4 couches cuivre. DRC : 0 erreur, 3 avertissements d’empreintes (J10, J22, AE1), 58 connexions non routées. Première passe : 47 segments, 11 vias ; nets I²C, IR, SWD, UART, NRST et BOOT0 routés, plans GND/PWR sur les quatre couches. RF/AE1 et plusieurs réseaux BQ25570 restent à router. J3/J4/J19 sont placés au dos. L’accord de l’antenne sur cette taille reste à vérifier dans CST. Aperçus : `../VeillePorte/implantation.png` et `../VeillePorte/implantation_dos.png` |
+| PCB | Implantation reprise en 40 × 60 mm, 4 couches, 47 empreintes ; aucune piste ni via. RAK orienté pour rapprocher RF de l’antenne, alimentation regroupée autour du BQ25570, J10 hors de la zone rayonnante. Plan GND préparé sur In1.Cu. Routage à réaliser : F.Cu alimentations/RF, In2.Cu signaux RAK, B.Cu autres connexions. DRC : 0 erreur géométrique, 2 avertissements d’empreinte J10/J22, 106 connexions non résolues. Aperçus : `../VeillePorte/implantation.svg` et `../VeillePorte/implantation_dos.svg`. |
 | Firmware et LoRaWAN | À développer et tester |
 | Boîtier et panneau | Panneau solaire environ 50 × 50 mm ; géométrie et matériaux à intégrer |
 | Mesures physiques | Non réalisées ; consommation, autonomie, portée et détection restent à valider |
