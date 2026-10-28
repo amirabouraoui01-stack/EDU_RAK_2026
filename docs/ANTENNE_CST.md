@@ -17,7 +17,7 @@ Le moniteur farfield est défini à 868 MHz, mais son diagramme n’a pas encore
 
 La simulation est une carte seule avec substrat FR4 supposé (εr = 4,3 ; tan δ = 0,02) et conducteurs PEC. Elle simplifie le plan de masse, le pont entre faces et l’excitation 50 Ω. Elle ne comprend ni le RAK3172 détaillé, ni le connecteur, ni le panneau solaire 50 × 50 mm, ni les fils, le boîtier, la colle ou le support de porte. Le rendement, l’accord final et la portée ne sont donc pas validés.
 
-L’empreinte KiCad AE1 est une traduction géométrique des conducteurs CST ; elle réserve 30 × 20 mm à l’extrémité de la carte. Le PCB reste à implanter et router. J20 et AE1 partagent le réseau RF : il faudra définir une alimentation RF adaptée avant de fabriquer.
+L’empreinte KiCad AE1 est une traduction géométrique des conducteurs CST ; elle réserve 30 × 20 mm à l’extrémité de la carte. Le PCB VeillePorte est implanté sur un contour de 40 × 60 mm et possède une première passe de routage. La liaison RF vers AE1 reste à router et à contrôler avec son keepout ; J20 n’est pas retenu comme seconde antenne. Le modèle CST 30 × 60 mm ne correspond pas encore au contour PCB final.
 
 Le croquis d’implantation panneau/boîtier est une hypothèse mécanique, pas un résultat de simulation. La géométrie doit être recalculée avec les matériaux réels puis mesurée au VNA sur prototype.
 
