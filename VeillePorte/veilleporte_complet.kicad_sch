@@ -11245,7 +11245,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 445.77 53.34 0)
+		(at 438.15 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11256,7 +11256,7 @@
 		(fields_autoplaced yes)
 		(uuid "8f5d7f8e-31e1-462f-9fed-6acd5ec69714")
 		(property "Reference" "#PWR063"
-			(at 445.77 59.69 0)
+			(at 438.15 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11267,7 +11267,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 445.77 58.42 0)
+			(at 438.15 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11277,7 +11277,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 445.77 53.34 0)
+			(at 438.15 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11288,7 +11288,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 445.77 53.34 0)
+			(at 438.15 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11299,7 +11299,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 445.77 53.34 0)
+			(at 438.15 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11483,7 +11483,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 445.77 49.53 0)
+		(at 438.15 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11493,7 +11493,7 @@
 		(dnp yes)
 		(uuid "9f9e16c6-9428-4b55-b5a8-70e02d81fe8c")
 		(property "Reference" "C6"
-			(at 449.58 48.26 0)
+			(at 441.96 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11504,7 +11504,7 @@
 			)
 		)
 		(property "Value" "DNP"
-			(at 449.58 50.8 0)
+			(at 441.96 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11515,7 +11515,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 440.69 49.53 0)
+			(at 433.07 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11527,7 +11527,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.pololu.com/product/3692"
-			(at 440.69 49.53 0)
+			(at 433.07 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11539,7 +11539,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 445.77 49.53 0)
+			(at 438.15 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13985,11 +13985,6 @@
 		(uuid "6b8ec1e0-ff6a-45d5-8d3e-a72bd7642978")
 	)
 
-	(wire
-		(pts (xy 445.77 52.07) (xy 445.77 53.34))
-		(stroke (width 0) (type default))
-		(uuid "7088ec34-6605-4715-abf8-d0b5cfba9302")
-	)
 
 	(junction (at 438.15 52.07) (diameter 0) (color 0 0 0 0) (uuid "2af6b4df-fadb-43cc-9ffb-3882b8b94676"))
 	(sheet_instances

@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "C:\\Users\\amira\\Desktop\\projet_kicad\\EDU_RAK_2026\\VeillePorte\\veilleporte_complet.kicad_sch")
-		(date "2026-10-27T16:55:42")
+		(date "2026-10-28T12:05:11")
 		(tool "Eeschema 10.0.6")
 		(sheet
 			(number "1")

@@ -3,5 +3,3 @@
 *-backups/
 __pycache__/
 .history/
-# Restes locaux de l’ancien projet (vues KiCad, aperçus et sauvegardes)
-/Collier_Chien/

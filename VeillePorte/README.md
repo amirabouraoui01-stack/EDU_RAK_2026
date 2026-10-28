@@ -3,9 +3,9 @@
 Ouvrir `veilleporte_complet.kicad_pro` pour modifier le schéma complet.
 
 - Schéma : `veilleporte_complet.kicad_sch`
-- PCB : `veilleporte.kicad_pcb` — RAK3172 placé au centre, connecteurs au pourtour, antenne avec zone de dégagement, contour arrondi 60 × 70 mm et cuivre 4 couches
+- PCB : `veilleporte_complet.kicad_pcb` — associé au projet et au schéma sous le même nom
 - Aperçu du placement : `implantation.png`
-- Rapport DRC : `pcb_drc.json` — 0 erreur, 28 avertissements; 108 connexions restent à router
+- Rapport DRC : `pcb_drc.json` — 0 erreur, 28 avertissements; le PCB reste à router
 - PDF A2 : `veilleporte_complet.pdf`
 - Netlist : `veilleporte_complet.net`
 - Rapport ERC : `erc_complet.json`
